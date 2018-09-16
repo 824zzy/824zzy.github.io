@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/09/09/Neural-Machine-Translation-by-tensorflow/</loc>
+    <lastmod>2018-09-16T07:58:41.894Z</lastmod>
+    <data>
+        <display>
+        <title>Neural-Machine-Translation-by-tensorflow</title>
+        <pubTime>2018-09-08T16:00:00.000Z</pubTime>
+        
+        <tag>tensorflow</tag>
+         
+        <tag>nmt</tag>
+         
+         
+           
+             
+              <breadCrumb title="Code" url="https://824zzy.github.io/categories/Code/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/09/09/paper-note-A-Diversity-Promoting-Objective-Function-for-Neural-Conversation-Models/</loc>
+    <lastmod>2018-09-16T07:58:12.859Z</lastmod>
+    <data>
+        <display>
+        <title>论文笔记：A-Diversity-Promoting-Objective-Function-for-Neural-Conversation-Models</title>
+        <pubTime>2018-09-08T16:00:00.000Z</pubTime>
+        
+        <tag>note</tag>
+         
+         
+           
+             
+              <breadCrumb title="Paper" url="https://824zzy.github.io/categories/Paper/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/08/23/Visual-Question-Learning/</loc>
+    <lastmod>2018-09-16T07:57:31.522Z</lastmod>
+    <data>
+        <display>
+        <title>Visual-Question-Learning(VQA)学习笔记</title>
+        <pubTime>2018-08-22T16:00:00.000Z</pubTime>
+        
+        <tag>summarize</tag>
+         
+         
+           
+             
+              <breadCrumb title="VQA" url="https://824zzy.github.io/categories/VQA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/08/18/paper-note-deep-reinfocement-learning-for-Dialogue-Generation/</loc>
+    <lastmod>2018-09-15T07:06:13.777Z</lastmod>
+    <data>
+        <display>
+        <title>论文笔记：Deep Reinforcement Learning for Dialogue Generation</title>
+        <pubTime>2018-08-17T16:00:00.000Z</pubTime>
+        
+        <tag>note</tag>
+         
+         
+           
+             
+              <breadCrumb title="Paper" url="https://824zzy.github.io/categories/Paper/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/08/23/colab-tensorflow-usage/</loc>
+    <lastmod>2018-09-09T09:01:24.999Z</lastmod>
+    <data>
+        <display>
+        <title>深度学习模块文档备忘录</title>
+        <pubTime>2018-08-22T16:00:00.000Z</pubTime>
+        
+        <tag>colab</tag>
+         
+        <tag>tensorflow</tag>
+         
+        <tag>sklearn</tag>
+         
+        <tag>Keras</tag>
+         
+         
+           
+             
+              <breadCrumb title="DeepLearning" url="https://824zzy.github.io/categories/DeepLearning/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/08/22/zero-shot-learning/</loc>
+    <lastmod>2018-09-09T09:01:09.385Z</lastmod>
+    <data>
+        <display>
+        <title>Zero-shot Learning学习笔记</title>
+        <pubTime>2018-08-21T16:00:00.000Z</pubTime>
+        
+        <tag>graphConvolutionalNetwork</tag>
+         
+         
+           
+             
+              <breadCrumb title="Zero-shot" url="https://824zzy.github.io/categories/Zero-shot/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2017/06/10/Python-module/</loc>
+    <lastmod>2018-09-05T13:57:37.739Z</lastmod>
+    <data>
+        <display>
+        <title>Python常用模块</title>
+        <pubTime>2017-06-09T16:00:00.000Z</pubTime>
+        
+        <tag>logging</tag>
+         
+        <tag>unittest</tag>
+         
+        <tag>datetime</tag>
+         
+        <tag>retry</tag>
+         
+        <tag>os</tag>
+         
+        <tag>timeit</tag>
+         
+        <tag>glob</tag>
+         
+        <tag>PIL</tag>
+         
+        <tag>pickle</tag>
+         
+        <tag>matplotlib</tag>
+         
+        <tag>numpy</tag>
+         
+        <tag>setuptool</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="https://824zzy.github.io/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2017/12/07/Python-language/</loc>
+    <lastmod>2018-09-05T13:57:34.874Z</lastmod>
+    <data>
+        <display>
+        <title>Python语言学习</title>
+        <pubTime>2017-12-06T16:00:00.000Z</pubTime>
+        
+        <tag>language</tag>
+         
+        <tag>code</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="https://824zzy.github.io/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/08/09/convAI-paper-list/</loc>
+    <lastmod>2018-09-04T06:22:10.271Z</lastmod>
+    <data>
+        <display>
+        <title>对话AI的论文列表</title>
+        <pubTime>2018-08-09T04:31:31.000Z</pubTime>
+        
+        <tag>chatbot</tag>
+         
+        <tag>conversationalAI</tag>
+         
+        <tag>nlp</tag>
+         
+        <tag>paper</tag>
+         
+         
+           
+             
+              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/08/26/Image-Caption-demo-by-tensorflow/</loc>
+    <lastmod>2018-08-27T05:12:07.688Z</lastmod>
+    <data>
+        <display>
+        <title>demo驱动学习：Image_Caption</title>
+        <pubTime>2018-08-25T16:00:00.000Z</pubTime>
+        
+        <tag>imageCaption</tag>
+         
+         
+           
+             
+              <breadCrumb title="Demo" url="https://824zzy.github.io/categories/Demo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2017/04/03/Linux-command/</loc>
+    <lastmod>2018-08-25T10:44:13.644Z</lastmod>
+    <data>
+        <display>
+        <title>Linux常用命令</title>
+        <pubTime>2017-04-02T16:00:00.000Z</pubTime>
+        
+        <tag>command</tag>
+         
+         
+           
+             
+              <breadCrumb title="Linux" url="https://824zzy.github.io/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/08/08/convAI-map-and-term/</loc>
+    <lastmod>2018-08-24T06:59:54.094Z</lastmod>
+    <data>
+        <display>
+        <title>对话AI的术语和学习地图</title>
+        <pubTime>2018-08-08T15:25:39.000Z</pubTime>
+        
+        <tag>chatbot</tag>
+         
+        <tag>conversationalAI</tag>
+         
+        <tag>nlp</tag>
+         
+         
+           
+             
+              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2017/09/06/Latex-Mathjex-usage/</loc>
+    <lastmod>2018-08-20T04:37:30.854Z</lastmod>
+    <data>
+        <display>
+        <title>Latex&Mathjax使用</title>
+        <pubTime>2017-09-05T16:00:00.000Z</pubTime>
+        
+        <tag>latex</tag>
+         
+        <tag>mathjex</tag>
+         
+         
+           
+             
+              <breadCrumb title="Paper" url="https://824zzy.github.io/categories/Paper/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2017/04/16/Git-usage/</loc>
+    <lastmod>2018-08-19T04:20:51.031Z</lastmod>
+    <data>
+        <display>
+        <title>Git使用备忘录</title>
+        <pubTime>2017-04-15T16:00:00.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="Linux" url="https://824zzy.github.io/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/07/26/blog-config/</loc>
+    <lastmod>2018-08-18T06:23:28.142Z</lastmod>
+    <data>
+        <display>
+        <title>博客主题配置</title>
+        <pubTime>2018-07-25T16:00:00.000Z</pubTime>
+        
+        <tag>Hexo-next</tag>
+         
+         
+           
+             
+              <breadCrumb title="Blog" url="https://824zzy.github.io/categories/Blog/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/04/17/web-app-ionic/</loc>
+    <lastmod>2018-08-18T05:50:08.055Z</lastmod>
+    <data>
+        <display>
+        <title>ionic常见报错解决方案&常用命令</title>
+        <pubTime>2018-04-16T16:00:00.000Z</pubTime>
+        
+        <tag>ionic</tag>
+         
+         
+           
+             
+              <breadCrumb title="App" url="https://824zzy.github.io/categories/App/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2017/03/01/Linux-softwares/</loc>
+    <lastmod>2018-08-08T15:14:00.028Z</lastmod>
+    <data>
+        <display>
+        <title>Linux常用软件</title>
+        <pubTime>2017-02-28T16:00:00.000Z</pubTime>
+        
+        <tag>vim</tag>
+         
+        <tag>screen</tag>
+         
+        <tag>virtualenv</tag>
+         
+        <tag>anaconda</tag>
+         
+        <tag>jupyterNoteBook</tag>
+         
+        <tag>commitizen</tag>
+         
+        <tag>mysql</tag>
+         
+         
+           
+             
+              <breadCrumb title="Linux" url="https://824zzy.github.io/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/08/03/Deeplearning-note/</loc>
+    <lastmod>2018-08-03T06:43:03.756Z</lastmod>
+    <data>
+        <display>
+        <title>深度学习手写笔记</title>
+        <pubTime>2018-08-03T06:36:43.000Z</pubTime>
+        
+        <tag>deepLearning</tag>
+         
+         
+           
+             
+              <breadCrumb title="HandWriting" url="https://824zzy.github.io/categories/HandWriting/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/06/16/YJango-Deep-Learning/</loc>
+    <lastmod>2018-08-01T09:55:00.174Z</lastmod>
+    <data>
+        <display>
+        <title>深度学习设计理念手写笔记</title>
+        <pubTime>2018-06-15T16:00:00.000Z</pubTime>
+        
+        <tag>deeplearning</tag>
+         
+         
+           
+             
+              <breadCrumb title="HandWriting" url="https://824zzy.github.io/categories/HandWriting/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/07/10/PRML-handwriting/</loc>
+    <lastmod>2018-08-01T09:49:45.284Z</lastmod>
+    <data>
+        <display>
+        <title>模式识别与机器学习手写笔记</title>
+        <pubTime>2018-07-09T16:00:00.000Z</pubTime>
+        
+        <tag>prml</tag>
+         
+         
+           
+             
+              <breadCrumb title="HandWriting" url="https://824zzy.github.io/categories/HandWriting/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/07/18/infomation-science-handwriting/</loc>
+    <lastmod>2018-08-01T09:47:29.880Z</lastmod>
+    <data>
+        <display>
+        <title>信息科学原理手写笔记</title>
+        <pubTime>2018-07-17T16:00:00.000Z</pubTime>
+        
+        <tag>informationScience</tag>
+         
+         
+           
+             
+              <breadCrumb title="HandWriting" url="https://824zzy.github.io/categories/HandWriting/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/06/30/RL-DavidSilver-1-3/</loc>
+    <lastmod>2018-07-31T07:37:20.978Z</lastmod>
+    <data>
+        <display>
+        <title>强化学习-DavidSilver(Lecture1 to Lecture3)</title>
+        <pubTime>2018-06-29T16:00:00.000Z</pubTime>
+        
+        <tag>reinforcementLearning</tag>
+         
+         
+           
+             
+              <breadCrumb title="MachineLearning" url="https://824zzy.github.io/categories/MachineLearning/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/02/20/BUPT-exam-note/</loc>
+    <lastmod>2018-07-29T06:03:08.913Z</lastmod>
+    <data>
+        <display>
+        <title>北邮复试笔试复习</title>
+        <pubTime>2018-02-19T16:00:00.000Z</pubTime>
+        
+        <tag>reexamine</tag>
+         
+         
+           
+             
+              <breadCrumb title="BUPT" url="https://824zzy.github.io/categories/BUPT/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/02/13/BUPT-OJ-experience/</loc>
+    <lastmod>2018-07-29T06:02:39.254Z</lastmod>
+    <data>
+        <display>
+        <title>北邮机试打印资料</title>
+        <pubTime>2018-02-12T16:00:00.000Z</pubTime>
+        
+        <tag>algorithm</tag>
+         
+         
+           
+             
+              <breadCrumb title="BUPT" url="https://824zzy.github.io/categories/BUPT/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/06/29/CNN-note/</loc>
+    <lastmod>2018-07-29T03:54:32.171Z</lastmod>
+    <data>
+        <display>
+        <title>卷积神经网络</title>
+        <pubTime>2018-06-28T16:00:00.000Z</pubTime>
+        
+        <tag>cnn</tag>
+         
+         
+           
+             
+              <breadCrumb title="DeepLearning" url="https://824zzy.github.io/categories/DeepLearning/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/04/23/RNN-introduction/</loc>
+    <lastmod>2018-07-29T03:48:54.585Z</lastmod>
+    <data>
+        <display>
+        <title>RNN原理介绍以及二进制加法器</title>
+        <pubTime>2018-04-22T16:00:00.000Z</pubTime>
+        
+        <tag>rnn</tag>
+         
+        <tag>lstm</tag>
+         
+        <tag>deepLearning</tag>
+         
+         
+           
+             
+              <breadCrumb title="DeepLearning" url="https://824zzy.github.io/categories/DeepLearning/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/06/15/super-organism-YJango/</loc>
+    <lastmod>2018-07-29T03:45:12.098Z</lastmod>
+    <data>
+        <display>
+        <title>超智能体读书笔记</title>
+        <pubTime>2018-06-14T16:00:00.000Z</pubTime>
+        
+        <tag>readingNote</tag>
+         
+        <tag>mathematics</tag>
+         
+         
+           
+             
+              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/06/27/some-great-books-note/</loc>
+    <lastmod>2018-07-29T03:45:10.174Z</lastmod>
+    <data>
+        <display>
+        <title>人类简史与未来简史</title>
+        <pubTime>2018-06-26T16:00:00.000Z</pubTime>
+        
+        <tag>aBriefHistoryOfHumankind</tag>
+         
+        <tag>homoDeus</tag>
+         
+         
+           
+             
+              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/06/10/GRE-verbal-overall/</loc>
+    <lastmod>2018-07-29T03:11:34.398Z</lastmod>
+    <data>
+        <display>
+        <title>GRE填空逻辑方法总结</title>
+        <pubTime>2018-06-09T16:00:00.000Z</pubTime>
+        
+        <tag>verbal</tag>
+         
+         
+           
+             
+              <breadCrumb title="GRE" url="https://824zzy.github.io/categories/GRE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/06/10/GRE-verbal-method/</loc>
+    <lastmod>2018-07-29T03:06:31.508Z</lastmod>
+    <data>
+        <display>
+        <title>GRE填空逻辑方法总结</title>
+        <pubTime>2018-06-09T16:00:00.000Z</pubTime>
+        
+        <tag>verbal</tag>
+         
+         
+           
+             
+              <breadCrumb title="GRE" url="https://824zzy.github.io/categories/GRE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/06/10/GRE-reasoning-overall/</loc>
+    <lastmod>2018-07-29T03:03:48.019Z</lastmod>
+    <data>
+        <display>
+        <title>GRE阅读导学</title>
+        <pubTime>2018-06-09T16:00:00.000Z</pubTime>
+        
+        <tag>reasoning</tag>
+         
+         
+           
+             
+              <breadCrumb title="GRE" url="https://824zzy.github.io/categories/GRE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/06/10/GRE-reasoning-method/</loc>
+    <lastmod>2018-07-29T03:02:37.320Z</lastmod>
+    <data>
+        <display>
+        <title>GRE阅读方法总结</title>
+        <pubTime>2018-06-09T16:00:00.000Z</pubTime>
+        
+        <tag>reasoning</tag>
+         
+         
+           
+             
+              <breadCrumb title="GRE" url="https://824zzy.github.io/categories/GRE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/06/09/mongodb-design-mode/</loc>
+    <lastmod>2018-07-29T02:56:11.676Z</lastmod>
+    <data>
+        <display>
+        <title>MongoDB进阶设计模式</title>
+        <pubTime>2018-06-08T16:00:00.000Z</pubTime>
+        
+        <tag>mongoDB</tag>
+         
+        <tag>designMode</tag>
+         
+         
+           
+             
+              <breadCrumb title="Database" url="https://824zzy.github.io/categories/Database/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/05/18/gradientDescent/</loc>
+    <lastmod>2018-07-29T02:52:05.281Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习中的梯度下降法</title>
+        <pubTime>2018-05-17T16:00:00.000Z</pubTime>
+        
+        <tag>gradientDescent</tag>
+         
+        <tag>mathematics</tag>
+         
+         
+           
+             
+              <breadCrumb title="MachineLearning" url="https://824zzy.github.io/categories/MachineLearning/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/04/16/quantitative-investment-summary/</loc>
+    <lastmod>2018-07-28T13:36:02.703Z</lastmod>
+    <data>
+        <display>
+        <title>量化投资</title>
+        <pubTime>2018-04-15T16:00:00.000Z</pubTime>
+        
+        <tag>machinelearning</tag>
+         
+        <tag>rnn</tag>
+         
+        <tag>lstm</tag>
+         
+         
+           
+             
+              <breadCrumb title="QuantitativeInvestment" url="https://824zzy.github.io/categories/QuantitativeInvestment/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/03/15/yin-wang-riddle-computer-science/</loc>
+    <lastmod>2018-07-28T13:33:10.927Z</lastmod>
+    <data>
+        <display>
+        <title>解谜计算机科学-王垠著（连载中）</title>
+        <pubTime>2018-03-14T16:00:00.000Z</pubTime>
+        
+        <tag>readingNote</tag>
+         
+         
+           
+             
+              <breadCrumb title="ComputerScience" url="https://824zzy.github.io/categories/ComputerScience/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/02/14/tornado-usage/</loc>
+    <lastmod>2018-07-28T13:09:51.946Z</lastmod>
+    <data>
+        <display>
+        <title>Tornado学习小结</title>
+        <pubTime>2018-02-13T16:00:00.000Z</pubTime>
+        
+        <tag>tornado</tag>
+         
+         
+           
+             
+              <breadCrumb title="App" url="https://824zzy.github.io/categories/App/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/01/24/colah-bp-algorithm/</loc>
+    <lastmod>2018-07-28T13:02:14.152Z</lastmod>
+    <data>
+        <display>
+        <title>colah对BP算法的详细讲解</title>
+        <pubTime>2018-01-23T16:00:00.000Z</pubTime>
+        
+        <tag>algorithm</tag>
+         
+        <tag>backpropagation</tag>
+         
+         
+           
+             
+              <breadCrumb title="MachineLearning" url="https://824zzy.github.io/categories/MachineLearning/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/01/23/quantitative-investment-index/</loc>
+    <lastmod>2018-07-28T13:00:15.109Z</lastmod>
+    <data>
+        <display>
+        <title>常见技术投资指标学习</title>
+        <pubTime>2018-01-22T16:00:00.000Z</pubTime>
+        
+        <tag>index</tag>
+         
+         
+           
+             
+              <breadCrumb title="QuantitativeInvestment" url="https://824zzy.github.io/categories/QuantitativeInvestment/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+</urlset>
