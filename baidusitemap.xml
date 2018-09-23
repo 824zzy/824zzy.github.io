@@ -4,6 +4,48 @@
 
     
   <url>
+    <loc>https://824zzy.github.io/2018/09/21/Object-Difference-Attention-paper-note/</loc>
+    <lastmod>2018-09-23T14:13:02.644Z</lastmod>
+    <data>
+        <display>
+        <title>对象差分注意力机制</title>
+        <pubTime>2018-09-20T16:00:00.000Z</pubTime>
+        
+        <tag>note</tag>
+         
+         
+           
+             
+              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/09/21/world-model-to-learn-them-all/</loc>
+    <lastmod>2018-09-23T12:54:49.061Z</lastmod>
+    <data>
+        <display>
+        <title>世界模型的解读</title>
+        <pubTime>2018-09-20T16:00:00.000Z</pubTime>
+        
+        <tag>note</tag>
+         
+        <tag>JurgenSchmidhuber</tag>
+         
+         
+           
+             
+              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://824zzy.github.io/2018/09/09/Neural-Machine-Translation-by-tensorflow/</loc>
     <lastmod>2018-09-18T14:59:13.153Z</lastmod>
     <data>
@@ -615,9 +657,9 @@
         <title>超智能体读书笔记</title>
         <pubTime>2018-06-14T16:00:00.000Z</pubTime>
         
-        <tag>readingNote</tag>
-         
         <tag>mathematics</tag>
+         
+        <tag>readingNote</tag>
          
          
            
