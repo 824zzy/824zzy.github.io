@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://824zzy.github.io/2018/09/21/Object-Difference-Attention-paper-note/</loc>
-    <lastmod>2018-09-23T14:13:02.644Z</lastmod>
+    <lastmod>2018-09-25T12:05:29.104Z</lastmod>
     <data>
         <display>
         <title>对象差分注意力机制</title>
@@ -25,7 +25,7 @@
     
   <url>
     <loc>https://824zzy.github.io/2018/09/21/world-model-to-learn-them-all/</loc>
-    <lastmod>2018-09-23T12:54:49.061Z</lastmod>
+    <lastmod>2018-09-25T10:26:48.898Z</lastmod>
     <data>
         <display>
         <title>世界模型的解读</title>
@@ -657,9 +657,9 @@
         <title>超智能体读书笔记</title>
         <pubTime>2018-06-14T16:00:00.000Z</pubTime>
         
-        <tag>mathematics</tag>
-         
         <tag>readingNote</tag>
+         
+        <tag>mathematics</tag>
          
          
            
@@ -803,9 +803,9 @@
         <title>机器学习中的梯度下降法</title>
         <pubTime>2018-05-17T16:00:00.000Z</pubTime>
         
-        <tag>gradientDescent</tag>
-         
         <tag>mathematics</tag>
+         
+        <tag>gradientDescent</tag>
          
          
            
