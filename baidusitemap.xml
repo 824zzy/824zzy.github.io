@@ -4,28 +4,8 @@
 
     
   <url>
-    <loc>https://824zzy.github.io/2018/09/21/Object-Difference-Attention-paper-note/</loc>
-    <lastmod>2018-09-25T12:05:29.104Z</lastmod>
-    <data>
-        <display>
-        <title>对象差分注意力机制</title>
-        <pubTime>2018-09-20T16:00:00.000Z</pubTime>
-        
-        <tag>note</tag>
-         
-         
-           
-             
-              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://824zzy.github.io/2018/09/21/world-model-to-learn-them-all/</loc>
-    <lastmod>2018-09-25T10:26:48.898Z</lastmod>
+    <lastmod>2018-09-26T12:37:39.898Z</lastmod>
     <data>
         <display>
         <title>世界模型的解读</title>
@@ -46,6 +26,26 @@
 
     
   <url>
+    <loc>https://824zzy.github.io/2018/09/21/Object-Difference-Attention-paper-note/</loc>
+    <lastmod>2018-09-25T12:05:29.104Z</lastmod>
+    <data>
+        <display>
+        <title>对象差分注意力机制</title>
+        <pubTime>2018-09-20T16:00:00.000Z</pubTime>
+        
+        <tag>note</tag>
+         
+         
+           
+             
+              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://824zzy.github.io/2018/09/09/Neural-Machine-Translation-by-tensorflow/</loc>
     <lastmod>2018-09-18T14:59:13.153Z</lastmod>
     <data>
@@ -53,9 +53,9 @@
         <title>Neural-Machine-Translation-by-tensorflow</title>
         <pubTime>2018-09-08T16:00:00.000Z</pubTime>
         
-        <tag>tensorflow</tag>
-         
         <tag>slide</tag>
+         
+        <tag>tensorflow</tag>
          
          
            
@@ -155,9 +155,9 @@
         <title>深度学习模块文档备忘录</title>
         <pubTime>2018-08-22T16:00:00.000Z</pubTime>
         
-        <tag>colab</tag>
-         
         <tag>tensorflow</tag>
+         
+        <tag>colab</tag>
          
         <tag>sklearn</tag>
          
@@ -803,9 +803,9 @@
         <title>机器学习中的梯度下降法</title>
         <pubTime>2018-05-17T16:00:00.000Z</pubTime>
         
-        <tag>mathematics</tag>
-         
         <tag>gradientDescent</tag>
+         
+        <tag>mathematics</tag>
          
          
            

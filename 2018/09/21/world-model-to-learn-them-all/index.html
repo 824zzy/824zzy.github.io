@@ -24,8 +24,8 @@
   <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
   <script>
     (function () {
-        if ('todo_for_the_next') {
-            if (prompt('请输入文章密码') !== 'todo_for_the_next') {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
                 alert('密码错误！');
                 if (history.length === 1) {
                     location.replace("http://xxxxxxx.xxx"); // 这里替换成你的首页
@@ -158,19 +158,21 @@
 <meta property="og:site_name" content="Zzy824">
 <meta property="og:description" content="论文基本信息 论文名：World Models   论文链接：https://arxiv.org/pdf/1803.10122.pdf   论文源码：  https://worldmodels.github.io/      关于作者：   David Ha： Jurgen Schimidhuber: LSTM之父，无需多言   关于笔记作者：  朱正源,北京邮电大学研究生，研究方向为多模态">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fv3ej4gjdpj20cu09a41n.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fv3aq0qijej209x02i747.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fv3da2abhvj20az01zglj.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fv3b3rrm7wj20ex04naad.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fv3btiaol9j20dd08g0ta.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fv3bu955smj209q01la9y.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fv3coi0jx5j20qk06nq4x.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fv3cp1j5taj20cs05tgmj.jpg">
-<meta property="og:updated_time" content="2018-09-25T10:26:48.898Z">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fvm2l4tc84j20wf0ledkn.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fvm3sg25puj20wn09zq7g.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fvmurcu30uj20u10l8jta.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fvmvf1dkd5j20p50ic77b.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fvmw8osn7xj20vh0kt43n.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fvmwg6zv1ej20gg063jru.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fvmxb7t9zdj20op09odi1.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fvmxeae7jyj20g00g4jwu.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fvmxq3o7ihj20g10bywio.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fvn0lmh3rdj20li07dwf8.jpg">
+<meta property="og:updated_time" content="2018-09-26T12:37:39.898Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="世界模型的解读">
 <meta name="twitter:description" content="论文基本信息 论文名：World Models   论文链接：https://arxiv.org/pdf/1803.10122.pdf   论文源码：  https://worldmodels.github.io/      关于作者：   David Ha： Jurgen Schimidhuber: LSTM之父，无需多言   关于笔记作者：  朱正源,北京邮电大学研究生，研究方向为多模态">
-<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fv3ej4gjdpj20cu09a41n.jpg">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fvm2l4tc84j20wf0ledkn.jpg">
 
 
 
@@ -471,8 +473,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-25T18:26:48+08:00">
-                2018-09-25
+              <time title="更新于" itemprop="dateModified" datetime="2018-09-26T20:37:39+08:00">
+                2018-09-26
               </time>
             
           </span>
@@ -532,7 +534,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,229
+                  2,297
                 </span>
               
 
@@ -548,7 +550,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5分钟
+                  9分钟
                 </span>
               
             </div>
@@ -604,62 +606,95 @@
 </ul>
 </li>
 </ol>
-<h2 id="论文推荐理由"><a href="#论文推荐理由" class="headerlink" title="论文推荐理由"></a>论文推荐理由</h2><p>文章提出使用最大互信息（Maximum Mutual Information MMI）代替原始的最大似然（Maximum Likelihood)作为目标函数，目的是使用互信息减小“I don’t Know”这类无聊响应的生成概率。</p>
-<h2 id="一种促进神经对话模型多样性的目标函数"><a href="#一种促进神经对话模型多样性的目标函数" class="headerlink" title="一种促进神经对话模型多样性的目标函数"></a>一种促进神经对话模型多样性的目标函数</h2><h3 id="预备知识"><a href="#预备知识" class="headerlink" title="预备知识"></a>预备知识</h3><ul>
-<li>Seq2Seq模型：<br>  <img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fv3ej4gjdpj20cu09a41n.jpg" alt=""></li>
-</ul>
-<h3 id="论文写作动机"><a href="#论文写作动机" class="headerlink" title="论文写作动机"></a>论文写作动机</h3><p>越来越多的研究者开始探索数据驱动的对话生成方法。主要分为三派：</p>
-<ul>
-<li>基于短语的统计方法（Ritter 2011）: 传统的基于短语的翻译系统通过将源句分成多个块，然后逐句翻译来完成任务.</li>
-<li>神经网络方法</li>
-<li>Seq2Seq模型（Sordoni 2015）</li>
-</ul>
-<p>Seq2Seq神经网络模型生成的回复往往十分保守。(I don’t know)</p>
-<h3 id="问题的解决思路"><a href="#问题的解决思路" class="headerlink" title="问题的解决思路"></a>问题的解决思路</h3><h4 id="最大互信息模型"><a href="#最大互信息模型" class="headerlink" title="最大互信息模型"></a>最大互信息模型</h4><ol>
-<li><p>符号表示</p>
-<ul>
-<li>$S={s_1, s_2, …, S_{N_s}}$: 输入句子序列</li>
-<li>$T={t_1, t_2, …, t_{N_s}, EOS}$: 目标句子序列，其中$EOS$表示句子结束。</li>
-</ul>
+<h2 id="论文推荐理由"><a href="#论文推荐理由" class="headerlink" title="论文推荐理由"></a>论文推荐理由</h2><p>通过探索并且建立流行的强化学习环境的生成神经网络模型。<strong>世界模型</strong>可以在无监督的情况下快速训练，以学习环境的压缩时空表示。通过使用从世界模型中提取的特征作为Agent的输入，可以训练一个非常紧凑和简单的策略来解决所需的任务。甚至可以训练Agent完全在它自己的世界模型所产生的<strong>梦</strong>中，并将这个策略转移回实际环境中。</p>
+<h2 id="世界模型"><a href="#世界模型" class="headerlink" title="世界模型"></a>世界模型</h2><h3 id="论文写作动机"><a href="#论文写作动机" class="headerlink" title="论文写作动机"></a>论文写作动机</h3><ol>
+<li><p>哲学问题：人类究竟如何认识世界？<br> 人类通过有限的感知能力（眼睛、鼻子、耳朵、皮肤），逐渐建立一个自己的<strong>心智模型</strong>。人类的一切决策和动作则均根据每个人自己的内部模型的<strong>预测</strong>而产生。</p>
 </li>
-<li><p>MMI评判标准</p>
+<li><p>人类如何处理日常生活的信息流？<br> 通过<strong>注意力机制</strong>学习客观世界时空方面的抽象表达。</p>
+</li>
+<li><p>人类的潜意识如何工作？<br> 以棒球为例子，击球手在如此短的时间（短于视觉信号到达大脑的时间！）内需要作出何时击球的动作。<br> 人类可以完成击球的原因便是因为人类天生的心智模型可以预测棒球的运动路线。</p>
+</li>
+<li><p>我们是否可以让模型根据环境自觉建立特有的模型进行自学习？</p>
+</li>
+<li><p>Jurgen历史性的工作总结：强化学习背景下的RNN-based世界模型!</p>
+</li>
+</ol>
+<h3 id="模型细节"><a href="#模型细节" class="headerlink" title="模型细节"></a>模型细节</h3><h4 id="总览Agent模型"><a href="#总览Agent模型" class="headerlink" title="总览Agent模型"></a>总览Agent模型</h4><ol>
+<li><p>视觉感知元件：<strong>压缩</strong>视觉获取到的信息</p>
+</li>
+<li><p>记忆元件：根据历史信息对客观环境进行<strong>预测</strong></p>
+</li>
+<li><p>决策模块：根据视觉感知元件和记忆元件选择<strong>行动</strong></p>
+</li>
+</ol>
+<p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvm2l4tc84j20wf0ledkn.jpg" alt=""></p>
+<h4 id="VAE-V-Model"><a href="#VAE-V-Model" class="headerlink" title="VAE(V) Model"></a>VAE(V) Model</h4><p>Agent通过VAE可以从观察的每一帧中学习出抽象的、压缩的表示。</p>
+<p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvm3sg25puj20wn09zq7g.jpg" alt=""></p>
+<h4 id="MDN-RNN-M-Model"><a href="#MDN-RNN-M-Model" class="headerlink" title="MDN-RNN(M) Model"></a>MDN-RNN(M) Model</h4><p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvmurcu30uj20u10l8jta.jpg" alt=""><br>其中下一时刻的预测$z_{t+1}$使用概率的形式表示为$P(z_{t+1}|a_t,z_t,h_t)$,其中$a_t$是在$t$时刻的动作。<br>并且在采样阶段，通过调整温度参数$\tau$来控制模型的模糊度。(这个参数对后续训练控制器环节十分有效)</p>
+<p>模型最上方的<strong>MDN</strong>表示<strong>Mixture Density Network</strong>。</p>
+<h4 id="Controller-C-Model"><a href="#Controller-C-Model" class="headerlink" title="Controller(C) Model"></a>Controller(C) Model</h4><p>这个模块用来根据最大累计Reward决定Agent下一个时刻的行动。论文中故意将这个模块设置的尽量小并且简单。</p>
+<p>因此控制器是一个简单的单层线性模型：<br>$$a_t=W_c[z_t h_t]+b_c$$</p>
+<p>特别指出，优化控制器参数的方法不是传统的梯度下降，而是<strong>Covariance-Matrix Adaptation Evolution Strategy</strong></p>
+<h4 id="结合三个模块"><a href="#结合三个模块" class="headerlink" title="结合三个模块"></a>结合三个模块</h4><p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvmvf1dkd5j20p50ic77b.jpg" alt=""></p>
+<p>通过伪代码表示模型:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">rollout</span><span class="params">(controller)</span>:</span></span><br><span class="line">  obs = env.reset()</span><br><span class="line">  h = rnn.initial_state()</span><br><span class="line">  done = <span class="keyword">False</span></span><br><span class="line">  cumulative_reward = <span class="number">0</span></span><br><span class="line">  <span class="keyword">while</span> <span class="keyword">not</span> done:</span><br><span class="line">    z = vae.encode(obs)</span><br><span class="line">    a = controller.action([z, h])</span><br><span class="line">    obs, reward, done = env.step(a)</span><br><span class="line">    cumulative_reward += reward</span><br><span class="line">    h = rnn.forward([a, z, h])</span><br><span class="line">  <span class="keyword">return</span> cumulative_reward</span><br></pre></td></tr></table></figure></p>
+<h3 id="实验设计1"><a href="#实验设计1" class="headerlink" title="实验设计1"></a>实验设计1</h3><p>两个实验的环境均选自<code>OpenAI Gym</code></p>
+<h4 id="实验环境"><a href="#实验环境" class="headerlink" title="实验环境"></a>实验环境</h4><p>CarRacing-v0(Car Racing Experiment)</p>
+<p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvmw8osn7xj20vh0kt43n.jpg" alt=""></p>
+<p>动作空间有</p>
 <ol>
-<li>MMI-antiLM:<br>对标准的目标函数：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fv3aq0qijej209x02i747.jpg" alt=""><br>进行了改进：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fv3da2abhvj20az01zglj.jpg" alt=""><br>在原始目标函数基础上添加了目标序列本身的概率$logp(T)$，$p(T)$就是一句话存在的概率，也就是一个模型，前面的lambda是惩罚因子，越大说明对语言模型惩罚力度越大。由于这里用的是减号，所以相当于在原本的目标上减去语言模型的概率，也就降低了“I don’t know”这类高频句子的出现概率。</li>
-<li>MMI-bidi:<br>在标准的目标函数基础上添加$logp(S|T)$,也就是T的基础上产生S的概率，而且可以通过改变lambda的大小衡量二者的重要性。后者可以表示在响应输入模型时产生输入的概率，自然像“I don’t know”这种答案的概率会比较低，而这里使用的是相加，所以会降低这种相应的概率。<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fv3b3rrm7wj20ex04naad.jpg" alt=""></li>
+<li>左转</li>
+<li>右转</li>
+<li>加速</li>
+<li>刹车</li>
 </ol>
+<h4 id="实验实现流程"><a href="#实验实现流程" class="headerlink" title="实验实现流程"></a>实验实现流程</h4><ol>
+<li>根据随机的策略收集10，000次游戏过程</li>
+<li>根据每个游戏过程的每一帧训练VAE模型，输出结果为$z\in \mathcal{R}^{32}$</li>
+<li>训练MDN-RNN模型，输出结果为$P(z_{t+1}|a_t,z_t,h_t)$</li>
+<li>定义控制器（c）,$a_t=W_c[z_t h_t]+b_c$</li>
+<li>使用CMS-ES算法得到最大化累计Reward的$$W_b$与$b_c$</li>
+</ol>
+<p>模型参数共有：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvmwg6zv1ej20gg063jru.jpg" alt=""></p>
+<h4 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h4><ol>
+<li><p>只添加V Model(VAE)<br>如果没有M Model(MDN-RNN)模块，控制器的公式便为：$a_t=W_{c}z_t+b_c$。<br>实验结果表明这会导致Agent不稳定的驾驶行为。<br>在这种情况下，尝试控制器添加一层隐含层，虽然实验效果有所提升，但是仍然没能达到很好的效果。</p>
+</li>
+<li><p>世界模型完全体（VAE+MDN-RNN）<br>实验结果表明，Agent驾驶得更加稳定。<br>因为$h_t$包含了当前环境关于未来信息的概率分布，因此Agent可以向一级方程式选手和棒球手一样迅速做出判断。</p>
+</li>
+<li><p>世界模型与其他模型的对比：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvmxb7t9zdj20op09odi1.jpg" alt=""></p>
+</li>
+<li><p>对世界模型当前状态$z_{t+1}$进行可视化<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvmxeae7jyj20g00g4jwu.jpg" alt=""><br>上图将$\tau$设置为0.25（这个参数可以调节生成环境的模糊程度）</p>
 </li>
 </ol>
-<h4 id="MMI-antiLM"><a href="#MMI-antiLM" class="headerlink" title="MMI-antiLM"></a>MMI-antiLM</h4><p>如上所说，MMI-antiLM模型使用第一个目标函数，引入了$logp(T)$，如果lambda取值不合适可能会导致产生的响应不符合语言模型，所以在实际使用过程中会对其进行修正。由于解码过程中往往第一个单词或者前面几个单词是根据encode向量选择的，后面的单词更倾向于根据前面decode的单词和语言模型选择，而encode的信息影响较小。也就是说我们只需要对前面几个单词进行惩罚，后面的单词直接根据语言模型选择即可，这样就不会使整个句子不符合语言模型了。使用下式中的$U(T)$代替$p(T)$,式中$g(k)$表示要惩罚的句子长度：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fv3btiaol9j20dd08g0ta.jpg" alt=""><br>此外，我们还想要加入响应句子的长度这个因素，也作为模型相应的依据，所以将上面的目标函数修正为下式：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fv3bu955smj209q01la9y.jpg" alt=""></p>
-<h4 id="MMI-bidi"><a href="#MMI-bidi" class="headerlink" title="MMI-bidi"></a>MMI-bidi</h4><p>MMI-bidi模型引入了$p(S|T)$项，这就需要先计算出完整的T序列再将其传入一个提前训练好的反向seq2seq模型中计算该项的值。但是考虑到S序列会产生无数个可能的T序列，我们不可能将每一个T都进行计算，所以这里引入beam-search只计算前200个序列T来代替。然后再计算两项和，进行得分重排。论文中也提到了这么做的缺点，比如最终的效果会依赖于选择的前N个序列的效果等等，但是实际的效果还是可以的。</p>
-<h3 id="实验设计"><a href="#实验设计" class="headerlink" title="实验设计"></a>实验设计</h3><h4 id="数据集"><a href="#数据集" class="headerlink" title="数据集"></a>数据集</h4><ol>
-<li>Twitter Conversation Triple Dataset: 包含2300万个对话片段。</li>
-<li>OpenSubtitiles Dataset</li>
+<h3 id="实验设计2"><a href="#实验设计2" class="headerlink" title="实验设计2"></a>实验设计2</h3><p><strong>我们是否可以让Agent在自己的梦境中学习，并且改变其对真实环境的策略</strong><br>如果世界模型对其<strong>目的</strong>有了充分的认识，那么我们就可以使用世界代替Agent真实观察到的环境。（类比我们下楼梯的时候，根本不需要小心翼翼地看着楼梯）<br>最终，Agent将不会直接观察到现实世界，而只会看到世界模型<strong>让</strong>它看到的事物。</p>
+<h4 id="实验环境-1"><a href="#实验环境-1" class="headerlink" title="实验环境"></a>实验环境</h4><p>VizDoom Experiment</p>
+<p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvmxq3o7ihj20g10bywio.jpg" alt=""></p>
+<p>游戏目的是控制Agent躲避怪物发出的火球。</p>
+<h4 id="实验实现流程-1"><a href="#实验实现流程-1" class="headerlink" title="实验实现流程"></a>实验实现流程</h4><p>模型的M Model(MDN-RNN)主要负责预测Agent下一时刻（帧）是否会死亡。<br>当Agent在其世界模型中进行训练的时候，便不需要V Model对真实环境的像素进行编码了。</p>
+<ol>
+<li>从随机策略中选取10，000局游戏（同实验一）</li>
+<li>根据每次游戏的每一帧训练VAE模型，得到$z\in \mathcal{R}^{64}$($z$的维度变成了64)，之后使用VAE模型将收集的图像转换为隐空间表示。</li>
+<li>训练MDN-RNN模型，输出结果为$P(z_{t+1},d_{t+1}|a_t,z_t,h_t)$</li>
+<li>定义控制器为$a_t=W_c[z_t h_t]$</li>
+<li>使用CMA-ES算法从世界模型构建的虚拟环境中得到最大化累计生存时间的$W_c$</li>
 </ol>
-<h4 id="对比实验方法："><a href="#对比实验方法：" class="headerlink" title="对比实验方法："></a>对比实验方法：</h4><ol>
-<li>SEQ2SEQ</li>
-<li>SEQ2SEQ(greedy)</li>
-<li>SMT(statistical machine translation): 2011</li>
-<li>SMT + neural reranking: 2015</li>
+<p>模型的参数共有：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvn0lmh3rdj20li07dwf8.jpg" alt=""></p>
+<h4 id="模糊化世界模型"><a href="#模糊化世界模型" class="headerlink" title="模糊化世界模型"></a>模糊化世界模型</h4><p>通过增加模糊度参数$\tau$，会使得游戏变得更难（世界模型生成的环境更加模糊）。<br>如果Agent在高模糊度参数表现的很好的话，那么在正常模式下通常表现的更好。</p>
+<p>也就是说，即使<strong>V model(VAE)不能够正确的捕捉每一帧全部的信息</strong>，Agent也能够完成真实环境给定的任务。</p>
+<p>实验结果表明，模糊度参数太低相当于没有利用这个参数，但是太高的话模型又相当于”近视“了。因此需要找到一个合适的模糊度参数值。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><h4 id="泛化：迭代式训练程序"><a href="#泛化：迭代式训练程序" class="headerlink" title="泛化：迭代式训练程序"></a>泛化：迭代式训练程序</h4><ol>
+<li>随机初始化M Model(MDN-RNN)和C Model(Controller)的参数</li>
+<li>对真实环境进行N次试验。保存每次试验的动作$a_t$和观察$x_t$</li>
+<li>训练M Model(MDN-RNN)，得到$P(x_{t+1},r_{t+1},a_{t+1},d_{t+1}|x_t,a_t,h_t)$；训练C Model(Controller)并且M中的最优化期望rewards。</li>
+<li>回到第2步如果任务没有结束</li>
 </ol>
-<h4 id="评估指标"><a href="#评估指标" class="headerlink" title="评估指标"></a>评估指标</h4><ol>
-<li>BLEU</li>
-<li>distinct-1</li>
-<li>distinct-2</li>
-</ol>
-<h3 id="实验结果分析"><a href="#实验结果分析" class="headerlink" title="实验结果分析"></a>实验结果分析</h3><h4 id="实验结果评价"><a href="#实验结果评价" class="headerlink" title="实验结果评价"></a>实验结果评价</h4><p>最终在Twitter和OpenSubtitle两个数据集上面进行测试，效果展示BLEU得分都比标准的seq2seq模型要好。</p>
-<ul>
-<li>Twitter<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fv3coi0jx5j20qk06nq4x.jpg" alt=""></li>
-<li>OpenSubtitle<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fv3cp1j5taj20cs05tgmj.jpg" alt=""></li>
-</ul>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>一般的seq2seq模型，倾向于生成安全、普适的响应，因为这种响应更符合语法规则，在训练集中出现频率也较高，最终生成的概率也最大，而有意义的响应生成概率往往比他们小。通过MMI来计算输入输出之间的依赖性和相关性，可以减少模型对他们的生成概率。</p>
-<!-- ### 批注版论文
-> 1. 黄色表示研究领域的问题
-> 2. 紫色表示论文叙述内容的重点
-> 3. 绿色表示该论文的解决思路
-> 4. 蓝色表示该论文的公式以及定义 -->
+<p>这个泛化程序的特点是从M model中不仅仅要得到预测的观察$x$和是否结束任务$done$，</p>
+<p>一般的seq2seq模型，倾向于生成安全、普适的响应，因为这种响应更符合语法规则，在训练集中出现频率也较高，最终生成的概率也最大，而有意义的响应生成概率往往比他们小。通过MMI来计算输入输出之间的依赖性和相关性，可以减少模型对他们的生成概率。</p>
+<h4 id="从信息到记忆：海马体的魔术"><a href="#从信息到记忆：海马体的魔术" class="headerlink" title="从信息到记忆：海马体的魔术"></a>从信息到记忆：海马体的魔术</h4><p>神经科学的研究（2017 Foster）发现了海马体重映现象：当动物休息或者睡觉的时候，其大脑会重新放映最近的经历。并且海马体重映现象对巩固记忆十分重要。</p>
+<h4 id="注意力：只关心任务相关的特征"><a href="#注意力：只关心任务相关的特征" class="headerlink" title="注意力：只关心任务相关的特征"></a>注意力：只关心任务相关的特征</h4><p>神经科学的研究（2013 Pi）发现，主要视觉神经元只有在受到奖励的时候才会被从抑制状态激活。这表明人类通常从任务相关的特征中学习，而非接收到的所有特征。（该结论至少在成年人中成立）</p>
+<h4 id="未来的展望"><a href="#未来的展望" class="headerlink" title="未来的展望"></a>未来的展望</h4><p>当前的问题主要出现在M Model(MDN-RNN)上：受限于RNN模型的信息存储能力。人类的大脑能够存储几十年甚至几百年的记忆，但是神经网络会因为梯度消失导致训练困难。</p>
+<p>如果想让Agent可以探索更加复杂的世界，那么未来的工作可能是设计出一个可以<strong>代替MDN-RNN结构的模型</strong>，或者开发出一个<strong>外部记忆模块</strong>。</p>
 <h3 id="引用与参考"><a href="#引用与参考" class="headerlink" title="引用与参考"></a>引用与参考</h3><ol>
-<li><a href="http://paperweek.ly/" target="_blank" rel="noopener">http://paperweek.ly/</a></li>
-<li><a href="https://scholar.google.com/" target="_blank" rel="noopener">https://scholar.google.com/</a></li>
+<li><a href="https://arxiv.org/pdf/1803.10122.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1803.10122.pdf</a></li>
 </ol>
 
       
@@ -964,7 +999,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#论文基本信息"><span class="nav-number">1.</span> <span class="nav-text">论文基本信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#论文推荐理由"><span class="nav-number">2.</span> <span class="nav-text">论文推荐理由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一种促进神经对话模型多样性的目标函数"><span class="nav-number">3.</span> <span class="nav-text">一种促进神经对话模型多样性的目标函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#预备知识"><span class="nav-number">3.1.</span> <span class="nav-text">预备知识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#论文写作动机"><span class="nav-number">3.2.</span> <span class="nav-text">论文写作动机</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题的解决思路"><span class="nav-number">3.3.</span> <span class="nav-text">问题的解决思路</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#最大互信息模型"><span class="nav-number">3.3.1.</span> <span class="nav-text">最大互信息模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MMI-antiLM"><span class="nav-number">3.3.2.</span> <span class="nav-text">MMI-antiLM</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MMI-bidi"><span class="nav-number">3.3.3.</span> <span class="nav-text">MMI-bidi</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实验设计"><span class="nav-number">3.4.</span> <span class="nav-text">实验设计</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数据集"><span class="nav-number">3.4.1.</span> <span class="nav-text">数据集</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#对比实验方法："><span class="nav-number">3.4.2.</span> <span class="nav-text">对比实验方法：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#评估指标"><span class="nav-number">3.4.3.</span> <span class="nav-text">评估指标</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实验结果分析"><span class="nav-number">3.5.</span> <span class="nav-text">实验结果分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#实验结果评价"><span class="nav-number">3.5.1.</span> <span class="nav-text">实验结果评价</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">3.6.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用与参考"><span class="nav-number">3.7.</span> <span class="nav-text">引用与参考</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#论文基本信息"><span class="nav-number">1.</span> <span class="nav-text">论文基本信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#论文推荐理由"><span class="nav-number">2.</span> <span class="nav-text">论文推荐理由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#世界模型"><span class="nav-number">3.</span> <span class="nav-text">世界模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#论文写作动机"><span class="nav-number">3.1.</span> <span class="nav-text">论文写作动机</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模型细节"><span class="nav-number">3.2.</span> <span class="nav-text">模型细节</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#总览Agent模型"><span class="nav-number">3.2.1.</span> <span class="nav-text">总览Agent模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#VAE-V-Model"><span class="nav-number">3.2.2.</span> <span class="nav-text">VAE(V) Model</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MDN-RNN-M-Model"><span class="nav-number">3.2.3.</span> <span class="nav-text">MDN-RNN(M) Model</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Controller-C-Model"><span class="nav-number">3.2.4.</span> <span class="nav-text">Controller(C) Model</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#结合三个模块"><span class="nav-number">3.2.5.</span> <span class="nav-text">结合三个模块</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实验设计1"><span class="nav-number">3.3.</span> <span class="nav-text">实验设计1</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#实验环境"><span class="nav-number">3.3.1.</span> <span class="nav-text">实验环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实验实现流程"><span class="nav-number">3.3.2.</span> <span class="nav-text">实验实现流程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实验结果"><span class="nav-number">3.3.3.</span> <span class="nav-text">实验结果</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实验设计2"><span class="nav-number">3.4.</span> <span class="nav-text">实验设计2</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#实验环境-1"><span class="nav-number">3.4.1.</span> <span class="nav-text">实验环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实验实现流程-1"><span class="nav-number">3.4.2.</span> <span class="nav-text">实验实现流程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#模糊化世界模型"><span class="nav-number">3.4.3.</span> <span class="nav-text">模糊化世界模型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">3.5.</span> <span class="nav-text">总结</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#泛化：迭代式训练程序"><span class="nav-number">3.5.1.</span> <span class="nav-text">泛化：迭代式训练程序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#从信息到记忆：海马体的魔术"><span class="nav-number">3.5.2.</span> <span class="nav-text">从信息到记忆：海马体的魔术</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注意力：只关心任务相关的特征"><span class="nav-number">3.5.3.</span> <span class="nav-text">注意力：只关心任务相关的特征</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#未来的展望"><span class="nav-number">3.5.4.</span> <span class="nav-text">未来的展望</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用与参考"><span class="nav-number">3.6.</span> <span class="nav-text">引用与参考</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -999,7 +1034,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">博客全站共51.0k字</span>
+    <span title="Site words total count">博客全站共52.1k字</span>
   
 </div>
 
