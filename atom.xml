@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://824zzy.github.io/"/>
-  <updated>2018-09-27T04:45:13.846Z</updated>
+  <updated>2018-09-27T11:13:10.275Z</updated>
   <id>https://824zzy.github.io/</id>
   
   <author>
@@ -17,23 +17,32 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>space-vim-usage</title>
+    <title>从Pycharm到SpaceVim</title>
     <link href="https://824zzy.github.io/2018/09/27/space-vim-usage/"/>
     <id>https://824zzy.github.io/2018/09/27/space-vim-usage/</id>
-    <published>2018-09-27T04:45:13.000Z</published>
-    <updated>2018-09-27T04:45:13.846Z</updated>
+    <published>2018-09-26T16:00:00.000Z</published>
+    <updated>2018-09-27T11:13:10.275Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><blockquote><p>Pycharm太吃内存，因此转向使用SpaceVim。基本配置记录如下：</p></blockquote><h2 id="环境基本配置"><a href="#环境基本配置" class="headerlink" title="环境基本配置"></a>环境基本配置</h2><h3 id="安装SpaceVim"><a href="#安装SpaceVim" class="headerlink" title="安装SpaceVim"></a>安装SpaceVim</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">curl -sLf https://spacevim.org/install.sh | bash</span><br><span class="line"><span class="comment"># 如果当前环境没有安装curl，并且没有管理员权限</span></span><br><span class="line">wget https://spacevim.org/install.sh</span><br><span class="line">bash install.sh</span><br><span class="line"><span class="comment"># 启动vim并且安装插件</span></span><br></pre></td></tr></table></figure><h3 id="配置-SpaceVim-autoload-SpaceVim-vim"><a href="#配置-SpaceVim-autoload-SpaceVim-vim" class="headerlink" title="配置.SpaceVim/autoload/SpaceVim.vim"></a>配置.SpaceVim/autoload/SpaceVim.vim</h3><ul><li><code>set timeoutlen=10</code>:空格键延迟</li><li><code>let g:spacevim_relativenumber=0</code>:禁用相对行号</li></ul><h3 id="配置-SpaceVim-d-init-vim"><a href="#配置-SpaceVim-d-init-vim" class="headerlink" title="配置.SpaceVim.d/init.vim"></a>配置.SpaceVim.d/init.vim</h3><ul><li><code>[[layers]] \n name=&quot;lang#python&quot;</code>:使用python</li><li><code>disable_plugins=[&quot;neomake.vim&quot;]</code>:禁用插件（当使用conda的时候，这个插件会报错）</li></ul><h3 id="更新-SPUpdate"><a href="#更新-SPUpdate" class="headerlink" title="更新:SPUpdate"></a>更新<code>:SPUpdate</code></h3><h2 id="常用命令备忘"><a href="#常用命令备忘" class="headerlink" title="常用命令备忘"></a>常用命令备忘</h2><h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><ul><li><code>e</code>: 打开一个空的编辑器</li><li><code>:e file_name</code>: 打开文件（该操作<strong>也可以</strong>在nerdtree上完成）</li></ul><h3 id="space-b系列-缓冲区"><a href="#space-b系列-缓冲区" class="headerlink" title="space+b系列(缓冲区)"></a>space+b系列(缓冲区)</h3><ul><li><code>N+l</code>:在右侧新建buffer</li><li><code>d</code>:删除buffer</li></ul><h3 id="space-f系列-文件管理"><a href="#space-f系列-文件管理" class="headerlink" title="space+f系列(文件管理)"></a>space+f系列(文件管理)</h3><ul><li><code>t</code>:开关nerdtree </li></ul><h3 id="space-w系列-窗口管理"><a href="#space-w系列-窗口管理" class="headerlink" title="space+w系列(窗口管理)"></a>space+w系列(窗口管理)</h3><ul><li><code>Tab</code>:切换到下一个窗口</li><li><code>/</code>和<code>-</code>:分别在右侧和下方分隔窗口</li><li><code>F</code>: 新建Tab</li></ul><h3 id="space-t系列（）"><a href="#space-t系列（）" class="headerlink" title="space+t系列（）"></a>space+t系列（）</h3><ul><li><code>t</code>:打开tab管理</li></ul><h3 id="space-c系列-注释）"><a href="#space-c系列-注释）" class="headerlink" title="space+c系列(注释）"></a>space+c系列(注释）</h3><ul><li><code>l</code>:注释选中行（配合<code>V</code>模式）</li></ul><h3 id="space-s系列-搜索"><a href="#space-s系列-搜索" class="headerlink" title="space+s系列(搜索)"></a>space+s系列(搜索)</h3><ul><li><code>s</code>:直接在当前文件搜索</li></ul><h3 id="space-l系列（语言）"><a href="#space-l系列（语言）" class="headerlink" title="space+l系列（语言）"></a>space+l系列（语言）</h3><ul><li><code>r</code>:执行代码</li></ul><h2 id="参考与引用"><a href="#参考与引用" class="headerlink" title="参考与引用"></a>参考与引用</h2><ul><li><a href="https://spacevim.org/cn/layers" target="_blank" rel="noopener">https://spacevim.org/cn/layers</a></li><li><a href="https://everettjf.gitbooks.io/spacevimtutorial" target="_blank" rel="noopener">https://everettjf.gitbooks.io/spacevimtutorial</a></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;blockquote&gt;
+&lt;p&gt;Pycharm太吃内存，因此转向使用SpaceVim。基本配置记录如下：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;环境基本配置&quot;&gt;&lt;a 
       
     
     </summary>
     
+      <category term="Linux" scheme="https://824zzy.github.io/categories/Linux/"/>
+    
+    
+      <category term="IDE" scheme="https://824zzy.github.io/tags/IDE/"/>
+    
+      <category term="Tools" scheme="https://824zzy.github.io/tags/Tools/"/>
     
   </entry>
   
@@ -141,9 +150,9 @@
       <category term="slide" scheme="https://824zzy.github.io/categories/slide/"/>
     
     
-      <category term="slide" scheme="https://824zzy.github.io/tags/slide/"/>
-    
       <category term="tensorflow" scheme="https://824zzy.github.io/tags/tensorflow/"/>
+    
+      <category term="slide" scheme="https://824zzy.github.io/tags/slide/"/>
     
   </entry>
   
@@ -220,9 +229,9 @@
       <category term="DeepLearning" scheme="https://824zzy.github.io/categories/DeepLearning/"/>
     
     
-      <category term="tensorflow" scheme="https://824zzy.github.io/tags/tensorflow/"/>
-    
       <category term="colab" scheme="https://824zzy.github.io/tags/colab/"/>
+    
+      <category term="tensorflow" scheme="https://824zzy.github.io/tags/tensorflow/"/>
     
       <category term="sklearn" scheme="https://824zzy.github.io/tags/sklearn/"/>
     

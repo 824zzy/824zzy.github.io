@@ -5,14 +5,21 @@
     
   <url>
     <loc>https://824zzy.github.io/2018/09/27/space-vim-usage/</loc>
-    <lastmod>2018-09-27T04:45:13.846Z</lastmod>
+    <lastmod>2018-09-27T11:13:10.275Z</lastmod>
     <data>
         <display>
-        <title>space-vim-usage</title>
-        <pubTime>2018-09-27T04:45:13.000Z</pubTime>
+        <title>从Pycharm到SpaceVim</title>
+        <pubTime>2018-09-26T16:00:00.000Z</pubTime>
         
+        <tag>IDE</tag>
+         
+        <tag>Tools</tag>
+         
          
            
+             
+              <breadCrumb title="Linux" url="https://824zzy.github.io/categories/Linux/"/>
+          
         </display>
     </data>
     </url>
@@ -68,9 +75,9 @@
         <title>Neural-Machine-Translation-by-tensorflow</title>
         <pubTime>2018-09-08T16:00:00.000Z</pubTime>
         
-        <tag>slide</tag>
-         
         <tag>tensorflow</tag>
+         
+        <tag>slide</tag>
          
          
            
@@ -170,9 +177,9 @@
         <title>深度学习模块文档备忘录</title>
         <pubTime>2018-08-22T16:00:00.000Z</pubTime>
         
-        <tag>tensorflow</tag>
-         
         <tag>colab</tag>
+         
+        <tag>tensorflow</tag>
          
         <tag>sklearn</tag>
          
@@ -648,11 +655,11 @@
         <title>RNN原理介绍以及二进制加法器</title>
         <pubTime>2018-04-22T16:00:00.000Z</pubTime>
         
-        <tag>deepLearning</tag>
-         
         <tag>rnn</tag>
          
         <tag>lstm</tag>
+         
+        <tag>deepLearning</tag>
          
          
            
@@ -672,9 +679,9 @@
         <title>超智能体读书笔记</title>
         <pubTime>2018-06-14T16:00:00.000Z</pubTime>
         
-        <tag>mathematics</tag>
-         
         <tag>readingNote</tag>
+         
+        <tag>mathematics</tag>
          
          
            
