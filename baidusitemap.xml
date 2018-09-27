@@ -4,6 +4,21 @@
 
     
   <url>
+    <loc>https://824zzy.github.io/2018/09/27/space-vim-usage/</loc>
+    <lastmod>2018-09-27T04:45:13.846Z</lastmod>
+    <data>
+        <display>
+        <title>space-vim-usage</title>
+        <pubTime>2018-09-27T04:45:13.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://824zzy.github.io/2018/09/21/world-model-to-learn-them-all/</loc>
     <lastmod>2018-09-26T12:37:39.898Z</lastmod>
     <data>
@@ -633,11 +648,11 @@
         <title>RNN原理介绍以及二进制加法器</title>
         <pubTime>2018-04-22T16:00:00.000Z</pubTime>
         
+        <tag>deepLearning</tag>
+         
         <tag>rnn</tag>
          
         <tag>lstm</tag>
-         
-        <tag>deepLearning</tag>
          
          
            
@@ -657,9 +672,9 @@
         <title>超智能体读书笔记</title>
         <pubTime>2018-06-14T16:00:00.000Z</pubTime>
         
-        <tag>readingNote</tag>
-         
         <tag>mathematics</tag>
+         
+        <tag>readingNote</tag>
          
          
            
