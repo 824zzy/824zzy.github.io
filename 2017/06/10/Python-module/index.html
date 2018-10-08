@@ -137,7 +137,7 @@
 
 
 
-  <meta name="keywords" content="logging,unittest,datetime,retry,os,timeit,glob,PIL,pickle,matplotlib,numpy,setuptool," />
+  <meta name="keywords" content="logging,unittest,datetime,retry,os,timeit,glob,PIL,pickle,matplotlib,numpy,setuptool,graphviz,pydot,easydict," />
 
 
 
@@ -151,7 +151,7 @@
 
 
 <meta name="description" content="python logging模块   Python引入了logging模块来记录用户想要查看的信息。  日志级别当我们执行如下代码：1234567import logging  # 引入logging模块# 将信息打印到控制台上logging.debug(u&quot;A&quot;)logging.info(u&quot;B&quot;)logging.warning(u&quot;C&quot;)logging.error(u&quot;D&quot;)logging.">
-<meta name="keywords" content="logging,unittest,datetime,retry,os,timeit,glob,PIL,pickle,matplotlib,numpy,setuptool">
+<meta name="keywords" content="logging,unittest,datetime,retry,os,timeit,glob,PIL,pickle,matplotlib,numpy,setuptool,graphviz,pydot,easydict">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python常用模块">
 <meta property="og:url" content="https://824zzy.github.io/2017/06/10/Python-module/index.html">
@@ -159,7 +159,7 @@
 <meta property="og:description" content="python logging模块   Python引入了logging模块来记录用户想要查看的信息。  日志级别当我们执行如下代码：1234567import logging  # 引入logging模块# 将信息打印到控制台上logging.debug(u&quot;A&quot;)logging.info(u&quot;B&quot;)logging.warning(u&quot;C&quot;)logging.error(u&quot;D&quot;)logging.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/824zzy/blogResources/master/picResources/python_model_1.png">
-<meta property="og:updated_time" content="2018-09-05T13:57:37.739Z">
+<meta property="og:updated_time" content="2018-10-03T07:34:55.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python常用模块">
 <meta name="twitter:description" content="python logging模块   Python引入了logging模块来记录用户想要查看的信息。  日志级别当我们执行如下代码：1234567import logging  # 引入logging模块# 将信息打印到控制台上logging.debug(u&quot;A&quot;)logging.info(u&quot;B&quot;)logging.warning(u&quot;C&quot;)logging.error(u&quot;D&quot;)logging.">
@@ -464,8 +464,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-05T21:57:37+08:00">
-                2018-09-05
+              <time title="更新于" itemprop="dateModified" datetime="2018-10-03T15:34:55+08:00">
+                2018-10-03
               </time>
             
           </span>
@@ -525,7 +525,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2,589
+                  2,614
                 </span>
               
 
@@ -618,7 +618,8 @@
 <h2 id="matplotlib"><a href="#matplotlib" class="headerlink" title="matplotlib"></a>matplotlib</h2><h3 id="在远端服务器利用matplotlib绘图"><a href="#在远端服务器利用matplotlib绘图" class="headerlink" title="在远端服务器利用matplotlib绘图"></a>在远端服务器利用matplotlib绘图</h3><p>在<code>import matplotlib.pyplot</code><strong>之前</strong>加上:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib <span class="keyword">as</span> mpl</span><br><span class="line">mpl.use(<span class="string">'Agg'</span>)</span><br></pre></td></tr></table></figure></p>
 <p>在<code>plt.draw</code><strong>之后</strong>加上:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plt.savefig(<span class="string">"/path/to/pic.jpg"</span>)</span><br></pre></td></tr></table></figure></p>
 <h2 id="setuptool"><a href="#setuptool" class="headerlink" title="setuptool"></a>setuptool</h2><h3 id="basic-usage"><a href="#basic-usage" class="headerlink" title="basic usage"></a>basic usage</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> setuptools <span class="keyword">import</span> setup</span><br><span class="line">setup(</span><br><span class="line">    name=<span class="string">'MyApp'</span>,         <span class="comment"># 应用名</span></span><br><span class="line">    version=<span class="string">'1.0'</span>,        <span class="comment"># 版本号</span></span><br><span class="line">    packages=[<span class="string">'myapp'</span>]    <span class="comment"># 包括在安装包内的Python包</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<blockquote>
+<h2 id="pydot-amp-graphviz"><a href="#pydot-amp-graphviz" class="headerlink" title="pydot &amp; graphviz"></a>pydot &amp; graphviz</h2><p>两个包为keras的可视化模块。可以可视化神经网络结构</p>
+<h2 id="easydict"><a href="#easydict" class="headerlink" title="easydict"></a>easydict</h2><blockquote>
 <p>引用与参考资料</p>
 <ol>
 <li>logging:<a href="https://www.cnblogs.com/CJOKER/p/8295272.html" target="_blank" rel="noopener">https://www.cnblogs.com/CJOKER/p/8295272.html</a></li>
@@ -718,6 +719,12 @@
             <a href="/tags/numpy/" rel="tag"><i class="fa fa-tag"></i> numpy</a>
           
             <a href="/tags/setuptool/" rel="tag"><i class="fa fa-tag"></i> setuptool</a>
+          
+            <a href="/tags/graphviz/" rel="tag"><i class="fa fa-tag"></i> graphviz</a>
+          
+            <a href="/tags/pydot/" rel="tag"><i class="fa fa-tag"></i> pydot</a>
+          
+            <a href="/tags/easydict/" rel="tag"><i class="fa fa-tag"></i> easydict</a>
           
         </div>
       
@@ -858,7 +865,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">43</span>
+                  <span class="site-state-item-count">44</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -869,7 +876,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -880,7 +887,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">67</span>
+                  <span class="site-state-item-count">70</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -958,7 +965,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#python-logging模块"><span class="nav-number">1.</span> <span class="nav-text">python logging模块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#日志级别"><span class="nav-number">1.1.</span> <span class="nav-text">日志级别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#控制台日志输出"><span class="nav-number">1.2.</span> <span class="nav-text">控制台日志输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#日志文件输出"><span class="nav-number">1.3.</span> <span class="nav-text">日志文件输出</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#python单元测试框架-unittest"><span class="nav-number">2.</span> <span class="nav-text">python单元测试框架-unittest</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#unittest最核心的原理"><span class="nav-number">2.1.</span> <span class="nav-text">unittest最核心的原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本使用方法"><span class="nav-number">2.2.</span> <span class="nav-text">基本使用方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进阶：TestSuite-组织测试"><span class="nav-number">2.3.</span> <span class="nav-text">进阶：TestSuite(组织测试)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进阶：准备测试环境"><span class="nav-number">2.4.</span> <span class="nav-text">进阶：准备测试环境</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#os模块与sys的模块"><span class="nav-number">3.</span> <span class="nav-text">os模块与sys的模块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#os模块与sys模块的区分"><span class="nav-number">3.1.</span> <span class="nav-text">os模块与sys模块的区分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#os模块常用方法"><span class="nav-number">3.2.</span> <span class="nav-text">os模块常用方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sys模块常用方法："><span class="nav-number">4.</span> <span class="nav-text">sys模块常用方法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于时间的模块"><span class="nav-number">5.</span> <span class="nav-text">关于时间的模块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#datetime模块获取当前时间"><span class="nav-number">5.1.</span> <span class="nav-text">datetime模块获取当前时间</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#retry模块"><span class="nav-number">6.</span> <span class="nav-text">retry模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#timeit"><span class="nav-number">7.</span> <span class="nav-text">timeit</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#例子1"><span class="nav-number">7.1.</span> <span class="nav-text">例子1</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#glob"><span class="nav-number">8.</span> <span class="nav-text">glob</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#glob方法：返回所有匹配的文件路径列表"><span class="nav-number">8.1.</span> <span class="nav-text">glob方法：返回所有匹配的文件路径列表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PIL"><span class="nav-number">9.</span> <span class="nav-text">PIL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#诡异的安装方式"><span class="nav-number">9.1.</span> <span class="nav-text">诡异的安装方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本操作"><span class="nav-number">9.2.</span> <span class="nav-text">基本操作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#matplotlib"><span class="nav-number">10.</span> <span class="nav-text">matplotlib</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在远端服务器利用matplotlib绘图"><span class="nav-number">10.1.</span> <span class="nav-text">在远端服务器利用matplotlib绘图</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#setuptool"><span class="nav-number">11.</span> <span class="nav-text">setuptool</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#basic-usage"><span class="nav-number">11.1.</span> <span class="nav-text">basic usage</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#python-logging模块"><span class="nav-number">1.</span> <span class="nav-text">python logging模块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#日志级别"><span class="nav-number">1.1.</span> <span class="nav-text">日志级别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#控制台日志输出"><span class="nav-number">1.2.</span> <span class="nav-text">控制台日志输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#日志文件输出"><span class="nav-number">1.3.</span> <span class="nav-text">日志文件输出</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#python单元测试框架-unittest"><span class="nav-number">2.</span> <span class="nav-text">python单元测试框架-unittest</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#unittest最核心的原理"><span class="nav-number">2.1.</span> <span class="nav-text">unittest最核心的原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本使用方法"><span class="nav-number">2.2.</span> <span class="nav-text">基本使用方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进阶：TestSuite-组织测试"><span class="nav-number">2.3.</span> <span class="nav-text">进阶：TestSuite(组织测试)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进阶：准备测试环境"><span class="nav-number">2.4.</span> <span class="nav-text">进阶：准备测试环境</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#os模块与sys的模块"><span class="nav-number">3.</span> <span class="nav-text">os模块与sys的模块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#os模块与sys模块的区分"><span class="nav-number">3.1.</span> <span class="nav-text">os模块与sys模块的区分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#os模块常用方法"><span class="nav-number">3.2.</span> <span class="nav-text">os模块常用方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sys模块常用方法："><span class="nav-number">4.</span> <span class="nav-text">sys模块常用方法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于时间的模块"><span class="nav-number">5.</span> <span class="nav-text">关于时间的模块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#datetime模块获取当前时间"><span class="nav-number">5.1.</span> <span class="nav-text">datetime模块获取当前时间</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#retry模块"><span class="nav-number">6.</span> <span class="nav-text">retry模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#timeit"><span class="nav-number">7.</span> <span class="nav-text">timeit</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#例子1"><span class="nav-number">7.1.</span> <span class="nav-text">例子1</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#glob"><span class="nav-number">8.</span> <span class="nav-text">glob</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#glob方法：返回所有匹配的文件路径列表"><span class="nav-number">8.1.</span> <span class="nav-text">glob方法：返回所有匹配的文件路径列表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PIL"><span class="nav-number">9.</span> <span class="nav-text">PIL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#诡异的安装方式"><span class="nav-number">9.1.</span> <span class="nav-text">诡异的安装方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本操作"><span class="nav-number">9.2.</span> <span class="nav-text">基本操作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#matplotlib"><span class="nav-number">10.</span> <span class="nav-text">matplotlib</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在远端服务器利用matplotlib绘图"><span class="nav-number">10.1.</span> <span class="nav-text">在远端服务器利用matplotlib绘图</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#setuptool"><span class="nav-number">11.</span> <span class="nav-text">setuptool</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#basic-usage"><span class="nav-number">11.1.</span> <span class="nav-text">basic usage</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pydot-amp-graphviz"><span class="nav-number">12.</span> <span class="nav-text">pydot &amp; graphviz</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#easydict"><span class="nav-number">13.</span> <span class="nav-text">easydict</span></a></li></ol></div>
             
 
           </div>
@@ -993,7 +1000,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">博客全站共52.4k字</span>
+    <span title="Site words total count">博客全站共53.5k字</span>
   
 </div>
 

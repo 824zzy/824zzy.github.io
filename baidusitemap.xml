@@ -4,8 +4,78 @@
 
     
   <url>
+    <loc>https://824zzy.github.io/2018/10/03/VAE-learning/</loc>
+    <lastmod>2018-10-07T08:17:57.959Z</lastmod>
+    <data>
+        <display>
+        <title>变分自编码器及其应用</title>
+        <pubTime>2018-10-02T16:00:00.000Z</pubTime>
+        
+        <tag>code</tag>
+         
+        <tag>note</tag>
+         
+         
+           
+             
+              <breadCrumb title="VAE" url="https://824zzy.github.io/categories/VAE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2017/06/10/Python-module/</loc>
+    <lastmod>2018-10-03T07:34:55.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python常用模块</title>
+        <pubTime>2017-06-09T16:00:00.000Z</pubTime>
+        
+        <tag>logging</tag>
+         
+        <tag>unittest</tag>
+         
+        <tag>datetime</tag>
+         
+        <tag>retry</tag>
+         
+        <tag>os</tag>
+         
+        <tag>timeit</tag>
+         
+        <tag>glob</tag>
+         
+        <tag>PIL</tag>
+         
+        <tag>pickle</tag>
+         
+        <tag>matplotlib</tag>
+         
+        <tag>numpy</tag>
+         
+        <tag>setuptool</tag>
+         
+        <tag>graphviz</tag>
+         
+        <tag>pydot</tag>
+         
+        <tag>easydict</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="https://824zzy.github.io/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://824zzy.github.io/2018/09/27/space-vim-usage/</loc>
-    <lastmod>2018-09-27T11:13:10.275Z</lastmod>
+    <lastmod>2018-10-03T07:08:46.857Z</lastmod>
     <data>
         <display>
         <title>从Pycharm到SpaceVim</title>
@@ -209,48 +279,6 @@
            
              
               <breadCrumb title="Zero-shot" url="https://824zzy.github.io/categories/Zero-shot/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://824zzy.github.io/2017/06/10/Python-module/</loc>
-    <lastmod>2018-09-05T13:57:37.739Z</lastmod>
-    <data>
-        <display>
-        <title>Python常用模块</title>
-        <pubTime>2017-06-09T16:00:00.000Z</pubTime>
-        
-        <tag>logging</tag>
-         
-        <tag>unittest</tag>
-         
-        <tag>datetime</tag>
-         
-        <tag>retry</tag>
-         
-        <tag>os</tag>
-         
-        <tag>timeit</tag>
-         
-        <tag>glob</tag>
-         
-        <tag>PIL</tag>
-         
-        <tag>pickle</tag>
-         
-        <tag>matplotlib</tag>
-         
-        <tag>numpy</tag>
-         
-        <tag>setuptool</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://824zzy.github.io/categories/Python/"/>
           
         </display>
     </data>

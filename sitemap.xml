@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://824zzy.github.io/2018/10/03/VAE-learning/</loc>
+    
+    <lastmod>2018-10-07T08:17:57.959Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://824zzy.github.io/2017/06/10/Python-module/</loc>
+    
+    <lastmod>2018-10-03T07:34:55.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://824zzy.github.io/2018/09/27/space-vim-usage/</loc>
     
-    <lastmod>2018-09-27T11:13:10.275Z</lastmod>
+    <lastmod>2018-10-03T07:08:46.857Z</lastmod>
     
   </url>
   
@@ -68,13 +82,6 @@
     <loc>https://824zzy.github.io/2018/08/22/zero-shot-learning/</loc>
     
     <lastmod>2018-09-09T09:01:09.385Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://824zzy.github.io/2017/06/10/Python-module/</loc>
-    
-    <lastmod>2018-09-05T13:57:37.739Z</lastmod>
     
   </url>
   

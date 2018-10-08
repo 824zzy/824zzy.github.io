@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://824zzy.github.io/"/>
-  <updated>2018-09-27T11:13:10.275Z</updated>
+  <updated>2018-10-07T08:17:57.959Z</updated>
   <id>https://824zzy.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>变分自编码器及其应用</title>
+    <link href="https://824zzy.github.io/2018/10/03/VAE-learning/"/>
+    <id>https://824zzy.github.io/2018/10/03/VAE-learning/</id>
+    <published>2018-10-02T16:00:00.000Z</published>
+    <updated>2018-10-07T08:17:57.959Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>笔记主要参考变分自编码器的原论文<img src="https://arxiv.org/pdf/1312.6114.pdf" alt="《Auto-Encoding Variational Bayes》">，与<img src="https://kexue.fm/archives/5253" alt="苏神的博客"></p><h2 id="VAE模型"><a href="#VAE模型" class="headerlink" title="VAE模型"></a>VAE模型</h2><p>VAE的目标（与GAN相同）：希望构建一个从隐变量$Z$生成目标数据$X$的模型。<br>VAE的核心是：<strong>进行分布之间的变换。</strong></p><p><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fvzqckwnkhj20my0aegn1.jpg" alt=""></p><p>VAE的Encoder有两个，一个用来计算均值，一个用来计算方差。</p><h3 id="问题所在"><a href="#问题所在" class="headerlink" title="问题所在"></a>问题所在</h3><p>但生成模型的难题是判断生成分布与真实分布的相似度。（即我们只知道抽样结果，不知道分布表达式）<br><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fvuzgu3recj20or0c7400.jpg" alt=""></p><h3 id="大部分教程所述的VAE"><a href="#大部分教程所述的VAE" class="headerlink" title="大部分教程所述的VAE"></a>大部分教程所述的VAE</h3><p><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fvxa4kzerpj20qt0dy40q.jpg" alt=""><br>模型思路是：先从标准正态分布中采样一个Z，然后根据Z来算一个X。<br>若VAE结构确实是这个图的话，我们其实完全不清楚：究竟经过重新采样出来的$Z_k$，是不是还对应着原来的$X_k$。</p><p>其实，在整个VAE模型中，我们并没有去使用$p(Z)$（隐变量空间的分布）是正态分布的假设，我们用的是假设$p(Z|X)$（后验分布）是正态分布!</p><p>但是，训练好的神经网络<br>并且VAE会让所有的$P(Z|X)$都向标准正态分布看齐：<br>$$p(Z)=\sum_X p(Z|X)p(X)=\sum_X \mathcal{N}(0,I)p(X)=\mathcal{N}(0,I) \sum_X p(X) = \mathcal{N}(0,I)$$</p><h3 id="真实的VAE"><a href="#真实的VAE" class="headerlink" title="真实的VAE"></a>真实的VAE</h3><p><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fvuzt27ie8j20rf0imjv6.jpg" alt=""><br>VAE是为每个样本构造<strong>专属</strong>的正态分布，然后采样来重构。</p><p>但是神经网络经过训练之后的方差会接近0。采样只会得到确定的结果。</p><p>因此还需要使所有的正态分布都向<strong>标准正态分布</strong>（模型的假设）看齐。为了使所有的P(Z|X)都向$\mathcal{N}(0,I)$看齐，我们需要：</p><h4 id="编码器：使用神经网络方法拟合参数"><a href="#编码器：使用神经网络方法拟合参数" class="headerlink" title="编码器：使用神经网络方法拟合参数"></a>编码器：使用神经网络方法拟合参数</h4><p>构建两个神经网络：$\mu_k=f_1(X_k), log_{\sigma^2}=f_2(X_k)$来拟合均值和方差。当二者尽量接近零的时候，分布也就达到了$\mathcal{N}(0,I)$。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">z_mean = Dense(latent_dim)(h)</span><br><span class="line">z_log_var = Dense(latent_dim)(h)</span><br></pre></td></tr></table></figure></p><p>针对两个损失的比例选取，使用KL散度$KL(N(\mu,\sigma^2)||N(0,I))$作为额外的loss。上式的计算结果为：</p><p>$$\mathcal{L}<em>{\mu,\sigma^2}=\frac{1}{2} \sum</em>{i=1}^d \Big(\mu_{(i)}^2 + \sigma_{(i)}^2 - \log \sigma_{(i)}^2 - 1\Big)$$</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kl_loss = - <span class="number">0.5</span> * K.sum(<span class="number">1</span> + z_log_var - K.square(z_mean) - K.exp(z_log_var), axis=<span class="number">-1</span>)</span><br></pre></td></tr></table></figure><h4 id="解码器：保证生成能力"><a href="#解码器：保证生成能力" class="headerlink" title="解码器：保证生成能力"></a>解码器：保证生成能力</h4><p>我们最终的目标则是最小化误差$\mathcal{D}(\hat{X_k},X_k)^2$。</p><p>解码器重构$X$的过程是希望没噪声的，而$KL loss$则希望有高斯噪声的，两者是对立的。所以，VAE跟GAN一样，内部其实是包含了一个对抗的过程，只不过它们两者是混合起来，共同进化的。</p><h4 id="reparameterization-trick（重参数技巧）"><a href="#reparameterization-trick（重参数技巧）" class="headerlink" title="reparameterization trick（重参数技巧）"></a>reparameterization trick（重参数技巧）</h4><p>在反向传播优化均值和方差的过程中，“采样”操作是<strong>不可导</strong>的，但是采样的结果是可导的。</p><p>因此可以利用标准正太分布采样出的$\epsilon$直接估算$Z=\mu+\epsilon\times\sigma$。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sampling</span><span class="params">(args)</span>:</span></span><br><span class="line">    <span class="string">"""Reparameterization trick by sampling fr an isotropic unit Gaussian.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    # Arguments:</span></span><br><span class="line"><span class="string">        args (tensor): mean and log of variance of Q(z|X)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    # Returns:</span></span><br><span class="line"><span class="string">        z (tensor): sampled latent vector</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line"></span><br><span class="line">    z_mean, z_log_var = args</span><br><span class="line">    batch = K.shape(z_mean)[<span class="number">0</span>]</span><br><span class="line">    dim = K.int_shape(z_mean)[<span class="number">1</span>]</span><br><span class="line">    <span class="comment"># by default, random_normal has mean=0 and std=1.0</span></span><br><span class="line">    epsilon = K.random_normal(shape=(batch, dim))</span><br><span class="line">    <span class="keyword">return</span> z_mean + K.exp(<span class="number">0.5</span> * z_log_var) * epsilon</span><br></pre></td></tr></table></figure></p><p>于是“采样”操作不再参与梯度下降，改为采样的结果参与，使得整个模型可以训练。</p><h2 id="DEMO-基于CNN和VAE的作诗机器人"><a href="#DEMO-基于CNN和VAE的作诗机器人" class="headerlink" title="DEMO:基于CNN和VAE的作诗机器人"></a>DEMO:基于CNN和VAE的作诗机器人</h2><h3 id="模型结构"><a href="#模型结构" class="headerlink" title="模型结构"></a>模型结构</h3><p><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fvuzt1xl9cj20rf0imjv6.jpg" alt=""><br>先将每个字embedding为向量，然后用层叠CNN来做编码，接着池化得到一个encoder的结果，根据这个结果生成计算均值和方差，然后生成正态分布并重新采样。在解码截断，由于现在只有一个encoder的输出结果，而最后要输出多个字，所以先接了多个不同的全连接层，得到多样的输出，然后再接着全连接层。</p><h4 id="GCNN-Gated-Convolutional-Networks"><a href="#GCNN-Gated-Convolutional-Networks" class="headerlink" title="GCNN(Gated Convolutional Networks)"></a>GCNN(Gated Convolutional Networks)</h4><p>这里的CNN不是普通的CNN+ReLU，而是facebook提出的GCNN，其实就是做两个不同的、外形一样的CNN，一个不加激活函数，一个用sigmoid激活，然后把结果乘起来。这样一来sigmoid那部分就相当于起到了一个“门（gate）”的作用。</p><h2 id="参考与引用"><a href="#参考与引用" class="headerlink" title="参考与引用"></a>参考与引用</h2><ul><li><a href="https://kexue.fm/archives/5253" target="_blank" rel="noopener">https://kexue.fm/archives/5253</a></li><li><a href="https://arxiv.org/pdf/1312.6114.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1312.6114.pdf</a></li><li><a href="https://kexue.fm/archives/5332" target="_blank" rel="noopener">https://kexue.fm/archives/5332</a></li><li><a href="https://jaan.io/what-is-variational-autoencoder-vae-tutorial/" target="_blank" rel="noopener">https://jaan.io/what-is-variational-autoencoder-vae-tutorial/</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;笔记主要参考变分自编码器的原论文&lt;img
+      
+    
+    </summary>
+    
+      <category term="VAE" scheme="https://824zzy.github.io/categories/VAE/"/>
+    
+    
+      <category term="code" scheme="https://824zzy.github.io/tags/code/"/>
+    
+      <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
     <title>从Pycharm到SpaceVim</title>
     <link href="https://824zzy.github.io/2018/09/27/space-vim-usage/"/>
     <id>https://824zzy.github.io/2018/09/27/space-vim-usage/</id>
     <published>2018-09-26T16:00:00.000Z</published>
-    <updated>2018-09-27T11:13:10.275Z</updated>
+    <updated>2018-10-03T07:08:46.857Z</updated>
     
     <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><blockquote><p>Pycharm太吃内存，因此转向使用SpaceVim。基本配置记录如下：</p></blockquote><h2 id="环境基本配置"><a href="#环境基本配置" class="headerlink" title="环境基本配置"></a>环境基本配置</h2><h3 id="安装SpaceVim"><a href="#安装SpaceVim" class="headerlink" title="安装SpaceVim"></a>安装SpaceVim</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">curl -sLf https://spacevim.org/install.sh | bash</span><br><span class="line"><span class="comment"># 如果当前环境没有安装curl，并且没有管理员权限</span></span><br><span class="line">wget https://spacevim.org/install.sh</span><br><span class="line">bash install.sh</span><br><span class="line"><span class="comment"># 启动vim并且安装插件</span></span><br></pre></td></tr></table></figure><h3 id="配置-SpaceVim-autoload-SpaceVim-vim"><a href="#配置-SpaceVim-autoload-SpaceVim-vim" class="headerlink" title="配置.SpaceVim/autoload/SpaceVim.vim"></a>配置.SpaceVim/autoload/SpaceVim.vim</h3><ul><li><code>set timeoutlen=10</code>:空格键延迟</li><li><code>let g:spacevim_relativenumber=0</code>:禁用相对行号</li></ul><h3 id="配置-SpaceVim-d-init-vim"><a href="#配置-SpaceVim-d-init-vim" class="headerlink" title="配置.SpaceVim.d/init.vim"></a>配置.SpaceVim.d/init.vim</h3><ul><li><code>[[layers]] \n name=&quot;lang#python&quot;</code>:使用python</li><li><code>disable_plugins=[&quot;neomake.vim&quot;]</code>:禁用插件（当使用conda的时候，这个插件会报错）</li></ul><h3 id="更新-SPUpdate"><a href="#更新-SPUpdate" class="headerlink" title="更新:SPUpdate"></a>更新<code>:SPUpdate</code></h3><h2 id="常用命令备忘"><a href="#常用命令备忘" class="headerlink" title="常用命令备忘"></a>常用命令备忘</h2><h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><ul><li><code>e</code>: 打开一个空的编辑器</li><li><code>:e file_name</code>: 打开文件（该操作<strong>也可以</strong>在nerdtree上完成）</li></ul><h3 id="space-b系列-缓冲区"><a href="#space-b系列-缓冲区" class="headerlink" title="space+b系列(缓冲区)"></a>space+b系列(缓冲区)</h3><ul><li><code>N+l</code>:在右侧新建buffer</li><li><code>d</code>:删除buffer</li></ul><h3 id="space-f系列-文件管理"><a href="#space-f系列-文件管理" class="headerlink" title="space+f系列(文件管理)"></a>space+f系列(文件管理)</h3><ul><li><code>t</code>:开关nerdtree </li></ul><h3 id="space-w系列-窗口管理"><a href="#space-w系列-窗口管理" class="headerlink" title="space+w系列(窗口管理)"></a>space+w系列(窗口管理)</h3><ul><li><code>Tab</code>:切换到下一个窗口</li><li><code>/</code>和<code>-</code>:分别在右侧和下方分隔窗口</li><li><code>F</code>: 新建Tab</li></ul><h3 id="space-t系列（）"><a href="#space-t系列（）" class="headerlink" title="space+t系列（）"></a>space+t系列（）</h3><ul><li><code>t</code>:打开tab管理</li></ul><h3 id="space-c系列-注释）"><a href="#space-c系列-注释）" class="headerlink" title="space+c系列(注释）"></a>space+c系列(注释）</h3><ul><li><code>l</code>:注释选中行（配合<code>V</code>模式）</li></ul><h3 id="space-s系列-搜索"><a href="#space-s系列-搜索" class="headerlink" title="space+s系列(搜索)"></a>space+s系列(搜索)</h3><ul><li><code>s</code>:直接在当前文件搜索</li></ul><h3 id="space-l系列（语言）"><a href="#space-l系列（语言）" class="headerlink" title="space+l系列（语言）"></a>space+l系列（语言）</h3><ul><li><code>r</code>:执行代码</li></ul><h2 id="参考与引用"><a href="#参考与引用" class="headerlink" title="参考与引用"></a>参考与引用</h2><ul><li><a href="https://spacevim.org/cn/layers" target="_blank" rel="noopener">https://spacevim.org/cn/layers</a></li><li><a href="https://everettjf.gitbooks.io/spacevimtutorial" target="_blank" rel="noopener">https://everettjf.gitbooks.io/spacevimtutorial</a></li></ul>]]></content>
     
@@ -130,33 +157,6 @@
   </entry>
   
   <entry>
-    <title>Neural-Machine-Translation-by-tensorflow</title>
-    <link href="https://824zzy.github.io/2018/09/09/Neural-Machine-Translation-by-tensorflow/"/>
-    <id>https://824zzy.github.io/2018/09/09/Neural-Machine-Translation-by-tensorflow/</id>
-    <published>2018-09-08T16:00:00.000Z</published>
-    <updated>2018-09-18T14:59:13.153Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="模型使用的公开数据集"><a href="#模型使用的公开数据集" class="headerlink" title="模型使用的公开数据集"></a>模型使用的公开数据集</h2><p>IWSLT Evaluation Campaign<br>WMT Evaluation Campaign</p><hr><h2 id="基本seq2seq模型"><a href="#基本seq2seq模型" class="headerlink" title="基本seq2seq模型"></a>基本seq2seq模型</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;模型使用的公开数据集&quot;&gt;&lt;a href=&quot;#模型使用的公开数据集&quot; class=&quot;headerlink&quot; title=&quot;模型使用的公开数据集&quot;&gt;&lt;/a&gt;模型使用的公
-      
-    
-    </summary>
-    
-      <category term="slide" scheme="https://824zzy.github.io/categories/slide/"/>
-    
-    
-      <category term="tensorflow" scheme="https://824zzy.github.io/tags/tensorflow/"/>
-    
-      <category term="slide" scheme="https://824zzy.github.io/tags/slide/"/>
-    
-  </entry>
-  
-  <entry>
     <title>论文笔记：A-Diversity-Promoting-Objective-Function-for-Neural-Conversation-Models</title>
     <link href="https://824zzy.github.io/2018/09/09/paper-note-A-Diversity-Promoting-Objective-Function-for-Neural-Conversation-Models/"/>
     <id>https://824zzy.github.io/2018/09/09/paper-note-A-Diversity-Promoting-Objective-Function-for-Neural-Conversation-Models/</id>
@@ -180,6 +180,33 @@
     
     
       <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Neural-Machine-Translation-by-tensorflow</title>
+    <link href="https://824zzy.github.io/2018/09/09/Neural-Machine-Translation-by-tensorflow/"/>
+    <id>https://824zzy.github.io/2018/09/09/Neural-Machine-Translation-by-tensorflow/</id>
+    <published>2018-09-08T16:00:00.000Z</published>
+    <updated>2018-09-18T14:59:13.153Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="模型使用的公开数据集"><a href="#模型使用的公开数据集" class="headerlink" title="模型使用的公开数据集"></a>模型使用的公开数据集</h2><p>IWSLT Evaluation Campaign<br>WMT Evaluation Campaign</p><hr><h2 id="基本seq2seq模型"><a href="#基本seq2seq模型" class="headerlink" title="基本seq2seq模型"></a>基本seq2seq模型</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;模型使用的公开数据集&quot;&gt;&lt;a href=&quot;#模型使用的公开数据集&quot; class=&quot;headerlink&quot; title=&quot;模型使用的公开数据集&quot;&gt;&lt;/a&gt;模型使用的公
+      
+    
+    </summary>
+    
+      <category term="slide" scheme="https://824zzy.github.io/categories/slide/"/>
+    
+    
+      <category term="tensorflow" scheme="https://824zzy.github.io/tags/tensorflow/"/>
+    
+      <category term="slide" scheme="https://824zzy.github.io/tags/slide/"/>
     
   </entry>
   
@@ -536,33 +563,6 @@
     
     
       <category term="cnn" scheme="https://824zzy.github.io/tags/cnn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>人类简史与未来简史</title>
-    <link href="https://824zzy.github.io/2018/06/27/some-great-books-note/"/>
-    <id>https://824zzy.github.io/2018/06/27/some-great-books-note/</id>
-    <published>2018-06-26T16:00:00.000Z</published>
-    <updated>2018-07-29T03:45:10.174Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="人类简史"><a href="#人类简史" class="headerlink" title="人类简史"></a>人类简史</h2><h3 id="以问题为导向阅读"><a href="#以问题为导向阅读" class="headerlink" title="以问题为导向阅读"></a>以问题为导向阅读</h3><h4 id="问题1：人类如何从不相关的物种变成了地球的主宰者？"><a href="#问题1：人类如何从不相关的物种变成了地球的主宰者？" class="headerlink" title="问题1：人类如何从不相关的物种变成了地球的主宰者？"></a>问题1：人类如何从不相关的物种变成了地球的主宰者？</h4><p>&emsp;答案：集体层面上，人类可以<em>灵活</em>地进行<em>大型合作</em>。其中，灵活相对于地球上的其他物种，例如：蚁群可以高效的合作，但是它们不会策划去推翻蚁后的统治。大型合作代表一种在信任机制，即陌生人“绑定”之间的契约。</p><p>&emsp;列举一些只会出现在人类这个物种上的合作机制：</p><ul><li>屠宰场</li><li>监狱</li><li>集中营</li></ul><p>&emsp;启发：人类之所以可以进行灵活地大型合作，我认为一部分要归功于人类的自我意识。而人工意识真的是当前人工智能的发展未来吗？人类进化成为“有意识”的物种花费了数百万年的时间。目前计算机接口并不具备像人类一样与现实世界进行交互，通过自然选择筛选基因的外部条件。因此人工智能也许会跳过意识这一环节，成为无意识的超级智能。再或者，计算机通过其特有的接口“互联网”，直接进化出超级意识。</p><h4 id="问题2：人类为何能建立前所未有的合作机制？"><a href="#问题2：人类为何能建立前所未有的合作机制？" class="headerlink" title="问题2：人类为何能建立前所未有的合作机制？"></a>问题2：人类为何能建立前所未有的合作机制？</h4><p>&emsp;答案：想象力：人类可以创造虚幻或者虚幻的故事。只要人们广泛“相信”/“信任”这些故事，大家便会遵循相同的规定、准则、价值观。</p><ul><li>动物仅仅用语言描述现实世界，而人类使用语言创造新的（虚构的）现实。例如：上帝、人权、国家、民族、公司、货币。</li></ul><p>&emsp;启发：正在飞速发展的AI恰恰会有相同形式机制，比如医疗领域，人类医生有数千万，但是他们参差不齐的水平和文化背景经常会导致误诊。而共享单一医疗网络的AI医生将会共享同一个“准则”，第一时间可以获取到最新具有抗药性的病毒，这无疑对医疗来说是巨大的进步。</p><h3 id="2-按照时间顺序阅读"><a href="#2-按照时间顺序阅读" class="headerlink" title="2. 按照时间顺序阅读"></a>2. 按照时间顺序阅读</h3><ol><li>认知革命：语言沟通进行合作。</li><li>农业革命：驯化地球上的其他物种；使用文字进行记录。</li><li>科学革命：人类发现自己的“无知”，进而不断探索未知的领域。</li><li>？？革命：？？</li></ol><p>&emsp;启发：人类会无意识的进入一个全新的时代。在时代的转换过程中阶层流动将会变得十分迅速，而每次转换都会让资源集中在更少的人手中。越来越多的权力由人类涌向算法，最后十分有可能是一个无意识的智能体控制这个星球。</p><h2 id="未来简史"><a href="#未来简史" class="headerlink" title="未来简史"></a>未来简史</h2><h3 id="观点导向阅读"><a href="#观点导向阅读" class="headerlink" title="观点导向阅读"></a>观点导向阅读</h3><ol><li><p>人类一直在追求“永生”，而计算机（硅基生命）天生“永生”。<br><br>启发：按照进化论的观点，通过不断地“死亡”来筛选适合生存的突变基因，碳基生命完成了进化。相反，硅基生命则不需要通过这种方式完成进化。那么我们需不需要编码一个“原始”的硅基生命体（含有基本代码片的单片机）使其模拟人类进化的过程呢？</p></li><li><p>科技革命产生了人文主义宗教。<br><br>科学，本身成为了一种宗教。“圣经“们打下了有神论宗教的基础。”牛顿与苹果“，”马尔科夫假设“，”神经网络“，成为了计算机乃至科学的基石。我常常恐惧于：如果有一天计算机科学的基石崩塌，这门学科将会向</p></li><li><p>人文主义将会面临彻底的失败。<br><br>人文主义的基本假设是：人是有自我意识的。但是神经科学家告诉我们：人的意识仅仅是神经信号，并不比地球上的其他物种高明多少，也没有21克的”灵魂“存在。未来数据主义十分有可能成为新的主流信仰，即全世界的低级碳基生命伴随着高级硅基生命一起进化，最终变成一个巨大的综合生命体。</p></li></ol><h3 id="章节顺序阅读"><a href="#章节顺序阅读" class="headerlink" title="章节顺序阅读"></a>章节顺序阅读</h3><ul><li>幸福：幸福感的本质是神经元之间传递的电化学反应信号，或许真的有一串代码可以传递一个”幸福矩阵“于神经网络之中呢？</li><li>直觉：生物自有的算法（适者生存）已经保证了，地球上的生物最起码是局部最优的。而人类决策算法中最重要的”直觉“或者说”无意识部分“，需要进行巧妙地编码。</li><li>意识：意识本质上是个体的退化与集体的进化。自由意志本身也只是一个算法。那么首先，如何让冷冰冰的代码具有主观能动性呢？是需要给他们编码一个最基本的生存动机？还是其他方式呢？</li><li>左右脑的启发：当前最为火爆的GAN(对抗神经网络)模型，可以类比人类的左右脑。因为脑科学实验表明，左脑和右脑本来就是两套不同的决策体系，它们通过神经纤维连接了起来，最终作出一致的决策。因此，从神经元到深度神经网络到对抗式神经网络，人类不经意间走着仿生学的”正确“道路。一步一步实现人工智能。（此处可以添加GAN相关论文成果）</li></ul><h3 id="小结："><a href="#小结：" class="headerlink" title="小结："></a>小结：</h3><ul><li>当前世界的时间节点，无论是中国倡导的“经济全球化”，还是美国倡导的“美国优先”，都是在讲一个故事，创造一种幻觉。</li><li>pytorch, tensorflow最终会变成一个超级平台，规范一切关于人工智能的进化过程。C语言就像是现实世界的物理定律，底层硬件就像是现实世界中的实体。</li><li>人类只是简单地算法，人工智能需要一个本领域的”质能方程“。 </li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;人类简史&quot;&gt;&lt;a href=&quot;#人类简史&quot; class=&quot;headerlink&quot; title=&quot;人类简史&quot;&gt;&lt;/a&gt;人类简史&lt;/h2&gt;&lt;h3 id=&quot;以问题为导向阅
-      
-    
-    </summary>
-    
-      <category term="AI" scheme="https://824zzy.github.io/categories/AI/"/>
-    
-    
-      <category term="aBriefHistoryOfHumankind" scheme="https://824zzy.github.io/tags/aBriefHistoryOfHumankind/"/>
-    
-      <category term="homoDeus" scheme="https://824zzy.github.io/tags/homoDeus/"/>
     
   </entry>
   
