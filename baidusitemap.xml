@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://824zzy.github.io/2018/10/15/capsule-note-and-demo/</loc>
-    <lastmod>2018-10-15T09:14:31.861Z</lastmod>
+    <lastmod>2018-10-15T09:20:16.315Z</lastmod>
     <data>
         <display>
         <title>胶囊（Capsule）网络</title>
@@ -190,9 +190,9 @@
         <title>Neural-Machine-Translation-by-tensorflow</title>
         <pubTime>2018-09-08T16:00:00.000Z</pubTime>
         
-        <tag>slide</tag>
-         
         <tag>tensorflow</tag>
+         
+        <tag>slide</tag>
          
          
            
@@ -292,9 +292,9 @@
         <title>深度学习模块文档备忘录</title>
         <pubTime>2018-08-22T16:00:00.000Z</pubTime>
         
-        <tag>tensorflow</tag>
-         
         <tag>colab</tag>
+         
+        <tag>tensorflow</tag>
          
         <tag>sklearn</tag>
          

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://824zzy.github.io/"/>
-  <updated>2018-10-15T07:22:56.984Z</updated>
+  <updated>2018-10-15T09:20:16.315Z</updated>
   <id>https://824zzy.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>胶囊（Capsule）网络</title>
+    <link href="https://824zzy.github.io/2018/10/15/capsule-note-and-demo/"/>
+    <id>https://824zzy.github.io/2018/10/15/capsule-note-and-demo/</id>
+    <published>2018-10-14T16:00:00.000Z</published>
+    <updated>2018-10-15T09:20:16.315Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="手写笔记"><a href="#手写笔记" class="headerlink" title="手写笔记"></a>手写笔记</h2><p>第一部分根据国外博客进行make sense的直观理解。<br>第二部分根据苏神博客的进行数学方面的推导加强理解。</p><div class="row"><iframe src="https://drive.google.com/file/d/1mA1dSM1q-12pfpr75842DWO0zcvsIFbt/preview" style="width:100%; height:550px"></iframe></div><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol><li><a href="https://kexue.fm/archives/5155" target="_blank" rel="noopener">https://kexue.fm/archives/5155</a></li><li><a href="https://kexue.fm/archives/5112" target="_blank" rel="noopener">https://kexue.fm/archives/5112</a></li><li><a href="https://medium.com/ai³-theory-practice-business/understanding-hintons-capsule-networks-part-iii-dynamic-routing-between-capsules-349f6d30418" target="_blank" rel="noopener">https://medium.com/ai³-theory-practice-business/understanding-hintons-capsule-networks-part-iii-dynamic-routing-between-capsules-349f6d30418</a></li><li><a href="https://medium.com/ai³-theory-practice-business/understanding-hintons-capsule-networks-part-ii-how-capsules-work-153b6ade9f66" target="_blank" rel="noopener">https://medium.com/ai³-theory-practice-business/understanding-hintons-capsule-networks-part-ii-how-capsules-work-153b6ade9f66</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;手写笔记&quot;&gt;&lt;a href=&quot;#手写笔记&quot; class=&quot;headerlink&quot; title=&quot;手写笔记&quot;&gt;&lt;/a&gt;手写笔记&lt;/h2&gt;&lt;p&gt;第一部分根据国外博客进行
+      
+    
+    </summary>
+    
+      <category term="Capsule" scheme="https://824zzy.github.io/categories/Capsule/"/>
+    
+    
+      <category term="code" scheme="https://824zzy.github.io/tags/code/"/>
+    
+      <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
+    
+  </entry>
   
   <entry>
     <title>英国人工智能发展战略</title>
@@ -40,33 +67,6 @@
       <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
     
       <category term="strategy" scheme="https://824zzy.github.io/tags/strategy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>胶囊（Capsule）网络</title>
-    <link href="https://824zzy.github.io/2018/10/15/capsule-note-and-demo/"/>
-    <id>https://824zzy.github.io/2018/10/15/capsule-note-and-demo/</id>
-    <published>2018-10-14T16:00:00.000Z</published>
-    <updated>2018-10-15T09:14:31.861Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="手写笔记"><a href="#手写笔记" class="headerlink" title="手写笔记"></a>手写笔记</h2><p>第一部分根据国外博客进行make sense的直观理解。<br>第二部分根据苏神博客的进行数学方面的推导加强理解。</p><div class="row"><iframe src="https://drive.google.com/file/d/1mA1dSM1q-12pfpr75842DWO0zcvsIFbt/view" style="width:100%; height:550px"></iframe></div><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol><li><a href="https://kexue.fm/archives/5155" target="_blank" rel="noopener">https://kexue.fm/archives/5155</a></li><li><a href="https://kexue.fm/archives/5112" target="_blank" rel="noopener">https://kexue.fm/archives/5112</a></li><li><a href="https://medium.com/ai³-theory-practice-business/understanding-hintons-capsule-networks-part-iii-dynamic-routing-between-capsules-349f6d30418" target="_blank" rel="noopener">https://medium.com/ai³-theory-practice-business/understanding-hintons-capsule-networks-part-iii-dynamic-routing-between-capsules-349f6d30418</a></li><li><a href="https://medium.com/ai³-theory-practice-business/understanding-hintons-capsule-networks-part-ii-how-capsules-work-153b6ade9f66" target="_blank" rel="noopener">https://medium.com/ai³-theory-practice-business/understanding-hintons-capsule-networks-part-ii-how-capsules-work-153b6ade9f66</a></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;手写笔记&quot;&gt;&lt;a href=&quot;#手写笔记&quot; class=&quot;headerlink&quot; title=&quot;手写笔记&quot;&gt;&lt;/a&gt;手写笔记&lt;/h2&gt;&lt;p&gt;第一部分根据国外博客进行
-      
-    
-    </summary>
-    
-      <category term="Capsule" scheme="https://824zzy.github.io/categories/Capsule/"/>
-    
-    
-      <category term="code" scheme="https://824zzy.github.io/tags/code/"/>
-    
-      <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
     
   </entry>
   
@@ -211,6 +211,33 @@
   </entry>
   
   <entry>
+    <title>Neural-Machine-Translation-by-tensorflow</title>
+    <link href="https://824zzy.github.io/2018/09/09/Neural-Machine-Translation-by-tensorflow/"/>
+    <id>https://824zzy.github.io/2018/09/09/Neural-Machine-Translation-by-tensorflow/</id>
+    <published>2018-09-08T16:00:00.000Z</published>
+    <updated>2018-09-18T14:59:13.153Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="模型使用的公开数据集"><a href="#模型使用的公开数据集" class="headerlink" title="模型使用的公开数据集"></a>模型使用的公开数据集</h2><p>IWSLT Evaluation Campaign<br>WMT Evaluation Campaign</p><hr><h2 id="基本seq2seq模型"><a href="#基本seq2seq模型" class="headerlink" title="基本seq2seq模型"></a>基本seq2seq模型</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;模型使用的公开数据集&quot;&gt;&lt;a href=&quot;#模型使用的公开数据集&quot; class=&quot;headerlink&quot; title=&quot;模型使用的公开数据集&quot;&gt;&lt;/a&gt;模型使用的公
+      
+    
+    </summary>
+    
+      <category term="slide" scheme="https://824zzy.github.io/categories/slide/"/>
+    
+    
+      <category term="tensorflow" scheme="https://824zzy.github.io/tags/tensorflow/"/>
+    
+      <category term="slide" scheme="https://824zzy.github.io/tags/slide/"/>
+    
+  </entry>
+  
+  <entry>
     <title>论文笔记：A-Diversity-Promoting-Objective-Function-for-Neural-Conversation-Models</title>
     <link href="https://824zzy.github.io/2018/09/09/paper-note-A-Diversity-Promoting-Objective-Function-for-Neural-Conversation-Models/"/>
     <id>https://824zzy.github.io/2018/09/09/paper-note-A-Diversity-Promoting-Objective-Function-for-Neural-Conversation-Models/</id>
@@ -234,33 +261,6 @@
     
     
       <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Neural-Machine-Translation-by-tensorflow</title>
-    <link href="https://824zzy.github.io/2018/09/09/Neural-Machine-Translation-by-tensorflow/"/>
-    <id>https://824zzy.github.io/2018/09/09/Neural-Machine-Translation-by-tensorflow/</id>
-    <published>2018-09-08T16:00:00.000Z</published>
-    <updated>2018-09-18T14:59:13.153Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="模型使用的公开数据集"><a href="#模型使用的公开数据集" class="headerlink" title="模型使用的公开数据集"></a>模型使用的公开数据集</h2><p>IWSLT Evaluation Campaign<br>WMT Evaluation Campaign</p><hr><h2 id="基本seq2seq模型"><a href="#基本seq2seq模型" class="headerlink" title="基本seq2seq模型"></a>基本seq2seq模型</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;模型使用的公开数据集&quot;&gt;&lt;a href=&quot;#模型使用的公开数据集&quot; class=&quot;headerlink&quot; title=&quot;模型使用的公开数据集&quot;&gt;&lt;/a&gt;模型使用的公
-      
-    
-    </summary>
-    
-      <category term="slide" scheme="https://824zzy.github.io/categories/slide/"/>
-    
-    
-      <category term="slide" scheme="https://824zzy.github.io/tags/slide/"/>
-    
-      <category term="tensorflow" scheme="https://824zzy.github.io/tags/tensorflow/"/>
     
   </entry>
   
@@ -310,9 +310,9 @@
       <category term="DeepLearning" scheme="https://824zzy.github.io/categories/DeepLearning/"/>
     
     
-      <category term="tensorflow" scheme="https://824zzy.github.io/tags/tensorflow/"/>
-    
       <category term="colab" scheme="https://824zzy.github.io/tags/colab/"/>
+    
+      <category term="tensorflow" scheme="https://824zzy.github.io/tags/tensorflow/"/>
     
       <category term="sklearn" scheme="https://824zzy.github.io/tags/sklearn/"/>
     
