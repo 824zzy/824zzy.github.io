@@ -150,26 +150,24 @@
 
 
 
-<meta name="description" content="引言笔记主要参考变分自编码器的原论文，与 VAE模型VAE的目标（与GAN相同）：希望构建一个从隐变量$Z$生成目标数据$X$的模型。VAE的核心是：进行分布之间的变换。  VAE的Encoder有两个，一个用来计算均值，一个用来计算方差。 问题所在但生成模型的难题是判断生成分布与真实分布的相似度。（即我们只知道抽样结果，不知道分布表达式） 大部分教程所述的VAE模型思路是：先从标准正态分布中采">
+<meta name="description" content="引言笔记主要参考变分自编码器的原论文《Auto-Encoding Variational Bayes》，与苏神的博客 VAE模型VAE的目标（与GAN相同）：希望构建一个从隐变量$Z$生成目标数据$X$的模型。VAE的核心是：进行分布之间的变换。  VAE的Encoder有两个，一个用来计算均值，一个用来计算方差。 问题所在但生成模型的难题是判断生成分布与真实分布的相似度。（即我们只知道抽样结果">
 <meta name="keywords" content="code,note">
 <meta property="og:type" content="article">
 <meta property="og:title" content="变分自编码器及其应用">
 <meta property="og:url" content="https://824zzy.github.io/2018/10/03/VAE-learning/index.html">
 <meta property="og:site_name" content="Zzy824">
-<meta property="og:description" content="引言笔记主要参考变分自编码器的原论文，与 VAE模型VAE的目标（与GAN相同）：希望构建一个从隐变量$Z$生成目标数据$X$的模型。VAE的核心是：进行分布之间的变换。  VAE的Encoder有两个，一个用来计算均值，一个用来计算方差。 问题所在但生成模型的难题是判断生成分布与真实分布的相似度。（即我们只知道抽样结果，不知道分布表达式） 大部分教程所述的VAE模型思路是：先从标准正态分布中采">
+<meta property="og:description" content="引言笔记主要参考变分自编码器的原论文《Auto-Encoding Variational Bayes》，与苏神的博客 VAE模型VAE的目标（与GAN相同）：希望构建一个从隐变量$Z$生成目标数据$X$的模型。VAE的核心是：进行分布之间的变换。  VAE的Encoder有两个，一个用来计算均值，一个用来计算方差。 问题所在但生成模型的难题是判断生成分布与真实分布的相似度。（即我们只知道抽样结果">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://arxiv.org/pdf/1312.6114.pdf">
-<meta property="og:image" content="https://kexue.fm/archives/5253">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18gy1fvzqckwnkhj20my0aegn1.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18gy1fvuzgu3recj20or0c7400.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18gy1fvxa4kzerpj20qt0dy40q.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18gy1fvuzt27ie8j20rf0imjv6.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18gy1fvuzt1xl9cj20rf0imjv6.jpg">
-<meta property="og:updated_time" content="2018-10-07T08:17:57.959Z">
+<meta property="og:updated_time" content="2018-10-15T09:10:05.810Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="变分自编码器及其应用">
-<meta name="twitter:description" content="引言笔记主要参考变分自编码器的原论文，与 VAE模型VAE的目标（与GAN相同）：希望构建一个从隐变量$Z$生成目标数据$X$的模型。VAE的核心是：进行分布之间的变换。  VAE的Encoder有两个，一个用来计算均值，一个用来计算方差。 问题所在但生成模型的难题是判断生成分布与真实分布的相似度。（即我们只知道抽样结果，不知道分布表达式） 大部分教程所述的VAE模型思路是：先从标准正态分布中采">
-<meta name="twitter:image" content="https://arxiv.org/pdf/1312.6114.pdf">
+<meta name="twitter:description" content="引言笔记主要参考变分自编码器的原论文《Auto-Encoding Variational Bayes》，与苏神的博客 VAE模型VAE的目标（与GAN相同）：希望构建一个从隐变量$Z$生成目标数据$X$的模型。VAE的核心是：进行分布之间的变换。  VAE的Encoder有两个，一个用来计算均值，一个用来计算方差。 问题所在但生成模型的难题是判断生成分布与真实分布的相似度。（即我们只知道抽样结果">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/ca26ff18gy1fvzqckwnkhj20my0aegn1.jpg">
 
 
 
@@ -470,8 +468,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-10-07T16:17:57+08:00">
-                2018-10-07
+              <time title="更新于" itemprop="dateModified" datetime="2018-10-15T17:10:05+08:00">
+                2018-10-15
               </time>
             
           </span>
@@ -531,7 +529,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,109
+                  1,118
                 </span>
               
 
@@ -568,7 +566,7 @@
       
 
       
-        <script src="/assets/js/APlayer.min.js"> </script><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>笔记主要参考变分自编码器的原论文<img src="https://arxiv.org/pdf/1312.6114.pdf" alt="《Auto-Encoding Variational Bayes》">，与<img src="https://kexue.fm/archives/5253" alt="苏神的博客"></p>
+        <script src="/assets/js/APlayer.min.js"> </script><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>笔记主要参考变分自编码器的原论文<a href="https://arxiv.org/pdf/1312.6114.pdf" target="_blank" rel="noopener">《Auto-Encoding Variational Bayes》</a>，与<a href="https://kexue.fm/archives/5253" target="_blank" rel="noopener">苏神的博客</a></p>
 <h2 id="VAE模型"><a href="#VAE模型" class="headerlink" title="VAE模型"></a>VAE模型</h2><p>VAE的目标（与GAN相同）：希望构建一个从隐变量$Z$生成目标数据$X$的模型。<br>VAE的核心是：<strong>进行分布之间的变换。</strong></p>
 <p><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fvzqckwnkhj20my0aegn1.jpg" alt=""></p>
 <p>VAE的Encoder有两个，一个用来计算均值，一个用来计算方差。</p>
