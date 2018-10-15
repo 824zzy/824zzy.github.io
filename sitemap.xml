@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://824zzy.github.io/books/index.html</loc>
+    
+    <lastmod>2018-10-15T09:00:08.879Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://824zzy.github.io/2018/10/15/UK-AI-strategy/</loc>
+    
+    <lastmod>2018-10-15T07:22:56.984Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://824zzy.github.io/2018/10/15/capsule-note-and-demo/</loc>
+    
+    <lastmod>2018-10-15T01:39:46.431Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://824zzy.github.io/2018/10/03/VAE-learning/</loc>
     
     <lastmod>2018-10-07T08:17:57.959Z</lastmod>
@@ -159,13 +180,6 @@
     <loc>https://824zzy.github.io/2018/08/03/Deeplearning-note/</loc>
     
     <lastmod>2018-08-03T06:43:03.756Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://824zzy.github.io/books/index.html</loc>
-    
-    <lastmod>2018-08-03T06:36:10.256Z</lastmod>
     
   </url>
   

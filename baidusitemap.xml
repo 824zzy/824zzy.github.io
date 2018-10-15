@@ -3,6 +3,51 @@
 
 
     
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/10/15/UK-AI-strategy/</loc>
+    <lastmod>2018-10-15T07:22:56.984Z</lastmod>
+    <data>
+        <display>
+        <title>英国人工智能发展战略</title>
+        <pubTime>2018-10-14T16:00:00.000Z</pubTime>
+        
+        <tag>note</tag>
+         
+        <tag>strategy</tag>
+         
+         
+           
+             
+              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/10/15/capsule-note-and-demo/</loc>
+    <lastmod>2018-10-15T01:39:46.431Z</lastmod>
+    <data>
+        <display>
+        <title>胶囊（Capsule）网络</title>
+        <pubTime>2018-10-14T16:00:00.000Z</pubTime>
+        
+        <tag>code</tag>
+         
+        <tag>note</tag>
+         
+         
+           
+             
+              <breadCrumb title="Capsule" url="https://824zzy.github.io/categories/Capsule/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
   <url>
     <loc>https://824zzy.github.io/2018/10/03/VAE-learning/</loc>
     <lastmod>2018-10-07T08:17:57.959Z</lastmod>
@@ -530,7 +575,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>https://824zzy.github.io/2018/06/16/YJango-Deep-Learning/</loc>
