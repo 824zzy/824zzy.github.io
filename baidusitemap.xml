@@ -4,8 +4,28 @@
 
     
   <url>
+    <loc>https://824zzy.github.io/2018/09/18/theory-of-self-reproducing-automata/</loc>
+    <lastmod>2018-10-20T13:13:27.037Z</lastmod>
+    <data>
+        <display>
+        <title>自复制自动机理论读书笔记</title>
+        <pubTime>2018-09-17T16:00:00.000Z</pubTime>
+        
+        <tag>note</tag>
+         
+         
+           
+             
+              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://824zzy.github.io/2018/10/15/capsule-note-and-demo/</loc>
-    <lastmod>2018-10-15T09:20:16.315Z</lastmod>
+    <lastmod>2018-10-15T09:22:26.217Z</lastmod>
     <data>
         <display>
         <title>胶囊（Capsule）网络</title>
@@ -198,26 +218,6 @@
            
              
               <breadCrumb title="slide" url="https://824zzy.github.io/categories/slide/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://824zzy.github.io/2018/09/18/theory-of-self-reproducing-automata/</loc>
-    <lastmod>2018-09-18T14:58:28.075Z</lastmod>
-    <data>
-        <display>
-        <title>自复制自动机理论读书笔记</title>
-        <pubTime>2018-09-17T16:00:00.000Z</pubTime>
-        
-        <tag>note</tag>
-         
-         
-           
-             
-              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
           
         </display>
     </data>

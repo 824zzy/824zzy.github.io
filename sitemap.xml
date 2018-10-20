@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://824zzy.github.io/2018/09/18/theory-of-self-reproducing-automata/</loc>
+    
+    <lastmod>2018-10-20T13:13:27.037Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://824zzy.github.io/2018/10/15/capsule-note-and-demo/</loc>
     
-    <lastmod>2018-10-15T09:20:16.315Z</lastmod>
+    <lastmod>2018-10-15T09:22:26.217Z</lastmod>
     
   </url>
   
@@ -61,13 +68,6 @@
     <loc>https://824zzy.github.io/2018/09/09/Neural-Machine-Translation-by-tensorflow/</loc>
     
     <lastmod>2018-09-18T14:59:13.153Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://824zzy.github.io/2018/09/18/theory-of-self-reproducing-automata/</loc>
-    
-    <lastmod>2018-09-18T14:58:28.075Z</lastmod>
     
   </url>
   
