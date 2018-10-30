@@ -4,8 +4,30 @@
 
     
   <url>
+    <loc>https://824zzy.github.io/2018/10/30/CMA-ES-note/</loc>
+    <lastmod>2018-10-30T05:42:45.750Z</lastmod>
+    <data>
+        <display>
+        <title>协方差矩阵适应性进化算法</title>
+        <pubTime>2018-10-29T16:00:00.000Z</pubTime>
+        
+        <tag>math</tag>
+         
+        <tag>evolutionStategy</tag>
+         
+         
+           
+             
+              <breadCrumb title="WorldModel" url="https://824zzy.github.io/categories/WorldModel/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://824zzy.github.io/2018/09/21/world-model-to-learn-them-all/</loc>
-    <lastmod>2018-10-27T16:46:06.453Z</lastmod>
+    <lastmod>2018-10-28T09:09:19.722Z</lastmod>
     <data>
         <display>
         <title>世界模型的解读</title>
@@ -232,9 +254,9 @@
         <title>Neural-Machine-Translation-by-tensorflow</title>
         <pubTime>2018-09-08T16:00:00.000Z</pubTime>
         
-        <tag>tensorflow</tag>
-         
         <tag>slide</tag>
+         
+        <tag>tensorflow</tag>
          
          
            
@@ -314,9 +336,9 @@
         <title>深度学习模块文档备忘录</title>
         <pubTime>2018-08-22T16:00:00.000Z</pubTime>
         
-        <tag>colab</tag>
-         
         <tag>tensorflow</tag>
+         
+        <tag>colab</tag>
          
         <tag>sklearn</tag>
          
