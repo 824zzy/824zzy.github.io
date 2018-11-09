@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://824zzy.github.io/2018/11/09/artificial-general-intelligence/</loc>
+    
+    <lastmod>2018-11-09T09:34:43.058Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://824zzy.github.io/2018/11/09/meta-learning-introduction/</loc>
+    
+    <lastmod>2018-11-09T07:50:50.723Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://824zzy.github.io/2018/10/31/mixture-density-network-note/</loc>
+    
+    <lastmod>2018-10-31T07:20:10.937Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://824zzy.github.io/2018/10/30/CMA-ES-note/</loc>
     
-    <lastmod>2018-10-30T05:48:29.103Z</lastmod>
+    <lastmod>2018-10-30T05:56:17.143Z</lastmod>
     
   </url>
   

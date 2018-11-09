@@ -4,8 +4,67 @@
 
     
   <url>
+    <loc>https://824zzy.github.io/2018/11/09/artificial-general-intelligence/</loc>
+    <lastmod>2018-11-09T09:34:43.058Z</lastmod>
+    <data>
+        <display>
+        <title>通用人工智能（AGI）</title>
+        <pubTime>2018-11-08T16:00:00.000Z</pubTime>
+        
+        <tag>note</tag>
+         
+        <tag>agi</tag>
+         
+        <tag>mit</tag>
+         
+         
+           
+             
+              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/11/09/meta-learning-introduction/</loc>
+    <lastmod>2018-11-09T07:50:50.723Z</lastmod>
+    <data>
+        <display>
+        <title>元学习（meta-learning）</title>
+        <pubTime>2018-11-08T16:00:00.000Z</pubTime>
+        
+        <tag>meta-learning</tag>
+         
+         
+           
+             
+              <breadCrumb title="ReinforcementLearning" url="https://824zzy.github.io/categories/ReinforcementLearning/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/10/31/mixture-density-network-note/</loc>
+    <lastmod>2018-10-31T07:20:10.937Z</lastmod>
+    <data>
+        <display>
+        <title>mixture-density-network-note</title>
+        <pubTime>2018-10-31T07:20:10.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://824zzy.github.io/2018/10/30/CMA-ES-note/</loc>
-    <lastmod>2018-10-30T05:48:29.103Z</lastmod>
+    <lastmod>2018-10-30T05:56:17.143Z</lastmod>
     <data>
         <display>
         <title>协方差矩阵适应性进化算法</title>
