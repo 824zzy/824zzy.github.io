@@ -24,8 +24,8 @@
   <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
   <script>
     (function () {
-        if ('todo') {
-            if (prompt('请输入文章密码') !== 'todo') {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
                 alert('密码错误！');
                 if (history.length === 1) {
                     location.replace("http://xxxxxxx.xxx"); // 这里替换成你的首页
@@ -158,10 +158,15 @@
 <meta property="og:site_name" content="Zzy824">
 <meta property="og:description" content="Two problems we confront Sample efficiency: models typically need 6000 samples per digit to recognize digit handwriting. Poor transferablity: models don’t learn from previous experience or learned kn">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-09T07:50:50.723Z">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18gy1fx2w9gmja6j20m80fzk0s.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18gy1fx2wk8ezr8j20m806rq3e.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18gy1fx2xk82uvzj20m807aaa7.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18gy1fx2y80btkjj20m8058wex.jpg">
+<meta property="og:updated_time" content="2018-11-10T07:06:15.555Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="元学习（meta-learning）">
 <meta name="twitter:description" content="Two problems we confront Sample efficiency: models typically need 6000 samples per digit to recognize digit handwriting. Poor transferablity: models don’t learn from previous experience or learned kn">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/ca26ff18gy1fx2w9gmja6j20m80fzk0s.jpg">
 
 
 
@@ -462,8 +467,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-11-09T15:50:50+08:00">
-                2018-11-09
+              <time title="更新于" itemprop="dateModified" datetime="2018-11-10T15:06:15+08:00">
+                2018-11-10
               </time>
             
           </span>
@@ -523,7 +528,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  78
+                  286
                 </span>
               
 
@@ -539,7 +544,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1分钟
+                  2分钟
                 </span>
               
             </div>
@@ -564,15 +569,22 @@
 <li>Sample efficiency: models typically need 6000 samples per digit to recognize digit handwriting.</li>
 <li>Poor transferablity: models don’t learn from previous experience or learned knowledge. </li>
 </ol>
-<p>So meta-learning is the solution to the two questions above. And we try to define it as “learning how to learn”. There are three areas we will focus on:</p>
-<ul>
-<li>recurrent models</li>
-<li>meta-optimization</li>
-<li>metric learning</li>
-</ul>
-<h2 id="Some-basic-concepts"><a href="#Some-basic-concepts" class="headerlink" title="Some basic concepts"></a>Some basic concepts</h2><h3 id="Few-shot-Learning"><a href="#Few-shot-Learning" class="headerlink" title="Few-shot Learning"></a>Few-shot Learning</h3><p>-</p>
+<p>So meta-learning is the solution to the two questions above. And we try to define it as “learning how to learn”.</p>
+<h2 id="Some-basic-concepts"><a href="#Some-basic-concepts" class="headerlink" title="Some basic concepts"></a>Some basic concepts</h2><h3 id="Few-shot-Learning"><a href="#Few-shot-Learning" class="headerlink" title="Few-shot Learning"></a>Few-shot Learning</h3><p>In deep learning, we use regularization to make sure we are not overfitting out model with a small dataset, but we are <strong>overfitting our task</strong>. Therefore what we learned cannot be generalized to other tasks.</p>
+<p>We often get stuck when test samples that are <strong>not common</strong> in dataset.</p>
+<p>In <strong>one-shot-learning</strong>, we will only provide one training sample per category. There is an example:</p>
+<p><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fx2w9gmja6j20m80fzk0s.jpg" alt=""></p>
+<p>In this one-shot learning, we often train a RNN to learn the training data and labels. When we represent with a test input, we should predict its label correctly.</p>
+<p><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fx2wk8ezr8j20m806rq3e.jpg" alt=""></p>
+<p>In meta-testing, we provide many datasets again with classes that never trained before. Once we have learned from hundred tasks, we should discover the general pattern in classifying objects.</p>
+<h2 id="Recurrent-Models"><a href="#Recurrent-Models" class="headerlink" title="Recurrent Models"></a>Recurrent Models</h2><h3 id="Memory-Augmented-Neural-Networks"><a href="#Memory-Augmented-Neural-Networks" class="headerlink" title="Memory-Augmented Neural Networks"></a>Memory-Augmented Neural Networks</h3><p>One of the meta-learning methods using an external memory network with RNN. Note that in supervised learning, we provide both input and label in the same time step $t$. However, in this model, the label is not provided untild the next time step $t+1$(shown below).</p>
+<p><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fx2xk82uvzj20m807aaa7.jpg" alt=""></p>
+<p>When updating the model, instead of updating the model immediately, we wait until a batch of tasks is completed. We later merge all we learned from these tasks for a single update.</p>
+<p><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fx2y80btkjj20m8058wex.jpg" alt=""></p>
 <h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol>
 <li><a href="https://medium.com/@jonathan_hui/meta-learning-how-we-address-the-shortcomings-of-our-deep-networks-a008aa4b5b2b" target="_blank" rel="noopener">RL — Meta-Learning</a></li>
+<li><a href="https://medium.com/huggingface/from-zero-to-research-an-introduction-to-meta-learning-8e16e677f78a" target="_blank" rel="noopener">From zero to research — An introduction to Meta-learning</a></li>
+<li></li>
 </ol>
 
       
@@ -875,7 +887,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Two-problems-we-confront"><span class="nav-number">1.</span> <span class="nav-text">Two problems we confront</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Some-basic-concepts"><span class="nav-number">2.</span> <span class="nav-text">Some basic concepts</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Few-shot-Learning"><span class="nav-number">2.1.</span> <span class="nav-text">Few-shot Learning</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">3.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Two-problems-we-confront"><span class="nav-number">1.</span> <span class="nav-text">Two problems we confront</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Some-basic-concepts"><span class="nav-number">2.</span> <span class="nav-text">Some basic concepts</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Few-shot-Learning"><span class="nav-number">2.1.</span> <span class="nav-text">Few-shot Learning</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Recurrent-Models"><span class="nav-number">3.</span> <span class="nav-text">Recurrent Models</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Memory-Augmented-Neural-Networks"><span class="nav-number">3.1.</span> <span class="nav-text">Memory-Augmented Neural Networks</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
             
 
           </div>
@@ -910,7 +922,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">博客全站共55.2k字</span>
+    <span title="Site words total count">博客全站共55.4k字</span>
   
 </div>
 

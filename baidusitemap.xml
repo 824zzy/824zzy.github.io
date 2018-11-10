@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://824zzy.github.io/2018/11/09/meta-learning-introduction/</loc>
+    <lastmod>2018-11-10T07:06:15.555Z</lastmod>
+    <data>
+        <display>
+        <title>元学习（meta-learning）</title>
+        <pubTime>2018-11-08T16:00:00.000Z</pubTime>
+        
+        <tag>meta-learning</tag>
+         
+         
+           
+             
+              <breadCrumb title="ReinforcementLearning" url="https://824zzy.github.io/categories/ReinforcementLearning/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://824zzy.github.io/2018/11/09/artificial-general-intelligence/</loc>
     <lastmod>2018-11-09T09:34:43.058Z</lastmod>
     <data>
@@ -21,26 +41,6 @@
            
              
               <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://824zzy.github.io/2018/11/09/meta-learning-introduction/</loc>
-    <lastmod>2018-11-09T07:50:50.723Z</lastmod>
-    <data>
-        <display>
-        <title>元学习（meta-learning）</title>
-        <pubTime>2018-11-08T16:00:00.000Z</pubTime>
-        
-        <tag>meta-learning</tag>
-         
-         
-           
-             
-              <breadCrumb title="ReinforcementLearning" url="https://824zzy.github.io/categories/ReinforcementLearning/"/>
           
         </display>
     </data>
@@ -313,9 +313,9 @@
         <title>Neural-Machine-Translation-by-tensorflow</title>
         <pubTime>2018-09-08T16:00:00.000Z</pubTime>
         
-        <tag>tensorflow</tag>
-         
         <tag>slide</tag>
+         
+        <tag>tensorflow</tag>
          
          
            
@@ -395,9 +395,9 @@
         <title>深度学习模块文档备忘录</title>
         <pubTime>2018-08-22T16:00:00.000Z</pubTime>
         
-        <tag>colab</tag>
-         
         <tag>tensorflow</tag>
+         
+        <tag>colab</tag>
          
         <tag>sklearn</tag>
          
@@ -1022,11 +1022,11 @@
         <title>量化投资</title>
         <pubTime>2018-04-15T16:00:00.000Z</pubTime>
         
-        <tag>machinelearning</tag>
-         
         <tag>rnn</tag>
          
         <tag>lstm</tag>
+         
+        <tag>machinelearning</tag>
          
          
            
