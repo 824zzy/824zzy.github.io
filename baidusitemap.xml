@@ -4,19 +4,21 @@
 
     
   <url>
-    <loc>https://824zzy.github.io/2018/11/09/meta-learning-introduction/</loc>
-    <lastmod>2018-11-10T07:06:15.555Z</lastmod>
+    <loc>https://824zzy.github.io/2018/10/30/CMA-ES-note/</loc>
+    <lastmod>2018-11-11T09:09:11.221Z</lastmod>
     <data>
         <display>
-        <title>元学习（meta-learning）</title>
-        <pubTime>2018-11-08T16:00:00.000Z</pubTime>
+        <title>Evolution strategies</title>
+        <pubTime>2018-10-29T16:00:00.000Z</pubTime>
         
-        <tag>meta-learning</tag>
+        <tag>math</tag>
+         
+        <tag>evolutionStategy</tag>
          
          
            
              
-              <breadCrumb title="ReinforcementLearning" url="https://824zzy.github.io/categories/ReinforcementLearning/"/>
+              <breadCrumb title="WorldModel" url="https://824zzy.github.io/categories/WorldModel/"/>
           
         </display>
     </data>
@@ -25,7 +27,7 @@
     
   <url>
     <loc>https://824zzy.github.io/2018/11/09/artificial-general-intelligence/</loc>
-    <lastmod>2018-11-09T09:34:43.058Z</lastmod>
+    <lastmod>2018-11-11T07:54:49.739Z</lastmod>
     <data>
         <display>
         <title>通用人工智能（AGI）</title>
@@ -48,27 +50,32 @@
 
     
   <url>
-    <loc>https://824zzy.github.io/2018/10/31/mixture-density-network-note/</loc>
-    <lastmod>2018-10-31T07:20:10.937Z</lastmod>
+    <loc>https://824zzy.github.io/2018/11/09/meta-learning-introduction/</loc>
+    <lastmod>2018-11-11T07:23:49.502Z</lastmod>
     <data>
         <display>
-        <title>mixture-density-network-note</title>
-        <pubTime>2018-10-31T07:20:10.000Z</pubTime>
+        <title>元学习（meta-learning）</title>
+        <pubTime>2018-11-08T16:00:00.000Z</pubTime>
         
+        <tag>meta-learning</tag>
+         
          
            
+             
+              <breadCrumb title="ReinforcementLearning" url="https://824zzy.github.io/categories/ReinforcementLearning/"/>
+          
         </display>
     </data>
     </url>
 
     
   <url>
-    <loc>https://824zzy.github.io/2018/10/30/CMA-ES-note/</loc>
-    <lastmod>2018-10-30T05:56:17.143Z</lastmod>
+    <loc>https://824zzy.github.io/2018/10/31/mixture-density-network-note/</loc>
+    <lastmod>2018-11-10T10:51:02.643Z</lastmod>
     <data>
         <display>
-        <title>协方差矩阵适应性进化算法</title>
-        <pubTime>2018-10-29T16:00:00.000Z</pubTime>
+        <title>混合密度网络</title>
+        <pubTime>2018-10-30T16:00:00.000Z</pubTime>
         
         <tag>math</tag>
          

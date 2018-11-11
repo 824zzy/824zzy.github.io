@@ -24,8 +24,8 @@
   <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
   <script>
     (function () {
-        if ('todo') {
-            if (prompt('请输入文章密码') !== 'todo') {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
                 alert('密码错误！');
                 if (history.length === 1) {
                     location.replace("http://xxxxxxx.xxx"); // 这里替换成你的首页
@@ -150,19 +150,29 @@
 
 
 
-<meta name="description" content="IntroductionProblems in BackPropagation and Gradient Descent the gradient of reward signals given to the agent is realised many timesteps in the future. there is the issue of being stuck in a local o">
+<meta name="description" content="Problems in BackPropagation and Gradient Descent the gradient of reward signals given to the agent is realised many timesteps in the future. Questions above can be seem as Credit Assignment  there is">
 <meta name="keywords" content="math,evolutionStategy">
 <meta property="og:type" content="article">
-<meta property="og:title" content="协方差矩阵适应性进化算法">
+<meta property="og:title" content="Evolution strategies">
 <meta property="og:url" content="https://824zzy.github.io/2018/10/30/CMA-ES-note/index.html">
 <meta property="og:site_name" content="Zzy824">
-<meta property="og:description" content="IntroductionProblems in BackPropagation and Gradient Descent the gradient of reward signals given to the agent is realised many timesteps in the future. there is the issue of being stuck in a local o">
+<meta property="og:description" content="Problems in BackPropagation and Gradient Descent the gradient of reward signals given to the agent is realised many timesteps in the future. Questions above can be seem as Credit Assignment  there is">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fwq7har0x0j206o06g3zn.jpg">
-<meta property="og:updated_time" content="2018-10-30T05:56:17.143Z">
+<meta property="og:image" content="http://blog.otoro.net/assets/20171031/schaffer/simplees.gif">
+<meta property="og:image" content="http://blog.otoro.net/assets/20171031/schaffer/cmaes.gif">
+<meta property="og:image" content="http://blog.otoro.net/assets/20171031/rastrigin/cmaes_step1.png">
+<meta property="og:image" content="http://blog.otoro.net/assets/20171031/rastrigin/cmaes_step2.png">
+<meta property="og:image" content="http://blog.otoro.net/assets/20171031/rastrigin/cmaes_step3.png">
+<meta property="og:image" content="http://blog.otoro.net/assets/20171031/rastrigin/cmaes_step4.png">
+<meta property="og:image" content="http://blog.otoro.net/assets/20171031/schaffer/openes.gif">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18gy1fx399cbkkfj20p205iq3y.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18gy1fx39a8kr44j20os0a2di4.jpg">
+<meta property="og:image" content="http://blog.otoro.net/assets/20171031/mnist_results.svg">
+<meta property="og:updated_time" content="2018-11-11T09:09:11.221Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="协方差矩阵适应性进化算法">
-<meta name="twitter:description" content="IntroductionProblems in BackPropagation and Gradient Descent the gradient of reward signals given to the agent is realised many timesteps in the future. there is the issue of being stuck in a local o">
+<meta name="twitter:title" content="Evolution strategies">
+<meta name="twitter:description" content="Problems in BackPropagation and Gradient Descent the gradient of reward signals given to the agent is realised many timesteps in the future. Questions above can be seem as Credit Assignment  there is">
 <meta name="twitter:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fwq7har0x0j206o06g3zn.jpg">
 
 
@@ -199,7 +209,7 @@
 
 
 
-  <title>协方差矩阵适应性进化算法 | Zzy824</title>
+  <title>Evolution strategies | Zzy824</title>
   
 
 
@@ -436,7 +446,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">协方差矩阵适应性进化算法</h2>
+          <h2 class="post-title" itemprop="name headline">Evolution strategies</h2>
         
 
         <div class="post-meta">
@@ -464,8 +474,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-10-30T13:56:17+08:00">
-                2018-10-30
+              <time title="更新于" itemprop="dateModified" datetime="2018-11-11T17:09:11+08:00">
+                2018-11-11
               </time>
             
           </span>
@@ -500,7 +510,7 @@
 
           
           
-             <span id="/2018/10/30/CMA-ES-note/" class="leancloud_visitors" data-flag-title="协方差矩阵适应性进化算法">
+             <span id="/2018/10/30/CMA-ES-note/" class="leancloud_visitors" data-flag-title="Evolution strategies">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -525,7 +535,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  46
+                  365
                 </span>
               
 
@@ -541,7 +551,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1分钟
+                  2分钟
                 </span>
               
             </div>
@@ -562,14 +572,47 @@
       
 
       
-        <script src="/assets/js/APlayer.min.js"> </script><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><h3 id="Problems-in-BackPropagation-and-Gradient-Descent"><a href="#Problems-in-BackPropagation-and-Gradient-Descent" class="headerlink" title="Problems in BackPropagation and Gradient Descent"></a>Problems in BackPropagation and Gradient Descent</h3><ol>
-<li>the gradient of reward signals given to the agent is realised many timesteps in the future.</li>
-<li>there is the issue of being stuck in a local optimum.</li>
+        <script src="/assets/js/APlayer.min.js"> </script><h3 id="Problems-in-BackPropagation-and-Gradient-Descent"><a href="#Problems-in-BackPropagation-and-Gradient-Descent" class="headerlink" title="Problems in BackPropagation and Gradient Descent"></a>Problems in BackPropagation and Gradient Descent</h3><ol>
+<li><p>the gradient of reward signals given to the agent is realised many timesteps in the future. Questions above can be seem as <strong>Credit Assignment</strong></p>
+</li>
+<li><p>there is the issue of being stuck in a local optimum.</p>
+</li>
 </ol>
-<p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fwq7har0x0j206o06g3zn.jpg" alt=""></p>
+<p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fwq7har0x0j206o06g3zn.jpg" width="50%" height="30%"></p>
+<h3 id="Pseudo-code-of-Basic-Evolution-Strategy"><a href="#Pseudo-code-of-Basic-Evolution-Strategy" class="headerlink" title="Pseudo code of Basic Evolution Strategy"></a>Pseudo code of Basic Evolution Strategy</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">solver = EvolutionStrategy()</span><br><span class="line"><span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">  <span class="comment"># ask the ES to give us a set of candidate solutions</span></span><br><span class="line">  solutions = solver.ask()</span><br><span class="line">  <span class="comment"># create an array to hold the fitness results.</span></span><br><span class="line">  fitness_list = np.zeros(solver.popsize)</span><br><span class="line">  <span class="comment"># evaluate the fitness for each given solution.</span></span><br><span class="line">  <span class="keyword">for</span> i <span class="keyword">in</span> range(solver.popsize):</span><br><span class="line">    fitness_list[i] = evaluate(solutions[i])</span><br><span class="line">  <span class="comment"># give list of fitness results back to ES</span></span><br><span class="line">  solver.tell(fitness_list)</span><br><span class="line">  <span class="comment"># get best parameter, fitness from ES</span></span><br><span class="line">  best_solution, best_fitness = solver.result()</span><br><span class="line">  <span class="keyword">if</span> best_fitness &gt; MY_REQUIRED_FITNESS:</span><br><span class="line">    <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+<h3 id="Advantages-in-Evolution-Strategies"><a href="#Advantages-in-Evolution-Strategies" class="headerlink" title="Advantages in Evolution Strategies"></a>Advantages in Evolution Strategies</h3><ol>
+<li>Easier to scale in a distributed setting(easy to parallelize).</li>
+<li>It does not suffer in settings with sparse rewards.</li>
+<li>It has fewer hyperparameters.</li>
+<li>It is effective at finding solutions for RL tasks.</li>
+</ol>
+<p><img src="http://blog.otoro.net/assets/20171031/schaffer/simplees.gif" width="30%" height="30%"></p>
+<h3 id="Improvement-of-Covariance-Matrix-Adaptive-Evolution-Strategy"><a href="#Improvement-of-Covariance-Matrix-Adaptive-Evolution-Strategy" class="headerlink" title="Improvement of Covariance Matrix Adaptive Evolution Strategy"></a>Improvement of Covariance Matrix Adaptive Evolution Strategy</h3><p>We want to explore more and increase the standard deviation of our search space.<br>And there are times when we are confident we are close to good optima and just want to fine-tune the solution.<br><img src="http://blog.otoro.net/assets/20171031/schaffer/cmaes.gif" width="30%" height="30%"></p>
+<h3 id="Details-of-algorithm"><a href="#Details-of-algorithm" class="headerlink" title="Details of algorithm"></a>Details of algorithm</h3><ol>
+<li><p>Calculate the fitness score of each candidate solution in generation $(g)$.<br><img src="http://blog.otoro.net/assets/20171031/rastrigin/cmaes_step1.png" width="30%" height="30%"></p>
+</li>
+<li><p>Isolates the best 25% of the population in generation $(g)$, in purple.</p>
+</li>
+</ol>
+<p><img src="http://blog.otoro.net/assets/20171031/rastrigin/cmaes_step2.png" width="30%" height="30%"></p>
+<ol start="3">
+<li>Using only the best solutions, along with the mean $\mu^{(g)}$ of the current generation (the green dot), calculate the covariance matrix $C^{(g+1)}$ of the next generation.</li>
+</ol>
+<p><img src="http://blog.otoro.net/assets/20171031/rastrigin/cmaes_step3.png" width="30%" height="30%"></p>
+<ol start="4">
+<li>Sample a new set of candidate solutions using the updated mean $\mu^{(g+1)}$ and covariance matrix $C^{(g+1)}​$.</li>
+</ol>
+<p><img src="http://blog.otoro.net/assets/20171031/rastrigin/cmaes_step4.png" width="30%" height="30%"></p>
+<h3 id="OpenAI-Evolution-Strategy"><a href="#OpenAI-Evolution-Strategy" class="headerlink" title="OpenAI Evolution Strategy"></a>OpenAI Evolution Strategy</h3><p>In particular, $\sigma$ is fixed to a constant number, and only the $\mu$ parameter is updated at each generation. </p>
+<p><img src="http://blog.otoro.net/assets/20171031/schaffer/openes.gif" width="30%" height="30%"></p>
+<p>Although its performance is not the best, it is possible to scale to over a thousand parallel workers.</p>
+<p><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fx399cbkkfj20p205iq3y.jpg" alt=""><br><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fx39a8kr44j20os0a2di4.jpg" alt=""></p>
+<h3 id="Comparision-among-Evolution-Strategies"><a href="#Comparision-among-Evolution-Strategies" class="headerlink" title="Comparision among Evolution Strategies"></a>Comparision among Evolution Strategies</h3><p><img src="http://blog.otoro.net/assets/20171031/mnist_results.svg" alt=""></p>
 <h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
 <li><a href="http://blog.otoro.net/2017/10/29/visual-evolution-strategies/" target="_blank" rel="noopener">A Visual Guide to Evolution Strategy</a></li>
 <li><a href="http://blog.otoro.net/2017/11/12/evolving-stable-strategies/" target="_blank" rel="noopener">Evolving Stable Strategies</a></li>
+<li><a href="https://blog.openai.com/evolution-strategies/" target="_blank" rel="noopener">Evolution Strategies as a Scalable Alternative to Reinforcement Learning</a></li>
+<li><a href="https://worldmodels.github.io/" target="_blank" rel="noopener">world model</a></li>
 </ul>
 
       
@@ -620,7 +663,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://824zzy.github.io/2018/10/30/CMA-ES-note/" title="协方差矩阵适应性进化算法">https://824zzy.github.io/2018/10/30/CMA-ES-note/</a>
+    <a href="https://824zzy.github.io/2018/10/30/CMA-ES-note/" title="Evolution strategies">https://824zzy.github.io/2018/10/30/CMA-ES-note/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -675,8 +718,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/10/31/mixture-density-network-note/" rel="prev" title="mixture-density-network-note">
-                mixture-density-network-note <i class="fa fa-chevron-right"></i>
+              <a href="/2018/10/31/mixture-density-network-note/" rel="prev" title="混合密度网络">
+                混合密度网络 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -878,7 +921,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Problems-in-BackPropagation-and-Gradient-Descent"><span class="nav-number">1.1.</span> <span class="nav-text">Problems in BackPropagation and Gradient Descent</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">2.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Problems-in-BackPropagation-and-Gradient-Descent"><span class="nav-number">1.</span> <span class="nav-text">Problems in BackPropagation and Gradient Descent</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pseudo-code-of-Basic-Evolution-Strategy"><span class="nav-number">2.</span> <span class="nav-text">Pseudo code of Basic Evolution Strategy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Advantages-in-Evolution-Strategies"><span class="nav-number">3.</span> <span class="nav-text">Advantages in Evolution Strategies</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Improvement-of-Covariance-Matrix-Adaptive-Evolution-Strategy"><span class="nav-number">4.</span> <span class="nav-text">Improvement of Covariance Matrix Adaptive Evolution Strategy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Details-of-algorithm"><span class="nav-number">5.</span> <span class="nav-text">Details of algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OpenAI-Evolution-Strategy"><span class="nav-number">6.</span> <span class="nav-text">OpenAI Evolution Strategy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Comparision-among-Evolution-Strategies"><span class="nav-number">7.</span> <span class="nav-text">Comparision among Evolution Strategies</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number"></span> <span class="nav-text">Reference</span></a></div>
             
 
           </div>
@@ -913,7 +956,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">博客全站共55.4k字</span>
+    <span title="Site words total count">博客全站共56.2k字</span>
   
 </div>
 
