@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://824zzy.github.io/2018/10/30/CMA-ES-note/</loc>
+    <loc>https://824zzy.github.io/2018/11/09/artificial-general-intelligence/</loc>
     
-    <lastmod>2018-11-11T09:09:11.221Z</lastmod>
+    <lastmod>2018-11-14T01:40:05.239Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://824zzy.github.io/2018/11/09/artificial-general-intelligence/</loc>
+    <loc>https://824zzy.github.io/2017/04/03/Linux-command/</loc>
     
-    <lastmod>2018-11-11T07:54:49.739Z</lastmod>
+    <lastmod>2018-11-12T10:38:41.574Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://824zzy.github.io/2018/10/30/CMA-ES-note/</loc>
+    
+    <lastmod>2018-11-11T09:09:11.221Z</lastmod>
     
   </url>
   
@@ -159,13 +166,6 @@
     <loc>https://824zzy.github.io/2018/08/26/Image-Caption-demo-by-tensorflow/</loc>
     
     <lastmod>2018-08-27T05:12:07.688Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://824zzy.github.io/2017/04/03/Linux-command/</loc>
-    
-    <lastmod>2018-08-25T10:44:13.644Z</lastmod>
     
   </url>
   
