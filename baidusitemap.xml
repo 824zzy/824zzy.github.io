@@ -340,9 +340,9 @@
         <title>Neural-Machine-Translation-by-tensorflow</title>
         <pubTime>2018-09-08T16:00:00.000Z</pubTime>
         
-        <tag>tensorflow</tag>
-         
         <tag>slide</tag>
+         
+        <tag>tensorflow</tag>
          
          
            
@@ -422,9 +422,9 @@
         <title>深度学习模块文档备忘录</title>
         <pubTime>2018-08-22T16:00:00.000Z</pubTime>
         
-        <tag>colab</tag>
-         
         <tag>tensorflow</tag>
+         
+        <tag>colab</tag>
          
         <tag>sklearn</tag>
          
