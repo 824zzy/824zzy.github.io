@@ -150,13 +150,13 @@
 
 
 
-<meta name="description" content="Problems in BackPropagation and Gradient Descent the gradient of reward signals given to the agent is realised many timesteps in the future. Questions above can be seem as Credit Assignment  there is">
+<meta name="description" content="Handwriting Version for this post  	 		 	    Problems in BackPropagation and Gradient Descent the gradient of reward signals given to the agent is realised many timesteps in the future. Questions abo">
 <meta name="keywords" content="math,evolutionStategy">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Evolution strategies">
 <meta property="og:url" content="https://824zzy.github.io/2018/10/30/CMA-ES-note/index.html">
 <meta property="og:site_name" content="Zzy824">
-<meta property="og:description" content="Problems in BackPropagation and Gradient Descent the gradient of reward signals given to the agent is realised many timesteps in the future. Questions above can be seem as Credit Assignment  there is">
+<meta property="og:description" content="Handwriting Version for this post  	 		 	    Problems in BackPropagation and Gradient Descent the gradient of reward signals given to the agent is realised many timesteps in the future. Questions abo">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fwq7har0x0j206o06g3zn.jpg">
 <meta property="og:image" content="http://blog.otoro.net/assets/20171031/schaffer/simplees.gif">
@@ -169,10 +169,10 @@
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18gy1fx399cbkkfj20p205iq3y.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18gy1fx39a8kr44j20os0a2di4.jpg">
 <meta property="og:image" content="http://blog.otoro.net/assets/20171031/mnist_results.svg">
-<meta property="og:updated_time" content="2018-11-11T09:09:11.221Z">
+<meta property="og:updated_time" content="2018-11-18T10:30:18.051Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Evolution strategies">
-<meta name="twitter:description" content="Problems in BackPropagation and Gradient Descent the gradient of reward signals given to the agent is realised many timesteps in the future. Questions above can be seem as Credit Assignment  there is">
+<meta name="twitter:description" content="Handwriting Version for this post  	 		 	    Problems in BackPropagation and Gradient Descent the gradient of reward signals given to the agent is realised many timesteps in the future. Questions abo">
 <meta name="twitter:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fwq7har0x0j206o06g3zn.jpg">
 
 
@@ -474,8 +474,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-11-11T17:09:11+08:00">
-                2018-11-11
+              <time title="更新于" itemprop="dateModified" datetime="2018-11-18T18:30:18+08:00">
+                2018-11-18
               </time>
             
           </span>
@@ -535,7 +535,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  365
+                  370
                 </span>
               
 
@@ -572,7 +572,15 @@
       
 
       
-        <script src="/assets/js/APlayer.min.js"> </script><h3 id="Problems-in-BackPropagation-and-Gradient-Descent"><a href="#Problems-in-BackPropagation-and-Gradient-Descent" class="headerlink" title="Problems in BackPropagation and Gradient Descent"></a>Problems in BackPropagation and Gradient Descent</h3><ol>
+        <script src="/assets/js/APlayer.min.js"> </script><h3 id="Handwriting-Version-for-this-post"><a href="#Handwriting-Version-for-this-post" class="headerlink" title="Handwriting Version for this post"></a>Handwriting Version for this post</h3>
+
+	<div class="row">
+		<iframe src="https://drive.google.com/open?id=1A9MUO2PQ3OjwCoZVr8XBh-yKa5lovO42/preview" style="width:100%; height:550px"></iframe>
+	</div>
+
+
+
+<h3 id="Problems-in-BackPropagation-and-Gradient-Descent"><a href="#Problems-in-BackPropagation-and-Gradient-Descent" class="headerlink" title="Problems in BackPropagation and Gradient Descent"></a>Problems in BackPropagation and Gradient Descent</h3><ol>
 <li><p>the gradient of reward signals given to the agent is realised many timesteps in the future. Questions above can be seem as <strong>Credit Assignment</strong></p>
 </li>
 <li><p>there is the issue of being stuck in a local optimum.</p>
@@ -921,7 +929,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Problems-in-BackPropagation-and-Gradient-Descent"><span class="nav-number">1.</span> <span class="nav-text">Problems in BackPropagation and Gradient Descent</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pseudo-code-of-Basic-Evolution-Strategy"><span class="nav-number">2.</span> <span class="nav-text">Pseudo code of Basic Evolution Strategy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Advantages-in-Evolution-Strategies"><span class="nav-number">3.</span> <span class="nav-text">Advantages in Evolution Strategies</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Improvement-of-Covariance-Matrix-Adaptive-Evolution-Strategy"><span class="nav-number">4.</span> <span class="nav-text">Improvement of Covariance Matrix Adaptive Evolution Strategy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Details-of-algorithm"><span class="nav-number">5.</span> <span class="nav-text">Details of algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OpenAI-Evolution-Strategy"><span class="nav-number">6.</span> <span class="nav-text">OpenAI Evolution Strategy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Comparision-among-Evolution-Strategies"><span class="nav-number">7.</span> <span class="nav-text">Comparision among Evolution Strategies</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number"></span> <span class="nav-text">Reference</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Handwriting-Version-for-this-post"><span class="nav-number">1.</span> <span class="nav-text">Handwriting Version for this post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Problems-in-BackPropagation-and-Gradient-Descent"><span class="nav-number">2.</span> <span class="nav-text">Problems in BackPropagation and Gradient Descent</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pseudo-code-of-Basic-Evolution-Strategy"><span class="nav-number">3.</span> <span class="nav-text">Pseudo code of Basic Evolution Strategy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Advantages-in-Evolution-Strategies"><span class="nav-number">4.</span> <span class="nav-text">Advantages in Evolution Strategies</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Improvement-of-Covariance-Matrix-Adaptive-Evolution-Strategy"><span class="nav-number">5.</span> <span class="nav-text">Improvement of Covariance Matrix Adaptive Evolution Strategy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Details-of-algorithm"><span class="nav-number">6.</span> <span class="nav-text">Details of algorithm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OpenAI-Evolution-Strategy"><span class="nav-number">7.</span> <span class="nav-text">OpenAI Evolution Strategy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Comparision-among-Evolution-Strategies"><span class="nav-number">8.</span> <span class="nav-text">Comparision among Evolution Strategies</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number"></span> <span class="nav-text">Reference</span></a></div>
             
 
           </div>

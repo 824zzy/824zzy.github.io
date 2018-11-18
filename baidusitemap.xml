@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://824zzy.github.io/2018/10/30/CMA-ES-note/</loc>
+    <lastmod>2018-11-18T10:30:18.051Z</lastmod>
+    <data>
+        <display>
+        <title>Evolution strategies</title>
+        <pubTime>2018-10-29T16:00:00.000Z</pubTime>
+        
+        <tag>math</tag>
+         
+        <tag>evolutionStategy</tag>
+         
+         
+           
+             
+              <breadCrumb title="WorldModel" url="https://824zzy.github.io/categories/WorldModel/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://824zzy.github.io/2018/11/09/artificial-general-intelligence/</loc>
     <lastmod>2018-11-14T02:02:58.439Z</lastmod>
     <data>
@@ -41,28 +63,6 @@
            
              
               <breadCrumb title="Linux" url="https://824zzy.github.io/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://824zzy.github.io/2018/10/30/CMA-ES-note/</loc>
-    <lastmod>2018-11-11T09:09:11.221Z</lastmod>
-    <data>
-        <display>
-        <title>Evolution strategies</title>
-        <pubTime>2018-10-29T16:00:00.000Z</pubTime>
-        
-        <tag>math</tag>
-         
-        <tag>evolutionStategy</tag>
-         
-         
-           
-             
-              <breadCrumb title="WorldModel" url="https://824zzy.github.io/categories/WorldModel/"/>
           
         </display>
     </data>
@@ -1029,11 +1029,11 @@
         <title>量化投资</title>
         <pubTime>2018-04-15T16:00:00.000Z</pubTime>
         
+        <tag>machinelearning</tag>
+         
         <tag>rnn</tag>
          
         <tag>lstm</tag>
-         
-        <tag>machinelearning</tag>
          
          
            
