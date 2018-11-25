@@ -137,7 +137,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="math,demo," />
 
 
 
@@ -150,13 +150,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Zzy824">
-<meta property="og:url" content="https://824zzy.github.io/tags/informationScience/index.html">
+<meta name="description" content="强化学习基础理论  	 		 	    通过CartPole实验来引入各种概念这个问题的目标是通过控制小车保持杆儿的平衡。 动作空间只有 左 和 右。从环境中可以获取的观察有四个：杆儿的角度，和小车的位置。 那么可以将动作和观察做一个简单的线性组合。12parameters = np.random.rand(4) * 2 - 1  # 四维的参数变量action = 0 if np.matmul">
+<meta name="keywords" content="math,demo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="世界模型（World Model）实验以及原理">
+<meta property="og:url" content="https://824zzy.github.io/2018/11/24/world-model-experiment-and-priciple/index.html">
 <meta property="og:site_name" content="Zzy824">
+<meta property="og:description" content="强化学习基础理论  	 		 	    通过CartPole实验来引入各种概念这个问题的目标是通过控制小车保持杆儿的平衡。 动作空间只有 左 和 右。从环境中可以获取的观察有四个：杆儿的角度，和小车的位置。 那么可以将动作和观察做一个简单的线性组合。12parameters = np.random.rand(4) * 2 - 1  # 四维的参数变量action = 0 if np.matmul">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-11-25T04:49:08.953Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Zzy824">
+<meta name="twitter:title" content="世界模型（World Model）实验以及原理">
+<meta name="twitter:description" content="强化学习基础理论  	 		 	    通过CartPole实验来引入各种概念这个问题的目标是通过控制小车保持杆儿的平衡。 动作空间只有 左 和 右。从环境中可以获取的观察有四个：杆儿的角度，和小车的位置。 那么可以将动作和观察做一个简单的线性组合。12parameters = np.random.rand(4) * 2 - 1  # 四维的参数变量action = 0 if np.matmul">
 
 
 
@@ -186,13 +191,13 @@
 
 
 
-  <link rel="canonical" href="https://824zzy.github.io/tags/informationScience/"/>
+  <link rel="canonical" href="https://824zzy.github.io/2018/11/24/world-model-experiment-and-priciple/"/>
 
 
 
 
 
-  <title>标签: informationScience | Zzy824</title>
+  <title>世界模型（World Model）实验以及原理 | Zzy824</title>
   
 
 
@@ -230,7 +235,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/824zzy" class="github-corner" aria-label="View source on Github"><svg width="92" height="92" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -398,54 +403,324 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>informationScience<small>标签</small>
-        </h2>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://824zzy.github.io/2018/11/24/world-model-experiment-and-priciple/">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZZY">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zzy824">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/07/18/infomation-science-handwriting/" itemprop="url">
-              
-                <span itemprop="name">信息科学原理手写笔记</span>
-              
-            </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">世界模型（World Model）实验以及原理</h2>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-07-18T00:00:00+08:00"
-              content="2018-07-18" >
-          07-18
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-24T00:00:00+08:00">
+                2018-11-24
+              </time>
+            
 
-    </header>
-  </article>
+            
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-11-25T12:49:08+08:00">
+                2018-11-25
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/WorldModel/" itemprop="url" rel="index">
+                    <span itemprop="name">WorldModel</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/11/24/world-model-experiment-and-priciple/" class="leancloud_visitors" data-flag-title="世界模型（World Model）实验以及原理">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  632
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <script src="/assets/js/APlayer.min.js"> </script><h2 id="强化学习基础理论"><a href="#强化学习基础理论" class="headerlink" title="强化学习基础理论"></a>强化学习基础理论</h2>
+
+	<div class="row">
+		<iframe src="https://drive.google.com/open?id=1pjdvuyQdC-LsZUJDRGKo5GPPPqavQofP/preview" style="width:100%; height:550px"></iframe>
+	</div>
+
+
+
+<h3 id="通过CartPole实验来引入各种概念"><a href="#通过CartPole实验来引入各种概念" class="headerlink" title="通过CartPole实验来引入各种概念"></a>通过CartPole实验来引入各种概念</h3><p>这个问题的目标是通过控制小车保持杆儿的平衡。</p>
+<p>动作空间只有 左 和 右。从环境中可以获取的观察有四个：杆儿的角度，和小车的位置。</p>
+<p>那么可以将动作和观察做一个简单的线性组合。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">parameters = np.random.rand(<span class="number">4</span>) * <span class="number">2</span> - <span class="number">1</span>  <span class="comment"># 四维的参数变量</span></span><br><span class="line">action = <span class="number">0</span> <span class="keyword">if</span> np.matmul(parameters, obervation) &lt; <span class="number">0</span> <span class="keyword">else</span> <span class="number">1</span> <span class="comment"># 动作的计算</span></span><br></pre></td></tr></table></figure></p>
+<p>在每个时间步里面，只要杆儿没有倒下就获得+1的奖励，那么有<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">run_episode</span><span class="params">(env, parameters)</span>:</span>  </span><br><span class="line">    observation = env.reset()</span><br><span class="line">    totalreward = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> xrange(<span class="number">200</span>):</span><br><span class="line">        action = <span class="number">0</span> <span class="keyword">if</span> np.matmul(parameters,observation) &lt; <span class="number">0</span> <span class="keyword">else</span> <span class="number">1</span></span><br><span class="line">        observation, reward, done, info = env.step(action)</span><br><span class="line">        totalreward += reward</span><br><span class="line">        <span class="keyword">if</span> done:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">return</span> totalreward</span><br></pre></td></tr></table></figure></p>
+<h3 id="解决CarPole问题的方法"><a href="#解决CarPole问题的方法" class="headerlink" title="解决CarPole问题的方法"></a>解决CarPole问题的方法</h3><ol>
+<li><p>随机搜索：不断地使用随机权重来找到一个最佳的权重</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">bestparams = <span class="keyword">None</span></span><br><span class="line">bestreward = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">10000</span>):</span><br><span class="line">    parameters = np.random.rand(<span class="number">4</span>) * <span class="number">2</span> - <span class="number">1</span></span><br><span class="line">    reward = run_episode(env, parameters)</span><br><span class="line">    <span class="keyword">if</span> reward &gt; bestreward:</span><br><span class="line">        bestreward = reward</span><br><span class="line">        bestparams = params</span><br><span class="line">        <span class="keyword">if</span> reward == <span class="number">200</span>:</span><br><span class="line">            <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>登山搜索：给随机权重增加一些噪声，如果Agent的表现提升了的话就保持权重</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">noise_scaling = <span class="number">0.1</span></span><br><span class="line">parameters = (np.random.rand(<span class="number">4</span>) * <span class="number">2</span> - <span class="number">1</span>)</span><br><span class="line">bestreward = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">10000</span>):</span><br><span class="line">    newparameters = parameters + (np.random.rand(<span class="number">4</span>) * <span class="number">2</span> - <span class="number">1</span>) * <span class="number">0.1</span></span><br><span class="line">    reward = run_episode(env, newparameters)</span><br><span class="line">    <span class="keyword">if</span> reward &gt; bestreward:</span><br><span class="line">        bestreward = reward</span><br><span class="line">        parameter = newparameters</span><br><span class="line">        <span class="keyword">if</span> reward == <span class="number">200</span>:</span><br><span class="line">            <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+<p> 该方法的缺点：</p>
+<ol>
+<li>若<code>noise_scaling</code>过高，权重则会在最优值附近跳跃</li>
+<li>权重初始化会严重影响Agent的性能。</li>
+</ol>
+</li>
+<li><p>策略梯度法<br>使用<strong>概率</strong>来描述Agent的动作：<code>probabilities = tf.nn.softmax(linear)</code></p>
+</li>
+</ol>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">policy_gradient</span><span class="params">()</span>:</span>  </span><br><span class="line">    params = tf.get_variable(<span class="string">"policy_parameters"</span>, [<span class="number">4</span>, <span class="number">2</span>])</span><br><span class="line">    observation = tf.placeholder(<span class="string">"float"</span>, [<span class="keyword">None</span>, <span class="number">4</span>])</span><br><span class="line">    actions = tf.placeholder(<span class="string">"float"</span>, [<span class="keyword">None</span>, <span class="number">2</span>])</span><br><span class="line">    linear = tf.matmul(observation, params)</span><br><span class="line">    probabilities = tf.nn.softmax(linear)</span><br><span class="line">    good_probabilities = tf.reduce_sum(tf.mul(probabilities, actions), reduction_indices=[<span class="number">1</span>])</span><br><span class="line">    <span class="comment"># maximize the log probability</span></span><br><span class="line">    log_probabilities = tf.log(good_probabilities)</span><br><span class="line">    loss = -tf.reduce_sum(log_probabilities)</span><br><span class="line">    optimizer = tf.train.AdamOptimizer(<span class="number">0.01</span>).minimize(loss)</span><br></pre></td></tr></table></figure>
+<h2 id="世界模型的原理"><a href="#世界模型的原理" class="headerlink" title="世界模型的原理"></a>世界模型的原理</h2><h2 id="世界模型的实验"><a href="#世界模型的实验" class="headerlink" title="世界模型的实验"></a>世界模型的实验</h2><h3 id="实验的坑"><a href="#实验的坑" class="headerlink" title="实验的坑"></a>实验的坑</h3><h4 id="ModuleNotFoundError-No-module-named-39-Box2D-39"><a href="#ModuleNotFoundError-No-module-named-39-Box2D-39" class="headerlink" title="ModuleNotFoundError: No module named &#39;Box2D&#39;"></a><code>ModuleNotFoundError: No module named &#39;Box2D&#39;</code></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># On OSX:</span></span><br><span class="line">brew install cmake boost boost-python sdl2 swig wget</span><br><span class="line"><span class="comment"># On Ubuntu:</span></span><br><span class="line">apt-get install -y python-pyglet python3-opengl zlib1g-dev libjpeg-dev patchelf \</span><br><span class="line">        cmake swig libboost-all-dev libsdl2-dev libosmesa6-dev xvfb ffmpeg</span><br><span class="line"><span class="comment"># install via conda</span></span><br><span class="line">conda install -c https://conda.anaconda.org/kne pybox2d</span><br><span class="line">conda install pillow</span><br><span class="line">pip3 install box2d box2d-kengz</span><br><span class="line"><span class="comment"># 如果还继续报错</span></span><br></pre></td></tr></table></figure>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
+<li><p><a href="https://arxiv.org/pdf/1511.09249.pdf" target="_blank" rel="noopener">On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models</a></p>
+</li>
+<li><p><a href="https://ai.intel.com/demystifying-deep-reinforcement-learning/" target="_blank" rel="noopener">Guest Post (Part I): Demystifying Deep Reinforcement Learning</a> </p>
+</li>
+<li><a href="http://kvfrans.com/simple-algoritms-for-solving-cartpole/" target="_blank" rel="noopener">Simple reinforcement learning methods to learn CartPole</a></li>
+<li><a href="https://arxiv.org/pdf/1802.08864.pdf" target="_blank" rel="noopener">One Big Net For Everything</a></li>
+<li><a href="http://kvfrans.com/simple-algoritms-for-solving-cartpole/" target="_blank" rel="noopener">Simple reinforcement learning methods to learn CartPole</a></li>
+</ul>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>请zzy824喝杯咖啡</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1ftpprdhc4gj20tz14q4a1.jpg" alt="ZZY 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1ftppqm04y6j20go0p0jy4.jpg" alt="ZZY 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    ZZY
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://824zzy.github.io/2018/11/24/world-model-experiment-and-priciple/" title="世界模型（World Model）实验以及原理">https://824zzy.github.io/2018/11/24/world-model-experiment-and-priciple/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/math/" rel="tag"><i class="fa fa-tag"></i> math</a>
+          
+            <a href="/tags/demo/" rel="tag"><i class="fa fa-tag"></i> demo</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/09/meta-learning-introduction/" rel="next" title="元学习（meta-learning）">
+                <i class="fa fa-chevron-left"></i> 元学习（meta-learning）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -453,6 +728,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zODQxMS8xNDkzOQ"></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -475,8 +759,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -598,6 +891,22 @@
 		<!--my custom code end-->
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#强化学习基础理论"><span class="nav-number">1.</span> <span class="nav-text">强化学习基础理论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#通过CartPole实验来引入各种概念"><span class="nav-number">1.1.</span> <span class="nav-text">通过CartPole实验来引入各种概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决CarPole问题的方法"><span class="nav-number">1.2.</span> <span class="nav-text">解决CarPole问题的方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#世界模型的原理"><span class="nav-number">2.</span> <span class="nav-text">世界模型的原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#世界模型的实验"><span class="nav-number">3.</span> <span class="nav-text">世界模型的实验</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实验的坑"><span class="nav-number">3.1.</span> <span class="nav-text">实验的坑</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ModuleNotFoundError-No-module-named-39-Box2D-39"><span class="nav-number">3.1.1.</span> <span class="nav-text">ModuleNotFoundError: No module named &#39;Box2D&#39;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -772,6 +1081,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
@@ -801,6 +1114,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://824zzy.github.io/"/>
-  <updated>2018-11-14T02:02:58.439Z</updated>
+  <updated>2018-11-25T04:49:08.953Z</updated>
   <id>https://824zzy.github.io/</id>
   
   <author>
@@ -17,31 +17,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>通用人工智能（AGI）</title>
-    <link href="https://824zzy.github.io/2018/11/09/artificial-general-intelligence/"/>
-    <id>https://824zzy.github.io/2018/11/09/artificial-general-intelligence/</id>
-    <published>2018-11-08T16:00:00.000Z</published>
-    <updated>2018-11-14T02:02:58.439Z</updated>
+    <title>世界模型（World Model）实验以及原理</title>
+    <link href="https://824zzy.github.io/2018/11/24/world-model-experiment-and-priciple/"/>
+    <id>https://824zzy.github.io/2018/11/24/world-model-experiment-and-priciple/</id>
+    <published>2018-11-23T16:00:00.000Z</published>
+    <updated>2018-11-25T04:49:08.953Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Artificial-General-Intelligence-Lex-Fridman"><a href="#Artificial-General-Intelligence-Lex-Fridman" class="headerlink" title="Artificial General Intelligence(Lex Fridman)"></a>Artificial General Intelligence(Lex Fridman)</h2><h3 id="Something-about-Lex-Fridman"><a href="#Something-about-Lex-Fridman" class="headerlink" title="Something about Lex Fridman"></a>Something about Lex Fridman</h3><h3 id="MIT-AGI-Misson-Engineer-Intelligence"><a href="#MIT-AGI-Misson-Engineer-Intelligence" class="headerlink" title="MIT AGI Misson: Engineer Intelligence"></a>MIT AGI Misson: Engineer Intelligence</h3><p>Goals:</p><ol><li>avoid the pitfalls of “black box”: Media often reports AI like fiction. Hype is the first enemy to us.</li><li>avoid the pitfalls of “I am just a scientist”.</li></ol><h3 id="How-far-away-from-creating-intelligent-systems"><a href="#How-far-away-from-creating-intelligent-systems" class="headerlink" title="How far away from creating intelligent systems"></a>How far away from creating intelligent systems</h3><p>Analogy: we are in the dark room looking for a switch with no knowledge of where the light switch is.</p><p>Exploration travel for the sake of discovery and adventure is human compulsion.</p><h2 id="Building-machines-that-see-and-think-like-people-Josh-Tenenbaum"><a href="#Building-machines-that-see-and-think-like-people-Josh-Tenenbaum" class="headerlink" title="Building machines that see, and think like people(Josh Tenenbaum)"></a>Building machines that see, and think like people(Josh Tenenbaum)</h2><h3 id="Something-about-Josh-Tenenbaum"><a href="#Something-about-Josh-Tenenbaum" class="headerlink" title="Something about Josh Tenenbaum"></a>Something about Josh Tenenbaum</h3><h3 id="AI-technologies-no-real-AI"><a href="#AI-technologies-no-real-AI" class="headerlink" title="AI technologies no real AI"></a>AI technologies no real AI</h3><p>Intelligence is not just about pattern recognition, it is about modeling the world.</p><h3 id="Sally-port-visual-intelligence-of-our-near-term-focus"><a href="#Sally-port-visual-intelligence-of-our-near-term-focus" class="headerlink" title="Sally port: visual intelligence of our near-term focus"></a>Sally port: visual intelligence of our near-term focus</h3><p>Some part of your brain is tracking the whole world around you. And you track your world model to plan your actions</p><p><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fx3a8gz9dfj20hs0am0v8.jpg" alt=""></p><h3 id="The-roots-for-common-sense"><a href="#The-roots-for-common-sense" class="headerlink" title="The roots for common sense"></a>The roots for common sense</h3><p>reverse engineer our brain, figure out how brain can formulate a goal and be able to acheive it. </p><h3 id="How-do-we-build-this-architecture"><a href="#How-do-we-build-this-architecture" class="headerlink" title="How do we build this architecture?"></a>How do we build this architecture?</h3><ul><li>symbolic language for knowledge representation</li><li>probabilistic inference in generative models to capture uncertainty</li><li>neural network for pattern recognition</li></ul><p><strong>Inference means that our model runs a few low precision simulations for a few time steps</strong><br><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fx3zgiybhzj20e6043js1.jpg" alt=""></p><p>Mental simulation engines based on probabilistic programs<br><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fx3zfqc8u1j208x0d8wg5.jpg" alt=""></p><h2 id="OpenAI-Meta-Learning-and-Self-play-Ilya-Sutskever"><a href="#OpenAI-Meta-Learning-and-Self-play-Ilya-Sutskever" class="headerlink" title="OpenAI Meta-Learning and Self-play(Ilya Sutskever)"></a>OpenAI Meta-Learning and Self-play(Ilya Sutskever)</h2><h3 id="Why-do-neural-networks-work"><a href="#Why-do-neural-networks-work" class="headerlink" title="Why do neural networks work?"></a>Why do neural networks work?</h3><p>shortest program that fits training data is the best possible generalization.</p><p>Reinforcement Learning is a good framework for building intelligent agent.</p><p><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fx443zm4tuj20hd086acq.jpg" alt=""></p><p>But note that RL framework is not quite complete because it assumes the reward is given by the environnment. But in reality, <strong>the agent rewards itself</strong>.</p><h3 id="Reinfocement-Learning-algorithms-in-a-nutshell"><a href="#Reinfocement-Learning-algorithms-in-a-nutshell" class="headerlink" title="Reinfocement Learning algorithms in a nutshell"></a>Reinfocement Learning algorithms in a nutshell</h3><p>Try something new add randomness directions and compare the result to your expectation. </p><p>If the result was better than expected, do more of the same in the future.</p><h4 id="Model-free-RL-Two-classes-of-algorithms"><a href="#Model-free-RL-Two-classes-of-algorithms" class="headerlink" title="Model-free RL: Two classes of algorithms"></a>Model-free RL: Two classes of algorithms</h4><ul><li>Policy Gradients:<ol><li>Just take the gradient</li><li>Stable, easy to use</li><li>Very few tricks needed</li><li><strong>On policy</strong></li></ol></li><li>Q-learning based:<ol><li>Less stable, more sample efficient</li><li>won’t explain how it works</li><li><strong>Off policy</strong>: can be trained on data generated by some other policy</li></ol></li></ul><h4 id="Meta-learning"><a href="#Meta-learning" class="headerlink" title="Meta-learning"></a>Meta-learning</h4><p>Our dream is:</p><ul><li>Learn to learn</li><li>Train a system on many tasks</li><li>Resulting system can solve new tasks quickly</li></ul><h3 id="Exploration-in-RL-a-key-challenge"><a href="#Exploration-in-RL-a-key-challenge" class="headerlink" title="Exploration in RL: a key challenge"></a>Exploration in RL: a key challenge</h3><p>Random behavior must generate some reward and you must get rewards from time to time, otherwise learning will not occur. So if the reward is too sparse, agent cannot learn.</p><h3 id="It-would-be-nice-if-learning-was-hierarchical"><a href="#It-would-be-nice-if-learning-was-hierarchical" class="headerlink" title="It would be nice if learning was hierarchical"></a>It would be nice if learning was hierarchical</h3><blockquote><p>Current RL learns by trying out random actions at each timestep</p></blockquote><p>Agent may require a real “model” to really solve this problem.</p><h3 id="Self-Play-that-is-very-cool"><a href="#Self-Play-that-is-very-cool" class="headerlink" title="Self-Play: that is very cool"></a><strong>Self-Play</strong>: that is very cool</h3><p>Crux: The agents create the environment by virture of the agent acting in the environment</p><p>Here comes the question: can we train AGI via self-play among multi-agents?</p><p>It’s unknown.</p><h2 id="MSRA-presentation-given-by-Yoshua-Bengio"><a href="#MSRA-presentation-given-by-Yoshua-Bengio" class="headerlink" title="MSRA presentation given by Yoshua Bengio"></a>MSRA presentation given by Yoshua Bengio</h2><h3 id="Principle-in-Bengio’s-idea"><a href="#Principle-in-Bengio’s-idea" class="headerlink" title="Principle in Bengio’s idea."></a>Principle in Bengio’s idea.</h3><h4 id="World-Models"><a href="#World-Models" class="headerlink" title="World Models"></a>World Models</h4><p>we(human-being) have a mental model, that could capture facts of our world to some extending and humans generalize better than other animals thanks to a more accurate internal model of the <strong>underlying causal relationships</strong> </p><h4 id="Shortcoming-in-current-model"><a href="#Shortcoming-in-current-model" class="headerlink" title="Shortcoming in current model"></a>Shortcoming in current model</h4><p>So long as our machine learning models ‘cheat’ by relying only on superficial statistical regularities, however they remain vulnerable to out-of-distribution examples.</p><h3 id="Possible-solutions"><a href="#Possible-solutions" class="headerlink" title="Possible solutions"></a>Possible solutions</h3><h4 id="Prediction"><a href="#Prediction" class="headerlink" title="Prediction"></a>Prediction</h4><p>To predict future situations(e.g., the effect of planned actions) far from  anything seen before while involving known concepts, an essential component of reasoning intelligence and science.</p><h4 id="Invariance"><a href="#Invariance" class="headerlink" title="Invariance"></a>Invariance</h4><p>Our systems need to be invariant about deep understanding : models for recognition and generation clearly don’t understand in the crucial abstractions. </p><h4 id="Imagination"><a href="#Imagination" class="headerlink" title="Imagination"></a>Imagination</h4><p>Real-life applications often require generalizations in regimes not seen during training, so humans can project themselves in situation they have never seen or never experience.</p><h4 id="Subjective-Knowledge"><a href="#Subjective-Knowledge" class="headerlink" title="Subjective Knowledge"></a>Subjective Knowledge</h4><p>Our brain can come up with control policies that can influence specific aspects of the world: an agent acquires by interacting in the world which is that it’s not universal knowledge, it’s subjective knowledge</p><h3 id="Present-Development-Stage"><a href="#Present-Development-Stage" class="headerlink" title="Present Development Stage"></a>Present Development Stage</h3><h4 id="More-elements-as-prior"><a href="#More-elements-as-prior" class="headerlink" title="More elements as prior"></a>More elements as prior</h4><ol><li>Spatial &amp; temporal scales</li><li>Marginal independence</li><li>Simple dependencies between factors<ol><li>Consciousness prior: arXiv(1709.08568)</li></ol></li><li>Causal / Mechanism independence<ol><li>Controllable factors<h4 id="Content-based-Attention-Attention-Mechanism"><a href="#Content-based-Attention-Attention-Mechanism" class="headerlink" title="Content-based Attention(Attention Mechanism)"></a>Content-based Attention(Attention Mechanism)</h4>to select a few relevant abstract concepts making a thought<h4 id="TODO-future-work"><a href="#TODO-future-work" class="headerlink" title="TODO future work"></a>TODO future work</h4>The ability to do credit assignment through very long  time spans. There are also shortcoming for current RNN architecture: I can remember something I did laster year.</li></ol></li></ol><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol><li><a href="https://www.youtube.com/watch?v=-GV_A9Js2nM&amp;list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4&amp;index=2&amp;t=0s" target="_blank" rel="noopener">MIT AGI: Artificial General Intelligence(Lex Fridman)</a></li><li><a href="https://www.youtube.com/watch?v=7ROelYvo8f0&amp;list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4&amp;index=8&amp;t=0s" target="_blank" rel="noopener">MIT AGI: Building machines that see, learn, and think like people (Josh Tenenbaum)</a></li><li><a href="https://www.youtube.com/watch?v=9EN_HoEk3KY&amp;list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4&amp;index=4&amp;t=0s" target="_blank" rel="noopener">MIT AGI: OpenAI Meta-Learning and Self-Play (Ilya Sutskever)</a></li><li><a href="https://www.youtube.com/results?search_query=bengio&amp;pbjreload=10" target="_blank" rel="noopener">Bengio Interview</a></li></ol>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="强化学习基础理论"><a href="#强化学习基础理论" class="headerlink" title="强化学习基础理论"></a>强化学习基础理论</h2><div class="row"><iframe src="https://drive.google.com/open?id=1pjdvuyQdC-LsZUJDRGKo5GPPPqavQofP/preview" style="width:100%; height:550px"></iframe></div><h3 id="通过CartPole实验来引入各种概念"><a href="#通过CartPole实验来引入各种概念" class="headerlink" title="通过CartPole实验来引入各种概念"></a>通过CartPole实验来引入各种概念</h3><p>这个问题的目标是通过控制小车保持杆儿的平衡。</p><p>动作空间只有 左 和 右。从环境中可以获取的观察有四个：杆儿的角度，和小车的位置。</p><p>那么可以将动作和观察做一个简单的线性组合。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">parameters = np.random.rand(<span class="number">4</span>) * <span class="number">2</span> - <span class="number">1</span>  <span class="comment"># 四维的参数变量</span></span><br><span class="line">action = <span class="number">0</span> <span class="keyword">if</span> np.matmul(parameters, obervation) &lt; <span class="number">0</span> <span class="keyword">else</span> <span class="number">1</span> <span class="comment"># 动作的计算</span></span><br></pre></td></tr></table></figure></p><p>在每个时间步里面，只要杆儿没有倒下就获得+1的奖励，那么有<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">run_episode</span><span class="params">(env, parameters)</span>:</span>  </span><br><span class="line">    observation = env.reset()</span><br><span class="line">    totalreward = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> xrange(<span class="number">200</span>):</span><br><span class="line">        action = <span class="number">0</span> <span class="keyword">if</span> np.matmul(parameters,observation) &lt; <span class="number">0</span> <span class="keyword">else</span> <span class="number">1</span></span><br><span class="line">        observation, reward, done, info = env.step(action)</span><br><span class="line">        totalreward += reward</span><br><span class="line">        <span class="keyword">if</span> done:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">return</span> totalreward</span><br></pre></td></tr></table></figure></p><h3 id="解决CarPole问题的方法"><a href="#解决CarPole问题的方法" class="headerlink" title="解决CarPole问题的方法"></a>解决CarPole问题的方法</h3><ol><li><p>随机搜索：不断地使用随机权重来找到一个最佳的权重</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">bestparams = <span class="keyword">None</span></span><br><span class="line">bestreward = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">10000</span>):</span><br><span class="line">    parameters = np.random.rand(<span class="number">4</span>) * <span class="number">2</span> - <span class="number">1</span></span><br><span class="line">    reward = run_episode(env, parameters)</span><br><span class="line">    <span class="keyword">if</span> reward &gt; bestreward:</span><br><span class="line">        bestreward = reward</span><br><span class="line">        bestparams = params</span><br><span class="line">        <span class="keyword">if</span> reward == <span class="number">200</span>:</span><br><span class="line">            <span class="keyword">break</span></span><br></pre></td></tr></table></figure></li><li><p>登山搜索：给随机权重增加一些噪声，如果Agent的表现提升了的话就保持权重</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">noise_scaling = <span class="number">0.1</span></span><br><span class="line">parameters = (np.random.rand(<span class="number">4</span>) * <span class="number">2</span> - <span class="number">1</span>)</span><br><span class="line">bestreward = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">10000</span>):</span><br><span class="line">    newparameters = parameters + (np.random.rand(<span class="number">4</span>) * <span class="number">2</span> - <span class="number">1</span>) * <span class="number">0.1</span></span><br><span class="line">    reward = run_episode(env, newparameters)</span><br><span class="line">    <span class="keyword">if</span> reward &gt; bestreward:</span><br><span class="line">        bestreward = reward</span><br><span class="line">        parameter = newparameters</span><br><span class="line">        <span class="keyword">if</span> reward == <span class="number">200</span>:</span><br><span class="line">            <span class="keyword">break</span></span><br></pre></td></tr></table></figure><p> 该方法的缺点：</p><ol><li>若<code>noise_scaling</code>过高，权重则会在最优值附近跳跃</li><li>权重初始化会严重影响Agent的性能。</li></ol></li><li><p>策略梯度法<br>使用<strong>概率</strong>来描述Agent的动作：<code>probabilities = tf.nn.softmax(linear)</code></p></li></ol><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">policy_gradient</span><span class="params">()</span>:</span>  </span><br><span class="line">    params = tf.get_variable(<span class="string">"policy_parameters"</span>, [<span class="number">4</span>, <span class="number">2</span>])</span><br><span class="line">    observation = tf.placeholder(<span class="string">"float"</span>, [<span class="keyword">None</span>, <span class="number">4</span>])</span><br><span class="line">    actions = tf.placeholder(<span class="string">"float"</span>, [<span class="keyword">None</span>, <span class="number">2</span>])</span><br><span class="line">    linear = tf.matmul(observation, params)</span><br><span class="line">    probabilities = tf.nn.softmax(linear)</span><br><span class="line">    good_probabilities = tf.reduce_sum(tf.mul(probabilities, actions), reduction_indices=[<span class="number">1</span>])</span><br><span class="line">    <span class="comment"># maximize the log probability</span></span><br><span class="line">    log_probabilities = tf.log(good_probabilities)</span><br><span class="line">    loss = -tf.reduce_sum(log_probabilities)</span><br><span class="line">    optimizer = tf.train.AdamOptimizer(<span class="number">0.01</span>).minimize(loss)</span><br></pre></td></tr></table></figure><h2 id="世界模型的原理"><a href="#世界模型的原理" class="headerlink" title="世界模型的原理"></a>世界模型的原理</h2><h2 id="世界模型的实验"><a href="#世界模型的实验" class="headerlink" title="世界模型的实验"></a>世界模型的实验</h2><h3 id="实验的坑"><a href="#实验的坑" class="headerlink" title="实验的坑"></a>实验的坑</h3><h4 id="ModuleNotFoundError-No-module-named-39-Box2D-39"><a href="#ModuleNotFoundError-No-module-named-39-Box2D-39" class="headerlink" title="ModuleNotFoundError: No module named &#39;Box2D&#39;"></a><code>ModuleNotFoundError: No module named &#39;Box2D&#39;</code></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># On OSX:</span></span><br><span class="line">brew install cmake boost boost-python sdl2 swig wget</span><br><span class="line"><span class="comment"># On Ubuntu:</span></span><br><span class="line">apt-get install -y python-pyglet python3-opengl zlib1g-dev libjpeg-dev patchelf \</span><br><span class="line">        cmake swig libboost-all-dev libsdl2-dev libosmesa6-dev xvfb ffmpeg</span><br><span class="line"><span class="comment"># install via conda</span></span><br><span class="line">conda install -c https://conda.anaconda.org/kne pybox2d</span><br><span class="line">conda install pillow</span><br><span class="line">pip3 install box2d box2d-kengz</span><br><span class="line"><span class="comment"># 如果还继续报错</span></span><br></pre></td></tr></table></figure><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul><li><p><a href="https://arxiv.org/pdf/1511.09249.pdf" target="_blank" rel="noopener">On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models</a></p></li><li><p><a href="https://ai.intel.com/demystifying-deep-reinforcement-learning/" target="_blank" rel="noopener">Guest Post (Part I): Demystifying Deep Reinforcement Learning</a> </p></li><li><a href="http://kvfrans.com/simple-algoritms-for-solving-cartpole/" target="_blank" rel="noopener">Simple reinforcement learning methods to learn CartPole</a></li><li><a href="https://arxiv.org/pdf/1802.08864.pdf" target="_blank" rel="noopener">One Big Net For Everything</a></li><li><a href="http://kvfrans.com/simple-algoritms-for-solving-cartpole/" target="_blank" rel="noopener">Simple reinforcement learning methods to learn CartPole</a></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Artificial-General-Intelligence-Lex-Fridman&quot;&gt;&lt;a href=&quot;#Artificial-General-Intellig
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;强化学习基础理论&quot;&gt;&lt;a href=&quot;#强化学习基础理论&quot; class=&quot;headerlink&quot; title=&quot;强化学习基础理论&quot;&gt;&lt;/a&gt;强化学习基础理论&lt;/h2
       
     
     </summary>
     
-      <category term="AI" scheme="https://824zzy.github.io/categories/AI/"/>
+      <category term="WorldModel" scheme="https://824zzy.github.io/categories/WorldModel/"/>
     
     
-      <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
+      <category term="math" scheme="https://824zzy.github.io/tags/math/"/>
     
-      <category term="agi" scheme="https://824zzy.github.io/tags/agi/"/>
-    
-      <category term="mit" scheme="https://824zzy.github.io/tags/mit/"/>
+      <category term="demo" scheme="https://824zzy.github.io/tags/demo/"/>
     
   </entry>
   
@@ -71,19 +69,48 @@
   </entry>
   
   <entry>
-    <title>混合密度网络</title>
-    <link href="https://824zzy.github.io/2018/10/31/mixture-density-network-note/"/>
-    <id>https://824zzy.github.io/2018/10/31/mixture-density-network-note/</id>
-    <published>2018-10-30T16:00:00.000Z</published>
-    <updated>2018-11-10T10:51:02.643Z</updated>
+    <title>通用人工智能（AGI）</title>
+    <link href="https://824zzy.github.io/2018/11/09/artificial-general-intelligence/"/>
+    <id>https://824zzy.github.io/2018/11/09/artificial-general-intelligence/</id>
+    <published>2018-11-08T16:00:00.000Z</published>
+    <updated>2018-11-25T04:54:23.153Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol><li><a href="http://blog.otoro.net/2015/11/24/mixture-density-networks-with-tensorflow/" target="_blank" rel="noopener">Mixture Density Networks with Tensorflow</a></li></ol>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Artificial-General-Intelligence-Lex-Fridman"><a href="#Artificial-General-Intelligence-Lex-Fridman" class="headerlink" title="Artificial General Intelligence(Lex Fridman)"></a>Artificial General Intelligence(Lex Fridman)</h2><h3 id="Something-about-Lex-Fridman"><a href="#Something-about-Lex-Fridman" class="headerlink" title="Something about Lex Fridman"></a>Something about Lex Fridman</h3><h3 id="MIT-AGI-Misson-Engineer-Intelligence"><a href="#MIT-AGI-Misson-Engineer-Intelligence" class="headerlink" title="MIT AGI Misson: Engineer Intelligence"></a>MIT AGI Misson: Engineer Intelligence</h3><p>Goals:</p><ol><li>avoid the pitfalls of “black box”: Media often reports AI like fiction. Hype is the first enemy to us.</li><li>avoid the pitfalls of “I am just a scientist”.</li></ol><h3 id="How-far-away-from-creating-intelligent-systems"><a href="#How-far-away-from-creating-intelligent-systems" class="headerlink" title="How far away from creating intelligent systems"></a>How far away from creating intelligent systems</h3><p>Analogy: we are in the dark room looking for a switch with no knowledge of where the light switch is.</p><p>Exploration travel for the sake of discovery and adventure is human compulsion.</p><h2 id="Building-machines-that-see-and-think-like-people-Josh-Tenenbaum"><a href="#Building-machines-that-see-and-think-like-people-Josh-Tenenbaum" class="headerlink" title="Building machines that see, and think like people(Josh Tenenbaum)"></a>Building machines that see, and think like people(Josh Tenenbaum)</h2><h3 id="Something-about-Josh-Tenenbaum"><a href="#Something-about-Josh-Tenenbaum" class="headerlink" title="Something about Josh Tenenbaum"></a>Something about Josh Tenenbaum</h3><h3 id="AI-technologies-no-real-AI"><a href="#AI-technologies-no-real-AI" class="headerlink" title="AI technologies no real AI"></a>AI technologies no real AI</h3><p>Intelligence is not just about pattern recognition, it is about modeling the world.</p><h3 id="Sally-port-visual-intelligence-of-our-near-term-focus"><a href="#Sally-port-visual-intelligence-of-our-near-term-focus" class="headerlink" title="Sally port: visual intelligence of our near-term focus"></a>Sally port: visual intelligence of our near-term focus</h3><p>Some part of your brain is tracking the whole world around you. And you track your world model to plan your actions</p><p><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fx3a8gz9dfj20hs0am0v8.jpg" alt=""></p><h3 id="The-roots-for-common-sense"><a href="#The-roots-for-common-sense" class="headerlink" title="The roots for common sense"></a>The roots for common sense</h3><p>reverse engineer our brain, figure out how brain can formulate a goal and be able to acheive it. </p><h3 id="How-do-we-build-this-architecture"><a href="#How-do-we-build-this-architecture" class="headerlink" title="How do we build this architecture?"></a>How do we build this architecture?</h3><ul><li>symbolic language for knowledge representation</li><li>probabilistic inference in generative models to capture uncertainty</li><li>neural network for pattern recognition</li></ul><p><strong>Inference means that our model runs a few low precision simulations for a few time steps</strong><br><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fx3zgiybhzj20e6043js1.jpg" alt=""></p><p>Mental simulation engines based on probabilistic programs<br><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fx3zfqc8u1j208x0d8wg5.jpg" alt=""></p><h2 id="OpenAI-Meta-Learning-and-Self-play-Ilya-Sutskever"><a href="#OpenAI-Meta-Learning-and-Self-play-Ilya-Sutskever" class="headerlink" title="OpenAI Meta-Learning and Self-play(Ilya Sutskever)"></a>OpenAI Meta-Learning and Self-play(Ilya Sutskever)</h2><h3 id="Why-do-neural-networks-work"><a href="#Why-do-neural-networks-work" class="headerlink" title="Why do neural networks work?"></a>Why do neural networks work?</h3><p>shortest program that fits training data is the best possible generalization.</p><p>Reinforcement Learning is a good framework for building intelligent agent.</p><p><img src="http://ww1.sinaimg.cn/large/ca26ff18gy1fx443zm4tuj20hd086acq.jpg" alt=""></p><p>But note that RL framework is not quite complete because it assumes the reward is given by the environnment. But in reality, <strong>the agent rewards itself</strong>.</p><h3 id="Reinfocement-Learning-algorithms-in-a-nutshell"><a href="#Reinfocement-Learning-algorithms-in-a-nutshell" class="headerlink" title="Reinfocement Learning algorithms in a nutshell"></a>Reinfocement Learning algorithms in a nutshell</h3><p>Try something new add randomness directions and compare the result to your expectation. </p><p>If the result was better than expected, do more of the same in the future.</p><h4 id="Model-free-RL-Two-classes-of-algorithms"><a href="#Model-free-RL-Two-classes-of-algorithms" class="headerlink" title="Model-free RL: Two classes of algorithms"></a>Model-free RL: Two classes of algorithms</h4><ul><li>Policy Gradients:<ol><li>Just take the gradient</li><li>Stable, easy to use</li><li>Very few tricks needed</li><li><strong>On policy</strong></li></ol></li><li>Q-learning based:<ol><li>Less stable, more sample efficient</li><li>won’t explain how it works</li><li><strong>Off policy</strong>: can be trained on data generated by some other policy</li></ol></li></ul><h4 id="Meta-learning"><a href="#Meta-learning" class="headerlink" title="Meta-learning"></a>Meta-learning</h4><p>Our dream is:</p><ul><li>Learn to learn</li><li>Train a system on many tasks</li><li>Resulting system can solve new tasks quickly</li></ul><h3 id="Exploration-in-RL-a-key-challenge"><a href="#Exploration-in-RL-a-key-challenge" class="headerlink" title="Exploration in RL: a key challenge"></a>Exploration in RL: a key challenge</h3><p>Random behavior must generate some reward and you must get rewards from time to time, otherwise learning will not occur. So if the reward is too sparse, agent cannot learn.</p><h3 id="It-would-be-nice-if-learning-was-hierarchical"><a href="#It-would-be-nice-if-learning-was-hierarchical" class="headerlink" title="It would be nice if learning was hierarchical"></a>It would be nice if learning was hierarchical</h3><blockquote><p>Current RL learns by trying out random actions at each timestep</p></blockquote><p>Agent may require a real “model” to really solve this problem.</p><h3 id="Self-Play-that-is-very-cool"><a href="#Self-Play-that-is-very-cool" class="headerlink" title="Self-Play: that is very cool"></a><strong>Self-Play</strong>: that is very cool</h3><p>Crux: The agents create the environment by virture of the agent acting in the environment</p><p>Here comes the question: can we train AGI via self-play among multi-agents?</p><p>It’s unknown.</p><h2 id="MSRA-presentation-given-by-Yoshua-Bengio"><a href="#MSRA-presentation-given-by-Yoshua-Bengio" class="headerlink" title="MSRA presentation given by Yoshua Bengio"></a>MSRA presentation given by Yoshua Bengio</h2><h3 id="Principle-in-Bengio’s-idea"><a href="#Principle-in-Bengio’s-idea" class="headerlink" title="Principle in Bengio’s idea."></a>Principle in Bengio’s idea.</h3><h4 id="World-Models"><a href="#World-Models" class="headerlink" title="World Models"></a>World Models</h4><p>we(human-being) have a mental model, that could capture facts of our world to some extending and humans generalize better than other animals thanks to a more accurate internal model of the <strong>underlying causal relationships</strong> </p><h4 id="Shortcoming-in-current-model"><a href="#Shortcoming-in-current-model" class="headerlink" title="Shortcoming in current model"></a>Shortcoming in current model</h4><p>So long as our machine learning models ‘cheat’ by relying only on superficial statistical<br>regularities, however they remain vulnerable to out-of-distribution examples.</p><h3 id="Possible-solutions"><a href="#Possible-solutions" class="headerlink" title="Possible solutions"></a>Possible solutions</h3><h4 id="Prediction"><a href="#Prediction" class="headerlink" title="Prediction"></a>Prediction</h4><p>To predict future situations(e.g., the effect of planned actions) far from  anything seen before while involving known concepts, an essential component of reasoning intelligence and science.</p><h4 id="Invariance"><a href="#Invariance" class="headerlink" title="Invariance"></a>Invariance</h4><p>Our systems need to be invariant about deep understanding : models for recognition and generation clearly don’t understand in the crucial abstractions. </p><h4 id="Imagination"><a href="#Imagination" class="headerlink" title="Imagination"></a>Imagination</h4><p>Real-life applications often require generalizations in regimes not seen during training, so humans can project themselves in situation they have never seen or never experience.</p><h4 id="Subjective-Knowledge"><a href="#Subjective-Knowledge" class="headerlink" title="Subjective Knowledge"></a>Subjective Knowledge</h4><p>Our brain can come up with control policies that can influence specific aspects of the world: an agent acquires by interacting in the world which is that it’s not universal knowledge, it’s subjective knowledge</p><h3 id="Present-Development-Stage"><a href="#Present-Development-Stage" class="headerlink" title="Present Development Stage"></a>Present Development Stage</h3><h4 id="More-elements-as-prior"><a href="#More-elements-as-prior" class="headerlink" title="More elements as prior"></a>More elements as prior</h4><ol><li>Spatial &amp; temporal scales</li><li>Marginal independence</li><li>Simple dependencies between factors<ol><li>Consciousness prior: arXiv(1709.08568)</li></ol></li><li>Causal / Mechanism independence<ol><li>Controllable factors</li></ol></li></ol><h4 id="Content-based-Attention-Attention-Mechanism"><a href="#Content-based-Attention-Attention-Mechanism" class="headerlink" title="Content-based Attention(Attention Mechanism)"></a>Content-based Attention(Attention Mechanism)</h4><p>to select a few relevant abstract concepts making a thought.</p><h4 id="TODO-future-work"><a href="#TODO-future-work" class="headerlink" title="TODO future work"></a>TODO future work</h4><p>The ability to do credit assignment through very long  time spans. There are also shortcoming for current RNN architecture: I can remember something I did laster year.</p><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol><li><a href="https://www.youtube.com/watch?v=-GV_A9Js2nM&amp;list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4&amp;index=2&amp;t=0s" target="_blank" rel="noopener">MIT AGI: Artificial General Intelligence(Lex Fridman)</a></li><li><a href="https://www.youtube.com/watch?v=7ROelYvo8f0&amp;list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4&amp;index=8&amp;t=0s" target="_blank" rel="noopener">MIT AGI: Building machines that see, learn, and think like people (Josh Tenenbaum)</a></li><li><a href="https://www.youtube.com/watch?v=9EN_HoEk3KY&amp;list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4&amp;index=4&amp;t=0s" target="_blank" rel="noopener">MIT AGI: OpenAI Meta-Learning and Self-Play (Ilya Sutskever)</a></li><li><a href="https://www.youtube.com/results?search_query=bengio&amp;pbjreload=10" target="_blank" rel="noopener">Bengio Interview</a></li></ol>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Reference&quot;&gt;&lt;a href=&quot;#Reference&quot; class=&quot;headerlink&quot; title=&quot;Reference&quot;&gt;&lt;/a&gt;Reference
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Artificial-General-Intelligence-Lex-Fridman&quot;&gt;&lt;a href=&quot;#Artificial-General-Intellig
+      
+    
+    </summary>
+    
+      <category term="AI" scheme="https://824zzy.github.io/categories/AI/"/>
+    
+    
+      <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
+    
+      <category term="agi" scheme="https://824zzy.github.io/tags/agi/"/>
+    
+      <category term="mit" scheme="https://824zzy.github.io/tags/mit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>混合密度网络</title>
+    <link href="https://824zzy.github.io/2018/10/31/mixture-density-network-note/"/>
+    <id>https://824zzy.github.io/2018/10/31/mixture-density-network-note/</id>
+    <published>2018-10-30T16:00:00.000Z</published>
+    <updated>2018-11-18T10:35:52.466Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="My-Implementation-with-Tensorflow-Eager-Execution"><a href="#My-Implementation-with-Tensorflow-Eager-Execution" class="headerlink" title="My Implementation with Tensorflow Eager Execution"></a>My Implementation with Tensorflow Eager Execution</h2><p><img src="https://colab.research.google.com/drive/1113X6Yx-XglANAzl933nb6vUynpy6VYk#scrollTo=km0IIHkaPH0T" alt="IPython Notebook on Colab"></p><h2 id="Key-equations-for-Mixture-Density-Networks"><a href="#Key-equations-for-Mixture-Density-Networks" class="headerlink" title="Key equations for Mixture Density Networks"></a>Key equations for Mixture Density Networks</h2><div class="row"><iframe src="https://drive.google.com/open?id=1T7ROj1FnzSdJUjQyd_4T4sRK4klQ1s2y/preview" style="width:100%; height:550px"></iframe></div><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol><li><a href="http://blog.otoro.net/2015/11/24/mixture-density-networks-with-tensorflow/" target="_blank" rel="noopener">Mixture Density Networks with Tensorflow</a></li><li><a href="http://blog.otoro.net/2015/06/14/mixture-density-networks/" target="_blank" rel="noopener">Mixture Density Networks</a></li><li><a href="https://github.com/hardmaru/pytorch_notebooks/blob/master/mixture_density_networks.ipynb" target="_blank" rel="noopener">Mixture Density Networks with Pytorch</a></li><li><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bishop-ncrg-94-004.pdf" target="_blank" rel="noopener">Mixture Density Networks</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;My-Implementation-with-Tensorflow-Eager-Execution&quot;&gt;&lt;a href=&quot;#My-Implementation-wit
       
     
     </summary>
@@ -125,29 +152,29 @@
   </entry>
   
   <entry>
-    <title>世界模型（World Model）实验以及原理</title>
-    <link href="https://824zzy.github.io/2018/10/24/world-model-experiment-and-priciple/"/>
-    <id>https://824zzy.github.io/2018/10/24/world-model-experiment-and-priciple/</id>
-    <published>2018-10-23T16:00:00.000Z</published>
-    <updated>2018-10-27T09:08:19.034Z</updated>
+    <title>胶囊（Capsule）网络</title>
+    <link href="https://824zzy.github.io/2018/10/15/capsule-note-and-demo/"/>
+    <id>https://824zzy.github.io/2018/10/15/capsule-note-and-demo/</id>
+    <published>2018-10-14T16:00:00.000Z</published>
+    <updated>2018-10-15T09:22:26.217Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="世界模型的原理"><a href="#世界模型的原理" class="headerlink" title="世界模型的原理"></a>世界模型的原理</h2><h2 id="世界模型的实验"><a href="#世界模型的实验" class="headerlink" title="世界模型的实验"></a>世界模型的实验</h2><h3 id="实验的坑"><a href="#实验的坑" class="headerlink" title="实验的坑"></a>实验的坑</h3><h4 id="ModuleNotFoundError-No-module-named-39-Box2D-39"><a href="#ModuleNotFoundError-No-module-named-39-Box2D-39" class="headerlink" title="ModuleNotFoundError: No module named &#39;Box2D&#39;"></a><code>ModuleNotFoundError: No module named &#39;Box2D&#39;</code></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># On OSX:</span></span><br><span class="line">brew install cmake boost boost-python sdl2 swig wget</span><br><span class="line"><span class="comment"># On Ubuntu:</span></span><br><span class="line">apt-get install -y python-pyglet python3-opengl zlib1g-dev libjpeg-dev patchelf \</span><br><span class="line">        cmake swig libboost-all-dev libsdl2-dev libosmesa6-dev xvfb ffmpeg</span><br><span class="line"><span class="comment"># install via conda</span></span><br><span class="line">conda install -c https://conda.anaconda.org/kne pybox2d</span><br><span class="line">conda install pillow</span><br><span class="line">pip3 install box2d box2d-kengz</span><br><span class="line"><span class="comment"># 如果还继续报错</span></span><br></pre></td></tr></table></figure><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul><li><p><a href="https://arxiv.org/pdf/1511.09249.pdf" target="_blank" rel="noopener">On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models</a></p></li><li><p><a href="https://ai.intel.com/demystifying-deep-reinforcement-learning/" target="_blank" rel="noopener">Guest Post (Part I): Demystifying Deep Reinforcement Learning</a> </p></li><li><a href="http://kvfrans.com/simple-algoritms-for-solving-cartpole/" target="_blank" rel="noopener">Simple reinforcement learning methods to learn CartPole</a></li><li><a href="https://arxiv.org/pdf/1802.08864.pdf" target="_blank" rel="noopener">One Big Net For Everything</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="手写笔记"><a href="#手写笔记" class="headerlink" title="手写笔记"></a>手写笔记</h2><p>第一部分根据国外博客进行make sense的直观理解。<br>第二部分根据苏神博客的进行数学方面的推导加强理解。</p><div class="row"><iframe src="https://drive.google.com/file/d/1mA1dSM1q-12pfpr75842DWO0zcvsIFbt/preview" style="width:100%; height:550px"></iframe></div><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol><li><a href="https://kexue.fm/archives/5155" target="_blank" rel="noopener">https://kexue.fm/archives/5155</a></li><li><a href="https://kexue.fm/archives/5112" target="_blank" rel="noopener">https://kexue.fm/archives/5112</a></li><li><a href="https://medium.com/ai³-theory-practice-business/understanding-hintons-capsule-networks-part-iii-dynamic-routing-between-capsules-349f6d30418" target="_blank" rel="noopener">https://medium.com/ai³-theory-practice-business/understanding-hintons-capsule-networks-part-iii-dynamic-routing-between-capsules-349f6d30418</a></li><li><a href="https://medium.com/ai³-theory-practice-business/understanding-hintons-capsule-networks-part-ii-how-capsules-work-153b6ade9f66" target="_blank" rel="noopener">https://medium.com/ai³-theory-practice-business/understanding-hintons-capsule-networks-part-ii-how-capsules-work-153b6ade9f66</a></li></ol>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;世界模型的原理&quot;&gt;&lt;a href=&quot;#世界模型的原理&quot; class=&quot;headerlink&quot; title=&quot;世界模型的原理&quot;&gt;&lt;/a&gt;世界模型的原理&lt;/h2&gt;&lt;h2
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;手写笔记&quot;&gt;&lt;a href=&quot;#手写笔记&quot; class=&quot;headerlink&quot; title=&quot;手写笔记&quot;&gt;&lt;/a&gt;手写笔记&lt;/h2&gt;&lt;p&gt;第一部分根据国外博客进行
       
     
     </summary>
     
-      <category term="WorldModel" scheme="https://824zzy.github.io/categories/WorldModel/"/>
+      <category term="Capsule" scheme="https://824zzy.github.io/categories/Capsule/"/>
     
     
-      <category term="math" scheme="https://824zzy.github.io/tags/math/"/>
+      <category term="code" scheme="https://824zzy.github.io/tags/code/"/>
     
-      <category term="demo" scheme="https://824zzy.github.io/tags/demo/"/>
+      <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
     
   </entry>
   
@@ -175,33 +202,6 @@
       <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
     
       <category term="strategy" scheme="https://824zzy.github.io/tags/strategy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>胶囊（Capsule）网络</title>
-    <link href="https://824zzy.github.io/2018/10/15/capsule-note-and-demo/"/>
-    <id>https://824zzy.github.io/2018/10/15/capsule-note-and-demo/</id>
-    <published>2018-10-14T16:00:00.000Z</published>
-    <updated>2018-10-15T09:22:26.217Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="手写笔记"><a href="#手写笔记" class="headerlink" title="手写笔记"></a>手写笔记</h2><p>第一部分根据国外博客进行make sense的直观理解。<br>第二部分根据苏神博客的进行数学方面的推导加强理解。</p><div class="row"><iframe src="https://drive.google.com/file/d/1mA1dSM1q-12pfpr75842DWO0zcvsIFbt/preview" style="width:100%; height:550px"></iframe></div><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol><li><a href="https://kexue.fm/archives/5155" target="_blank" rel="noopener">https://kexue.fm/archives/5155</a></li><li><a href="https://kexue.fm/archives/5112" target="_blank" rel="noopener">https://kexue.fm/archives/5112</a></li><li><a href="https://medium.com/ai³-theory-practice-business/understanding-hintons-capsule-networks-part-iii-dynamic-routing-between-capsules-349f6d30418" target="_blank" rel="noopener">https://medium.com/ai³-theory-practice-business/understanding-hintons-capsule-networks-part-iii-dynamic-routing-between-capsules-349f6d30418</a></li><li><a href="https://medium.com/ai³-theory-practice-business/understanding-hintons-capsule-networks-part-ii-how-capsules-work-153b6ade9f66" target="_blank" rel="noopener">https://medium.com/ai³-theory-practice-business/understanding-hintons-capsule-networks-part-ii-how-capsules-work-153b6ade9f66</a></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;手写笔记&quot;&gt;&lt;a href=&quot;#手写笔记&quot; class=&quot;headerlink&quot; title=&quot;手写笔记&quot;&gt;&lt;/a&gt;手写笔记&lt;/h2&gt;&lt;p&gt;第一部分根据国外博客进行
-      
-    
-    </summary>
-    
-      <category term="Capsule" scheme="https://824zzy.github.io/categories/Capsule/"/>
-    
-    
-      <category term="code" scheme="https://824zzy.github.io/tags/code/"/>
-    
-      <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
     
   </entry>
   
@@ -263,34 +263,6 @@
   </entry>
   
   <entry>
-    <title>对象差分注意力机制</title>
-    <link href="https://824zzy.github.io/2018/09/21/Object-Difference-Attention-paper-note/"/>
-    <id>https://824zzy.github.io/2018/09/21/Object-Difference-Attention-paper-note/</id>
-    <published>2018-09-20T16:00:00.000Z</published>
-    <updated>2018-09-25T12:05:29.104Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><!-- 论文基本信息：方便查阅和追踪 --><!-- 论文基本信息的获取：1. 直接从论文pdf中获取2. 从paperweekly首页上方搜索论文；若未检索到，点击推荐论文输入论文名即可自动获取信息--><h2 id="论文基本信息"><a href="#论文基本信息" class="headerlink" title="论文基本信息"></a>论文基本信息</h2><ol><li><p>论文名：Object-Difference Attention: A Simple Relational Attention for Visual Question Answering</p></li><li><p>论文链接：<a href="http://www.acmmm.org/2018/accepted-papers/" target="_blank" rel="noopener">http://www.acmmm.org/2018/accepted-papers/</a></p></li><li><p>论文源码：</p><ul><li>None</li></ul></li><li><p>关于作者：</p><ul><li>吴晨飞，北邮AI Lab博士</li></ul></li><li><p>关于笔记作者：</p><ul><li>朱正源,北京邮电大学研究生，研究方向为多模态与认知计算。  </li></ul></li></ol><h2 id="论文推荐理由"><a href="#论文推荐理由" class="headerlink" title="论文推荐理由"></a>论文推荐理由</h2><!-- Ex: 论文摘要的中文翻译最近对话生成的神经模型为会话代理生成响应提供了很大的希望，但往往是短视的，一次预测一个话语而忽略它们对未来结果的影响。对未来的对话方向进行建模对于产生连贯，有趣的对话至关重要，这种对话需要传统的NLP对话模式借鉴强化学习。在本文中，我们将展示如何整合这些目标，应用深度强化学习来模拟聊天机器人对话中的未来奖励。该模型模拟两个虚拟代理之间的对话，使用策略梯度方法来奖励显示三个有用会话属性的序列：信息性，连贯性和易于回答（与前瞻性功能相关）。我们在多样性，长度以及人类评判方面评估我们的模型，表明所提出的算法产生了更多的交互式响应，并设法在对话模拟中促进更持久的对话。这项工作标志着基于对话的长期成功学习神经对话模型的第一步。--><p>注意机制极大地促进了视觉问答技术(VQA)的发展。注意力分配在注意力机制中起着至关重要的作用，它根据对象(如图像区域或定界框)回答问题的重要性对图像中的对象(如图像区域或包围盒)进行不同的权重。现有的工作大多集中在融合图像特征和文本特征来计算注意力分布，而不需要比较<strong>不同的图像对象</strong>。作为注意力的一个主要属性，<strong>分离度</strong>取决于不同对象之间的比较。这种比较为更好地分配注意力提供了更多的信息。为了实现对目标的可感知性，我们提出了一种对象差分注意(ODA)方法，通过在图像中实现不同图像对象之间的差值运算来计算注意概率。实验结果表明，我们基于ODA的VQA模型得到了最先进的结果。此外，还提出了一种关系注意的一般形式。除了ODA之外，本文还介绍了其他一些相关的注意事项。实验结果表明，这些关系关注在不同类型的问题上都有优势。</p><h2 id="对象差分注意力机制：视觉问答中一个简单的关系注意力机制"><a href="#对象差分注意力机制：视觉问答中一个简单的关系注意力机制" class="headerlink" title="对象差分注意力机制：视觉问答中一个简单的关系注意力机制"></a>对象差分注意力机制：视觉问答中一个简单的关系注意力机制</h2><!-- Ex: ## 强化学习在对话生成领域的应用 --><h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><h4 id="本文术语"><a href="#本文术语" class="headerlink" title="本文术语"></a>本文术语</h4><!-- 针对论文中不常用的术语进行简短的解释，方便读者理解 --><ol><li><p>序列编码的方式：</p><ol><li><strong>RNN</strong>: $y_t=f(y_{t-1},x_t)$</li><li><strong>CNN</strong>: $y_t=f(x_{t-1},x_t,x_{t+1})$</li><li><strong>Attention</strong>: $y_t=f(x_t, A, B), if A = B = X: Self Attention$</li></ol></li><li><p>注意力机制的例子<br>$$Attention(Q,K,V)$$</p></li><li><p>应用于VQA的注意力机制编年史：</p><ol><li>one-step linear fusion</li><li>multi-step linear fusion</li><li>bilinear fusion</li><li>multi-feature attention</li></ol></li><li><p>Mutan机制</p></li></ol><h4 id="论文写作动机"><a href="#论文写作动机" class="headerlink" title="论文写作动机"></a>论文写作动机</h4><!-- 当前研究领域存在的问题Ex:标准的Seq-to-Seq模型用于对话系统时常常使用MLE作为模型的评价标准，但这往往导致下面两个主要缺点：系统倾向于产生一些普适性的回应，也就是dull response，这些响应可以回答很多问题但却并不是我们想要的，我们想要的是有趣、多样性、丰富的回应；系统的回复不具有前瞻性，有时会导致陷入死循环，导致对话轮次较少。也就是产生的响应没有考虑对方是否容易回答的情况。--><ol><li>现有的工作大多集中在融合图像特征和文本特征来计算注意力分布，而<strong>忽略了</strong>比较不同的图像对象之间的差异。<br> <img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvisv9uyyhj20i10cw46l.jpg" alt=""><br> 如上图，想要回答出问题<code>图中最高的花是什么？</code>，我们建立的模型就需要不仅仅关注潜在答案<code>玫瑰</code>，也应该关注<code>兰花</code>。</li><li>如何合理分配现有问题的注意力？</li></ol><h3 id="解决问题的方法"><a href="#解决问题的方法" class="headerlink" title="解决问题的方法"></a>解决问题的方法</h3><h4 id="玫瑰例子"><a href="#玫瑰例子" class="headerlink" title="玫瑰例子"></a>玫瑰例子</h4><p>对于回答<code>图中最高的花是什么？</code>，一共分几步？</p><ol><li>找到图中所有的花。</li><li>比较不同的花对于正确答案的重要性。</li></ol><p>正确的答案就会在<strong>比较</strong>的过程中产生。若以这个例子作为启发，一种新型的注意力机制的思路便产生了：ODA在问题的指导下，通过将每个图像对象与其他所有对象进行对比，计算出图像中物体的注意注意力分布。</p><h4 id="模型细节"><a href="#模型细节" class="headerlink" title="模型细节"></a>模型细节</h4><p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjiq8dptpj20pw0bdgqo.jpg" alt=""></p><ol><li><p>将数据Embedding</p><ol><li>$V^f=RCNN(image)$,其中$v^f$是一个$m\times{d_v}$维的embedding，代表拉出的$m$个框。</li><li>$Q^f=GRU(question)$，其中$Q^f$代表$d_q$维的问题embedding。</li><li>$V=relu(Conv1d(V^f))$</li><li>$Q=relu(Linear(Q^f))$</li></ol></li><li><p>对象差分注意力<br>$$\hat{V}=softmax([(V_i-V_j)\odot{Q}]_{m\odot{md}}W_f)^{T}V$$<br>该模型的优点：</p><ol><li>通过对比(差分))，我们可以选择更重要的对象。</li><li>计算复杂度相对与传统注意力机制模型（Mutan）低。</li><li>”即插即用“的特性使得该模型十分容易应用到其他领域。</li></ol></li><li><p>决策阶段</p><ol><li><p>通过对$\hat{V}$计算$p$次，并且将结果拼接在一起。<br>$$\hat{Z}=[\hat{V}^{1};\hat{V}^{2};…;\hat{V}^{p}]$$</p><blockquote><p>可以参考Attention is all you need模型的multi-head</p></blockquote></li><li>将图片的特征和问题的特征相结合<br>$$H=\sum^s_{s=1}(\hat{Z}W_v^{(s)}\odot{QW_q^{(s)}})$$</li><li>预测<br>$$\hat{a}=\sigma(W_{h}H)$$</li></ol></li></ol><h4 id="扩展：相关性注意力"><a href="#扩展：相关性注意力" class="headerlink" title="扩展：相关性注意力"></a>扩展：相关性注意力</h4><p>针对模型中$(V_i-V_j)\odot{Q}$部分进行扩展，可以得到不同类型的注意力机制<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjt8ggw48j20dk06emya.jpg" alt=""></p><h3 id="实验结果分析"><a href="#实验结果分析" class="headerlink" title="实验结果分析"></a>实验结果分析</h3><h4 id="数据集"><a href="#数据集" class="headerlink" title="数据集"></a>数据集</h4><ul><li>VQA1.0 dataset</li><li>VQA2.0 dataset</li><li>COCO-QA dataset</li></ul><h4 id="评估指标"><a href="#评估指标" class="headerlink" title="评估指标"></a>评估指标</h4><ul><li>针对VQA1.0和VQA2.0，使用准确率：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtavlwoxj209701hgli.jpg" alt=""></li><li>针对COCO_QA使用：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtbn6b1pj207m00tdfo.jpg" alt=""></li></ul><h4 id="实验结果评价"><a href="#实验结果评价" class="headerlink" title="实验结果评价"></a>实验结果评价</h4><ul><li>在VQA1.0上与最先进的模型对比<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtf0nyn4j20qs0c8wh1.jpg" alt=""></li><li>在VQA2.0上与最先进的模型对比<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtfgxjdxj20ht05qmy9.jpg" alt=""></li><li>在VQA3.0上与最先进的模型对比<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtg34t3dj20mm05twfl.jpg" alt=""></li></ul><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>从感性的角度来说，对象差分注意力机制符合人类根据图片回答问题的思考过程。未来的研究方向应该是通过对世界的常识性知识建立一个世界模型，通过先验知识减少计算量和对大量带有标签的数据的依赖性。</p><h3 id="引用与参考"><a href="#引用与参考" class="headerlink" title="引用与参考"></a>引用与参考</h3><!--Ex:1. https://www.paperweekly.site/papers/notes/2212. https://scholar.google.com/--><ol><li><a href="https://kexue.fm/archives/4765" target="_blank" rel="noopener">https://kexue.fm/archives/4765</a></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;!-- 论文基本信息：方便查阅和追踪 --&gt;
-&lt;!-- 论文基本信息的获取：
-1. 直接从论文pdf中获取
-2. 从paperweekly首页上方搜索论文；若未检索到，点击推荐论
-      
-    
-    </summary>
-    
-      <category term="AI" scheme="https://824zzy.github.io/categories/AI/"/>
-    
-    
-      <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
-    
-  </entry>
-  
-  <entry>
     <title>世界模型的解读</title>
     <link href="https://824zzy.github.io/2018/09/21/world-model-to-learn-them-all/"/>
     <id>https://824zzy.github.io/2018/09/21/world-model-to-learn-them-all/</id>
@@ -316,6 +288,34 @@
       <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
     
       <category term="JurgenSchmidhuber" scheme="https://824zzy.github.io/tags/JurgenSchmidhuber/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对象差分注意力机制</title>
+    <link href="https://824zzy.github.io/2018/09/21/Object-Difference-Attention-paper-note/"/>
+    <id>https://824zzy.github.io/2018/09/21/Object-Difference-Attention-paper-note/</id>
+    <published>2018-09-20T16:00:00.000Z</published>
+    <updated>2018-09-25T12:05:29.104Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><!-- 论文基本信息：方便查阅和追踪 --><!-- 论文基本信息的获取：1. 直接从论文pdf中获取2. 从paperweekly首页上方搜索论文；若未检索到，点击推荐论文输入论文名即可自动获取信息--><h2 id="论文基本信息"><a href="#论文基本信息" class="headerlink" title="论文基本信息"></a>论文基本信息</h2><ol><li><p>论文名：Object-Difference Attention: A Simple Relational Attention for Visual Question Answering</p></li><li><p>论文链接：<a href="http://www.acmmm.org/2018/accepted-papers/" target="_blank" rel="noopener">http://www.acmmm.org/2018/accepted-papers/</a></p></li><li><p>论文源码：</p><ul><li>None</li></ul></li><li><p>关于作者：</p><ul><li>吴晨飞，北邮AI Lab博士</li></ul></li><li><p>关于笔记作者：</p><ul><li>朱正源,北京邮电大学研究生，研究方向为多模态与认知计算。  </li></ul></li></ol><h2 id="论文推荐理由"><a href="#论文推荐理由" class="headerlink" title="论文推荐理由"></a>论文推荐理由</h2><!-- Ex: 论文摘要的中文翻译最近对话生成的神经模型为会话代理生成响应提供了很大的希望，但往往是短视的，一次预测一个话语而忽略它们对未来结果的影响。对未来的对话方向进行建模对于产生连贯，有趣的对话至关重要，这种对话需要传统的NLP对话模式借鉴强化学习。在本文中，我们将展示如何整合这些目标，应用深度强化学习来模拟聊天机器人对话中的未来奖励。该模型模拟两个虚拟代理之间的对话，使用策略梯度方法来奖励显示三个有用会话属性的序列：信息性，连贯性和易于回答（与前瞻性功能相关）。我们在多样性，长度以及人类评判方面评估我们的模型，表明所提出的算法产生了更多的交互式响应，并设法在对话模拟中促进更持久的对话。这项工作标志着基于对话的长期成功学习神经对话模型的第一步。--><p>注意机制极大地促进了视觉问答技术(VQA)的发展。注意力分配在注意力机制中起着至关重要的作用，它根据对象(如图像区域或定界框)回答问题的重要性对图像中的对象(如图像区域或包围盒)进行不同的权重。现有的工作大多集中在融合图像特征和文本特征来计算注意力分布，而不需要比较<strong>不同的图像对象</strong>。作为注意力的一个主要属性，<strong>分离度</strong>取决于不同对象之间的比较。这种比较为更好地分配注意力提供了更多的信息。为了实现对目标的可感知性，我们提出了一种对象差分注意(ODA)方法，通过在图像中实现不同图像对象之间的差值运算来计算注意概率。实验结果表明，我们基于ODA的VQA模型得到了最先进的结果。此外，还提出了一种关系注意的一般形式。除了ODA之外，本文还介绍了其他一些相关的注意事项。实验结果表明，这些关系关注在不同类型的问题上都有优势。</p><h2 id="对象差分注意力机制：视觉问答中一个简单的关系注意力机制"><a href="#对象差分注意力机制：视觉问答中一个简单的关系注意力机制" class="headerlink" title="对象差分注意力机制：视觉问答中一个简单的关系注意力机制"></a>对象差分注意力机制：视觉问答中一个简单的关系注意力机制</h2><!-- Ex: ## 强化学习在对话生成领域的应用 --><h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><h4 id="本文术语"><a href="#本文术语" class="headerlink" title="本文术语"></a>本文术语</h4><!-- 针对论文中不常用的术语进行简短的解释，方便读者理解 --><ol><li><p>序列编码的方式：</p><ol><li><strong>RNN</strong>: $y_t=f(y_{t-1},x_t)$</li><li><strong>CNN</strong>: $y_t=f(x_{t-1},x_t,x_{t+1})$</li><li><strong>Attention</strong>: $y_t=f(x_t, A, B), if A = B = X: Self Attention$</li></ol></li><li><p>注意力机制的例子<br>$$Attention(Q,K,V)$$</p></li><li><p>应用于VQA的注意力机制编年史：</p><ol><li>one-step linear fusion</li><li>multi-step linear fusion</li><li>bilinear fusion</li><li>multi-feature attention</li></ol></li><li><p>Mutan机制</p></li></ol><h4 id="论文写作动机"><a href="#论文写作动机" class="headerlink" title="论文写作动机"></a>论文写作动机</h4><!-- 当前研究领域存在的问题Ex:标准的Seq-to-Seq模型用于对话系统时常常使用MLE作为模型的评价标准，但这往往导致下面两个主要缺点：系统倾向于产生一些普适性的回应，也就是dull response，这些响应可以回答很多问题但却并不是我们想要的，我们想要的是有趣、多样性、丰富的回应；系统的回复不具有前瞻性，有时会导致陷入死循环，导致对话轮次较少。也就是产生的响应没有考虑对方是否容易回答的情况。--><ol><li>现有的工作大多集中在融合图像特征和文本特征来计算注意力分布，而<strong>忽略了</strong>比较不同的图像对象之间的差异。<br> <img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvisv9uyyhj20i10cw46l.jpg" alt=""><br> 如上图，想要回答出问题<code>图中最高的花是什么？</code>，我们建立的模型就需要不仅仅关注潜在答案<code>玫瑰</code>，也应该关注<code>兰花</code>。</li><li>如何合理分配现有问题的注意力？</li></ol><h3 id="解决问题的方法"><a href="#解决问题的方法" class="headerlink" title="解决问题的方法"></a>解决问题的方法</h3><h4 id="玫瑰例子"><a href="#玫瑰例子" class="headerlink" title="玫瑰例子"></a>玫瑰例子</h4><p>对于回答<code>图中最高的花是什么？</code>，一共分几步？</p><ol><li>找到图中所有的花。</li><li>比较不同的花对于正确答案的重要性。</li></ol><p>正确的答案就会在<strong>比较</strong>的过程中产生。若以这个例子作为启发，一种新型的注意力机制的思路便产生了：ODA在问题的指导下，通过将每个图像对象与其他所有对象进行对比，计算出图像中物体的注意注意力分布。</p><h4 id="模型细节"><a href="#模型细节" class="headerlink" title="模型细节"></a>模型细节</h4><p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjiq8dptpj20pw0bdgqo.jpg" alt=""></p><ol><li><p>将数据Embedding</p><ol><li>$V^f=RCNN(image)$,其中$v^f$是一个$m\times{d_v}$维的embedding，代表拉出的$m$个框。</li><li>$Q^f=GRU(question)$，其中$Q^f$代表$d_q$维的问题embedding。</li><li>$V=relu(Conv1d(V^f))$</li><li>$Q=relu(Linear(Q^f))$</li></ol></li><li><p>对象差分注意力<br>$$\hat{V}=softmax([(V_i-V_j)\odot{Q}]_{m\odot{md}}W_f)^{T}V$$<br>该模型的优点：</p><ol><li>通过对比(差分))，我们可以选择更重要的对象。</li><li>计算复杂度相对与传统注意力机制模型（Mutan）低。</li><li>”即插即用“的特性使得该模型十分容易应用到其他领域。</li></ol></li><li><p>决策阶段</p><ol><li><p>通过对$\hat{V}$计算$p$次，并且将结果拼接在一起。<br>$$\hat{Z}=[\hat{V}^{1};\hat{V}^{2};…;\hat{V}^{p}]$$</p><blockquote><p>可以参考Attention is all you need模型的multi-head</p></blockquote></li><li>将图片的特征和问题的特征相结合<br>$$H=\sum^s_{s=1}(\hat{Z}W_v^{(s)}\odot{QW_q^{(s)}})$$</li><li>预测<br>$$\hat{a}=\sigma(W_{h}H)$$</li></ol></li></ol><h4 id="扩展：相关性注意力"><a href="#扩展：相关性注意力" class="headerlink" title="扩展：相关性注意力"></a>扩展：相关性注意力</h4><p>针对模型中$(V_i-V_j)\odot{Q}$部分进行扩展，可以得到不同类型的注意力机制<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjt8ggw48j20dk06emya.jpg" alt=""></p><h3 id="实验结果分析"><a href="#实验结果分析" class="headerlink" title="实验结果分析"></a>实验结果分析</h3><h4 id="数据集"><a href="#数据集" class="headerlink" title="数据集"></a>数据集</h4><ul><li>VQA1.0 dataset</li><li>VQA2.0 dataset</li><li>COCO-QA dataset</li></ul><h4 id="评估指标"><a href="#评估指标" class="headerlink" title="评估指标"></a>评估指标</h4><ul><li>针对VQA1.0和VQA2.0，使用准确率：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtavlwoxj209701hgli.jpg" alt=""></li><li>针对COCO_QA使用：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtbn6b1pj207m00tdfo.jpg" alt=""></li></ul><h4 id="实验结果评价"><a href="#实验结果评价" class="headerlink" title="实验结果评价"></a>实验结果评价</h4><ul><li>在VQA1.0上与最先进的模型对比<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtf0nyn4j20qs0c8wh1.jpg" alt=""></li><li>在VQA2.0上与最先进的模型对比<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtfgxjdxj20ht05qmy9.jpg" alt=""></li><li>在VQA3.0上与最先进的模型对比<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtg34t3dj20mm05twfl.jpg" alt=""></li></ul><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>从感性的角度来说，对象差分注意力机制符合人类根据图片回答问题的思考过程。未来的研究方向应该是通过对世界的常识性知识建立一个世界模型，通过先验知识减少计算量和对大量带有标签的数据的依赖性。</p><h3 id="引用与参考"><a href="#引用与参考" class="headerlink" title="引用与参考"></a>引用与参考</h3><!--Ex:1. https://www.paperweekly.site/papers/notes/2212. https://scholar.google.com/--><ol><li><a href="https://kexue.fm/archives/4765" target="_blank" rel="noopener">https://kexue.fm/archives/4765</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;!-- 论文基本信息：方便查阅和追踪 --&gt;
+&lt;!-- 论文基本信息的获取：
+1. 直接从论文pdf中获取
+2. 从paperweekly首页上方搜索论文；若未检索到，点击推荐论
+      
+    
+    </summary>
+    
+      <category term="AI" scheme="https://824zzy.github.io/categories/AI/"/>
+    
+    
+      <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
     
   </entry>
   
@@ -346,6 +346,33 @@
   </entry>
   
   <entry>
+    <title>Neural-Machine-Translation-by-tensorflow</title>
+    <link href="https://824zzy.github.io/2018/09/09/Neural-Machine-Translation-by-tensorflow/"/>
+    <id>https://824zzy.github.io/2018/09/09/Neural-Machine-Translation-by-tensorflow/</id>
+    <published>2018-09-08T16:00:00.000Z</published>
+    <updated>2018-09-18T14:59:13.153Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="模型使用的公开数据集"><a href="#模型使用的公开数据集" class="headerlink" title="模型使用的公开数据集"></a>模型使用的公开数据集</h2><p>IWSLT Evaluation Campaign<br>WMT Evaluation Campaign</p><hr><h2 id="基本seq2seq模型"><a href="#基本seq2seq模型" class="headerlink" title="基本seq2seq模型"></a>基本seq2seq模型</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;模型使用的公开数据集&quot;&gt;&lt;a href=&quot;#模型使用的公开数据集&quot; class=&quot;headerlink&quot; title=&quot;模型使用的公开数据集&quot;&gt;&lt;/a&gt;模型使用的公
+      
+    
+    </summary>
+    
+      <category term="slide" scheme="https://824zzy.github.io/categories/slide/"/>
+    
+    
+      <category term="tensorflow" scheme="https://824zzy.github.io/tags/tensorflow/"/>
+    
+      <category term="slide" scheme="https://824zzy.github.io/tags/slide/"/>
+    
+  </entry>
+  
+  <entry>
     <title>论文笔记：A-Diversity-Promoting-Objective-Function-for-Neural-Conversation-Models</title>
     <link href="https://824zzy.github.io/2018/09/09/paper-note-A-Diversity-Promoting-Objective-Function-for-Neural-Conversation-Models/"/>
     <id>https://824zzy.github.io/2018/09/09/paper-note-A-Diversity-Promoting-Objective-Function-for-Neural-Conversation-Models/</id>
@@ -369,33 +396,6 @@
     
     
       <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Neural-Machine-Translation-by-tensorflow</title>
-    <link href="https://824zzy.github.io/2018/09/09/Neural-Machine-Translation-by-tensorflow/"/>
-    <id>https://824zzy.github.io/2018/09/09/Neural-Machine-Translation-by-tensorflow/</id>
-    <published>2018-09-08T16:00:00.000Z</published>
-    <updated>2018-09-18T14:59:13.153Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="模型使用的公开数据集"><a href="#模型使用的公开数据集" class="headerlink" title="模型使用的公开数据集"></a>模型使用的公开数据集</h2><p>IWSLT Evaluation Campaign<br>WMT Evaluation Campaign</p><hr><h2 id="基本seq2seq模型"><a href="#基本seq2seq模型" class="headerlink" title="基本seq2seq模型"></a>基本seq2seq模型</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;模型使用的公开数据集&quot;&gt;&lt;a href=&quot;#模型使用的公开数据集&quot; class=&quot;headerlink&quot; title=&quot;模型使用的公开数据集&quot;&gt;&lt;/a&gt;模型使用的公
-      
-    
-    </summary>
-    
-      <category term="slide" scheme="https://824zzy.github.io/categories/slide/"/>
-    
-    
-      <category term="slide" scheme="https://824zzy.github.io/tags/slide/"/>
-    
-      <category term="tensorflow" scheme="https://824zzy.github.io/tags/tensorflow/"/>
     
   </entry>
   
@@ -445,9 +445,9 @@
       <category term="DeepLearning" scheme="https://824zzy.github.io/categories/DeepLearning/"/>
     
     
-      <category term="tensorflow" scheme="https://824zzy.github.io/tags/tensorflow/"/>
-    
       <category term="colab" scheme="https://824zzy.github.io/tags/colab/"/>
+    
+      <category term="tensorflow" scheme="https://824zzy.github.io/tags/tensorflow/"/>
     
       <category term="sklearn" scheme="https://824zzy.github.io/tags/sklearn/"/>
     
