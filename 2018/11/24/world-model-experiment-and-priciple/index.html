@@ -150,18 +150,18 @@
 
 
 
-<meta name="description" content="强化学习基础理论  	 		 	    通过CartPole实验来引入各种概念这个问题的目标是通过控制小车保持杆儿的平衡。 动作空间只有 左 和 右。从环境中可以获取的观察有四个：杆儿的角度，和小车的位置。 那么可以将动作和观察做一个简单的线性组合。12parameters = np.random.rand(4) * 2 - 1  # 四维的参数变量action = 0 if np.matmul">
+<meta name="description" content="Basic Concepts in Reinforcement Learning  	 		 	    世界模型的实验[World models on colab]{https://colab.research.google.com/drive/1sF2iUdhMbm2mwdECvy01l9iWEFiIodlb#scrollTo=pCg_b9DOwDN6} Reference On Learni">
 <meta name="keywords" content="math,demo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="世界模型（World Model）实验以及原理">
 <meta property="og:url" content="https://824zzy.github.io/2018/11/24/world-model-experiment-and-priciple/index.html">
 <meta property="og:site_name" content="Zzy824">
-<meta property="og:description" content="强化学习基础理论  	 		 	    通过CartPole实验来引入各种概念这个问题的目标是通过控制小车保持杆儿的平衡。 动作空间只有 左 和 右。从环境中可以获取的观察有四个：杆儿的角度，和小车的位置。 那么可以将动作和观察做一个简单的线性组合。12parameters = np.random.rand(4) * 2 - 1  # 四维的参数变量action = 0 if np.matmul">
+<meta property="og:description" content="Basic Concepts in Reinforcement Learning  	 		 	    世界模型的实验[World models on colab]{https://colab.research.google.com/drive/1sF2iUdhMbm2mwdECvy01l9iWEFiIodlb#scrollTo=pCg_b9DOwDN6} Reference On Learni">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-25T04:49:08.953Z">
+<meta property="og:updated_time" content="2018-11-26T02:52:12.774Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="世界模型（World Model）实验以及原理">
-<meta name="twitter:description" content="强化学习基础理论  	 		 	    通过CartPole实验来引入各种概念这个问题的目标是通过控制小车保持杆儿的平衡。 动作空间只有 左 和 右。从环境中可以获取的观察有四个：杆儿的角度，和小车的位置。 那么可以将动作和观察做一个简单的线性组合。12parameters = np.random.rand(4) * 2 - 1  # 四维的参数变量action = 0 if np.matmul">
+<meta name="twitter:description" content="Basic Concepts in Reinforcement Learning  	 		 	    世界模型的实验[World models on colab]{https://colab.research.google.com/drive/1sF2iUdhMbm2mwdECvy01l9iWEFiIodlb#scrollTo=pCg_b9DOwDN6} Reference On Learni">
 
 
 
@@ -462,8 +462,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-11-25T12:49:08+08:00">
-                2018-11-25
+              <time title="更新于" itemprop="dateModified" datetime="2018-11-26T10:52:12+08:00">
+                2018-11-26
               </time>
             
           </span>
@@ -523,7 +523,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  632
+                  80
                 </span>
               
 
@@ -539,7 +539,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3分钟
+                  1分钟
                 </span>
               
             </div>
@@ -560,35 +560,15 @@
       
 
       
-        <script src="/assets/js/APlayer.min.js"> </script><h2 id="强化学习基础理论"><a href="#强化学习基础理论" class="headerlink" title="强化学习基础理论"></a>强化学习基础理论</h2>
+        <script src="/assets/js/APlayer.min.js"> </script><h2 id="Basic-Concepts-in-Reinforcement-Learning"><a href="#Basic-Concepts-in-Reinforcement-Learning" class="headerlink" title="Basic Concepts in Reinforcement Learning"></a>Basic Concepts in Reinforcement Learning</h2>
 
 	<div class="row">
-		<iframe src="https://drive.google.com/open?id=1pjdvuyQdC-LsZUJDRGKo5GPPPqavQofP/preview" style="width:100%; height:550px"></iframe>
+		<iframe src="https://drive.google.com/file/d/1LceWiaaxbhfrV1mEvwP0ojCefpY5A_gt/preview" style="width:100%; height:550px"></iframe>
 	</div>
 
 
 
-<h3 id="通过CartPole实验来引入各种概念"><a href="#通过CartPole实验来引入各种概念" class="headerlink" title="通过CartPole实验来引入各种概念"></a>通过CartPole实验来引入各种概念</h3><p>这个问题的目标是通过控制小车保持杆儿的平衡。</p>
-<p>动作空间只有 左 和 右。从环境中可以获取的观察有四个：杆儿的角度，和小车的位置。</p>
-<p>那么可以将动作和观察做一个简单的线性组合。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">parameters = np.random.rand(<span class="number">4</span>) * <span class="number">2</span> - <span class="number">1</span>  <span class="comment"># 四维的参数变量</span></span><br><span class="line">action = <span class="number">0</span> <span class="keyword">if</span> np.matmul(parameters, obervation) &lt; <span class="number">0</span> <span class="keyword">else</span> <span class="number">1</span> <span class="comment"># 动作的计算</span></span><br></pre></td></tr></table></figure></p>
-<p>在每个时间步里面，只要杆儿没有倒下就获得+1的奖励，那么有<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">run_episode</span><span class="params">(env, parameters)</span>:</span>  </span><br><span class="line">    observation = env.reset()</span><br><span class="line">    totalreward = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> xrange(<span class="number">200</span>):</span><br><span class="line">        action = <span class="number">0</span> <span class="keyword">if</span> np.matmul(parameters,observation) &lt; <span class="number">0</span> <span class="keyword">else</span> <span class="number">1</span></span><br><span class="line">        observation, reward, done, info = env.step(action)</span><br><span class="line">        totalreward += reward</span><br><span class="line">        <span class="keyword">if</span> done:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">return</span> totalreward</span><br></pre></td></tr></table></figure></p>
-<h3 id="解决CarPole问题的方法"><a href="#解决CarPole问题的方法" class="headerlink" title="解决CarPole问题的方法"></a>解决CarPole问题的方法</h3><ol>
-<li><p>随机搜索：不断地使用随机权重来找到一个最佳的权重</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">bestparams = <span class="keyword">None</span></span><br><span class="line">bestreward = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">10000</span>):</span><br><span class="line">    parameters = np.random.rand(<span class="number">4</span>) * <span class="number">2</span> - <span class="number">1</span></span><br><span class="line">    reward = run_episode(env, parameters)</span><br><span class="line">    <span class="keyword">if</span> reward &gt; bestreward:</span><br><span class="line">        bestreward = reward</span><br><span class="line">        bestparams = params</span><br><span class="line">        <span class="keyword">if</span> reward == <span class="number">200</span>:</span><br><span class="line">            <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>登山搜索：给随机权重增加一些噪声，如果Agent的表现提升了的话就保持权重</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">noise_scaling = <span class="number">0.1</span></span><br><span class="line">parameters = (np.random.rand(<span class="number">4</span>) * <span class="number">2</span> - <span class="number">1</span>)</span><br><span class="line">bestreward = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">10000</span>):</span><br><span class="line">    newparameters = parameters + (np.random.rand(<span class="number">4</span>) * <span class="number">2</span> - <span class="number">1</span>) * <span class="number">0.1</span></span><br><span class="line">    reward = run_episode(env, newparameters)</span><br><span class="line">    <span class="keyword">if</span> reward &gt; bestreward:</span><br><span class="line">        bestreward = reward</span><br><span class="line">        parameter = newparameters</span><br><span class="line">        <span class="keyword">if</span> reward == <span class="number">200</span>:</span><br><span class="line">            <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
-<p> 该方法的缺点：</p>
-<ol>
-<li>若<code>noise_scaling</code>过高，权重则会在最优值附近跳跃</li>
-<li>权重初始化会严重影响Agent的性能。</li>
-</ol>
-</li>
-<li><p>策略梯度法<br>使用<strong>概率</strong>来描述Agent的动作：<code>probabilities = tf.nn.softmax(linear)</code></p>
-</li>
-</ol>
-<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">policy_gradient</span><span class="params">()</span>:</span>  </span><br><span class="line">    params = tf.get_variable(<span class="string">"policy_parameters"</span>, [<span class="number">4</span>, <span class="number">2</span>])</span><br><span class="line">    observation = tf.placeholder(<span class="string">"float"</span>, [<span class="keyword">None</span>, <span class="number">4</span>])</span><br><span class="line">    actions = tf.placeholder(<span class="string">"float"</span>, [<span class="keyword">None</span>, <span class="number">2</span>])</span><br><span class="line">    linear = tf.matmul(observation, params)</span><br><span class="line">    probabilities = tf.nn.softmax(linear)</span><br><span class="line">    good_probabilities = tf.reduce_sum(tf.mul(probabilities, actions), reduction_indices=[<span class="number">1</span>])</span><br><span class="line">    <span class="comment"># maximize the log probability</span></span><br><span class="line">    log_probabilities = tf.log(good_probabilities)</span><br><span class="line">    loss = -tf.reduce_sum(log_probabilities)</span><br><span class="line">    optimizer = tf.train.AdamOptimizer(<span class="number">0.01</span>).minimize(loss)</span><br></pre></td></tr></table></figure>
-<h2 id="世界模型的原理"><a href="#世界模型的原理" class="headerlink" title="世界模型的原理"></a>世界模型的原理</h2><h2 id="世界模型的实验"><a href="#世界模型的实验" class="headerlink" title="世界模型的实验"></a>世界模型的实验</h2><h3 id="实验的坑"><a href="#实验的坑" class="headerlink" title="实验的坑"></a>实验的坑</h3><h4 id="ModuleNotFoundError-No-module-named-39-Box2D-39"><a href="#ModuleNotFoundError-No-module-named-39-Box2D-39" class="headerlink" title="ModuleNotFoundError: No module named &#39;Box2D&#39;"></a><code>ModuleNotFoundError: No module named &#39;Box2D&#39;</code></h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># On OSX:</span></span><br><span class="line">brew install cmake boost boost-python sdl2 swig wget</span><br><span class="line"><span class="comment"># On Ubuntu:</span></span><br><span class="line">apt-get install -y python-pyglet python3-opengl zlib1g-dev libjpeg-dev patchelf \</span><br><span class="line">        cmake swig libboost-all-dev libsdl2-dev libosmesa6-dev xvfb ffmpeg</span><br><span class="line"><span class="comment"># install via conda</span></span><br><span class="line">conda install -c https://conda.anaconda.org/kne pybox2d</span><br><span class="line">conda install pillow</span><br><span class="line">pip3 install box2d box2d-kengz</span><br><span class="line"><span class="comment"># 如果还继续报错</span></span><br></pre></td></tr></table></figure>
+<h2 id="世界模型的实验"><a href="#世界模型的实验" class="headerlink" title="世界模型的实验"></a>世界模型的实验</h2><p>[World models on colab]{<a href="https://colab.research.google.com/drive/1sF2iUdhMbm2mwdECvy01l9iWEFiIodlb#scrollTo=pCg_b9DOwDN6}" target="_blank" rel="noopener">https://colab.research.google.com/drive/1sF2iUdhMbm2mwdECvy01l9iWEFiIodlb#scrollTo=pCg_b9DOwDN6}</a></p>
 <h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul>
 <li><p><a href="https://arxiv.org/pdf/1511.09249.pdf" target="_blank" rel="noopener">On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models</a></p>
 </li>
@@ -597,6 +577,7 @@
 <li><a href="http://kvfrans.com/simple-algoritms-for-solving-cartpole/" target="_blank" rel="noopener">Simple reinforcement learning methods to learn CartPole</a></li>
 <li><a href="https://arxiv.org/pdf/1802.08864.pdf" target="_blank" rel="noopener">One Big Net For Everything</a></li>
 <li><a href="http://kvfrans.com/simple-algoritms-for-solving-cartpole/" target="_blank" rel="noopener">Simple reinforcement learning methods to learn CartPole</a></li>
+<li><a href="https://medium.com/applied-data-science/how-to-build-your-own-world-model-using-python-and-keras-64fb388ba459" target="_blank" rel="noopener">Hallucinogenic Deep Reinforcement Learning Using Python and Keras</a></li>
 </ul>
 
       
@@ -692,8 +673,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/09/meta-learning-introduction/" rel="next" title="元学习（meta-learning）">
-                <i class="fa fa-chevron-left"></i> 元学习（meta-learning）
+              <a href="/2018/11/09/artificial-general-intelligence/" rel="next" title="通用人工智能（AGI）">
+                <i class="fa fa-chevron-left"></i> 通用人工智能（AGI）
               </a>
             
           </div>
@@ -901,7 +882,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#强化学习基础理论"><span class="nav-number">1.</span> <span class="nav-text">强化学习基础理论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#通过CartPole实验来引入各种概念"><span class="nav-number">1.1.</span> <span class="nav-text">通过CartPole实验来引入各种概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决CarPole问题的方法"><span class="nav-number">1.2.</span> <span class="nav-text">解决CarPole问题的方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#世界模型的原理"><span class="nav-number">2.</span> <span class="nav-text">世界模型的原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#世界模型的实验"><span class="nav-number">3.</span> <span class="nav-text">世界模型的实验</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实验的坑"><span class="nav-number">3.1.</span> <span class="nav-text">实验的坑</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ModuleNotFoundError-No-module-named-39-Box2D-39"><span class="nav-number">3.1.1.</span> <span class="nav-text">ModuleNotFoundError: No module named &#39;Box2D&#39;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Basic-Concepts-in-Reinforcement-Learning"><span class="nav-number">1.</span> <span class="nav-text">Basic Concepts in Reinforcement Learning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#世界模型的实验"><span class="nav-number">2.</span> <span class="nav-text">世界模型的实验</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">3.</span> <span class="nav-text">Reference</span></a></li></ol></div>
             
 
           </div>
@@ -936,7 +917,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">博客全站共57.0k字</span>
+    <span title="Site words total count">博客全站共56.4k字</span>
   
 </div>
 

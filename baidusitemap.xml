@@ -4,32 +4,8 @@
 
     
   <url>
-    <loc>https://824zzy.github.io/2018/11/09/artificial-general-intelligence/</loc>
-    <lastmod>2018-11-25T04:54:23.153Z</lastmod>
-    <data>
-        <display>
-        <title>通用人工智能（AGI）</title>
-        <pubTime>2018-11-08T16:00:00.000Z</pubTime>
-        
-        <tag>note</tag>
-         
-        <tag>agi</tag>
-         
-        <tag>mit</tag>
-         
-         
-           
-             
-              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://824zzy.github.io/2018/11/24/world-model-experiment-and-priciple/</loc>
-    <lastmod>2018-11-25T04:49:08.953Z</lastmod>
+    <lastmod>2018-11-26T02:52:12.774Z</lastmod>
     <data>
         <display>
         <title>世界模型（World Model）实验以及原理</title>
@@ -50,8 +26,30 @@
 
     
   <url>
+    <loc>https://824zzy.github.io/2018/09/27/space-vim-usage/</loc>
+    <lastmod>2018-11-25T08:37:46.162Z</lastmod>
+    <data>
+        <display>
+        <title>从Pycharm到SpaceVim</title>
+        <pubTime>2018-09-26T16:00:00.000Z</pubTime>
+        
+        <tag>IDE</tag>
+         
+        <tag>Tools</tag>
+         
+         
+           
+             
+              <breadCrumb title="Linux" url="https://824zzy.github.io/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://824zzy.github.io/2018/10/31/mixture-density-network-note/</loc>
-    <lastmod>2018-11-18T10:35:52.466Z</lastmod>
+    <lastmod>2018-11-25T05:07:06.358Z</lastmod>
     <data>
         <display>
         <title>混合密度网络</title>
@@ -73,7 +71,7 @@
     
   <url>
     <loc>https://824zzy.github.io/2018/10/30/CMA-ES-note/</loc>
-    <lastmod>2018-11-18T10:30:18.051Z</lastmod>
+    <lastmod>2018-11-25T05:05:13.749Z</lastmod>
     <data>
         <display>
         <title>Evolution strategies</title>
@@ -87,6 +85,30 @@
            
              
               <breadCrumb title="WorldModel" url="https://824zzy.github.io/categories/WorldModel/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/11/09/artificial-general-intelligence/</loc>
+    <lastmod>2018-11-25T04:54:23.153Z</lastmod>
+    <data>
+        <display>
+        <title>通用人工智能（AGI）</title>
+        <pubTime>2018-11-08T16:00:00.000Z</pubTime>
+        
+        <tag>note</tag>
+         
+        <tag>agi</tag>
+         
+        <tag>mit</tag>
+         
+         
+           
+             
+              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
           
         </display>
     </data>
@@ -284,28 +306,6 @@
            
              
               <breadCrumb title="Python" url="https://824zzy.github.io/categories/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://824zzy.github.io/2018/09/27/space-vim-usage/</loc>
-    <lastmod>2018-10-03T07:08:46.857Z</lastmod>
-    <data>
-        <display>
-        <title>从Pycharm到SpaceVim</title>
-        <pubTime>2018-09-26T16:00:00.000Z</pubTime>
-        
-        <tag>IDE</tag>
-         
-        <tag>Tools</tag>
-         
-         
-           
-             
-              <breadCrumb title="Linux" url="https://824zzy.github.io/categories/Linux/"/>
           
         </display>
     </data>

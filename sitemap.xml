@@ -2,30 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://824zzy.github.io/2018/11/09/artificial-general-intelligence/</loc>
+    <loc>https://824zzy.github.io/2018/11/24/world-model-experiment-and-priciple/</loc>
     
-    <lastmod>2018-11-25T04:54:23.153Z</lastmod>
+    <lastmod>2018-11-26T02:52:12.774Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://824zzy.github.io/2018/11/24/world-model-experiment-and-priciple/</loc>
+    <loc>https://824zzy.github.io/2018/09/27/space-vim-usage/</loc>
     
-    <lastmod>2018-11-25T04:49:08.953Z</lastmod>
+    <lastmod>2018-11-25T08:37:46.162Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://824zzy.github.io/2018/10/31/mixture-density-network-note/</loc>
     
-    <lastmod>2018-11-18T10:35:52.466Z</lastmod>
+    <lastmod>2018-11-25T05:07:06.358Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://824zzy.github.io/2018/10/30/CMA-ES-note/</loc>
     
-    <lastmod>2018-11-18T10:30:18.051Z</lastmod>
+    <lastmod>2018-11-25T05:05:13.749Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://824zzy.github.io/2018/11/09/artificial-general-intelligence/</loc>
+    
+    <lastmod>2018-11-25T04:54:23.153Z</lastmod>
     
   </url>
   
@@ -89,13 +96,6 @@
     <loc>https://824zzy.github.io/2017/06/10/Python-module/</loc>
     
     <lastmod>2018-10-03T07:34:55.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://824zzy.github.io/2018/09/27/space-vim-usage/</loc>
-    
-    <lastmod>2018-10-03T07:08:46.857Z</lastmod>
     
   </url>
   
