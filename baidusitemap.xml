@@ -4,6 +4,70 @@
 
     
   <url>
+    <loc>https://824zzy.github.io/2018/11/24/world-model-experiment-and-priciple/</loc>
+    <lastmod>2018-12-13T06:12:37.059Z</lastmod>
+    <data>
+        <display>
+        <title>世界模型（World Model）实验以及原理</title>
+        <pubTime>2018-11-23T16:00:00.000Z</pubTime>
+        
+        <tag>math</tag>
+         
+        <tag>demo</tag>
+         
+         
+           
+             
+              <breadCrumb title="WorldModel" url="https://824zzy.github.io/categories/WorldModel/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/12/06/Chinese-segmentation-Homework/</loc>
+    <lastmod>2018-12-13T06:12:30.610Z</lastmod>
+    <data>
+        <display>
+        <title>最大概率汉语切分作业</title>
+        <pubTime>2018-12-06T03:16:41.000Z</pubTime>
+        
+        <tag>chineseSegmentation</tag>
+         
+        <tag>bupt</tag>
+         
+         
+           
+             
+              <breadCrumb title="NLP" url="https://824zzy.github.io/categories/NLP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/09/21/Object-Difference-Attention-paper-note/</loc>
+    <lastmod>2018-12-10T02:57:30.737Z</lastmod>
+    <data>
+        <display>
+        <title>对象差分注意力机制</title>
+        <pubTime>2018-09-20T16:00:00.000Z</pubTime>
+        
+        <tag>note</tag>
+         
+         
+           
+             
+              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://824zzy.github.io/2018/12/09/ConsciousnessPrior-Bengio/</loc>
     <lastmod>2018-12-09T11:27:34.643Z</lastmod>
     <data>
@@ -58,43 +122,6 @@
            
              
               <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://824zzy.github.io/2018/12/06/Chinese-segmentation-Homework/</loc>
-    <lastmod>2018-12-06T14:15:53.299Z</lastmod>
-    <data>
-        <display>
-        <title>Chinese-segmentation-Homework</title>
-        <pubTime>2018-12-06T03:16:41.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://824zzy.github.io/2018/11/24/world-model-experiment-and-priciple/</loc>
-    <lastmod>2018-11-26T02:55:42.370Z</lastmod>
-    <data>
-        <display>
-        <title>世界模型（World Model）实验以及原理</title>
-        <pubTime>2018-11-23T16:00:00.000Z</pubTime>
-        
-        <tag>math</tag>
-         
-        <tag>demo</tag>
-         
-         
-           
-             
-              <breadCrumb title="WorldModel" url="https://824zzy.github.io/categories/WorldModel/"/>
           
         </display>
     </data>
@@ -365,26 +392,6 @@
 
     
   <url>
-    <loc>https://824zzy.github.io/2018/09/21/Object-Difference-Attention-paper-note/</loc>
-    <lastmod>2018-09-25T12:05:29.104Z</lastmod>
-    <data>
-        <display>
-        <title>对象差分注意力机制</title>
-        <pubTime>2018-09-20T16:00:00.000Z</pubTime>
-        
-        <tag>note</tag>
-         
-         
-           
-             
-              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://824zzy.github.io/2018/09/09/Neural-Machine-Translation-by-tensorflow/</loc>
     <lastmod>2018-09-18T14:59:13.153Z</lastmod>
     <data>
@@ -392,9 +399,9 @@
         <title>Neural-Machine-Translation-by-tensorflow</title>
         <pubTime>2018-09-08T16:00:00.000Z</pubTime>
         
-        <tag>tensorflow</tag>
-         
         <tag>slide</tag>
+         
+        <tag>tensorflow</tag>
          
          
            
@@ -474,9 +481,9 @@
         <title>深度学习模块文档备忘录</title>
         <pubTime>2018-08-22T16:00:00.000Z</pubTime>
         
-        <tag>colab</tag>
-         
         <tag>tensorflow</tag>
+         
+        <tag>colab</tag>
          
         <tag>sklearn</tag>
          
