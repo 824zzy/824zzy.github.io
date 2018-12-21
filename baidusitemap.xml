@@ -4,6 +4,50 @@
 
     
   <url>
+    <loc>https://824zzy.github.io/2018/10/31/mixture-density-network-note/</loc>
+    <lastmod>2018-12-21T03:35:46.172Z</lastmod>
+    <data>
+        <display>
+        <title>混合密度网络</title>
+        <pubTime>2018-10-30T16:00:00.000Z</pubTime>
+        
+        <tag>math</tag>
+         
+        <tag>evolutionStategy</tag>
+         
+         
+           
+             
+              <breadCrumb title="WorldModel" url="https://824zzy.github.io/categories/WorldModel/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/11/24/world-model-experiment-and-priciple/</loc>
+    <lastmod>2018-12-21T00:35:16.589Z</lastmod>
+    <data>
+        <display>
+        <title>世界模型（World Model）实验以及原理</title>
+        <pubTime>2018-11-23T16:00:00.000Z</pubTime>
+        
+        <tag>math</tag>
+         
+        <tag>demo</tag>
+         
+         
+           
+             
+              <breadCrumb title="WorldModel" url="https://824zzy.github.io/categories/WorldModel/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://824zzy.github.io/2018/12/06/DataMining-Homework/</loc>
     <lastmod>2018-12-14T08:26:31.812Z</lastmod>
     <data>
@@ -19,28 +63,6 @@
            
              
               <breadCrumb title="ML" url="https://824zzy.github.io/categories/ML/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://824zzy.github.io/2018/11/24/world-model-experiment-and-priciple/</loc>
-    <lastmod>2018-12-13T06:12:37.059Z</lastmod>
-    <data>
-        <display>
-        <title>世界模型（World Model）实验以及原理</title>
-        <pubTime>2018-11-23T16:00:00.000Z</pubTime>
-        
-        <tag>math</tag>
-         
-        <tag>demo</tag>
-         
-         
-           
-             
-              <breadCrumb title="WorldModel" url="https://824zzy.github.io/categories/WorldModel/"/>
           
         </display>
     </data>
@@ -151,28 +173,6 @@
            
              
               <breadCrumb title="Linux" url="https://824zzy.github.io/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://824zzy.github.io/2018/10/31/mixture-density-network-note/</loc>
-    <lastmod>2018-11-25T05:07:06.358Z</lastmod>
-    <data>
-        <display>
-        <title>混合密度网络</title>
-        <pubTime>2018-10-30T16:00:00.000Z</pubTime>
-        
-        <tag>math</tag>
-         
-        <tag>evolutionStategy</tag>
-         
-         
-           
-             
-              <breadCrumb title="WorldModel" url="https://824zzy.github.io/categories/WorldModel/"/>
           
         </display>
     </data>

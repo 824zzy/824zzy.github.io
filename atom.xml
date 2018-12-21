@@ -44,33 +44,6 @@
   </entry>
   
   <entry>
-    <title>数据挖掘文本分类作业</title>
-    <link href="https://824zzy.github.io/2018/12/06/DataMining-Homework/"/>
-    <id>https://824zzy.github.io/2018/12/06/DataMining-Homework/</id>
-    <published>2018-12-06T03:16:41.000Z</published>
-    <updated>2018-12-14T08:26:31.812Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Talk-is-Cheap-Let-me-show-you-the-code"><a href="#Talk-is-Cheap-Let-me-show-you-the-code" class="headerlink" title="Talk is Cheap, Let me show you the code"></a>Talk is Cheap, Let me show you the code</h2><p><a href="https://colab.research.google.com/drive/1AIzOZinBCn7iHo8Dx6AgLMRBzy2WglA-#scrollTo=ZPYreCTDWQB_&amp;uniqifier=4" target="_blank" rel="noopener">传送门</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Talk-is-Cheap-Let-me-show-you-the-code&quot;&gt;&lt;a href=&quot;#Talk-is-Cheap-Let-me-show-you-th
-      
-    
-    </summary>
-    
-      <category term="ML" scheme="https://824zzy.github.io/categories/ML/"/>
-    
-    
-      <category term="bupt" scheme="https://824zzy.github.io/tags/bupt/"/>
-    
-      <category term="dataMining" scheme="https://824zzy.github.io/tags/dataMining/"/>
-    
-  </entry>
-  
-  <entry>
     <title>最大概率汉语切分作业</title>
     <link href="https://824zzy.github.io/2018/12/06/Chinese-segmentation-Homework/"/>
     <id>https://824zzy.github.io/2018/12/06/Chinese-segmentation-Homework/</id>
@@ -98,13 +71,40 @@
   </entry>
   
   <entry>
+    <title>数据挖掘文本分类作业</title>
+    <link href="https://824zzy.github.io/2018/12/06/DataMining-Homework/"/>
+    <id>https://824zzy.github.io/2018/12/06/DataMining-Homework/</id>
+    <published>2018-12-06T03:16:41.000Z</published>
+    <updated>2018-12-14T08:26:31.812Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Talk-is-Cheap-Let-me-show-you-the-code"><a href="#Talk-is-Cheap-Let-me-show-you-the-code" class="headerlink" title="Talk is Cheap, Let me show you the code"></a>Talk is Cheap, Let me show you the code</h2><p><a href="https://colab.research.google.com/drive/1AIzOZinBCn7iHo8Dx6AgLMRBzy2WglA-#scrollTo=ZPYreCTDWQB_&amp;uniqifier=4" target="_blank" rel="noopener">传送门</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Talk-is-Cheap-Let-me-show-you-the-code&quot;&gt;&lt;a href=&quot;#Talk-is-Cheap-Let-me-show-you-th
+      
+    
+    </summary>
+    
+      <category term="ML" scheme="https://824zzy.github.io/categories/ML/"/>
+    
+    
+      <category term="bupt" scheme="https://824zzy.github.io/tags/bupt/"/>
+    
+      <category term="dataMining" scheme="https://824zzy.github.io/tags/dataMining/"/>
+    
+  </entry>
+  
+  <entry>
     <title>世界模型（World Model）实验以及原理</title>
     <link href="https://824zzy.github.io/2018/11/24/world-model-experiment-and-priciple/"/>
     <id>https://824zzy.github.io/2018/11/24/world-model-experiment-and-priciple/</id>
     <published>2018-11-23T16:00:00.000Z</published>
-    <updated>2018-12-13T06:12:37.059Z</updated>
+    <updated>2018-12-21T00:35:16.589Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Basic-Concepts-in-Reinforcement-Learning"><a href="#Basic-Concepts-in-Reinforcement-Learning" class="headerlink" title="Basic Concepts in Reinforcement Learning"></a>Basic Concepts in Reinforcement Learning</h2><div class="row"><iframe src="https://drive.google.com/file/d/1LceWiaaxbhfrV1mEvwP0ojCefpY5A_gt/preview" style="width:100%; height:550px"></iframe></div><h2 id="世界模型的实验"><a href="#世界模型的实验" class="headerlink" title="世界模型的实验"></a>世界模型的实验</h2><p>[World models on colab]{<a href="https://colab.research.google.com/drive/1sF2iUdhMbm2mwdECvy01l9iWEFiIodlb#scrollTo=pCg_b9DOwDN6}" target="_blank" rel="noopener">https://colab.research.google.com/drive/1sF2iUdhMbm2mwdECvy01l9iWEFiIodlb#scrollTo=pCg_b9DOwDN6}</a></p><h3 id="补充：在colab上显示游戏环境"><a href="#补充：在colab上显示游戏环境" class="headerlink" title="补充：在colab上显示游戏环境"></a>补充：在colab上显示游戏环境</h3><p>通过<code>xvfb</code>,我们可以很方便的在colab上观察训练过程与模型训练结果。</p><p>demo: <a href="https://colab.research.google.com/drive/13XzgZo_CZuMYrgbiIJiurD-_tdAuUJOl#scrollTo=4fOPouQND0FA" target="_blank" rel="noopener">Policy Gradient display on Colab</a></p><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul><li><p><a href="https://arxiv.org/pdf/1511.09249.pdf" target="_blank" rel="noopener">On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models</a></p></li><li><p><a href="https://ai.intel.com/demystifying-deep-reinforcement-learning/" target="_blank" rel="noopener">Guest Post (Part I): Demystifying Deep Reinforcement Learning</a> </p></li><li><a href="http://kvfrans.com/simple-algoritms-for-solving-cartpole/" target="_blank" rel="noopener">Simple reinforcement learning methods to learn CartPole</a></li><li><a href="https://arxiv.org/pdf/1802.08864.pdf" target="_blank" rel="noopener">One Big Net For Everything</a></li><li><a href="http://kvfrans.com/simple-algoritms-for-solving-cartpole/" target="_blank" rel="noopener">Simple reinforcement learning methods to learn CartPole</a></li><li><a href="https://medium.com/applied-data-science/how-to-build-your-own-world-model-using-python-and-keras-64fb388ba459" target="_blank" rel="noopener">Hallucinogenic Deep Reinforcement Learning Using Python and Keras</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Basic-Concepts-in-Reinforcement-Learning"><a href="#Basic-Concepts-in-Reinforcement-Learning" class="headerlink" title="Basic Concepts in Reinforcement Learning"></a>Basic Concepts in Reinforcement Learning</h2><div class="row"><iframe src="https://drive.google.com/file/d/1LceWiaaxbhfrV1mEvwP0ojCefpY5A_gt/preview" style="width:100%; height:550px"></iframe></div><h2 id="世界模型的实验"><a href="#世界模型的实验" class="headerlink" title="世界模型的实验"></a>世界模型的实验</h2><p>[World models on colab]{<a href="https://colab.research.google.com,/drive/1sF2iUdhMbm2mwdECvy01l9iWEFiIodlb#scrollTo=pCg_b9DOwDN6}" target="_blank" rel="noopener">https://colab.research.google.com,/drive/1sF2iUdhMbm2mwdECvy01l9iWEFiIodlb#scrollTo=pCg_b9DOwDN6}</a></p><h3 id="补充：在colab上显示游戏环境"><a href="#补充：在colab上显示游戏环境" class="headerlink" title="补充：在colab上显示游戏环境"></a>补充：在colab上显示游戏环境</h3><p>通过<code>xvfb</code>,我们可以很方便的在colab上观察训练过程与模型训练结果。</p><p>demo: <a href="https://colab.research.google.com/drive/13XzgZo_CZuMYrgbiIJiurD-_tdAuUJOl#scrollTo=4fOPouQND0FA" target="_blank" rel="noopener">Policy Gradient display on Colab</a></p><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ul><li><p><a href="https://arxiv.org/pdf/1511.09249.pdf" target="_blank" rel="noopener">On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models</a></p></li><li><p><a href="https://ai.intel.com/demystifying-deep-reinforcement-learning/" target="_blank" rel="noopener">Guest Post (Part I): Demystifying Deep Reinforcement Learning</a> </p></li><li><a href="http://kvfrans.com/simple-algoritms-for-solving-cartpole/" target="_blank" rel="noopener">Simple reinforcement learning methods to learn CartPole</a></li><li><a href="https://arxiv.org/pdf/1802.08864.pdf" target="_blank" rel="noopener">One Big Net For Everything</a></li><li><a href="http://kvfrans.com/simple-algoritms-for-solving-cartpole/" target="_blank" rel="noopener">Simple reinforcement learning methods to learn CartPole</a></li><li><a href="https://medium.com/applied-data-science/how-to-build-your-own-world-model-using-python-and-keras-64fb388ba459" target="_blank" rel="noopener">Hallucinogenic Deep Reinforcement Learning Using Python and Keras</a></li></ul>]]></content>
     
     <summary type="html">
     
@@ -183,9 +183,9 @@
     <link href="https://824zzy.github.io/2018/10/31/mixture-density-network-note/"/>
     <id>https://824zzy.github.io/2018/10/31/mixture-density-network-note/</id>
     <published>2018-10-30T16:00:00.000Z</published>
-    <updated>2018-11-25T05:07:06.358Z</updated>
+    <updated>2018-12-21T03:35:46.172Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="My-Implementation-with-Tensorflow-Eager-Execution"><a href="#My-Implementation-with-Tensorflow-Eager-Execution" class="headerlink" title="My Implementation with Tensorflow Eager Execution"></a>My Implementation with Tensorflow Eager Execution</h2><p><a href="https://colab.research.google.com/drive/1113X6Yx-XglANAzl933nb6vUynpy6VYk#scrollTo=km0IIHkaPH0T" target="_blank" rel="noopener">IPython Notebook on Colab</a></p><h2 id="Key-equations-for-Mixture-Density-Networks"><a href="#Key-equations-for-Mixture-Density-Networks" class="headerlink" title="Key equations for Mixture Density Networks"></a>Key equations for Mixture Density Networks</h2><div class="row"><iframe src="https://drive.google.com/file/d/1A9MUO2PQ3OjwCoZVr8XBh-yKa5lovO42/preview" style="width:100%; height:550px"></iframe></div><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol><li><a href="http://blog.otoro.net/2015/11/24/mixture-density-networks-with-tensorflow/" target="_blank" rel="noopener">Mixture Density Networks with Tensorflow</a></li><li><a href="http://blog.otoro.net/2015/06/14/mixture-density-networks/" target="_blank" rel="noopener">Mixture Density Networks</a></li><li><a href="https://github.com/hardmaru/pytorch_notebooks/blob/master/mixture_density_networks.ipynb" target="_blank" rel="noopener">Mixture Density Networks with Pytorch</a></li><li><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bishop-ncrg-94-004.pdf" target="_blank" rel="noopener">Mixture Density Networks</a></li></ol>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="My-Implementation-with-Tensorflow-Eager-Execution"><a href="#My-Implementation-with-Tensorflow-Eager-Execution" class="headerlink" title="My Implementation with Tensorflow Eager Execution"></a>My Implementation with Tensorflow Eager Execution</h2><p><a href="https://colab.research.google.com/drive/1113X6Yx-XglANAzl933nb6vUynpy6VYk#scrollTo=km0IIHkaPH0T" target="_blank" rel="noopener">IPython Notebook on Colab</a></p><h2 id="Key-equations-for-Mixture-Density-Networks"><a href="#Key-equations-for-Mixture-Density-Networks" class="headerlink" title="Key equations for Mixture Density Networks"></a>Key equations for Mixture Density Networks</h2><div class="row"><iframe src="https://drive.google.com/file/d/1T7ROj1FnzSdJUjQyd_4T4sRK4klQ1s2y/preview" style="width:100%; height:550px"></iframe></div><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol><li><a href="http://blog.otoro.net/2015/11/24/mixture-density-networks-with-tensorflow/" target="_blank" rel="noopener">Mixture Density Networks with Tensorflow</a></li><li><a href="http://blog.otoro.net/2015/06/14/mixture-density-networks/" target="_blank" rel="noopener">Mixture Density Networks</a></li><li><a href="https://github.com/hardmaru/pytorch_notebooks/blob/master/mixture_density_networks.ipynb" target="_blank" rel="noopener">Mixture Density Networks with Pytorch</a></li><li><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bishop-ncrg-94-004.pdf" target="_blank" rel="noopener">Mixture Density Networks</a></li></ol>]]></content>
     
     <summary type="html">
     
@@ -233,33 +233,6 @@
   </entry>
   
   <entry>
-    <title>英国人工智能发展战略</title>
-    <link href="https://824zzy.github.io/2018/10/15/UK-AI-strategy/"/>
-    <id>https://824zzy.github.io/2018/10/15/UK-AI-strategy/</id>
-    <published>2018-10-14T16:00:00.000Z</published>
-    <updated>2018-10-15T07:22:56.984Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="英国2018年国家战略最新进展"><a href="#英国2018年国家战略最新进展" class="headerlink" title="英国2018年国家战略最新进展"></a>英国2018年国家战略最新进展</h2><p>英国政府于2018年4月公布了人工智能行业协议（AI Sector Deal）。这是英国政府产业战略的一部分，旨在将英国定位为人工智能领域的全球领导者。该协议涉及广泛的领域：促进公共和私人研发，投资于STEM教育，改善数字基础设施，开发人工智能人才，并领导全球关于数据伦理的对话。其中包括超过£3亿英镑用于私营部门投资的国内外科技公司,阿兰·图灵研究所创建图灵的奖学金,和促进伦理创新数据中心。该中心是该项目的一个关键项目，因为政府希望领导AI伦理的全球治理。该中心于2018年6月开始进行公众咨询。</p><p>在该行业协议公布的十天前，英国上议院人工智能特别委员会(House of Lords’s Select Committee on AI)发表了一份题为(AI in the UK: ready, willing, and able?)的报告。这份报告是为期10个月的调查的结果，该调查的任务是调查人工智能技术进步的经济、伦理和社会影响。该报告列出了一些建议供政府考虑，包括呼吁审查技术公司对数据的潜在垄断，鼓励开发审计数据集的新方法，并为与人工智能合作的英国中小企业创建一个增长基金。报告还指出，英国有机会领导人工智能的全球治理，并建议在2019年举办一次全球峰会，为人工智能的使用和发展建立国际规范。2018年6月，英国政府发布了一份针对上议院的官方回应，对报告中的每一项建议进行评论。</p><h2 id="英国人工智能分类以及体系结构"><a href="#英国人工智能分类以及体系结构" class="headerlink" title="英国人工智能分类以及体系结构"></a>英国人工智能分类以及体系结构</h2><h3 id="分类一"><a href="#分类一" class="headerlink" title="分类一"></a>分类一</h3><ol><li>医疗健康</li><li>自动驾驶</li><li>金融服务</li></ol><h3 id="分类二"><a href="#分类二" class="headerlink" title="分类二"></a>分类二</h3><ul><li>网络安全</li><li>个性化和综合医疗</li><li>个性化教育和培训</li><li>智能城市综合交通</li><li>提高基础设施的效率</li><li>个性化的公共服务</li><li>在医药和航空航天等关键领域进行数字化制造。</li></ul><h2 id="参考与引用"><a href="#参考与引用" class="headerlink" title="参考与引用"></a>参考与引用</h2><ol><li><a href="https://medium.com/politics-ai/an-overview-of-national-ai-strategies-2a70ec6edfd" target="_blank" rel="noopener">https://medium.com/politics-ai/an-overview-of-national-ai-strategies-2a70ec6edfd</a></li><li><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/652097/Growing_the_artificial_intelligence_industry_in_the_UK.pdf" target="_blank" rel="noopener">https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/652097/Growing_the_artificial_intelligence_industry_in_the_UK.pdf</a></li><li><a href="https://publications.parliament.uk/pa/ld201719/ldselect/ldai/100/100.pdf" target="_blank" rel="noopener">https://publications.parliament.uk/pa/ld201719/ldselect/ldai/100/100.pdf</a></li><li><a href="https://www.gov.uk/government/publications/artificial-intelligence-sector-deal/ai-sector-deal" target="_blank" rel="noopener">https://www.gov.uk/government/publications/artificial-intelligence-sector-deal/ai-sector-deal</a></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;英国2018年国家战略最新进展&quot;&gt;&lt;a href=&quot;#英国2018年国家战略最新进展&quot; class=&quot;headerlink&quot; title=&quot;英国2018年国家战略最
-      
-    
-    </summary>
-    
-      <category term="AI" scheme="https://824zzy.github.io/categories/AI/"/>
-    
-    
-      <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
-    
-      <category term="strategy" scheme="https://824zzy.github.io/tags/strategy/"/>
-    
-  </entry>
-  
-  <entry>
     <title>胶囊（Capsule）网络</title>
     <link href="https://824zzy.github.io/2018/10/15/capsule-note-and-demo/"/>
     <id>https://824zzy.github.io/2018/10/15/capsule-note-and-demo/</id>
@@ -283,6 +256,33 @@
       <category term="code" scheme="https://824zzy.github.io/tags/code/"/>
     
       <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>英国人工智能发展战略</title>
+    <link href="https://824zzy.github.io/2018/10/15/UK-AI-strategy/"/>
+    <id>https://824zzy.github.io/2018/10/15/UK-AI-strategy/</id>
+    <published>2018-10-14T16:00:00.000Z</published>
+    <updated>2018-10-15T07:22:56.984Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="英国2018年国家战略最新进展"><a href="#英国2018年国家战略最新进展" class="headerlink" title="英国2018年国家战略最新进展"></a>英国2018年国家战略最新进展</h2><p>英国政府于2018年4月公布了人工智能行业协议（AI Sector Deal）。这是英国政府产业战略的一部分，旨在将英国定位为人工智能领域的全球领导者。该协议涉及广泛的领域：促进公共和私人研发，投资于STEM教育，改善数字基础设施，开发人工智能人才，并领导全球关于数据伦理的对话。其中包括超过£3亿英镑用于私营部门投资的国内外科技公司,阿兰·图灵研究所创建图灵的奖学金,和促进伦理创新数据中心。该中心是该项目的一个关键项目，因为政府希望领导AI伦理的全球治理。该中心于2018年6月开始进行公众咨询。</p><p>在该行业协议公布的十天前，英国上议院人工智能特别委员会(House of Lords’s Select Committee on AI)发表了一份题为(AI in the UK: ready, willing, and able?)的报告。这份报告是为期10个月的调查的结果，该调查的任务是调查人工智能技术进步的经济、伦理和社会影响。该报告列出了一些建议供政府考虑，包括呼吁审查技术公司对数据的潜在垄断，鼓励开发审计数据集的新方法，并为与人工智能合作的英国中小企业创建一个增长基金。报告还指出，英国有机会领导人工智能的全球治理，并建议在2019年举办一次全球峰会，为人工智能的使用和发展建立国际规范。2018年6月，英国政府发布了一份针对上议院的官方回应，对报告中的每一项建议进行评论。</p><h2 id="英国人工智能分类以及体系结构"><a href="#英国人工智能分类以及体系结构" class="headerlink" title="英国人工智能分类以及体系结构"></a>英国人工智能分类以及体系结构</h2><h3 id="分类一"><a href="#分类一" class="headerlink" title="分类一"></a>分类一</h3><ol><li>医疗健康</li><li>自动驾驶</li><li>金融服务</li></ol><h3 id="分类二"><a href="#分类二" class="headerlink" title="分类二"></a>分类二</h3><ul><li>网络安全</li><li>个性化和综合医疗</li><li>个性化教育和培训</li><li>智能城市综合交通</li><li>提高基础设施的效率</li><li>个性化的公共服务</li><li>在医药和航空航天等关键领域进行数字化制造。</li></ul><h2 id="参考与引用"><a href="#参考与引用" class="headerlink" title="参考与引用"></a>参考与引用</h2><ol><li><a href="https://medium.com/politics-ai/an-overview-of-national-ai-strategies-2a70ec6edfd" target="_blank" rel="noopener">https://medium.com/politics-ai/an-overview-of-national-ai-strategies-2a70ec6edfd</a></li><li><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/652097/Growing_the_artificial_intelligence_industry_in_the_UK.pdf" target="_blank" rel="noopener">https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/652097/Growing_the_artificial_intelligence_industry_in_the_UK.pdf</a></li><li><a href="https://publications.parliament.uk/pa/ld201719/ldselect/ldai/100/100.pdf" target="_blank" rel="noopener">https://publications.parliament.uk/pa/ld201719/ldselect/ldai/100/100.pdf</a></li><li><a href="https://www.gov.uk/government/publications/artificial-intelligence-sector-deal/ai-sector-deal" target="_blank" rel="noopener">https://www.gov.uk/government/publications/artificial-intelligence-sector-deal/ai-sector-deal</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;英国2018年国家战略最新进展&quot;&gt;&lt;a href=&quot;#英国2018年国家战略最新进展&quot; class=&quot;headerlink&quot; title=&quot;英国2018年国家战略最
+      
+    
+    </summary>
+    
+      <category term="AI" scheme="https://824zzy.github.io/categories/AI/"/>
+    
+    
+      <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
+    
+      <category term="strategy" scheme="https://824zzy.github.io/tags/strategy/"/>
     
   </entry>
   
@@ -344,34 +344,6 @@
   </entry>
   
   <entry>
-    <title>对象差分注意力机制</title>
-    <link href="https://824zzy.github.io/2018/09/21/Object-Difference-Attention-paper-note/"/>
-    <id>https://824zzy.github.io/2018/09/21/Object-Difference-Attention-paper-note/</id>
-    <published>2018-09-20T16:00:00.000Z</published>
-    <updated>2018-12-10T02:57:30.737Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><!-- 论文基本信息：方便查阅和追踪 --><!-- 论文基本信息的获取：1. 直接从论文pdf中获取2. 从paperweekly首页上方搜索论文；若未检索到，点击推荐论文输入论文名即可自动获取信息--><h2 id="论文基本信息"><a href="#论文基本信息" class="headerlink" title="论文基本信息"></a>论文基本信息</h2><ol><li><p>论文名：Object-Difference Attention: A Simple Relational Attention for Visual Question Answering</p></li><li><p>论文链接：<a href="http://www.acmmm.org/2018/accepted-papers/" target="_blank" rel="noopener">http://www.acmmm.org/2018/accepted-papers/</a></p></li><li><p>论文源码：</p><ul><li>None</li></ul></li><li><p>关于作者：</p><ul><li>吴晨飞，北邮AI Lab博士</li></ul></li><li><p>关于笔记作者：</p><ul><li>朱正源,北京邮电大学研究生，研究方向为多模态与认知计算。  </li></ul></li></ol><h2 id="论文推荐理由"><a href="#论文推荐理由" class="headerlink" title="论文推荐理由"></a>论文推荐理由</h2><!-- Ex: 论文摘要的中文翻译最近对话生成的神经模型为会话代理生成响应提供了很大的希望，但往往是短视的，一次预测一个话语而忽略它们对未来结果的影响。对未来的对话方向进行建模对于产生连贯，有趣的对话至关重要，这种对话需要传统的NLP对话模式借鉴强化学习。在本文中，我们将展示如何整合这些目标，应用深度强化学习来模拟聊天机器人对话中的未来奖励。该模型模拟两个虚拟代理之间的对话，使用策略梯度方法来奖励显示三个有用会话属性的序列：信息性，连贯性和易于回答（与前瞻性功能相关）。我们在多样性，长度以及人类评判方面评估我们的模型，表明所提出的算法产生了更多的交互式响应，并设法在对话模拟中促进更持久的对话。这项工作标志着基于对话的长期成功学习神经对话模型的第一步。--><p>注意机制极大地促进了视觉问答技术(VQA)的发展。注意力分配在注意力机制中起着至关重要的作用，它根据对象(如图像区域或定界框)回答问题的重要性对图像中的对象(如图像区域或包围盒)进行不同的权重。现有的工作大多集中在融合图像特征和文本特征来计算注意力分布，而不需要比较<strong>不同的图像对象</strong>。作为注意力的一个主要属性，<strong>分离度</strong>取决于不同对象之间的比较。这种比较为更好地分配注意力提供了更多的信息。为了实现对目标的可感知性，我们提出了一种对象差分注意(ODA)方法，通过在图像中实现不同图像对象之间的差值运算来计算注意概率。实验结果表明，我们基于ODA的VQA模型得到了最先进的结果。此外，还提出了一种关系注意的一般形式。除了ODA之外，本文还介绍了其他一些相关的注意事项。实验结果表明，这些关系关注在不同类型的问题上都有优势。</p><h2 id="对象差分注意力机制：视觉问答中一个简单的关系注意力机制"><a href="#对象差分注意力机制：视觉问答中一个简单的关系注意力机制" class="headerlink" title="对象差分注意力机制：视觉问答中一个简单的关系注意力机制"></a>对象差分注意力机制：视觉问答中一个简单的关系注意力机制</h2><!-- Ex: ## 强化学习在对话生成领域的应用 --><h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><h4 id="本文术语"><a href="#本文术语" class="headerlink" title="本文术语"></a>本文术语</h4><!-- 针对论文中不常用的术语进行简短的解释，方便读者理解 --><ol><li><p>序列编码的方式：</p><ol><li><strong>RNN</strong>: $y_t=f(y_{t-1},x_t)$</li><li><strong>CNN</strong>: $y_t=f(x_{t-1},x_t,x_{t+1})$</li><li><strong>Attention</strong>: $y_t=f(x_t, A, B), if A = B = X: Self Attention$</li></ol></li><li><p>注意力机制的例子<br>$$Attention(Q,K,V)$$</p></li><li><p>应用于VQA的注意力机制编年史：</p><ol><li>one-step linear fusion</li><li>multi-step linear fusion</li><li>bilinear fusion</li><li>multi-feature attention</li></ol></li><li><p>Mutan机制</p></li></ol><h4 id="论文写作动机"><a href="#论文写作动机" class="headerlink" title="论文写作动机"></a>论文写作动机</h4><!-- 当前研究领域存在的问题Ex:标准的Seq-to-Seq模型用于对话系统时常常使用MLE作为模型的评价标准，但这往往导致下面两个主要缺点：系统倾向于产生一些普适性的回应，也就是dull response，这些响应可以回答很多问题但却并不是我们想要的，我们想要的是有趣、多样性、丰富的回应；系统的回复不具有前瞻性，有时会导致陷入死循环，导致对话轮次较少。也就是产生的响应没有考虑对方是否容易回答的情况。--><ol><li>现有的工作大多集中在融合图像特征和文本特征来计算注意力分布，而<strong>忽略了</strong>比较不同的图像对象之间的差异。<br> <img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvisv9uyyhj20i10cw46l.jpg" alt=""><br> 如上图，想要回答出问题<code>图中最高的花是什么？</code>，我们建立的模型就需要不仅仅关注潜在答案<code>玫瑰</code>，也应该关注<code>兰花</code>。</li><li>如何合理分配现有问题的注意力？</li></ol><h3 id="解决问题的方法"><a href="#解决问题的方法" class="headerlink" title="解决问题的方法"></a>解决问题的方法</h3><h4 id="玫瑰例子"><a href="#玫瑰例子" class="headerlink" title="玫瑰例子"></a>玫瑰例子</h4><p>对于回答<code>图中最高的花是什么？</code>，一共分几步？</p><ol><li>找到图中所有的花。</li><li>比较不同的花对于正确答案的重要性。</li></ol><p>正确的答案就会在<strong>比较</strong>的过程中产生。若以这个例子作为启发，一种新型的注意力机制的思路便产生了：ODA在问题的指导下，通过将每个图像对象与其他所有对象进行对比，计算出图像中物体的注意注意力分布。</p><h4 id="模型细节"><a href="#模型细节" class="headerlink" title="模型细节"></a>模型细节</h4><p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjiq8dptpj20pw0bdgqo.jpg" alt=""></p><ol><li><p>将数据Embedding</p><ol><li>$V^f=RCNN(image)$,其中$v^f$是一个$m\times{d_v}$维的embedding，代表拉出的$m$个框。</li><li>$Q^f=GRU(question)$，其中$Q^f$代表$d_q$维的问题embedding。</li><li>$V=relu(Conv1d(V^f))$</li><li>$Q=relu(Linear(Q^f))$</li></ol></li><li><p>对象差分注意力<br>$$\hat{V}=softmax([(V_i-V_j)\odot{Q}]_{m\odot{md}}W_f)^{T}V$$<br>该模型的优点：</p><ol><li>通过对比(差分))，我们可以选择更重要的对象。</li><li>计算复杂度相对与传统注意力机制模型（Mutan）低。</li><li>”即插即用“的特性使得该模型十分容易应用到其他领域。</li></ol></li><li><p>决策阶段</p><ol><li><p>通过对$\hat{V}$计算$p$次，并且将结果拼接在一起。<br>$$\hat{Z}=[\hat{V}^{1};\hat{V}^{2};…;\hat{V}^{p}]$$</p><blockquote><p>可以参考Attention is all you need模型的multi-head</p></blockquote></li><li>将图片的特征和问题的特征相结合<br>$$H=\sum^s_{s=1}(\hat{Z}W_v^{(s)}\odot{QW_q^{(s)}})$$</li><li>预测<br>$$\hat{a}=\sigma(W_{h}H)$$</li></ol></li></ol><h4 id="扩展：相关性注意力"><a href="#扩展：相关性注意力" class="headerlink" title="扩展：相关性注意力"></a>扩展：相关性注意力</h4><p>针对模型中$(V_i-V_j)\odot{Q}$部分进行扩展，可以得到不同类型的注意力机制<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjt8ggw48j20dk06emya.jpg" alt=""></p><h3 id="实验结果分析"><a href="#实验结果分析" class="headerlink" title="实验结果分析"></a>实验结果分析</h3><h4 id="数据集"><a href="#数据集" class="headerlink" title="数据集"></a>数据集</h4><ul><li>VQA1.0 dataset</li><li>VQA2.0 dataset</li><li>COCO-QA dataset</li></ul><h4 id="评估指标"><a href="#评估指标" class="headerlink" title="评估指标"></a>评估指标</h4><ul><li>针对VQA1.0和VQA2.0，使用准确率：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtavlwoxj209701hgli.jpg" alt=""></li><li>针对COCO_QA使用：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtbn6b1pj207m00tdfo.jpg" alt=""></li></ul><h4 id="实验结果评价"><a href="#实验结果评价" class="headerlink" title="实验结果评价"></a>实验结果评价</h4><ul><li>在VQA1.0上与最先进的模型对比<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtf0nyn4j20qs0c8wh1.jpg" alt=""></li><li>在VQA2.0上与最先进的模型对比<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtfgxjdxj20ht05qmy9.jpg" alt=""></li><li>在VQA3.0上与最先进的模型对比<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtg34t3dj20mm05twfl.jpg" alt=""></li></ul><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>从感性的角度来说，对象差分注意力机制符合人类根据图片回答问题的思考过程。未来的研究方向应该是通过对世界的常识性知识建立一个世界模型，通过先验知识减少计算量和对大量带有标签的数据的依赖性。</p><h3 id="引用与参考"><a href="#引用与参考" class="headerlink" title="引用与参考"></a>引用与参考</h3><ol><li><a href="https://kexue.fm/archives/4765" target="_blank" rel="noopener">https://kexue.fm/archives/4765</a></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;!-- 论文基本信息：方便查阅和追踪 --&gt;
-&lt;!-- 论文基本信息的获取：
-1. 直接从论文pdf中获取
-2. 从paperweekly首页上方搜索论文；若未检索到，点击推荐论
-      
-    
-    </summary>
-    
-      <category term="AI" scheme="https://824zzy.github.io/categories/AI/"/>
-    
-    
-      <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
-    
-  </entry>
-  
-  <entry>
     <title>世界模型的解读</title>
     <link href="https://824zzy.github.io/2018/09/21/world-model-to-learn-them-all/"/>
     <id>https://824zzy.github.io/2018/09/21/world-model-to-learn-them-all/</id>
@@ -397,6 +369,34 @@
       <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
     
       <category term="JurgenSchmidhuber" scheme="https://824zzy.github.io/tags/JurgenSchmidhuber/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对象差分注意力机制</title>
+    <link href="https://824zzy.github.io/2018/09/21/Object-Difference-Attention-paper-note/"/>
+    <id>https://824zzy.github.io/2018/09/21/Object-Difference-Attention-paper-note/</id>
+    <published>2018-09-20T16:00:00.000Z</published>
+    <updated>2018-12-10T02:57:30.737Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><!-- 论文基本信息：方便查阅和追踪 --><!-- 论文基本信息的获取：1. 直接从论文pdf中获取2. 从paperweekly首页上方搜索论文；若未检索到，点击推荐论文输入论文名即可自动获取信息--><h2 id="论文基本信息"><a href="#论文基本信息" class="headerlink" title="论文基本信息"></a>论文基本信息</h2><ol><li><p>论文名：Object-Difference Attention: A Simple Relational Attention for Visual Question Answering</p></li><li><p>论文链接：<a href="http://www.acmmm.org/2018/accepted-papers/" target="_blank" rel="noopener">http://www.acmmm.org/2018/accepted-papers/</a></p></li><li><p>论文源码：</p><ul><li>None</li></ul></li><li><p>关于作者：</p><ul><li>吴晨飞，北邮AI Lab博士</li></ul></li><li><p>关于笔记作者：</p><ul><li>朱正源,北京邮电大学研究生，研究方向为多模态与认知计算。  </li></ul></li></ol><h2 id="论文推荐理由"><a href="#论文推荐理由" class="headerlink" title="论文推荐理由"></a>论文推荐理由</h2><!-- Ex: 论文摘要的中文翻译最近对话生成的神经模型为会话代理生成响应提供了很大的希望，但往往是短视的，一次预测一个话语而忽略它们对未来结果的影响。对未来的对话方向进行建模对于产生连贯，有趣的对话至关重要，这种对话需要传统的NLP对话模式借鉴强化学习。在本文中，我们将展示如何整合这些目标，应用深度强化学习来模拟聊天机器人对话中的未来奖励。该模型模拟两个虚拟代理之间的对话，使用策略梯度方法来奖励显示三个有用会话属性的序列：信息性，连贯性和易于回答（与前瞻性功能相关）。我们在多样性，长度以及人类评判方面评估我们的模型，表明所提出的算法产生了更多的交互式响应，并设法在对话模拟中促进更持久的对话。这项工作标志着基于对话的长期成功学习神经对话模型的第一步。--><p>注意机制极大地促进了视觉问答技术(VQA)的发展。注意力分配在注意力机制中起着至关重要的作用，它根据对象(如图像区域或定界框)回答问题的重要性对图像中的对象(如图像区域或包围盒)进行不同的权重。现有的工作大多集中在融合图像特征和文本特征来计算注意力分布，而不需要比较<strong>不同的图像对象</strong>。作为注意力的一个主要属性，<strong>分离度</strong>取决于不同对象之间的比较。这种比较为更好地分配注意力提供了更多的信息。为了实现对目标的可感知性，我们提出了一种对象差分注意(ODA)方法，通过在图像中实现不同图像对象之间的差值运算来计算注意概率。实验结果表明，我们基于ODA的VQA模型得到了最先进的结果。此外，还提出了一种关系注意的一般形式。除了ODA之外，本文还介绍了其他一些相关的注意事项。实验结果表明，这些关系关注在不同类型的问题上都有优势。</p><h2 id="对象差分注意力机制：视觉问答中一个简单的关系注意力机制"><a href="#对象差分注意力机制：视觉问答中一个简单的关系注意力机制" class="headerlink" title="对象差分注意力机制：视觉问答中一个简单的关系注意力机制"></a>对象差分注意力机制：视觉问答中一个简单的关系注意力机制</h2><!-- Ex: ## 强化学习在对话生成领域的应用 --><h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><h4 id="本文术语"><a href="#本文术语" class="headerlink" title="本文术语"></a>本文术语</h4><!-- 针对论文中不常用的术语进行简短的解释，方便读者理解 --><ol><li><p>序列编码的方式：</p><ol><li><strong>RNN</strong>: $y_t=f(y_{t-1},x_t)$</li><li><strong>CNN</strong>: $y_t=f(x_{t-1},x_t,x_{t+1})$</li><li><strong>Attention</strong>: $y_t=f(x_t, A, B), if A = B = X: Self Attention$</li></ol></li><li><p>注意力机制的例子<br>$$Attention(Q,K,V)$$</p></li><li><p>应用于VQA的注意力机制编年史：</p><ol><li>one-step linear fusion</li><li>multi-step linear fusion</li><li>bilinear fusion</li><li>multi-feature attention</li></ol></li><li><p>Mutan机制</p></li></ol><h4 id="论文写作动机"><a href="#论文写作动机" class="headerlink" title="论文写作动机"></a>论文写作动机</h4><!-- 当前研究领域存在的问题Ex:标准的Seq-to-Seq模型用于对话系统时常常使用MLE作为模型的评价标准，但这往往导致下面两个主要缺点：系统倾向于产生一些普适性的回应，也就是dull response，这些响应可以回答很多问题但却并不是我们想要的，我们想要的是有趣、多样性、丰富的回应；系统的回复不具有前瞻性，有时会导致陷入死循环，导致对话轮次较少。也就是产生的响应没有考虑对方是否容易回答的情况。--><ol><li>现有的工作大多集中在融合图像特征和文本特征来计算注意力分布，而<strong>忽略了</strong>比较不同的图像对象之间的差异。<br> <img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvisv9uyyhj20i10cw46l.jpg" alt=""><br> 如上图，想要回答出问题<code>图中最高的花是什么？</code>，我们建立的模型就需要不仅仅关注潜在答案<code>玫瑰</code>，也应该关注<code>兰花</code>。</li><li>如何合理分配现有问题的注意力？</li></ol><h3 id="解决问题的方法"><a href="#解决问题的方法" class="headerlink" title="解决问题的方法"></a>解决问题的方法</h3><h4 id="玫瑰例子"><a href="#玫瑰例子" class="headerlink" title="玫瑰例子"></a>玫瑰例子</h4><p>对于回答<code>图中最高的花是什么？</code>，一共分几步？</p><ol><li>找到图中所有的花。</li><li>比较不同的花对于正确答案的重要性。</li></ol><p>正确的答案就会在<strong>比较</strong>的过程中产生。若以这个例子作为启发，一种新型的注意力机制的思路便产生了：ODA在问题的指导下，通过将每个图像对象与其他所有对象进行对比，计算出图像中物体的注意注意力分布。</p><h4 id="模型细节"><a href="#模型细节" class="headerlink" title="模型细节"></a>模型细节</h4><p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjiq8dptpj20pw0bdgqo.jpg" alt=""></p><ol><li><p>将数据Embedding</p><ol><li>$V^f=RCNN(image)$,其中$v^f$是一个$m\times{d_v}$维的embedding，代表拉出的$m$个框。</li><li>$Q^f=GRU(question)$，其中$Q^f$代表$d_q$维的问题embedding。</li><li>$V=relu(Conv1d(V^f))$</li><li>$Q=relu(Linear(Q^f))$</li></ol></li><li><p>对象差分注意力<br>$$\hat{V}=softmax([(V_i-V_j)\odot{Q}]_{m\odot{md}}W_f)^{T}V$$<br>该模型的优点：</p><ol><li>通过对比(差分))，我们可以选择更重要的对象。</li><li>计算复杂度相对与传统注意力机制模型（Mutan）低。</li><li>”即插即用“的特性使得该模型十分容易应用到其他领域。</li></ol></li><li><p>决策阶段</p><ol><li><p>通过对$\hat{V}$计算$p$次，并且将结果拼接在一起。<br>$$\hat{Z}=[\hat{V}^{1};\hat{V}^{2};…;\hat{V}^{p}]$$</p><blockquote><p>可以参考Attention is all you need模型的multi-head</p></blockquote></li><li>将图片的特征和问题的特征相结合<br>$$H=\sum^s_{s=1}(\hat{Z}W_v^{(s)}\odot{QW_q^{(s)}})$$</li><li>预测<br>$$\hat{a}=\sigma(W_{h}H)$$</li></ol></li></ol><h4 id="扩展：相关性注意力"><a href="#扩展：相关性注意力" class="headerlink" title="扩展：相关性注意力"></a>扩展：相关性注意力</h4><p>针对模型中$(V_i-V_j)\odot{Q}$部分进行扩展，可以得到不同类型的注意力机制<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjt8ggw48j20dk06emya.jpg" alt=""></p><h3 id="实验结果分析"><a href="#实验结果分析" class="headerlink" title="实验结果分析"></a>实验结果分析</h3><h4 id="数据集"><a href="#数据集" class="headerlink" title="数据集"></a>数据集</h4><ul><li>VQA1.0 dataset</li><li>VQA2.0 dataset</li><li>COCO-QA dataset</li></ul><h4 id="评估指标"><a href="#评估指标" class="headerlink" title="评估指标"></a>评估指标</h4><ul><li>针对VQA1.0和VQA2.0，使用准确率：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtavlwoxj209701hgli.jpg" alt=""></li><li>针对COCO_QA使用：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtbn6b1pj207m00tdfo.jpg" alt=""></li></ul><h4 id="实验结果评价"><a href="#实验结果评价" class="headerlink" title="实验结果评价"></a>实验结果评价</h4><ul><li>在VQA1.0上与最先进的模型对比<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtf0nyn4j20qs0c8wh1.jpg" alt=""></li><li>在VQA2.0上与最先进的模型对比<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtfgxjdxj20ht05qmy9.jpg" alt=""></li><li>在VQA3.0上与最先进的模型对比<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvjtg34t3dj20mm05twfl.jpg" alt=""></li></ul><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>从感性的角度来说，对象差分注意力机制符合人类根据图片回答问题的思考过程。未来的研究方向应该是通过对世界的常识性知识建立一个世界模型，通过先验知识减少计算量和对大量带有标签的数据的依赖性。</p><h3 id="引用与参考"><a href="#引用与参考" class="headerlink" title="引用与参考"></a>引用与参考</h3><ol><li><a href="https://kexue.fm/archives/4765" target="_blank" rel="noopener">https://kexue.fm/archives/4765</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;!-- 论文基本信息：方便查阅和追踪 --&gt;
+&lt;!-- 论文基本信息的获取：
+1. 直接从论文pdf中获取
+2. 从paperweekly首页上方搜索论文；若未检索到，点击推荐论
+      
+    
+    </summary>
+    
+      <category term="AI" scheme="https://824zzy.github.io/categories/AI/"/>
+    
+    
+      <category term="note" scheme="https://824zzy.github.io/tags/note/"/>
     
   </entry>
   
@@ -506,6 +506,34 @@
   </entry>
   
   <entry>
+    <title>Visual-Question-Learning(VQA)学习笔记</title>
+    <link href="https://824zzy.github.io/2018/08/23/Visual-Question-Learning/"/>
+    <id>https://824zzy.github.io/2018/08/23/Visual-Question-Learning/</id>
+    <published>2018-08-22T16:00:00.000Z</published>
+    <updated>2018-09-16T07:57:31.522Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><!-- 论文基本信息：方便查阅和追踪 --><!-- 论文基本信息的获取：1. 直接从论文pdf中获取2. 从paperweekly首页上方搜索论文；若未检索到，点击推荐论文输入论文名即可自动获取信息--><h2 id="论文基本信息"><a href="#论文基本信息" class="headerlink" title="论文基本信息"></a>论文基本信息</h2><ol><li><p>论文名：Visual Question Answering: Datasets, Algorithms, and Future Challenges</p></li><li><p>论文链接：<a href="https://arxiv.org/pdf/1610.01465.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1610.01465.pdf</a></p><!-- Ex: https://arxiv.org/abs/1606.01541  --></li><li><p>论文源码</p><ul><li>None</li></ul></li><li><p>关于作者</p><ul><li>Kushal Kafle</li><li>Christopher Kanan</li></ul></li><li><p>关于笔记作者：</p><ul><li>朱正源,北京邮电大学研究生，研究方向为多模态与认知计算。  </li></ul></li></ol><h2 id="论文推荐理由"><a href="#论文推荐理由" class="headerlink" title="论文推荐理由"></a>论文推荐理由</h2><!-- Ex: 论文摘要的中文翻译最近对话生成的神经模型为会话代理生成响应提供了很大的希望，但往往是短视的，一次预测一个话语而忽略它们对未来结果的影响。对未来的对话方向进行建模对于产生连贯，有趣的对话至关重要，这种对话需要传统的NLP对话模式借鉴强化学习。在本文中，我们将展示如何整合这些目标，应用深度强化学习来模拟聊天机器人对话中的未来奖励。该模型模拟两个虚拟代理之间的对话，使用策略梯度方法来奖励显示三个有用会话属性的序列：信息性，连贯性和易于回答（与前瞻性功能相关）。我们在多样性，长度以及人类评判方面评估我们的模型，表明所提出的算法产生了更多的交互式响应，并设法在对话模拟中促进更持久的对话。这项工作标志着基于对话的长期成功学习神经对话模型的第一步。 --><p> 视觉问答(Visual Question answering, VQA)是近年来计算机视觉和自然语言处理领域的一个热点问题。在VQA中，一个算法需要回答关于图像的基于文本的问题。自2014年发布第一个VQA数据集以来，已经发布了更多的数据集，并提出了许多算法。在这篇综述中，我们从问题的形成、现有数据集、评估指标和算法的角度，批判性地研究了VQA的当前状态。特别地，我们讨论了当前数据集在正确训练和评估VQA算法方面的局限性。然后，我们详尽地回顾了VQA的现有算法。最后，我们讨论了未来VQA和图像理解研究的可能方向。</p><h2 id="视觉问答：数据集，算法和未来的挑战"><a href="#视觉问答：数据集，算法和未来的挑战" class="headerlink" title="视觉问答：数据集，算法和未来的挑战"></a>视觉问答：数据集，算法和未来的挑战</h2><!-- Ex: ## 强化学习在对话生成领域的应用 --><h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><h4 id="VQA的研究价值"><a href="#VQA的研究价值" class="headerlink" title="VQA的研究价值"></a>VQA的研究价值</h4><ol><li><p>大部分计算机视觉任务不能完整的理解图像<br>图像分类、物体检测、动作识别等任务很难获取到物体的<strong>空间位置信息</strong>并且根据它们的属性和关系进行<strong>推理</strong>。</p></li><li><p>人类对<strong>Grand Unified Theory</strong>的痴迷追求</p><ul><li>目标识别任务：图像里面有什么？[分类]</li><li>目标检测任务：图像里面有猫吗？[拉框]</li><li>属性分类任务：图像里面的猫是什么颜色的？</li><li>场景分类：图像是在室内吗？</li><li>计数任务：图像里面有多少猫？<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvah1uwsvij208c04ogn4.jpg" alt=""></li></ul></li><li><p>通过视觉图灵测试：</p><ul><li>基准问题测试</li><li>建立评价指标 </li></ul></li></ol><h3 id="VQA的数据集"><a href="#VQA的数据集" class="headerlink" title="VQA的数据集"></a>VQA的数据集</h3><p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvajh4e1wbj20tz09eacb.jpg" alt=""></p><h3 id="VQA的评价标准"><a href="#VQA的评价标准" class="headerlink" title="VQA的评价标准"></a>VQA的评价标准</h3><ul><li>Open-ended(OE): 开放式的</li><li>Multiple Choice(MC): 选择式的</li></ul><p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvb6r1njlkj20kp0dmjuj.jpg" alt=""></p><h4 id="流行的评价标准"><a href="#流行的评价标准" class="headerlink" title="流行的评价标准"></a>流行的评价标准</h4><p>选择式任务的评价标准直接使用正确率即可。但是开放式任务的评价标准呢？</p><ol><li>Simple accuracy:<ol><li>Q: What animals are in the photo<br>若<code>dogs</code>是正确答案，那么<code>dog</code>和<code>zebra</code>的惩罚竟然是一样的</li><li>Q: What is in the tree<br>若<code>bald eagle</code>是正确答案，<code>eagle</code>或是<code>bird</code>  与  <code>yes</code>的惩罚竟然也是一样的</li></ol></li><li><p>Wu-Palmer Similarity</p><ol><li>语义相似度<br><code>Black</code>、<code>White</code>两个单词的<code>WUPS score</code>是0.91。所以这可能会给错误答案一个相当高的分数。</li><li>只可以评价单词，句子不可使用</li></ol></li><li><p>$Accuracy_{VQA}=min(\frac{n}{3}, 1)$<br>同样是语义相似度，大致正确就ok: 人为构造一个答案集合，$n$是算法和人类拥有的相同的答案数量。</p></li></ol><h3 id="VQA的算法"><a href="#VQA的算法" class="headerlink" title="VQA的算法"></a>VQA的算法</h3><p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvbaa7e7d4j20qr098n45.jpg" alt=""><br>存在的算法大致结构均包括：</p><ol><li>提取图像特征</li><li>提取问题特征</li><li>利用特征产生结果的算法</li></ol><h4 id="Baseline和模型性能"><a href="#Baseline和模型性能" class="headerlink" title="Baseline和模型性能"></a>Baseline和模型性能</h4><ol><li>瞎猜最有可能的答案。“yes”/“no”</li><li>MLP(multi-layer percepton)</li></ol><p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvbapjz9zkj20ky0lradq.jpg" alt=""></p><h4 id="模型架构一览"><a href="#模型架构一览" class="headerlink" title="模型架构一览"></a>模型架构一览</h4><p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvbasmehclj20qg0l278r.jpg" alt=""></p><ol><li>基于贝叶斯和问题导向的模型</li><li>基于注意力机制的模型<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvbb0ttq7cj20r60dj7bs.jpg" alt=""></li><li>非线性池化方法</li></ol><ul><li>MULTI-WORLD: A multi-world approach to question answering about real- world scenes based on uncertain input, NIPS2014</li><li>ASK-NEURon: Ask your neurons: A neural-based ap- proach to answering questions about images, ICCV2015</li><li>ENSEMSBLE: Exploring models and data for image question answering, NIPS2015</li><li>LSTM Q+I: VQA: Visual question answering, ICCV2015</li><li>iBOWIMG: Simple baseline for visual question answering, arxiv</li><li>DPPNET: Image question answering using convolutional neural network with dynamic parameter prediction, CVPR2016</li><li>SMem: Ask, attend and answer: Exploring question-guided spatial attention for visual question answering, ECCV2016</li><li>SAN: Stacked attention networks for image question answering, CVPR2016</li><li>NMN: Deep compositional question answering with neural module networks, CVPR2016</li><li>FDA: A focused dynamic attention model for visual question answering, arxiv2016</li><li>HYBRID: Answer-type prediction for visual question answering, CVPR2016</li><li>DMN+: Dynamic memory networks for visual and textual question answering, ICML2016</li><li>MRN: Multimodal residual learning for visual qa, NIPS2016</li><li>HieCoAtten: Hierarchical question-image co-attention for visual question answering, NIPS2016</li><li>RAU_ResNet: Training recurrent answering units with joint loss minimization for VQA, arxiv2016</li><li>DAN: Dual attention networks for multimodal reasoning and matching, arxiv2016</li><li>MCB+Att: Multi-modal compact bilinear pooling for visual question answering and visual grounding, EMNLP2016</li><li>MLB: Hadamard product for low-rank bilinear pooling, arxiv2016</li><li>AMA: Ask me anything: Free-form visual question answering based on knowledge from external sources, CVPR2016</li><li>MCB-ensemble: Multi-modal compact bilinear pooling for visual question answering and visual grounding, EMNLP2016</li></ul><h3 id="VQA仍然存在很多问题"><a href="#VQA仍然存在很多问题" class="headerlink" title="VQA仍然存在很多问题"></a>VQA仍然存在很多问题</h3><p>虽然VQA已经取得了长足的进步，但是现有的算法仍然距离人类有巨大的差距。<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvbbxjxinej20n10gvmzr.jpg" alt=""></p><p>现有问题有：</p><ol><li>现有的VQA系统太依赖于问题而不是图片内容，并且语言的偏差会严重影响VQA系统性能。<ol><li>只需要问题或者图片就能猜出来答案，甚至一个差的数据集(通常包含具有偏差的问题)会降低VQA系统的性能。也即越具体的问题越好！[do-&gt;play-&gt;sport play]</li></ol></li><li>算法性能的提升是否真的来自于注意力机制？<ol><li>通过多全局图片特征（预训练的VGG-19,ResNet-101）也能达到很好的效果。</li><li>注意力机制有时候会误导VQA系统。</li></ol></li></ol><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>可以回答任意关于图片的问题的算法将会是人工智能的里程碑。</p><h4 id="研究方向潜力股"><a href="#研究方向潜力股" class="headerlink" title="研究方向潜力股"></a>研究方向潜力股</h4><ol><li>更<strong>大</strong>更<strong>无偏</strong>更<strong>丰富</strong>的数据集:每个问题权重不应该一样；问题的质量应该更高；答案不应该是二元的；多选题应当被淘汰</li><li>更加巧妙地模型评估方式</li><li>重点：可以对图片内容进行<strong>推理</strong>的算法！<ol><li>常识推理。</li><li>空间位置。</li><li>根据不同粒度回复问题。</li></ol></li></ol><!-- TODO: ### 批注版论文 > 1. 黄色表示研究领域的问题> 2. 紫色表示论文叙述内容的重点> 3. 绿色表示该论文的解决思路> 4. 蓝色表示该论文的公式以及定义 --><h3 id="引用与参考"><a href="#引用与参考" class="headerlink" title="引用与参考"></a>引用与参考</h3><!--Ex:1. https://www.paperweekly.site/papers/notes/2212. https://scholar.google.com/-->]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;!-- 论文基本信息：方便查阅和追踪 --&gt;
+&lt;!-- 论文基本信息的获取：
+1. 直接从论文pdf中获取
+2. 从paperweekly首页上方搜索论文；若未检索到，点击推荐论
+      
+    
+    </summary>
+    
+      <category term="VQA" scheme="https://824zzy.github.io/categories/VQA/"/>
+    
+    
+      <category term="summarize" scheme="https://824zzy.github.io/tags/summarize/"/>
+    
+  </entry>
+  
+  <entry>
     <title>深度学习模块文档备忘录</title>
     <link href="https://824zzy.github.io/2018/08/23/colab-tensorflow-usage/"/>
     <id>https://824zzy.github.io/2018/08/23/colab-tensorflow-usage/</id>
@@ -533,34 +561,6 @@
       <category term="sklearn" scheme="https://824zzy.github.io/tags/sklearn/"/>
     
       <category term="Keras" scheme="https://824zzy.github.io/tags/Keras/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Visual-Question-Learning(VQA)学习笔记</title>
-    <link href="https://824zzy.github.io/2018/08/23/Visual-Question-Learning/"/>
-    <id>https://824zzy.github.io/2018/08/23/Visual-Question-Learning/</id>
-    <published>2018-08-22T16:00:00.000Z</published>
-    <updated>2018-09-16T07:57:31.522Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><!-- 论文基本信息：方便查阅和追踪 --><!-- 论文基本信息的获取：1. 直接从论文pdf中获取2. 从paperweekly首页上方搜索论文；若未检索到，点击推荐论文输入论文名即可自动获取信息--><h2 id="论文基本信息"><a href="#论文基本信息" class="headerlink" title="论文基本信息"></a>论文基本信息</h2><ol><li><p>论文名：Visual Question Answering: Datasets, Algorithms, and Future Challenges</p></li><li><p>论文链接：<a href="https://arxiv.org/pdf/1610.01465.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1610.01465.pdf</a></p><!-- Ex: https://arxiv.org/abs/1606.01541  --></li><li><p>论文源码</p><ul><li>None</li></ul></li><li><p>关于作者</p><ul><li>Kushal Kafle</li><li>Christopher Kanan</li></ul></li><li><p>关于笔记作者：</p><ul><li>朱正源,北京邮电大学研究生，研究方向为多模态与认知计算。  </li></ul></li></ol><h2 id="论文推荐理由"><a href="#论文推荐理由" class="headerlink" title="论文推荐理由"></a>论文推荐理由</h2><!-- Ex: 论文摘要的中文翻译最近对话生成的神经模型为会话代理生成响应提供了很大的希望，但往往是短视的，一次预测一个话语而忽略它们对未来结果的影响。对未来的对话方向进行建模对于产生连贯，有趣的对话至关重要，这种对话需要传统的NLP对话模式借鉴强化学习。在本文中，我们将展示如何整合这些目标，应用深度强化学习来模拟聊天机器人对话中的未来奖励。该模型模拟两个虚拟代理之间的对话，使用策略梯度方法来奖励显示三个有用会话属性的序列：信息性，连贯性和易于回答（与前瞻性功能相关）。我们在多样性，长度以及人类评判方面评估我们的模型，表明所提出的算法产生了更多的交互式响应，并设法在对话模拟中促进更持久的对话。这项工作标志着基于对话的长期成功学习神经对话模型的第一步。 --><p> 视觉问答(Visual Question answering, VQA)是近年来计算机视觉和自然语言处理领域的一个热点问题。在VQA中，一个算法需要回答关于图像的基于文本的问题。自2014年发布第一个VQA数据集以来，已经发布了更多的数据集，并提出了许多算法。在这篇综述中，我们从问题的形成、现有数据集、评估指标和算法的角度，批判性地研究了VQA的当前状态。特别地，我们讨论了当前数据集在正确训练和评估VQA算法方面的局限性。然后，我们详尽地回顾了VQA的现有算法。最后，我们讨论了未来VQA和图像理解研究的可能方向。</p><h2 id="视觉问答：数据集，算法和未来的挑战"><a href="#视觉问答：数据集，算法和未来的挑战" class="headerlink" title="视觉问答：数据集，算法和未来的挑战"></a>视觉问答：数据集，算法和未来的挑战</h2><!-- Ex: ## 强化学习在对话生成领域的应用 --><h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><h4 id="VQA的研究价值"><a href="#VQA的研究价值" class="headerlink" title="VQA的研究价值"></a>VQA的研究价值</h4><ol><li><p>大部分计算机视觉任务不能完整的理解图像<br>图像分类、物体检测、动作识别等任务很难获取到物体的<strong>空间位置信息</strong>并且根据它们的属性和关系进行<strong>推理</strong>。</p></li><li><p>人类对<strong>Grand Unified Theory</strong>的痴迷追求</p><ul><li>目标识别任务：图像里面有什么？[分类]</li><li>目标检测任务：图像里面有猫吗？[拉框]</li><li>属性分类任务：图像里面的猫是什么颜色的？</li><li>场景分类：图像是在室内吗？</li><li>计数任务：图像里面有多少猫？<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvah1uwsvij208c04ogn4.jpg" alt=""></li></ul></li><li><p>通过视觉图灵测试：</p><ul><li>基准问题测试</li><li>建立评价指标 </li></ul></li></ol><h3 id="VQA的数据集"><a href="#VQA的数据集" class="headerlink" title="VQA的数据集"></a>VQA的数据集</h3><p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvajh4e1wbj20tz09eacb.jpg" alt=""></p><h3 id="VQA的评价标准"><a href="#VQA的评价标准" class="headerlink" title="VQA的评价标准"></a>VQA的评价标准</h3><ul><li>Open-ended(OE): 开放式的</li><li>Multiple Choice(MC): 选择式的</li></ul><p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvb6r1njlkj20kp0dmjuj.jpg" alt=""></p><h4 id="流行的评价标准"><a href="#流行的评价标准" class="headerlink" title="流行的评价标准"></a>流行的评价标准</h4><p>选择式任务的评价标准直接使用正确率即可。但是开放式任务的评价标准呢？</p><ol><li>Simple accuracy:<ol><li>Q: What animals are in the photo<br>若<code>dogs</code>是正确答案，那么<code>dog</code>和<code>zebra</code>的惩罚竟然是一样的</li><li>Q: What is in the tree<br>若<code>bald eagle</code>是正确答案，<code>eagle</code>或是<code>bird</code>  与  <code>yes</code>的惩罚竟然也是一样的</li></ol></li><li><p>Wu-Palmer Similarity</p><ol><li>语义相似度<br><code>Black</code>、<code>White</code>两个单词的<code>WUPS score</code>是0.91。所以这可能会给错误答案一个相当高的分数。</li><li>只可以评价单词，句子不可使用</li></ol></li><li><p>$Accuracy_{VQA}=min(\frac{n}{3}, 1)$<br>同样是语义相似度，大致正确就ok: 人为构造一个答案集合，$n$是算法和人类拥有的相同的答案数量。</p></li></ol><h3 id="VQA的算法"><a href="#VQA的算法" class="headerlink" title="VQA的算法"></a>VQA的算法</h3><p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvbaa7e7d4j20qr098n45.jpg" alt=""><br>存在的算法大致结构均包括：</p><ol><li>提取图像特征</li><li>提取问题特征</li><li>利用特征产生结果的算法</li></ol><h4 id="Baseline和模型性能"><a href="#Baseline和模型性能" class="headerlink" title="Baseline和模型性能"></a>Baseline和模型性能</h4><ol><li>瞎猜最有可能的答案。“yes”/“no”</li><li>MLP(multi-layer percepton)</li></ol><p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvbapjz9zkj20ky0lradq.jpg" alt=""></p><h4 id="模型架构一览"><a href="#模型架构一览" class="headerlink" title="模型架构一览"></a>模型架构一览</h4><p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvbasmehclj20qg0l278r.jpg" alt=""></p><ol><li>基于贝叶斯和问题导向的模型</li><li>基于注意力机制的模型<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvbb0ttq7cj20r60dj7bs.jpg" alt=""></li><li>非线性池化方法</li></ol><ul><li>MULTI-WORLD: A multi-world approach to question answering about real- world scenes based on uncertain input, NIPS2014</li><li>ASK-NEURon: Ask your neurons: A neural-based ap- proach to answering questions about images, ICCV2015</li><li>ENSEMSBLE: Exploring models and data for image question answering, NIPS2015</li><li>LSTM Q+I: VQA: Visual question answering, ICCV2015</li><li>iBOWIMG: Simple baseline for visual question answering, arxiv</li><li>DPPNET: Image question answering using convolutional neural network with dynamic parameter prediction, CVPR2016</li><li>SMem: Ask, attend and answer: Exploring question-guided spatial attention for visual question answering, ECCV2016</li><li>SAN: Stacked attention networks for image question answering, CVPR2016</li><li>NMN: Deep compositional question answering with neural module networks, CVPR2016</li><li>FDA: A focused dynamic attention model for visual question answering, arxiv2016</li><li>HYBRID: Answer-type prediction for visual question answering, CVPR2016</li><li>DMN+: Dynamic memory networks for visual and textual question answering, ICML2016</li><li>MRN: Multimodal residual learning for visual qa, NIPS2016</li><li>HieCoAtten: Hierarchical question-image co-attention for visual question answering, NIPS2016</li><li>RAU_ResNet: Training recurrent answering units with joint loss minimization for VQA, arxiv2016</li><li>DAN: Dual attention networks for multimodal reasoning and matching, arxiv2016</li><li>MCB+Att: Multi-modal compact bilinear pooling for visual question answering and visual grounding, EMNLP2016</li><li>MLB: Hadamard product for low-rank bilinear pooling, arxiv2016</li><li>AMA: Ask me anything: Free-form visual question answering based on knowledge from external sources, CVPR2016</li><li>MCB-ensemble: Multi-modal compact bilinear pooling for visual question answering and visual grounding, EMNLP2016</li></ul><h3 id="VQA仍然存在很多问题"><a href="#VQA仍然存在很多问题" class="headerlink" title="VQA仍然存在很多问题"></a>VQA仍然存在很多问题</h3><p>虽然VQA已经取得了长足的进步，但是现有的算法仍然距离人类有巨大的差距。<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fvbbxjxinej20n10gvmzr.jpg" alt=""></p><p>现有问题有：</p><ol><li>现有的VQA系统太依赖于问题而不是图片内容，并且语言的偏差会严重影响VQA系统性能。<ol><li>只需要问题或者图片就能猜出来答案，甚至一个差的数据集(通常包含具有偏差的问题)会降低VQA系统的性能。也即越具体的问题越好！[do-&gt;play-&gt;sport play]</li></ol></li><li>算法性能的提升是否真的来自于注意力机制？<ol><li>通过多全局图片特征（预训练的VGG-19,ResNet-101）也能达到很好的效果。</li><li>注意力机制有时候会误导VQA系统。</li></ol></li></ol><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>可以回答任意关于图片的问题的算法将会是人工智能的里程碑。</p><h4 id="研究方向潜力股"><a href="#研究方向潜力股" class="headerlink" title="研究方向潜力股"></a>研究方向潜力股</h4><ol><li>更<strong>大</strong>更<strong>无偏</strong>更<strong>丰富</strong>的数据集:每个问题权重不应该一样；问题的质量应该更高；答案不应该是二元的；多选题应当被淘汰</li><li>更加巧妙地模型评估方式</li><li>重点：可以对图片内容进行<strong>推理</strong>的算法！<ol><li>常识推理。</li><li>空间位置。</li><li>根据不同粒度回复问题。</li></ol></li></ol><!-- TODO: ### 批注版论文 > 1. 黄色表示研究领域的问题> 2. 紫色表示论文叙述内容的重点> 3. 绿色表示该论文的解决思路> 4. 蓝色表示该论文的公式以及定义 --><h3 id="引用与参考"><a href="#引用与参考" class="headerlink" title="引用与参考"></a>引用与参考</h3><!--Ex:1. https://www.paperweekly.site/papers/notes/2212. https://scholar.google.com/-->]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;!-- 论文基本信息：方便查阅和追踪 --&gt;
-&lt;!-- 论文基本信息的获取：
-1. 直接从论文pdf中获取
-2. 从paperweekly首页上方搜索论文；若未检索到，点击推荐论
-      
-    
-    </summary>
-    
-      <category term="VQA" scheme="https://824zzy.github.io/categories/VQA/"/>
-    
-    
-      <category term="summarize" scheme="https://824zzy.github.io/tags/summarize/"/>
     
   </entry>
   
