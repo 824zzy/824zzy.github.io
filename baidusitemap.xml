@@ -4,6 +4,65 @@
 
     
   <url>
+    <loc>https://824zzy.github.io/2018/12/26/Network-software-design-exam-tips/</loc>
+    <lastmod>2018-12-26T01:12:02.081Z</lastmod>
+    <data>
+        <display>
+        <title>Tips for Examination of Network Software Design</title>
+        <pubTime>2018-12-26T01:08:17.000Z</pubTime>
+        
+        <tag>exam</tag>
+         
+         
+           
+             
+              <breadCrumb title="BUPT" url="https://824zzy.github.io/categories/BUPT/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/11/09/artificial-general-intelligence/</loc>
+    <lastmod>2018-12-26T01:08:30.598Z</lastmod>
+    <data>
+        <display>
+        <title>通用人工智能（AGI）</title>
+        <pubTime>2018-11-08T16:00:00.000Z</pubTime>
+        
+        <tag>note</tag>
+         
+        <tag>agi</tag>
+         
+        <tag>mit</tag>
+         
+         
+           
+             
+              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/12/25/Neuralink-and-Brains-Magical-Future/</loc>
+    <lastmod>2018-12-25T06:54:22.687Z</lastmod>
+    <data>
+        <display>
+        <title>Neuralink-and-Brains-Magical-Future</title>
+        <pubTime>2018-12-25T06:54:22.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://824zzy.github.io/2018/10/31/mixture-density-network-note/</loc>
     <lastmod>2018-12-21T03:35:46.172Z</lastmod>
     <data>
@@ -55,9 +114,9 @@
         <title>数据挖掘文本分类作业</title>
         <pubTime>2018-12-06T03:16:41.000Z</pubTime>
         
-        <tag>bupt</tag>
-         
         <tag>dataMining</tag>
+         
+        <tag>bupt</tag>
          
          
            
@@ -77,9 +136,9 @@
         <title>最大概率汉语切分作业</title>
         <pubTime>2018-12-06T03:16:41.000Z</pubTime>
         
-        <tag>chineseSegmentation</tag>
-         
         <tag>bupt</tag>
+         
+        <tag>chineseSegmentation</tag>
          
          
            
@@ -122,30 +181,6 @@
         <tag>agi</tag>
          
         <tag>bengio</tag>
-         
-         
-           
-             
-              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://824zzy.github.io/2018/11/09/artificial-general-intelligence/</loc>
-    <lastmod>2018-12-07T06:58:49.107Z</lastmod>
-    <data>
-        <display>
-        <title>通用人工智能（AGI）</title>
-        <pubTime>2018-11-08T16:00:00.000Z</pubTime>
-        
-        <tag>note</tag>
-         
-        <tag>agi</tag>
-         
-        <tag>mit</tag>
          
          
            
