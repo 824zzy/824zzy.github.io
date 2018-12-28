@@ -4,23 +4,8 @@
 
     
   <url>
-    <loc>https://824zzy.github.io/2018/12/25/Neuralink-and-Brains-Magical-Future/</loc>
-    <lastmod>2018-12-27T08:30:54.155Z</lastmod>
-    <data>
-        <display>
-        <title>Neuralink-and-Brains-Magical-Future</title>
-        <pubTime>2018-12-25T06:54:22.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://824zzy.github.io/2018/12/26/Network-software-design-exam-tips/</loc>
-    <lastmod>2018-12-27T08:24:41.369Z</lastmod>
+    <lastmod>2018-12-28T12:49:18.439Z</lastmod>
     <data>
         <display>
         <title>Tips for Examination of Network Software Design</title>
@@ -33,6 +18,21 @@
              
               <breadCrumb title="BUPT" url="https://824zzy.github.io/categories/BUPT/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/12/25/Neuralink-and-Brains-Magical-Future/</loc>
+    <lastmod>2018-12-27T08:30:54.155Z</lastmod>
+    <data>
+        <display>
+        <title>Neuralink-and-Brains-Magical-Future</title>
+        <pubTime>2018-12-25T06:54:22.000Z</pubTime>
+        
+         
+           
         </display>
     </data>
     </url>
@@ -136,9 +136,9 @@
         <title>数据挖掘文本分类作业</title>
         <pubTime>2018-12-06T03:16:41.000Z</pubTime>
         
-        <tag>dataMining</tag>
-         
         <tag>bupt</tag>
+         
+        <tag>dataMining</tag>
          
          
            
@@ -158,9 +158,9 @@
         <title>最大概率汉语切分作业</title>
         <pubTime>2018-12-06T03:16:41.000Z</pubTime>
         
-        <tag>bupt</tag>
-         
         <tag>chineseSegmentation</tag>
+         
+        <tag>bupt</tag>
          
          
            
@@ -463,9 +463,9 @@
         <title>Neural-Machine-Translation-by-tensorflow</title>
         <pubTime>2018-09-08T16:00:00.000Z</pubTime>
         
-        <tag>slide</tag>
-         
         <tag>tensorflow</tag>
+         
+        <tag>slide</tag>
          
          
            
@@ -545,9 +545,9 @@
         <title>深度学习模块文档备忘录</title>
         <pubTime>2018-08-22T16:00:00.000Z</pubTime>
         
-        <tag>tensorflow</tag>
-         
         <tag>colab</tag>
+         
+        <tag>tensorflow</tag>
          
         <tag>sklearn</tag>
          

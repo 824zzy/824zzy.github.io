@@ -24,8 +24,8 @@
   <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
   <script>
     (function () {
-        if ('') {
-            if (prompt('请输入文章密码') !== '') {
+        if ('123') {
+            if (prompt('请输入文章密码') !== '123') {
                 alert('密码错误！');
                 if (history.length === 1) {
                     location.replace("http://xxxxxxx.xxx"); // 这里替换成你的首页
@@ -150,18 +150,21 @@
 
 
 
-<meta name="description" content="Question distribution 10 choice questions(20%) 10 true or false questions(20%) 6 essay questions(60%)  Network&amp;amp;Design&amp;amp;ProgrammingNetwork IP address public address: an IP address that can be a">
+<meta name="description" content="Question distribution 10 choice questions(20%) 10 true or false questions(20%) 6 essay questions(60%)  Examation contains three parts: Network &amp;amp; Design &amp;amp; ProgrammingNetwork IP address:  publi">
 <meta name="keywords" content="exam">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Tips for Examination of Network Software Design">
 <meta property="og:url" content="https://824zzy.github.io/2018/12/26/Network-software-design-exam-tips/index.html">
 <meta property="og:site_name" content="Zzy824">
-<meta property="og:description" content="Question distribution 10 choice questions(20%) 10 true or false questions(20%) 6 essay questions(60%)  Network&amp;amp;Design&amp;amp;ProgrammingNetwork IP address public address: an IP address that can be a">
+<meta property="og:description" content="Question distribution 10 choice questions(20%) 10 true or false questions(20%) 6 essay questions(60%)  Examation contains three parts: Network &amp;amp; Design &amp;amp; ProgrammingNetwork IP address:  publi">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-27T08:24:41.369Z">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fymplax73rj20go0dagn8.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fymqd8mgezj20b007qjtb.jpg">
+<meta property="og:updated_time" content="2018-12-28T12:49:18.439Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tips for Examination of Network Software Design">
-<meta name="twitter:description" content="Question distribution 10 choice questions(20%) 10 true or false questions(20%) 6 essay questions(60%)  Network&amp;amp;Design&amp;amp;ProgrammingNetwork IP address public address: an IP address that can be a">
+<meta name="twitter:description" content="Question distribution 10 choice questions(20%) 10 true or false questions(20%) 6 essay questions(60%)  Examation contains three parts: Network &amp;amp; Design &amp;amp; ProgrammingNetwork IP address:  publi">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fymplax73rj20go0dagn8.jpg">
 
 
 
@@ -462,8 +465,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-12-27T16:24:41+08:00">
-                2018-12-27
+              <time title="更新于" itemprop="dateModified" datetime="2018-12-28T20:49:18+08:00">
+                2018-12-28
               </time>
             
           </span>
@@ -523,7 +526,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  776
+                  1,439
                 </span>
               
 
@@ -539,7 +542,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5分钟
+                  9分钟
                 </span>
               
             </div>
@@ -565,15 +568,72 @@
 <li>10 true or false questions(20%)</li>
 <li>6 essay questions(60%)</li>
 </ul>
-<h2 id="Network-amp-Design-amp-Programming"><a href="#Network-amp-Design-amp-Programming" class="headerlink" title="Network&amp;Design&amp;Programming"></a>Network&amp;Design&amp;Programming</h2><h3 id="Network"><a href="#Network" class="headerlink" title="Network"></a>Network</h3><ul>
-<li>IP address<ul>
-<li>public address: an IP address that can be <strong>accessed over the Internet</strong>. And your public IP address is the <strong>globally unique</strong> and <strong>can be found</strong>, and can only be assigned to a unique device.</li>
-<li>private IP address: The devices with private IP address will <strong>use your router’s public IP address to communicate</strong>. Note that to allow direct access to a local device which is assign a private IP address, a Network Address Translator(NAT) should be used.</li>
+<h2 id="Examation-contains-three-parts-Network-amp-Design-amp-Programming"><a href="#Examation-contains-three-parts-Network-amp-Design-amp-Programming" class="headerlink" title="Examation contains three parts: Network &amp; Design &amp; Programming"></a>Examation contains three parts: Network &amp; Design &amp; Programming</h2><h3 id="Network"><a href="#Network" class="headerlink" title="Network"></a>Network</h3><ul>
+<li><p>IP address:</p>
+<ul>
+<li><code>public address</code>: an IP address that can be <strong>accessed over the Internet</strong>. And your public IP address is the <strong>globally unique</strong> and <strong>can be found</strong>, and can only be assigned to a unique device.</li>
+<li><code>private IP address</code>: The devices with private IP address will <strong>use your router’s public IP address to communicate</strong>. Note that to allow direct access to a local device which is assign a private IP address, a Network Address Translator(NAT) should be used.</li>
+<li><code>how to compute total ip address in a subnet</code>: <ol>
+<li>transform ip address into binary address.</li>
+<li>count zero from tail to first one.</li>
+<li>substract 2(reserve address and broadcast address)</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>Port(some default ports for common protocol):</p>
+<ul>
+<li><strong>http</strong>: 80</li>
+<li><strong>https</strong>: 443</li>
+<li><strong>ntp</strong>: 123</li>
+<li><strong>ssh/tcp</strong>: 22</li>
+<li><strong>mongoDB</strong>: 27017</li>
+<li>DNS: 53</li>
+<li>FTP: 21</li>
+<li>Telnet: 23</li>
+</ul>
+</li>
+<li><p>DNS:<br>Definition: The Domain Name System(DNS) is the <strong>phonebook</strong> of the Internet. </p>
+<ul>
+<li>DNS <strong>translate domain names to IP address</strong> so browsers can load Internet resources.</li>
+<li>DNS is hierarchical with a few authoritative serves at the top level.<ol>
+<li>Your router or ISP provides information about DNS server to contact when doing a look up.</li>
+<li>Low level DNS servers cache mappings, which could become stale due to DNS propagation delays. </li>
+<li>DNS results can also be cached by your browser or OS for a certain period of time, determined by the time to live(TTL)</li>
+</ol>
+</li>
 </ul>
 </li>
 </ul>
+<p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fymplax73rj20go0dagn8.jpg" alt="DNS flow diagram"><br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fymqd8mgezj20b007qjtb.jpg" alt="DNS in ppt"></p>
+<ul>
+<li>CDN:<ul>
+<li>Definition: <strong>CDN(Content dilivery network/Content distributed network) is a geographically distributed network</strong> of proxy servers and their data centers. The goal is to distribute service spatially relative to end-users to <strong>provide high availability and high performance</strong>.</li>
+<li>Improve performance in two ways:<ul>
+<li>Users receive content at data centers close to them.</li>
+<li>Your servers do not have to serve requests that the CND fulfills</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Main routing protocol:<ul>
+<li>OSPF(Open Shortest Path First): OSPF is an <strong>interior gateway protocal</strong>.</li>
+<li>IS-IS(Intermediate System-to-Intermediate System): It is just like OSPF. IS-IS associates routers into areas of intra-area and inter-area.</li>
+<li>BGP(Border Gateway Protocol): It is used as the edge of your network. BGP <strong>constructs a routing table of networks</strong> reachable among Autonomous Systems(AS) number defined by the user.</li>
+</ul>
+</li>
+</ul>
+<h3 id="Design-TODO"><a href="#Design-TODO" class="headerlink" title="Design TODO:"></a>Design TODO:</h3><ul>
+<li>software requirements analysis</li>
+<li>main principles and key technologies for High concurrency programming.</li>
+<li>generic phases of software engineering</li>
+<li>Agile Development</li>
+</ul>
 <h3 id="Programming"><a href="#Programming" class="headerlink" title="Programming"></a>Programming</h3><ul>
-<li>MVC(model-view-controller) model:<ul>
+<li><p>MVC(model-view-controller) model:</p>
+<ul>
 <li>MVC is an <strong>architectural pattern</strong> commonly used for developing <strong>user interfaces</strong> and allowing for effcient <strong>code reuse</strong> and <strong>paraller development</strong>.<ul>
 <li>Model[probe]: an object carrying data. It can also have logic to <strong>update controller</strong> if its data changes.</li>
 <li>View[frontend]: it can be any <strong>output representation of information</strong>, such as chart or a diagram.</li>
@@ -582,18 +642,33 @@
 </li>
 </ul>
 </li>
-<li>NoSQL database:<ol>
-<li>redis</li>
-<li>mongodb</li>
-</ol>
-</li>
-<li>Websocket:<ol>
-<li>Definition:</li>
+<li><p>NoSQL database:TODO:</p>
+<ol>
+<li>redis:</li>
+<li>mongodb:</li>
 </ol>
 </li>
 </ul>
 <ul>
-<li>differences between <code>git</code> and <code>svn</code>:<ol>
+<li>Websocket:<ul>
+<li>WebSocket is a <strong>computer communications protocal</strong>, providing <strong>Bidirectional full-duplex communication channels</strong> over a single TCP connection and it is defined in <strong>RFC6445</strong>.</li>
+<li>WebSocket is a different protocol from HTTP. Both protocols are located at <strong>layer 7 in the OSI model</strong> and depend on <strong>TCP at layer 4</strong>.</li>
+<li>The WebSocket protocol enables interaction between a web client and a web server with lower overheads, facilitating real-time data transfer from and to the server.</li>
+<li>working progress<ul>
+<li>There are four main functions in Tornado<ul>
+<li><code>open(</code>: Invoked when a new websocket is opened.</li>
+<li><code>on_message(message)</code>: Handle incoming messages on the WebSocket</li>
+<li><code>on_close(</code>: Invoke when the WebSocket is closed.</li>
+<li><code>write_message(message)</code>: Sends the given message to the client of this Web Socket.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Differences between <code>git</code> and <code>svn</code>:<ol>
 <li>Git is a <strong>distrubuted</strong> version control system; SVN is a non-distributed version control system.</li>
 <li>Git has a <strong>centralized</strong> server and repository; SVN has <strong>non-centralized</strong> server and repository.</li>
 <li>The content in Git is stored as <strong>metadata</strong>; SVN stores <strong>files of content</strong>.</li>
@@ -617,9 +692,59 @@
 <li>Git branches are <strong>easier</strong> to work with than SVN branches.</li>
 <li>Git does not have the <strong>global revision number</strong> feature like SVN has.</li>
 <li>Git has <strong>better content protection</strong> than SVN,</li>
-<li>Git was developed for <strong>Linux kernel</strong> by Linus Torvalds; SVN was deveploped by <strong>CollabNet</strong>.<h4 id="main-principles-and-key-technologies-for-High-concurrency-programming-TODO"><a href="#main-principles-and-key-technologies-for-High-concurrency-programming-TODO" class="headerlink" title="main principles and key technologies for High concurrency programming TODO:"></a>main principles and key technologies for High concurrency programming TODO:</h4></li>
+<li>Git was developed for <strong>Linux kernel</strong> by Linus Torvalds; SVN was deveploped by <strong>CollabNet</strong>.</li>
 </ol>
-<h4 id="NoSQL-vs-SQL-database"><a href="#NoSQL-vs-SQL-database" class="headerlink" title="NoSQL vs SQL database"></a>NoSQL vs SQL database</h4><h4 id="Websocket-working-progress"><a href="#Websocket-working-progress" class="headerlink" title="Websocket(working progress)"></a>Websocket(working progress)</h4><ul>
+<h4 id="main-principles-and-key-technologies-for-High-concurrency-programming-TODO"><a href="#main-principles-and-key-technologies-for-High-concurrency-programming-TODO" class="headerlink" title="main principles and key technologies for High concurrency programming TODO:"></a>main principles and key technologies for High concurrency programming TODO:</h4><h4 id="NoSQL-and-SQL-database"><a href="#NoSQL-and-SQL-database" class="headerlink" title="NoSQL and SQL database"></a>NoSQL and SQL database</h4><ol>
+<li>RDBMS(Relational database management system)<ol>
+<li>A relational database like SQL is a collection of <strong>data items organized by tables</strong>. It has features below:<ol>
+<li><code>ACID</code> is a set of <strong>properties of relational database transactions</strong>.</li>
+<li><code>Atomicity</code>: Each transaction is all or nothing</li>
+<li><code>Consistency</code>: Any transaction will bring the database from one valid state to server.</li>
+<li><code>Isolation</code>:  Executing transaction has been committed, it will remain so.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>NoSQL</p>
+<ol>
+<li>NoSQL is <code>Not only SQL</code>, it has the advantages below: <ul>
+<li><strong>Not using</strong> the <strong>relational model</strong> nor the SQL language. It is a collection of <strong>data items represented in a key-value store, document-store, wide column store, or a graph database</strong>.</li>
+<li>Designed to run on <strong>large clusters</strong></li>
+<li><strong>No schema</strong></li>
+<li>Open Source</li>
+</ul>
+</li>
+<li>NoSQL properties in detail:<ul>
+<li><strong>Flexible scalability</strong></li>
+<li><strong>Dynamic schema</strong> of data</li>
+<li><strong>Efficient reading</strong></li>
+<li><strong>Cost saving</strong></li>
+</ul>
+</li>
+<li>NoSQL Technologies:<ul>
+<li><strong>MapReduce</strong> programming model</li>
+<li><strong>Key-value</strong> stores</li>
+<li><strong>Document databases</strong></li>
+<li><strong>Column-family stores</strong></li>
+<li><strong>Graph databases</strong> </li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>SQL VS NoSQL</p>
+<ol>
+<li>Relational data model VS Document data model</li>
+<li>Structured data VS semi-structured data</li>
+<li>strict schema VS dynamic/flexible schema</li>
+<li>relational data </li>
+<li>need for complex joins</li>
+<li>transactions</li>
+<li>clear pattern for scaling</li>
+<li>lookups by index are very fast</li>
+</ol>
+</li>
+</ol>
+<h4 id="Websocket-working-progress"><a href="#Websocket-working-progress" class="headerlink" title="Websocket(working progress)"></a>Websocket(working progress)</h4><ul>
 <li>WebSocket is a <strong>computer communications protocal</strong>, providing <strong>Bidirectional full-duplex communication channels</strong> over a single TCP connection and it is defined in <strong>RFC6445</strong>.</li>
 <li>WebSocket is a different protocol from HTTP. Both protocols are located at <strong>layer 7 in the OSI model</strong> and depend on <strong>TCP at layer 4</strong>.</li>
 <li>The WebSocket protocol enables interaction between a web client and a web server with lower overheads, facilitating real-time data transfer from and to the server.</li>
@@ -642,10 +767,14 @@
 <li><a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_blank" rel="noopener">Model-view-controller</a></li>
 <li><a href="https://en.wikipedia.org/wiki/IP_address" target="_blank" rel="noopener">IP address</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Port_(computer_networking" target="_blank" rel="noopener">Port(computer networking)</a>)</li>
-<li><a href="https://en.wikipedia.org/wiki/Domain_Name_System" target="_blank" rel="noopener">Dmain Name System</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Domain_Name_System" target="_blank" rel="noopener">Domain Name System</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Content_delivery_network" target="_blank" rel="noopener">Content delivery network/Content distributed network</a></li>
 <li><a href="https://en.wikipedia.org/wiki/WebSocket" target="_blank" rel="noopener">Websocket wiki</a></li>
 <li><a href="https://www.tornadoweb.org/en/stable/websocket.html" target="_blank" rel="noopener">tornado.websocket — Bidirectional communication to the browser</a></li>
+<li><a href="https://wenku.baidu.com/view/df90877bf121dd36a22d827d.html" target="_blank" rel="noopener">网络常见协议及端口号</a></li>
+<li><a href="https://www.cloudflare.com/learning/dns/what-is-dns/" target="_blank" rel="noopener">How does DNS work</a></li>
+<li><a href="http://freewimaxinfo.com/routing-protocol-types.html" target="_blank" rel="noopener">Routing Protocols Types (RIP, IGRP, OSPF, EGP, EIGRP, BGP, IS-IS)</a></li>
+<li><a href="https://www.virtually-limitless.com/vcix-nv-study-guide/configure-dynamic-routing-protocols-ospf-bgp-is-is/" target="_blank" rel="noopener">Configure dynamic routing protocols: OSPF, BGP, IS-IS</a></li>
 </ul>
 
       
@@ -952,7 +1081,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Question-distribution"><span class="nav-number">1.</span> <span class="nav-text">Question distribution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Network-amp-Design-amp-Programming"><span class="nav-number">2.</span> <span class="nav-text">Network&amp;Design&amp;Programming</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Network"><span class="nav-number">2.1.</span> <span class="nav-text">Network</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Programming"><span class="nav-number">2.2.</span> <span class="nav-text">Programming</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Essay-Questions"><span class="nav-number">2.3.</span> <span class="nav-text">Essay Questions</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Main-role-of-IP-address-port-DNS-CDN-for-network-software-design"><span class="nav-number">2.3.1.</span> <span class="nav-text">Main role of IP address, port, DNS, CDN for network software design</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Difference-between-git-and-svn"><span class="nav-number">2.3.2.</span> <span class="nav-text">Difference between git and svn:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#main-principles-and-key-technologies-for-High-concurrency-programming-TODO"><span class="nav-number">2.3.3.</span> <span class="nav-text">main principles and key technologies for High concurrency programming TODO:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NoSQL-vs-SQL-database"><span class="nav-number">2.3.4.</span> <span class="nav-text">NoSQL vs SQL database</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Websocket-working-progress"><span class="nav-number">2.3.5.</span> <span class="nav-text">Websocket(working progress)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Agile-Development-and-scrum"><span class="nav-number">2.3.6.</span> <span class="nav-text">Agile Development and scrum</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Explain-how-DNS-work"><span class="nav-number">2.3.7.</span> <span class="nav-text">Explain how DNS work</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Difference-between-docker-and-virtual-host"><span class="nav-number">2.3.8.</span> <span class="nav-text">Difference between docker and virtual host</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Type-of-software-test"><span class="nav-number">2.3.9.</span> <span class="nav-text">Type of software test</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Explain-how-CDN-work"><span class="nav-number">2.3.10.</span> <span class="nav-text">Explain how CDN work</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">3.</span> <span class="nav-text">Reference:</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Question-distribution"><span class="nav-number">1.</span> <span class="nav-text">Question distribution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Examation-contains-three-parts-Network-amp-Design-amp-Programming"><span class="nav-number">2.</span> <span class="nav-text">Examation contains three parts: Network &amp; Design &amp; Programming</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Network"><span class="nav-number">2.1.</span> <span class="nav-text">Network</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Design-TODO"><span class="nav-number">2.2.</span> <span class="nav-text">Design TODO:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Programming"><span class="nav-number">2.3.</span> <span class="nav-text">Programming</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Essay-Questions"><span class="nav-number">2.4.</span> <span class="nav-text">Essay Questions</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Main-role-of-IP-address-port-DNS-CDN-for-network-software-design"><span class="nav-number">2.4.1.</span> <span class="nav-text">Main role of IP address, port, DNS, CDN for network software design</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Difference-between-git-and-svn"><span class="nav-number">2.4.2.</span> <span class="nav-text">Difference between git and svn:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#main-principles-and-key-technologies-for-High-concurrency-programming-TODO"><span class="nav-number">2.4.3.</span> <span class="nav-text">main principles and key technologies for High concurrency programming TODO:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NoSQL-and-SQL-database"><span class="nav-number">2.4.4.</span> <span class="nav-text">NoSQL and SQL database</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Websocket-working-progress"><span class="nav-number">2.4.5.</span> <span class="nav-text">Websocket(working progress)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Agile-Development-and-scrum"><span class="nav-number">2.4.6.</span> <span class="nav-text">Agile Development and scrum</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Explain-how-DNS-work"><span class="nav-number">2.4.7.</span> <span class="nav-text">Explain how DNS work</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Difference-between-docker-and-virtual-host"><span class="nav-number">2.4.8.</span> <span class="nav-text">Difference between docker and virtual host</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Type-of-software-test"><span class="nav-number">2.4.9.</span> <span class="nav-text">Type of software test</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Explain-how-CDN-work"><span class="nav-number">2.4.10.</span> <span class="nav-text">Explain how CDN work</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">3.</span> <span class="nav-text">Reference:</span></a></li></ol></div>
             
 
           </div>
@@ -987,7 +1116,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">博客全站共59.6k字</span>
+    <span title="Site words total count">博客全站共60.3k字</span>
   
 </div>
 
