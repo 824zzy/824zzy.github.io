@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://824zzy.github.io/2018/12/26/Network-software-design-exam-tips/</loc>
-    <lastmod>2018-12-29T12:17:11.981Z</lastmod>
+    <lastmod>2019-01-04T13:21:04.511Z</lastmod>
     <data>
         <display>
         <title>Tips for Examination of Network Software Design</title>
@@ -17,6 +17,32 @@
            
              
               <breadCrumb title="BUPT" url="https://824zzy.github.io/categories/BUPT/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2018/08/23/colab-tensorflow-usage/</loc>
+    <lastmod>2018-12-29T12:24:18.056Z</lastmod>
+    <data>
+        <display>
+        <title>深度学习模块文档备忘录</title>
+        <pubTime>2018-08-22T16:00:00.000Z</pubTime>
+        
+        <tag>colab</tag>
+         
+        <tag>tensorflow</tag>
+         
+        <tag>sklearn</tag>
+         
+        <tag>Keras</tag>
+         
+         
+           
+             
+              <breadCrumb title="DeepLearning" url="https://824zzy.github.io/categories/DeepLearning/"/>
           
         </display>
     </data>
@@ -463,9 +489,9 @@
         <title>Neural-Machine-Translation-by-tensorflow</title>
         <pubTime>2018-09-08T16:00:00.000Z</pubTime>
         
-        <tag>slide</tag>
-         
         <tag>tensorflow</tag>
+         
+        <tag>slide</tag>
          
          
            
@@ -531,32 +557,6 @@
            
              
               <breadCrumb title="Paper" url="https://824zzy.github.io/categories/Paper/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://824zzy.github.io/2018/08/23/colab-tensorflow-usage/</loc>
-    <lastmod>2018-09-09T09:01:24.999Z</lastmod>
-    <data>
-        <display>
-        <title>深度学习模块文档备忘录</title>
-        <pubTime>2018-08-22T16:00:00.000Z</pubTime>
-        
-        <tag>tensorflow</tag>
-         
-        <tag>colab</tag>
-         
-        <tag>sklearn</tag>
-         
-        <tag>Keras</tag>
-         
-         
-           
-             
-              <breadCrumb title="DeepLearning" url="https://824zzy.github.io/categories/DeepLearning/"/>
           
         </display>
     </data>
