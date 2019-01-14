@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://824zzy.github.io/2018/12/25/Neuralink-and-Brains-Magical-Future/</loc>
+    <lastmod>2019-01-14T16:19:22.269Z</lastmod>
+    <data>
+        <display>
+        <title>Neuralink and Brains'Magical Future</title>
+        <pubTime>2018-12-25T06:54:22.000Z</pubTime>
+        
+        <tag>agi</tag>
+         
+         
+           
+             
+              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://824zzy.github.io/2018/12/26/Network-software-design-exam-tips/</loc>
     <lastmod>2019-01-04T13:21:04.511Z</lastmod>
     <data>
@@ -31,9 +51,9 @@
         <title>深度学习模块文档备忘录</title>
         <pubTime>2018-08-22T16:00:00.000Z</pubTime>
         
-        <tag>colab</tag>
-         
         <tag>tensorflow</tag>
+         
+        <tag>colab</tag>
          
         <tag>sklearn</tag>
          
@@ -44,21 +64,6 @@
              
               <breadCrumb title="DeepLearning" url="https://824zzy.github.io/categories/DeepLearning/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://824zzy.github.io/2018/12/25/Neuralink-and-Brains-Magical-Future/</loc>
-    <lastmod>2018-12-27T08:30:54.155Z</lastmod>
-    <data>
-        <display>
-        <title>Neuralink-and-Brains-Magical-Future</title>
-        <pubTime>2018-12-25T06:54:22.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
@@ -489,9 +494,9 @@
         <title>Neural-Machine-Translation-by-tensorflow</title>
         <pubTime>2018-09-08T16:00:00.000Z</pubTime>
         
-        <tag>tensorflow</tag>
-         
         <tag>slide</tag>
+         
+        <tag>tensorflow</tag>
          
          
            
@@ -984,9 +989,9 @@
         <title>超智能体读书笔记</title>
         <pubTime>2018-06-14T16:00:00.000Z</pubTime>
         
-        <tag>readingNote</tag>
-         
         <tag>mathematics</tag>
+         
+        <tag>readingNote</tag>
          
          
            
@@ -1152,11 +1157,11 @@
         <title>量化投资</title>
         <pubTime>2018-04-15T16:00:00.000Z</pubTime>
         
-        <tag>machinelearning</tag>
-         
         <tag>rnn</tag>
          
         <tag>lstm</tag>
+         
+        <tag>machinelearning</tag>
          
          
            
