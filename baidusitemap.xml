@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://824zzy.github.io/2019/01/20/first-deep-model-in-video-captioning/</loc>
+    <lastmod>2019-01-20T08:03:09.331Z</lastmod>
+    <data>
+        <display>
+        <title>视频描述领域的第一篇深度模型论文</title>
+        <pubTime>2019-01-20T04:00:00.000Z</pubTime>
+        
+        <tag>videoCaptioning</tag>
+         
+         
+           
+             
+              <breadCrumb title="AGI" url="https://824zzy.github.io/categories/AGI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://824zzy.github.io/2018/12/25/Neuralink-and-Brains-Magical-Future/</loc>
     <lastmod>2019-01-14T16:19:22.269Z</lastmod>
     <data>
@@ -51,9 +71,9 @@
         <title>深度学习模块文档备忘录</title>
         <pubTime>2018-08-22T16:00:00.000Z</pubTime>
         
-        <tag>tensorflow</tag>
-         
         <tag>colab</tag>
+         
+        <tag>tensorflow</tag>
          
         <tag>sklearn</tag>
          
@@ -167,9 +187,9 @@
         <title>数据挖掘文本分类作业</title>
         <pubTime>2018-12-06T03:16:41.000Z</pubTime>
         
-        <tag>bupt</tag>
-         
         <tag>dataMining</tag>
+         
+        <tag>bupt</tag>
          
          
            
@@ -189,9 +209,9 @@
         <title>最大概率汉语切分作业</title>
         <pubTime>2018-12-06T03:16:41.000Z</pubTime>
         
-        <tag>chineseSegmentation</tag>
-         
         <tag>bupt</tag>
+         
+        <tag>chineseSegmentation</tag>
          
          
            
@@ -297,9 +317,9 @@
         <title>胶囊（Capsule）网络</title>
         <pubTime>2018-10-14T16:00:00.000Z</pubTime>
         
-        <tag>code</tag>
-         
         <tag>note</tag>
+         
+        <tag>code</tag>
          
          
            
@@ -401,9 +421,9 @@
         <title>变分自编码器及其应用</title>
         <pubTime>2018-10-02T16:00:00.000Z</pubTime>
         
-        <tag>code</tag>
-         
         <tag>note</tag>
+         
+        <tag>code</tag>
          
          
            
@@ -494,9 +514,9 @@
         <title>Neural-Machine-Translation-by-tensorflow</title>
         <pubTime>2018-09-08T16:00:00.000Z</pubTime>
         
-        <tag>slide</tag>
-         
         <tag>tensorflow</tag>
+         
+        <tag>slide</tag>
          
          
            
@@ -596,9 +616,9 @@
         <title>Python语言学习</title>
         <pubTime>2017-12-06T16:00:00.000Z</pubTime>
         
-        <tag>language</tag>
-         
         <tag>code</tag>
+         
+        <tag>language</tag>
          
          
            
@@ -989,9 +1009,9 @@
         <title>超智能体读书笔记</title>
         <pubTime>2018-06-14T16:00:00.000Z</pubTime>
         
-        <tag>mathematics</tag>
-         
         <tag>readingNote</tag>
+         
+        <tag>mathematics</tag>
          
          
            
@@ -1157,11 +1177,11 @@
         <title>量化投资</title>
         <pubTime>2018-04-15T16:00:00.000Z</pubTime>
         
+        <tag>machinelearning</tag>
+         
         <tag>rnn</tag>
          
         <tag>lstm</tag>
-         
-        <tag>machinelearning</tag>
          
          
            
