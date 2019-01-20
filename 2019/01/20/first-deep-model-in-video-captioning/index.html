@@ -166,7 +166,9 @@
 <meta property="og:image" content="http://ww1.sinaimg.cn/mw690/ca26ff18ly1fzd06rquyyj20qk0nwgo6.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/mw690/ca26ff18ly1fzd0skao7sj216c0jm0zn.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/mw690/ca26ff18ly1fzd1cmxyalj217g0lcdyf.jpg">
-<meta property="og:updated_time" content="2019-01-20T08:03:09.331Z">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/ca26ff18ly1fzd5gnjzg6j20p20f8n0d.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/ca26ff18ly1fzd5p0xo78j20nm0aotak.jpg">
+<meta property="og:updated_time" content="2019-01-20T09:04:38.920Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="视频描述领域的第一篇深度模型论文">
 <meta name="twitter:description" content="论文基本信息 论文名：Translating Videos to Natural Language Using Deep Recurrent Neural Networks  论文链接：https://www.cs.utexas.edu/users/ml/papers/venugopalan.naacl15.pdf  论文源码：  https://github.com/vsubhashini/c">
@@ -471,7 +473,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-01-20T16:03:09+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2019-01-20T17:04:38+08:00">
                 2019-01-20
               </time>
             
@@ -532,7 +534,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,470
+                  1,484
                 </span>
               
 
@@ -611,11 +613,11 @@
 <ol>
 <li>从视频中，每十帧取出一帧进行分析</li>
 </ol>
-<p><img src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1fzczmke1dbj20vg0astdq.jpg" alt=""><br>　人类眼睛的帧数是每秒24帧，从仿生学的观点出发，模型也不需要处理视频中所有的帧。再对视频帧进行缩放以便计算机进行处理。</p>
+<p>　<img src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1fzczmke1dbj20vg0astdq.jpg" alt=""><br>　人类眼睛的帧数是每秒24帧，从仿生学的观点出发，模型也不需要处理视频中所有的帧。再对视频帧进行缩放以便计算机进行处理。</p>
 <ol start="2">
 <li>使用CNN提取特征并进行平均池化（Mean Pooling）</li>
 </ol>
-<p><img src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1fzczv0iwy6j20x40mktg0.jpg" alt=""></p>
+<p>　<img src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1fzczv0iwy6j20x40mktg0.jpg" alt=""></p>
 <ul>
 <li><p>预训练的Alexnet[2012]:在120万张图片上进行预训练[ImageNet LSVRC-2012]，提取最后一层（第七层全连接层）的特征（4096维）。注意：提取的向量不是最后进行分类的1000维特征向量。</p>
 <p><img src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1fzd0iak8vhj216o0eqacn.jpg" alt="Alexnet"></p>
@@ -626,11 +628,11 @@
 <ol start="3">
 <li>句子生成</li>
 </ol>
-<p><img src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1fzd06rquyyj20qk0nwgo6.jpg" alt="RNN生成句子"></p>
+<p>　<img src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1fzd06rquyyj20qk0nwgo6.jpg" alt="RNN生成句子"></p>
 <h3 id="迁移学习和微调模型"><a href="#迁移学习和微调模型" class="headerlink" title="迁移学习和微调模型"></a>迁移学习和微调模型</h3><ol>
 <li>在图片描述任务进行预训练</li>
 </ol>
-<p><img src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1fzd0skao7sj216c0jm0zn.jpg" alt="transfer-learning from image captioning"></p>
+<p>　<img src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1fzd0skao7sj216c0jm0zn.jpg" alt="transfer-learning from image captioning"></p>
 <ol start="2">
 <li>微调（Fine-tuning）<br>　需要注意的是，在视频描述过程中：<ul>
 <li>将输入从图片转换为视频；</li>
@@ -656,6 +658,14 @@
 <li>METEOR</li>
 <li>Human evaluation</li>
 </ul>
+<h4 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h4><ol>
+<li>SVO正确率：</li>
+</ol>
+<p>　<img src="https://ws1.sinaimg.cn/mw690/ca26ff18ly1fzd5gnjzg6j20p20f8n0d.jpg" alt="result on SVO"></p>
+<ol start="2">
+<li>BLEU值和METEOR值</li>
+</ol>
+<p>　<img src="https://ws1.sinaimg.cn/mw690/ca26ff18ly1fzd5p0xo78j20nm0aotak.jpg" alt="result on BLEU and METEOR"></p>
 <h3 id="站在2019年回看2015年的论文"><a href="#站在2019年回看2015年的论文" class="headerlink" title="站在2019年回看2015年的论文"></a>站在2019年回看2015年的论文</h3><p>以19年的后见之明来考察这篇论文，虽然论文没有Attention和强化学习加持的，但是也开辟了用神经模型完成视频描述任务的先河。</p>
 <p>回顾一下以前提出的问题，如何才能实现：</p>
 <ol>
@@ -764,8 +774,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/26/Network-software-design-exam-tips/" rel="next" title="Tips for Examination of Network Software Design">
-                <i class="fa fa-chevron-left"></i> Tips for Examination of Network Software Design
+              <a href="/2018/12/26/information-theory-channel-capacity-iteration-algorithm/" rel="next" title="信息论-信道容量迭代算法python实现版">
+                <i class="fa fa-chevron-left"></i> 信息论-信道容量迭代算法python实现版
               </a>
             
           </div>
@@ -973,7 +983,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#论文基本信息"><span class="nav-number">1.</span> <span class="nav-text">论文基本信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#论文推荐理由"><span class="nav-number">2.</span> <span class="nav-text">论文推荐理由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Translating-Videos-to-Natural-Language-Using-Deep-Recurrent-Neural-Networks"><span class="nav-number">3.</span> <span class="nav-text">Translating Videos to Natural Language Using Deep Recurrent Neural Networks</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#视频描述任务介绍："><span class="nav-number">3.1.</span> <span class="nav-text">视频描述任务介绍：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视频描述的前世："><span class="nav-number">3.2.</span> <span class="nav-text">视频描述的前世：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#神经模型的第一次尝试："><span class="nav-number">3.3.</span> <span class="nav-text">神经模型的第一次尝试：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#迁移学习和微调模型"><span class="nav-number">3.4.</span> <span class="nav-text">迁移学习和微调模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实验细节"><span class="nav-number">3.5.</span> <span class="nav-text">实验细节</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数据集"><span class="nav-number">3.5.1.</span> <span class="nav-text">数据集</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#评估指标"><span class="nav-number">3.5.2.</span> <span class="nav-text">评估指标</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#站在2019年回看2015年的论文"><span class="nav-number">3.6.</span> <span class="nav-text">站在2019年回看2015年的论文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用与参考"><span class="nav-number">3.7.</span> <span class="nav-text">引用与参考</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#论文基本信息"><span class="nav-number">1.</span> <span class="nav-text">论文基本信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#论文推荐理由"><span class="nav-number">2.</span> <span class="nav-text">论文推荐理由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Translating-Videos-to-Natural-Language-Using-Deep-Recurrent-Neural-Networks"><span class="nav-number">3.</span> <span class="nav-text">Translating Videos to Natural Language Using Deep Recurrent Neural Networks</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#视频描述任务介绍："><span class="nav-number">3.1.</span> <span class="nav-text">视频描述任务介绍：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视频描述的前世："><span class="nav-number">3.2.</span> <span class="nav-text">视频描述的前世：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#神经模型的第一次尝试："><span class="nav-number">3.3.</span> <span class="nav-text">神经模型的第一次尝试：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#迁移学习和微调模型"><span class="nav-number">3.4.</span> <span class="nav-text">迁移学习和微调模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实验细节"><span class="nav-number">3.5.</span> <span class="nav-text">实验细节</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数据集"><span class="nav-number">3.5.1.</span> <span class="nav-text">数据集</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#评估指标"><span class="nav-number">3.5.2.</span> <span class="nav-text">评估指标</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#实验结果"><span class="nav-number">3.5.3.</span> <span class="nav-text">实验结果</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#站在2019年回看2015年的论文"><span class="nav-number">3.6.</span> <span class="nav-text">站在2019年回看2015年的论文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用与参考"><span class="nav-number">3.7.</span> <span class="nav-text">引用与参考</span></a></li></ol></li></ol></div>
             
 
           </div>
