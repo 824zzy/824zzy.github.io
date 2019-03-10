@@ -4,6 +4,41 @@
 
     
   <url>
+    <loc>https://824zzy.github.io/2019/03/10/HRL-video-captioning/</loc>
+    <lastmod>2019-03-10T09:08:19.116Z</lastmod>
+    <data>
+        <display>
+        <title>基于分层强化学习的视频描述</title>
+        <pubTime>2019-03-10T03:49:46.000Z</pubTime>
+        
+        <tag>reinforcement_learning</tag>
+         
+         
+           
+             
+              <breadCrumb title="VideoCaptioning" url="https://824zzy.github.io/categories/VideoCaptioning/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2019/03/03/HTM-theory/</loc>
+    <lastmod>2019-03-03T04:08:50.736Z</lastmod>
+    <data>
+        <display>
+        <title>HTM_theory</title>
+        <pubTime>2019-03-03T04:08:50.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://824zzy.github.io/2019/03/02/describing-videos-by-exploiting-tempporal-structure/</loc>
     <lastmod>2019-03-02T13:53:13.811Z</lastmod>
     <data>
@@ -91,9 +126,9 @@
         <title>深度学习模块文档备忘录</title>
         <pubTime>2018-08-22T16:00:00.000Z</pubTime>
         
-        <tag>tensorflow</tag>
-         
         <tag>colab</tag>
+         
+        <tag>tensorflow</tag>
          
         <tag>sklearn</tag>
          
@@ -534,9 +569,9 @@
         <title>Neural-Machine-Translation-by-tensorflow</title>
         <pubTime>2018-09-08T16:00:00.000Z</pubTime>
         
-        <tag>slide</tag>
-         
         <tag>tensorflow</tag>
+         
+        <tag>slide</tag>
          
          
            
