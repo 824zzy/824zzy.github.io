@@ -4,14 +4,14 @@
 
     
   <url>
-    <loc>https://824zzy.github.io/2019/03/10/HRL-video-captioning/</loc>
-    <lastmod>2019-03-10T09:08:19.116Z</lastmod>
+    <loc>https://824zzy.github.io/2019/04/07/zero-shot-for-VD/</loc>
+    <lastmod>2019-04-07T09:32:28.158Z</lastmod>
     <data>
         <display>
-        <title>基于分层强化学习的视频描述</title>
-        <pubTime>2019-03-10T03:49:46.000Z</pubTime>
+        <title>零样本学习的视频描述</title>
+        <pubTime>2019-04-07T09:15:30.000Z</pubTime>
         
-        <tag>reinforcement_learning</tag>
+        <tag>zeroshot</tag>
          
          
            
@@ -25,7 +25,7 @@
     
   <url>
     <loc>https://824zzy.github.io/2019/03/03/HTM-theory/</loc>
-    <lastmod>2019-03-03T04:08:50.736Z</lastmod>
+    <lastmod>2019-04-07T09:15:05.441Z</lastmod>
     <data>
         <display>
         <title>HTM_theory</title>
@@ -33,6 +33,26 @@
         
          
            
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2019/03/10/HRL-video-captioning/</loc>
+    <lastmod>2019-03-10T11:09:13.171Z</lastmod>
+    <data>
+        <display>
+        <title>基于分层强化学习的视频描述</title>
+        <pubTime>2019-03-10T03:49:46.000Z</pubTime>
+        
+        <tag>reinforcement_learning</tag>
+         
+         
+           
+             
+              <breadCrumb title="VideoCaptioning" url="https://824zzy.github.io/categories/VideoCaptioning/"/>
+          
         </display>
     </data>
     </url>
@@ -372,9 +392,9 @@
         <title>胶囊（Capsule）网络</title>
         <pubTime>2018-10-14T16:00:00.000Z</pubTime>
         
-        <tag>code</tag>
-         
         <tag>note</tag>
+         
+        <tag>code</tag>
          
          
            
@@ -476,9 +496,9 @@
         <title>变分自编码器及其应用</title>
         <pubTime>2018-10-02T16:00:00.000Z</pubTime>
         
-        <tag>code</tag>
-         
         <tag>note</tag>
+         
+        <tag>code</tag>
          
          
            
@@ -671,9 +691,9 @@
         <title>Python语言学习</title>
         <pubTime>2017-12-06T16:00:00.000Z</pubTime>
         
-        <tag>language</tag>
-         
         <tag>code</tag>
+         
+        <tag>language</tag>
          
          
            
@@ -1040,11 +1060,11 @@
         <title>RNN原理介绍以及二进制加法器</title>
         <pubTime>2018-04-22T16:00:00.000Z</pubTime>
         
-        <tag>deepLearning</tag>
-         
         <tag>rnn</tag>
          
         <tag>lstm</tag>
+         
+        <tag>deepLearning</tag>
          
          
            
@@ -1064,9 +1084,9 @@
         <title>超智能体读书笔记</title>
         <pubTime>2018-06-14T16:00:00.000Z</pubTime>
         
-        <tag>mathematics</tag>
-         
         <tag>readingNote</tag>
+         
+        <tag>mathematics</tag>
          
          
            
@@ -1232,11 +1252,11 @@
         <title>量化投资</title>
         <pubTime>2018-04-15T16:00:00.000Z</pubTime>
         
+        <tag>machinelearning</tag>
+         
         <tag>rnn</tag>
          
         <tag>lstm</tag>
-         
-        <tag>machinelearning</tag>
          
          
            
