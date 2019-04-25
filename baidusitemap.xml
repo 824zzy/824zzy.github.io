@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://824zzy.github.io/2019/04/24/on-intelligence/</loc>
+    <lastmod>2019-04-25T11:38:07.553Z</lastmod>
+    <data>
+        <display>
+        <title>Inspiration of On-intelligence</title>
+        <pubTime>2019-04-24T09:15:30.000Z</pubTime>
+        
+        <tag>agi</tag>
+         
+         
+           
+             
+              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://824zzy.github.io/2019/04/07/zero-shot-for-VD/</loc>
     <lastmod>2019-04-07T09:32:28.158Z</lastmod>
     <data>
@@ -392,9 +412,9 @@
         <title>胶囊（Capsule）网络</title>
         <pubTime>2018-10-14T16:00:00.000Z</pubTime>
         
-        <tag>note</tag>
-         
         <tag>code</tag>
+         
+        <tag>note</tag>
          
          
            
@@ -496,9 +516,9 @@
         <title>变分自编码器及其应用</title>
         <pubTime>2018-10-02T16:00:00.000Z</pubTime>
         
-        <tag>note</tag>
-         
         <tag>code</tag>
+         
+        <tag>note</tag>
          
          
            
@@ -691,9 +711,9 @@
         <title>Python语言学习</title>
         <pubTime>2017-12-06T16:00:00.000Z</pubTime>
         
-        <tag>code</tag>
-         
         <tag>language</tag>
+         
+        <tag>code</tag>
          
          
            
@@ -1084,9 +1104,9 @@
         <title>超智能体读书笔记</title>
         <pubTime>2018-06-14T16:00:00.000Z</pubTime>
         
-        <tag>readingNote</tag>
-         
         <tag>mathematics</tag>
+         
+        <tag>readingNote</tag>
          
          
            
@@ -1252,11 +1272,11 @@
         <title>量化投资</title>
         <pubTime>2018-04-15T16:00:00.000Z</pubTime>
         
-        <tag>machinelearning</tag>
-         
         <tag>rnn</tag>
          
         <tag>lstm</tag>
+         
+        <tag>machinelearning</tag>
          
          
            
