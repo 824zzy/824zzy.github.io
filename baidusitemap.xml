@@ -4,6 +4,66 @@
 
     
   <url>
+    <loc>https://824zzy.github.io/2019/05/10/schedule-sampling/</loc>
+    <lastmod>2019-05-12T05:27:11.136Z</lastmod>
+    <data>
+        <display>
+        <title>Using Scheduled Sample to improve sentence quality</title>
+        <pubTime>2019-05-10T09:15:30.000Z</pubTime>
+        
+        <tag>videoCaptioning</tag>
+         
+         
+           
+             
+              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2019/05/06/basic-knowledge-supplement/</loc>
+    <lastmod>2019-05-12T05:27:06.114Z</lastmod>
+    <data>
+        <display>
+        <title>basic_knowledge_supplement</title>
+        <pubTime>2019-05-06T06:27:55.000Z</pubTime>
+        
+        <tag>note</tag>
+         
+         
+           
+             
+              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://824zzy.github.io/2019/05/05/Hybrid-computing-using-a-neural-network-with-dynamic-external-memory/</loc>
+    <lastmod>2019-05-06T06:35:51.591Z</lastmod>
+    <data>
+        <display>
+        <title>The first and second generation of Neural Turing Machine</title>
+        <pubTime>2019-05-05T09:15:30.000Z</pubTime>
+        
+        <tag>agi</tag>
+         
+         
+           
+             
+              <breadCrumb title="AI" url="https://824zzy.github.io/categories/AI/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://824zzy.github.io/2019/04/24/on-intelligence/</loc>
     <lastmod>2019-04-25T11:38:07.553Z</lastmod>
     <data>
@@ -282,9 +342,9 @@
         <title>数据挖掘文本分类作业</title>
         <pubTime>2018-12-06T03:16:41.000Z</pubTime>
         
-        <tag>bupt</tag>
-         
         <tag>dataMining</tag>
+         
+        <tag>bupt</tag>
          
          
            
@@ -304,9 +364,9 @@
         <title>最大概率汉语切分作业</title>
         <pubTime>2018-12-06T03:16:41.000Z</pubTime>
         
-        <tag>chineseSegmentation</tag>
-         
         <tag>bupt</tag>
+         
+        <tag>chineseSegmentation</tag>
          
          
            
@@ -1104,9 +1164,9 @@
         <title>超智能体读书笔记</title>
         <pubTime>2018-06-14T16:00:00.000Z</pubTime>
         
-        <tag>mathematics</tag>
-         
         <tag>readingNote</tag>
+         
+        <tag>mathematics</tag>
          
          
            
@@ -1272,11 +1332,11 @@
         <title>量化投资</title>
         <pubTime>2018-04-15T16:00:00.000Z</pubTime>
         
+        <tag>machinelearning</tag>
+         
         <tag>rnn</tag>
          
         <tag>lstm</tag>
-         
-        <tag>machinelearning</tag>
          
          
            
