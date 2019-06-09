@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://824zzy.github.io/2019/05/31/ON-LSTM-and-DIORA/</loc>
+    
+    <lastmod>2019-06-09T04:50:29.928Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://824zzy.github.io/2019/05/05/Hybrid-computing-using-a-neural-network-with-dynamic-external-memory/</loc>
+    
+    <lastmod>2019-05-12T05:27:13.002Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://824zzy.github.io/2019/05/10/schedule-sampling/</loc>
     
     <lastmod>2019-05-12T05:27:11.136Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>https://824zzy.github.io/2019/05/06/basic-knowledge-supplement/</loc>
     
     <lastmod>2019-05-12T05:27:06.114Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://824zzy.github.io/2019/05/05/Hybrid-computing-using-a-neural-network-with-dynamic-external-memory/</loc>
-    
-    <lastmod>2019-05-06T06:35:51.591Z</lastmod>
     
   </url>
   

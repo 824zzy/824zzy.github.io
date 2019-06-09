@@ -137,7 +137,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="LSTM," />
 
 
 
@@ -150,17 +150,18 @@
 
 
 
-<meta name="description" content="关于我目前研究生就读于北京邮电大学计算机学院，研究方向为多模态与认知计算。 主要兴趣集中在人工智能领域：深度学习与强化学习。 喜欢读书、打篮球、弹吉他。  2018.7 北京邮电大学 智能科学与技术 2018.6 毕业于天津财经大学 计算机科学与技术 2014.6 毕业于天津一中  联系我 GitHub：https://github.com/824zzy email：zhuzhengyuan8">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于">
-<meta property="og:url" content="https://824zzy.github.io/about/index.html">
+<meta name="description" content="ON-LSTMInsprition under the hood: How to introduce grammar tree structure into LSTM in an unsupervised apporach. Introduction: Ordered Neurons(ON) The neurons inside ON-LSTM are specifically ordered">
+<meta name="keywords" content="LSTM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Comparison of ON-LSTM and DIORA">
+<meta property="og:url" content="https://824zzy.github.io/2019/05/31/ON-LSTM-and-DIORA/index.html">
 <meta property="og:site_name" content="Zzy824">
-<meta property="og:description" content="关于我目前研究生就读于北京邮电大学计算机学院，研究方向为多模态与认知计算。 主要兴趣集中在人工智能领域：深度学习与强化学习。 喜欢读书、打篮球、弹吉他。  2018.7 北京邮电大学 智能科学与技术 2018.6 毕业于天津财经大学 计算机科学与技术 2014.6 毕业于天津一中  联系我 GitHub：https://github.com/824zzy email：zhuzhengyuan8">
+<meta property="og:description" content="ON-LSTMInsprition under the hood: How to introduce grammar tree structure into LSTM in an unsupervised apporach. Introduction: Ordered Neurons(ON) The neurons inside ON-LSTM are specifically ordered">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-29T05:16:56.191Z">
+<meta property="og:updated_time" content="2019-06-09T04:50:29.928Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于">
-<meta name="twitter:description" content="关于我目前研究生就读于北京邮电大学计算机学院，研究方向为多模态与认知计算。 主要兴趣集中在人工智能领域：深度学习与强化学习。 喜欢读书、打篮球、弹吉他。  2018.7 北京邮电大学 智能科学与技术 2018.6 毕业于天津财经大学 计算机科学与技术 2014.6 毕业于天津一中  联系我 GitHub：https://github.com/824zzy email：zhuzhengyuan8">
+<meta name="twitter:title" content="Comparison of ON-LSTM and DIORA">
+<meta name="twitter:description" content="ON-LSTMInsprition under the hood: How to introduce grammar tree structure into LSTM in an unsupervised apporach. Introduction: Ordered Neurons(ON) The neurons inside ON-LSTM are specifically ordered">
 
 
 
@@ -190,13 +191,13 @@
 
 
 
-  <link rel="canonical" href="https://824zzy.github.io/about/"/>
+  <link rel="canonical" href="https://824zzy.github.io/2019/05/31/ON-LSTM-and-DIORA/"/>
 
 
 
 
 
-  <title>关于 | Zzy824</title>
+  <title>Comparison of ON-LSTM and DIORA | Zzy824</title>
   
 
 
@@ -404,47 +405,299 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://824zzy.github.io/2019/05/31/ON-LSTM-and-DIORA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZZY">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zzy824">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h2 class="post-title" itemprop="name headline">关于</h2>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <script src="/assets/js/APlayer.min.js"> </script><h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>目前研究生就读于北京邮电大学计算机学院，研究方向为多模态与认知计算。</p>
-<p>主要兴趣集中在人工智能领域：深度学习与强化学习。</p>
-<p>喜欢读书、打篮球、弹吉他。</p>
-<ul>
-<li>2018.7 北京邮电大学 智能科学与技术</li>
-<li>2018.6 毕业于天津财经大学 计算机科学与技术</li>
-<li>2014.6 毕业于天津一中</li>
-</ul>
-<h2 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h2><ul>
-<li>GitHub：<a href="https://github.com/824zzy" target="_blank" rel="noopener">https://github.com/824zzy</a></li>
-<li>email：<a href="mailto:zhuzhengyuan824@gmail.com" target="_blank" rel="noopener">zhuzhengyuan824@gmail.com</a></li>
-<li>mobile:  $37\cdot 23 \cdot 18569039$</li>
-</ul>
-<h2 id="关于本站"><a href="#关于本站" class="headerlink" title="关于本站"></a>关于本站</h2><p><strong>若您想使用这个 HEXO-next 博客主题，请访问：<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a></strong></p>
-
+          <h2 class="post-title" itemprop="name headline">Comparison of ON-LSTM and DIORA</h2>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-31T00:00:00+08:00">
+                2019-05-31
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-06-09T12:50:29+08:00">
+                2019-06-09
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/NLP/" itemprop="url" rel="index">
+                    <span itemprop="name">NLP</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/05/31/ON-LSTM-and-DIORA/" class="leancloud_visitors" data-flag-title="Comparison of ON-LSTM and DIORA">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  114
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <script src="/assets/js/APlayer.min.js"> </script><h2 id="ON-LSTM"><a href="#ON-LSTM" class="headerlink" title="ON-LSTM"></a>ON-LSTM</h2><p>Insprition under the hood: How to introduce grammar tree structure into LSTM in an unsupervised apporach.</p>
+<h3 id="Introduction-Ordered-Neurons-ON"><a href="#Introduction-Ordered-Neurons-ON" class="headerlink" title="Introduction: Ordered Neurons(ON)"></a>Introduction: Ordered Neurons(ON)</h3><ol>
+<li>The neurons inside ON-LSTM are specifically <code>ordered</code> to <code>express richer information</code>: Change the order of update frequency.</li>
+<li>The specific order of neurons is to integrate the hierarchical structure (tree structure) into the LSTM, allowing the LSTM to <code>automatically learn the hierarchical structure</code>.</li>
+<li><code>High/Low level information</code>: Should keep longer/shorter in corresponding coding interval.</li>
+<li><code>cumax()</code>: A special function to internate special $F1$ and $F2$gate.</li>
+</ol>
+<h3 id="The-nuts-and-bolts-in-Mathematic"><a href="#The-nuts-and-bolts-in-Mathematic" class="headerlink" title="The nuts and bolts in Mathematic"></a>The nuts and bolts in Mathematic</h3>
+
+	<div class="row">
+		<iframe src="https://drive.google.com/file/d/1UjxnKAcMtydDEr_-PuvVMRLK_2pjx80M/preview" style="width:100%; height:550px"></iframe>
+	</div>
+
+
+
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol>
+<li><a href="https://kexue.fm/archives/6621" target="_blank" rel="noopener">ON-LSTM：用有序神经元表达层次结构</a></li>
+</ol>
+
       
     </div>
     
     
     
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>请zzy824喝杯咖啡</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1ftpprdhc4gj20tz14q4a1.jpg" alt="ZZY 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1ftppqm04y6j20go0p0jy4.jpg" alt="ZZY 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    824zzy
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://824zzy.github.io/2019/05/31/ON-LSTM-and-DIORA/" title="Comparison of ON-LSTM and DIORA">https://824zzy.github.io/2019/05/31/ON-LSTM-and-DIORA/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/LSTM/" rel="tag"><i class="fa fa-tag"></i> LSTM</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/10/schedule-sampling/" rel="next" title="Using Scheduled Sample to improve sentence quality">
+                <i class="fa fa-chevron-left"></i> Using Scheduled Sample to improve sentence quality
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -626,7 +879,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于我"><span class="nav-number">1.</span> <span class="nav-text">关于我</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#联系我"><span class="nav-number">2.</span> <span class="nav-text">联系我</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于本站"><span class="nav-number">3.</span> <span class="nav-text">关于本站</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ON-LSTM"><span class="nav-number">1.</span> <span class="nav-text">ON-LSTM</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Introduction-Ordered-Neurons-ON"><span class="nav-number">1.1.</span> <span class="nav-text">Introduction: Ordered Neurons(ON)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-nuts-and-bolts-in-Mathematic"><span class="nav-number">1.2.</span> <span class="nav-text">The nuts and bolts in Mathematic</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">2.</span> <span class="nav-text">Reference</span></a></li></ol></div>
             
 
           </div>
