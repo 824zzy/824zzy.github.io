@@ -1,37 +1,1787 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
 
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
-{% block page_class %}page-post-detail{% endblock %}
+  
 
 
-{% block content %}
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <meta name="baidu-site-verification" content="UqlC4pwKIm" />
+  <meta name="baidu-site-verification" content="d3U0dGeqGw" />
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+  <script>
+    (function () {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
+                alert('密码错误！');
+                if (history.length === 1) {
+                    location.replace("http://xxxxxxx.xxx"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+  </script>
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="1C1XSuJ8TgM2O0mcZvsgzEdy0IdRZOJfxDYPyh18U9Q" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.cat.net/css?family=Roboto Slab:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="note," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Zhengyuan Zhu" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="论文基本信息 论文名：Deep Reinforcement Learning for Dialogue Generation 论文链接：https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;1606.01541 论文源码： https:&#x2F;&#x2F;github.com&#x2F;liuyuemaicha&#x2F;Deep-Reinforcement-Learning-for-Dialogue-Generation-in-tenso">
+<meta property="og:type" content="article">
+<meta property="og:title" content="论文笔记：Deep Reinforcement Learning for Dialogue Generation">
+<meta property="og:url" content="https://824zzy.github.io/2018/08/18/paper-note-deep-reinfocement-learning-for-Dialogue-Generation/index.html">
+<meta property="og:site_name" content="Zhengyuan Zhu">
+<meta property="og:description" content="论文基本信息 论文名：Deep Reinforcement Learning for Dialogue Generation 论文链接：https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;1606.01541 论文源码： https:&#x2F;&#x2F;github.com&#x2F;liuyuemaicha&#x2F;Deep-Reinforcement-Learning-for-Dialogue-Generation-in-tenso">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fuf3bujstcj20b509zgmm.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fuf47elgdkj20af09yjse.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fug2dvizhhj209o01wdfq.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fug5a6naokj20b302d747.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fug5av9bkgj20bp028mx4.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fug5beurspj209y01dt8k.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fuhd5cu9doj208j01ddfo.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fuhd6s09lyj20ax01awed.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fuhdbxz4kij20b401tjra.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fuief5dqqxj209j01n0sn.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fuf4u98teyj20lv0aatav.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fuf0a67z3dj20fi051q3c.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fuf0boign2j20e104a3z0.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fuf0gegq71j20gc03sgm9.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fuf0hq4jzaj20g203k3z5.jpg">
+<meta property="article:published_time" content="2018-08-18T05:00:00.000Z">
+<meta property="article:modified_time" content="2018-09-15T07:06:13.000Z">
+<meta property="article:author" content="Zhengyuan Zhu">
+<meta property="article:tag" content="note">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fuf3bujstcj20b509zgmm.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: 'undefined',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '0BV7SDEYWS',
+      apiKey: '7b5bee63a251ae508a2ab2b689f114c8',
+      indexName: 'zzy824',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://824zzy.github.io/2018/08/18/paper-note-deep-reinfocement-learning-for-Dialogue-Generation/"/>
+
+
+
+
+
+  <title>论文笔记：Deep Reinforcement Learning for Dialogue Generation | Zhengyuan Zhu</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-111723881-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?605e0c55415d20ab6e7a9cd3fcb8f3e6";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <a target="_blank" rel="noopener" href="https://github.com/824zzy" class="github-corner" aria-label="View source on Github"><svg width="92" height="92" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Zhengyuan Zhu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-book">
+          <a href="/books%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            HandwritingNote
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-demo">
+          <a href="/demo%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-play-circle"></i> <br />
+            
+            Playing
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-maze">
+          <a href="/maze.html%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-code"></i> <br />
+            
+            Maze
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://824zzy.github.io/2018/08/18/paper-note-deep-reinfocement-learning-for-Dialogue-Generation/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhengyuan Zhu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">论文笔记：Deep Reinforcement Learning for Dialogue Generation</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-18T00:00:00-05:00">
+                2018-08-18
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified&#58;</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2018-09-15T02:06:13-05:00">
+                2018-09-15
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Paper/" itemprop="url" rel="index">
+                    <span itemprop="name">Paper</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/08/18/paper-note-deep-reinfocement-learning-for-Dialogue-Generation/" class="leancloud_visitors" data-flag-title="论文笔记：Deep Reinforcement Learning for Dialogue Generation">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  2,624
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  10分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <script src="/assets/js/APlayer.min.js"> </script><h2 id="论文基本信息"><a href="#论文基本信息" class="headerlink" title="论文基本信息"></a>论文基本信息</h2><ol>
+<li>论文名：Deep Reinforcement Learning for Dialogue Generation</li>
+<li>论文链接：<a target="_blank" rel="noopener" href="https://arxiv.org/abs/1606.01541">https://arxiv.org/abs/1606.01541</a></li>
+<li>论文源码：<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/liuyuemaicha/Deep-Reinforcement-Learning-for-Dialogue-Generation-in-tensorflow">https://github.com/liuyuemaicha/Deep-Reinforcement-Learning-for-Dialogue-Generation-in-tensorflow</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/agsarthak/Goal-oriented-Dialogue-Systems">https://github.com/agsarthak/Goal-oriented-Dialogue-Systems</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/jiweil/Neural-Dialogue-Generation">https://github.com/jiweil/Neural-Dialogue-Generation</a></li>
+</ul>
+</li>
+<li>关于作者：<ul>
+<li>Jiwei Li：斯坦福大学博士毕业生，截至发稿被引次数：2156</li>
+<li>Will Monroe：斯坦福大学博士在读，截至发稿被引次数：562</li>
+<li>Alan Ritter：俄亥俄州立大学教授，截至发稿被引次数：4608</li>
+<li>Michel Galley：微软高级研究员，截至发稿被引次数：4529</li>
+<li>Jianfeng Gao：雷德蒙德微软研究院（总部），截至发稿被引次数：11944</li>
+<li>Dan Jurafsky：，斯坦福大学教授，截至发稿被引次数：32973</li>
+</ul>
+</li>
+<li>关于笔记作者：<ul>
+<li>朱正源,北京邮电大学研究生，研究方向为多模态与认知计算。</li>
+</ul>
+</li>
+</ol>
+<h2 id="论文推荐理由与摘要"><a href="#论文推荐理由与摘要" class="headerlink" title="论文推荐理由与摘要"></a>论文推荐理由与摘要</h2><p>最近对话生成的神经模型为会话Agent生成响应提供了很大的帮助，但其结果往往是短视的：一次预测一个话语会忽略它们对未来结果的影响。对未来的对话方向进行建模，这对于产生连贯，有趣的对话至关重要。这种对话需要在传统的NLP对话模式的技术上使用强化学习。在本文中，我们将展示如何整合这些目标，应用深度强化学习来模拟聊天机器人对话中的未来奖励。该模型模拟两个虚拟代理之间的对话，使用策略梯度方法来奖励显示三个有用会话属性的序列：信息性，连贯性和易于回答（与前瞻性功能相关）。我们在多样性，长度以及人类评判方面评估我们的模型，表明所提出的算法产生了更多的交互式响应，并设法在对话模拟中促进更持久的对话。这项工作标志着基于对话的长期成功学习神经对话模型的第一步。</p>
+<h2 id="对话系统的缺点不再致命：深度强化学习带来的曙光"><a href="#对话系统的缺点不再致命：深度强化学习带来的曙光" class="headerlink" title="对话系统的缺点不再致命：深度强化学习带来的曙光"></a>对话系统的缺点不再致命：深度强化学习带来的曙光</h2><h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><h4 id="论文的写作动机"><a href="#论文的写作动机" class="headerlink" title="论文的写作动机"></a>论文的写作动机</h4><blockquote>
+<p>Seq2Seq Model：将一个领域的序列(如英文句子)转换为另一个领域（如中文句子）的序列。在论文中是一种神经生成模型，它能最大限度地根据在前面的对话，生成回复的概率。</p>
+</blockquote>
+<p>Seq2Seq模型用于对话生成系统虽然已经取得一些成功，但是还存在两个问题：</p>
+<ol>
+<li><p>SEQ2SEQ模型是通过使用最大似然估计(MLE)目标函数,预测给定上下文中的下一个会话来训练的。SEQ2SEQ模型倾向于生成高度通用的响应，例如“我不知道”等。然而，“我不知道”显然不是一个好的回复。</p>
+</li>
+<li><p>基于最大似然估计的Seq2Seq模型无法结局重复的问题，因此对话系统通常会陷入重复性应答的无限循环之中。</p>
+</li>
+</ol>
+<p>以上问题如下图所示：</p>
+<p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fuf3bujstcj20b509zgmm.jpg" alt=""></p>
+<h4 id="论文思路的亮点"><a href="#论文思路的亮点" class="headerlink" title="论文思路的亮点"></a>论文思路的亮点</h4><p>首先提出对话系统应当具备的两种能力：</p>
+<ol>
+<li>结合开发人员定义的奖励函数，更好地模拟聊天机器人开发的真正目标。</li>
+<li>在正在进行的对话中,对生成应答的长期影响进行建模。</li>
+</ol>
+<p>紧接着提出利用强化学习的生成方法来改进对话系统：</p>
+<blockquote>
+<p>encoder-decoder architecture:一种标准的神经机器翻译方法，用于解决seq2seq问题的递归神经网络。<br>Policy Gradient 策略梯度:</p>
+</blockquote>
+<p>该模型以encoder-decoder结构为骨干，模拟两个Agent之间的对话，在学习最大化预期回报的同时，探索可能的活动空间(回复的可能性)。Agent通过从正在进行的对话中优化长期Reward函数来学习策略。学习方式则使用策略梯度而非最大似然。</p>
+<p>改进后的模型如下图所示：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fuf47elgdkj20af09yjse.jpg" alt=""></p>
+<h3 id="论文模型的细节"><a href="#论文模型的细节" class="headerlink" title="论文模型的细节"></a>论文模型的细节</h3><h4 id="符号以及定义"><a href="#符号以及定义" class="headerlink" title="符号以及定义"></a>符号以及定义</h4><ol>
+<li>$p$: 第一个Agent生成的句子</li>
+<li>$q$: 第二个Agent生成的句子</li>
+<li>$p_1,q_1,p_2,q_2,…,p_i,q_i$: 一段对话，或者称之为上下文.</li>
+<li>$[p_i,q_i]$: Agent所处的状态，也即Agent的前两轮对话。</li>
+<li>$p<em>{RL}(p</em>{i+1}|p_i,q_i)$: 策略(policy),论文中以LSTM encoder-decoder的形式出现。</li>
+<li>$r$: 每个动作（每轮对话）的奖励函数。</li>
+<li>$\mathbb{S}$: 人工构建的”迟钝回复”，例如“我不知道你在说什么”。</li>
+<li>$N<em>{\mathbb{S}}$: 表示$N</em>{\mathbb{S}}$的基数</li>
+<li>$N_{s}$: 表示“迟钝回复”$s$的符号数量。</li>
+<li>$p_{seq2seq}$: 表示SEQ2SEQ模型的似然输出</li>
+<li>$h_{p<em>i}$和$h</em>{p_{i+1}}$: 从encoder中获取的，代表Agent两轮连续对话$p<em>i$和$p</em>{i+1}$的表示。</li>
+</ol>
+<h4 id="Reward的定义和作用："><a href="#Reward的定义和作用：" class="headerlink" title="Reward的定义和作用："></a>Reward的定义和作用：</h4><p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fug2dvizhhj209o01wdfq.jpg" alt=""></p>
+<blockquote>
+<p>$N<em>{\mathbb{S}}$:表示$N</em>{\mathbb{S}}$的基数<br>$N<em>{s}$: 表示“迟钝回复”$s$的符号数量<br>$p</em>{seq2seq}$: 表示SEQ2SEQ模型的似然输出</p>
+<ul>
+<li>$r_1$是为了降低回复的困难程度。这个奖励函数的灵感来自于前瞻性函数：计算当模型产生的响应$a$作为输入时模型输出$s$的概率，在对$\mathbb{S}$集合中的每一句话进行求和。因为$p_seq2seq}可定小于1，所以log项大于零，则r1小于零。通过r1的奖励机制，模型最终产生的action会慢慢的远离dull response，而且也会一定程度上估计到下一个人的回复，让对方可以更容易回复。</li>
+</ul>
+</blockquote>
+<p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fug5a6naokj20b302d747.jpg" alt=""></p>
+<blockquote>
+<p>$h_{p<em>i}$和$h</em>{p_{i+1}}$: 从encoder中获取的，代表Agent两轮连续对话$p<em>i$和$p</em>{i+1}$的表示。</p>
+<ul>
+<li>$r_2$是为了增加信息流的丰富程度，避免两次回复之间相似程度很高的情况。所以r2使用余弦相似度来计算两个句子之间的语义相似程度，很容易发现r2也是一个小于零的数，用来惩罚相似的句子。</li>
+</ul>
+</blockquote>
+<p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fug5av9bkgj20bp028mx4.jpg" alt=""></p>
+<blockquote>
+<p>$p_{seq2seq}(a|p_i, q_i)$: 表示在给定对话上文$[p_i,q<em>i]$的情况下生成回复a的概率<br>$p^{backward}</em>{seq2seq}(q_i|a)$: 表示基于响应$a$来生成之前的对话$q_i$的概率。</p>
+<ul>
+<li>$r_3$是为了增强语义连贯性，避免模型只产生那些高reward的响应，而丧失回答的充分性和连贯性。为了解决这个问题模型采用互信息来实现。反向的seq2seq是使用source和target反过来训练的另外一个模型，这样做的目的是为了提高q和a之间的相互关系，让对话更具有可持续性。可以看出来，$r_3$的两项都是正值。</li>
+</ul>
+</blockquote>
+<p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fug5beurspj209y01dt8k.jpg" alt=""></p>
+<ul>
+<li>最终的奖励函数式对$r_1，r_2，r_3$进行加权求和,论文中设定$\lambda_1=0.25, \lambda_2=0.25, \lambda3=0.5$。最后总模型在训练的时候也是先使用Seq2Seq模型先预训练一个基础模型，然后在其基础上在使用reward进行policy gradient的训练来优化模型的效果。</li>
+</ul>
+<h4 id="强化学习模型细节"><a href="#强化学习模型细节" class="headerlink" title="强化学习模型细节"></a>强化学习模型细节</h4><blockquote>
+<p>完全监督环境（fully supervised setting）: 一个预先训练的SEQ2SEQ模型，用作初始化强化学习模型。<br>注意力模型（Attention）: 模型在产生输出的时候，还会产生一个“注意力范围”表示接下来输出的时候要重点关注输入序列中的哪些部分，然后根据关注的区域来产生下一个输出，如此往复。</p>
+</blockquote>
+<p>论文采用了AlphaGo风格的模型：通过一个完全监督的环境下的一般响应生成策略来初始化强化学习模型。其中，SEQ2SEQ模型加入了Attention机制并且该模型在<strong>OpenSubtitles dataset</strong>数据集上训练。</p>
+<p>论文并未采用预训练的Seq2Seq模型来初始化强化学习策略模型，而是使用了第一作者本人在2016年提出的生成最大互信息响应的encoder-decoder模型: 使用$p_{SEQ2SEQ}(a|p_i, q<em>i)$来初始化$p</em>{RL}$。从生成的候选集$A={\hat{a}|\hat{a}~p_{RL}}$中的$\hat{a}$获取互信息的得分$m(\hat{a}, [p_i, q_i])$，那么对一个sequence的期望奖励函数为：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fuhd5cu9doj208j01ddfo.jpg" alt=""></p>
+<p>通过似然率估计的梯度为：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fuhd6s09lyj20ax01awed.jpg" alt=""></p>
+<p>通过随机梯度下降就可以更新encoder-decoder的参数。论文中通过借鉴curriculum learning strategy对梯度进行了改进。</p>
+<p>最终的梯度为：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fuhdbxz4kij20b401tjra.jpg" alt=""></p>
+<p>优化模型过程中则使用策略梯度来寻找可以最大化奖励函数的参数：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fuief5dqqxj209j01n0sn.jpg" alt=""></p>
+<h3 id="仿真实验细节"><a href="#仿真实验细节" class="headerlink" title="仿真实验细节"></a>仿真实验细节</h3><h4 id="对话仿真流程："><a href="#对话仿真流程：" class="headerlink" title="对话仿真流程："></a>对话仿真流程：</h4><ol>
+<li>从训练集中挑选一个message给Agent-A</li>
+<li>Agent-A对message进行编码并解码出一个响应作为输出。</li>
+<li>Agent-B以Agent-A的输出作为输入，并且通过encoder-decoder来</li>
+</ol>
+<p>而策略policy就是Seq2Seq模型生成的相应的概率分布。我们可以把这个问题看成是上下文的对话历史输入到神经网络中，然后输出是一个response的概率分布：$pRL(pi+1|pi,qi)$。所谓策略就是进行随机采样，选择要进行的回答。最后使用policy gradient进行网络参数的训练。</p>
+<p>两个agent互相对话最终得到的reward来调整base model的参数。</p>
+<p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fuf4u98teyj20lv0aatav.jpg" alt=""></p>
+<h3 id="实验结果分析"><a href="#实验结果分析" class="headerlink" title="实验结果分析"></a>实验结果分析</h3><h4 id="评估指标"><a href="#评估指标" class="headerlink" title="评估指标"></a>评估指标</h4><blockquote>
+<p>BLEU: bilingual evaluation understudy，一个评估机器翻译准确度的算法。<br>论文并没有使用 广泛应用的BLEU作为评价标准。</p>
+</blockquote>
+<ol>
+<li><p>对话的长度，作者认为当对话出现dull response的时候就算做对话结束，所以使用对话的轮次来作为了评价指标：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fuf0a67z3dj20fi051q3c.jpg" alt=""></p>
+</li>
+<li><p>不同unigrams、bigrams元组的数量和多样性，用于评测模型产生回答的丰富程度：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fuf0boign2j20e104a3z0.jpg" alt=""></p>
+</li>
+<li><p>人类评分：<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fuf0gegq71j20gc03sgm9.jpg" alt=""></p>
+</li>
+<li><p>最终对话效果<br><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fuf0hq4jzaj20g203k3z5.jpg" alt=""></p>
+</li>
+</ol>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>作者使用深度强化学习的方法来改善多轮对话的效果，并提出了三种reward的定义方式。可以算是DRL与NLP结合的一个比较不错的例子。但是从最后的结果部分也可以看得出，作者无论是在reward的定义、还是最后的评价指标都没有采用使用比较广泛的BLUE指标。这种手工定义的reward函数不可能涵盖一段理想对话所具有特点的的方方面面。</p>
+<h3 id="引用与参考"><a href="#引用与参考" class="headerlink" title="引用与参考"></a>引用与参考</h3><ol>
+<li><a target="_blank" rel="noopener" href="https://www.paperweekly.site/papers/notes/221">https://www.paperweekly.site/papers/notes/221</a></li>
+<li><a target="_blank" rel="noopener" href="https://scholar.google.com/">https://scholar.google.com/</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/u014595019/article/details/52826423">https://blog.csdn.net/u014595019/article/details/52826423</a></li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>请zzy824喝杯咖啡</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1ftpprdhc4gj20tz14q4a1.jpg" alt=" WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1ftppqm04y6j20go0p0jy4.jpg" alt=" Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    Zhengyuan Zhu
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="https://824zzy.github.io/2018/08/18/paper-note-deep-reinfocement-learning-for-Dialogue-Generation/" title="论文笔记：Deep Reinforcement Learning for Dialogue Generation">https://824zzy.github.io/2018/08/18/paper-note-deep-reinfocement-learning-for-Dialogue-Generation/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/note/" rel="tag"><i class="fa fa-tag"></i> note</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/09/convAI-paper-list/" rel="next" title="对话AI的论文列表">
+                <i class="fa fa-chevron-left"></i> 对话AI的论文列表
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/22/zero-shot-learning/" rel="prev" title="Zero-shot Learning学习笔记">
+                Zero-shot Learning学习笔记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
 
     <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+      
     </div>
   </div>
 
-{% endblock %}
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+          </div>
+          
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zODQxMS8xNDkzOQ"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="" />
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+			<!--my custom code begin-->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+			<script type="text/javascript">
+			  $("#sidebar").hover(function(){
+				$("#mydivshow").velocity('stop').velocity({opacity: 1});
+			  },function(){
+				$("#mydivshow").velocity('stop').velocity({opacity: 0});
+			  });
+			</script>
+			<div id="mydivshow" class="mydivshow">
+			<!--my custom code end-->
+			
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">72</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">90</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/824zzy" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:zhuzhengyuan824@gmail.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.zhihu.com/people/zzy-78/activities" target="_blank" title="知乎">
+                    
+                      <i class="fa fa-fw fa-bell"></i>知乎</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://github.com/BUPT/awesome-chatbot" title="Chatbot主页" target="_blank">Chatbot主页</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+        </div>
+		<!--my custom code begin-->
+		</div>
+		<!--my custom code end-->
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BA%E6%96%87%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF"><span class="nav-number">1.</span> <span class="nav-text">论文基本信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BA%E6%96%87%E6%8E%A8%E8%8D%90%E7%90%86%E7%94%B1%E4%B8%8E%E6%91%98%E8%A6%81"><span class="nav-number">2.</span> <span class="nav-text">论文推荐理由与摘要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%B9%E8%AF%9D%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%BC%BA%E7%82%B9%E4%B8%8D%E5%86%8D%E8%87%B4%E5%91%BD%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%9B%99%E5%85%89"><span class="nav-number">3.</span> <span class="nav-text">对话系统的缺点不再致命：深度强化学习带来的曙光</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E8%A8%80"><span class="nav-number">3.1.</span> <span class="nav-text">引言</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BA%E6%96%87%E7%9A%84%E5%86%99%E4%BD%9C%E5%8A%A8%E6%9C%BA"><span class="nav-number">3.1.1.</span> <span class="nav-text">论文的写作动机</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BA%E6%96%87%E6%80%9D%E8%B7%AF%E7%9A%84%E4%BA%AE%E7%82%B9"><span class="nav-number">3.1.2.</span> <span class="nav-text">论文思路的亮点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BA%E6%96%87%E6%A8%A1%E5%9E%8B%E7%9A%84%E7%BB%86%E8%8A%82"><span class="nav-number">3.2.</span> <span class="nav-text">论文模型的细节</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AC%A6%E5%8F%B7%E4%BB%A5%E5%8F%8A%E5%AE%9A%E4%B9%89"><span class="nav-number">3.2.1.</span> <span class="nav-text">符号以及定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Reward%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E4%BD%9C%E7%94%A8%EF%BC%9A"><span class="nav-number">3.2.2.</span> <span class="nav-text">Reward的定义和作用：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E6%A8%A1%E5%9E%8B%E7%BB%86%E8%8A%82"><span class="nav-number">3.2.3.</span> <span class="nav-text">强化学习模型细节</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%BF%E7%9C%9F%E5%AE%9E%E9%AA%8C%E7%BB%86%E8%8A%82"><span class="nav-number">3.3.</span> <span class="nav-text">仿真实验细节</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AF%B9%E8%AF%9D%E4%BB%BF%E7%9C%9F%E6%B5%81%E7%A8%8B%EF%BC%9A"><span class="nav-number">3.3.1.</span> <span class="nav-text">对话仿真流程：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C%E5%88%86%E6%9E%90"><span class="nav-number">3.4.</span> <span class="nav-text">实验结果分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%84%E4%BC%B0%E6%8C%87%E6%A0%87"><span class="nav-number">3.4.1.</span> <span class="nav-text">评估指标</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">3.5.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E7%94%A8%E4%B8%8E%E5%8F%82%E8%80%83"><span class="nav-number">3.6.</span> <span class="nav-text">引用与参考</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Zhengyuan Zhu</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">博客全站共69.4k字</span>
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a></div>
+  <span>　<i class="fa fa-bomb"></i></span>
+  <span id="showDays"></span>  
+
+
+
+
+<script>
+  var seconds = 1000;
+  var minutes = seconds * 60;
+  var hours = minutes * 60;
+  var days = hours * 24;
+  var years = days * 365;
+  var birthDay = Date.UTC(2018,07,27,00,00,00); // 这里设置建站时间
+  setInterval(function() {
+    var today = new Date();
+    var todayYear = today.getFullYear();
+    var todayMonth = today.getMonth()+1;
+    var todayDate = today.getDate();
+    var todayHour = today.getHours();
+    var todayMinute = today.getMinutes();
+    var todaySecond = today.getSeconds();
+    var now = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+    var diff = now - birthDay;
+    var diffYears = Math.floor(diff/years);
+    var diffDays = Math.floor((diff/days)-diffYears*365);
+    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+      document.getElementById('showDays').innerHTML="本站已运行 "+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+  }, 1000);
+</script>
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  <script type="text/javascript" color="255,255,255" opacity='1' zIndex="-2" count="81" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("lrStmEgU8MjAwlxcSITnS6DR-gzGzoHsz", "iR6jz7gj1mKzrFtB6EqbxmzK");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.3"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.3"></script>
+
+
+  
+  <script type="text/javascript" src="/js/src/exturl.js?v=5.1.3"></script>
+
+
+  <script src="/js/src/Aplayer-Controler.js"></script>
+<div id="AP-controler"></div>
+<script type="text/javascript">
+var myapc=new APlayer_Controler({
+		APC_dom:$('#AP-controler'),
+		aplayer:ap, //此为绑定的aplayer对象
+		attach_right:false,
+		position:{top:'300px',bottom:''},
+		fixed:true,
+		btn_width:100,
+		btn_height:120,
+		img_src:['http://oty1v077k.bkt.clouddn.com/bukagirl.jpg',
+				'http://oty1v077k.bkt.clouddn.com/jumpgirl.jpg',
+				'http://oty1v077k.bkt.clouddn.com/pentigirl.jpg',
+				'http://oty1v077k.bkt.clouddn.com/%E8%90%8C1.gif'],
+		img_style:{repeat:'no-repeat',position:'center',size:'contain'},
+		ctrls_color:'rgba(173,255,47,0.8)',
+		ctrls_hover_color:'rgba(255,140,0,0.7)',
+		tips_on:true,
+		tips_width:140,
+		tips_height:25,
+		tips_color:'rgba(255,255,255,0.6)',
+		tips_content:{},
+		timeout:30
+	});
+</script>
+
+<!-- 页面点击特效 -->
+<script type="text/javascript" src="/js/src/click-effect.js"></script>
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"sciptFrom":"local","model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"superSample":2,"width":300,"height":600,"position":"left","hOffset":0,"vOffset":-150},"mobile":{"show":true,"scale":0.01},"react":{"opacityDefault":0.9,"opacityOnHover":0.9},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>

@@ -1,37 +1,2022 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
 
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
-{% block page_class %}page-post-detail{% endblock %}
+  
 
 
-{% block content %}
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <meta name="baidu-site-verification" content="UqlC4pwKIm" />
+  <meta name="baidu-site-verification" content="d3U0dGeqGw" />
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+  <script>
+    (function () {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
+                alert('密码错误！');
+                if (history.length === 1) {
+                    location.replace("http://xxxxxxx.xxx"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+  </script>
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="1C1XSuJ8TgM2O0mcZvsgzEdy0IdRZOJfxDYPyh18U9Q" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.cat.net/css?family=Roboto Slab:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="exam," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Zhengyuan Zhu" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="Question distribution 10 choice questions(20%) 10 true or false questions(20%) 6 essay questions(60%)  Examation contains three parts: Network &amp; Design &amp; ProgrammingNetwork IP address: public">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tips for Examination of Network Software Design">
+<meta property="og:url" content="https://824zzy.github.io/2018/12/26/Network-software-design-exam-tips/index.html">
+<meta property="og:site_name" content="Zhengyuan Zhu">
+<meta property="og:description" content="Question distribution 10 choice questions(20%) 10 true or false questions(20%) 6 essay questions(60%)  Examation contains three parts: Network &amp; Design &amp; ProgrammingNetwork IP address: public">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://ww1.sinaimg.cn/mw690/ca26ff18ly1fynty6a1xwj20e50vnjt4.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/mw690/ca26ff18ly1fynty6a1xwj20e50vnjt4.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/ca26ff18ly1fymtosr7vyj20vt0f0whj.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/mw690/ca26ff18ly1fymv8bwce7j20d00kqgne.jpg">
+<meta property="article:published_time" content="2018-12-26T15:08:17.000Z">
+<meta property="article:modified_time" content="2019-01-04T13:21:04.000Z">
+<meta property="article:author" content="Zhengyuan Zhu">
+<meta property="article:tag" content="exam">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/mw690/ca26ff18ly1fynty6a1xwj20e50vnjt4.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Muse',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: 'undefined',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '0BV7SDEYWS',
+      apiKey: '7b5bee63a251ae508a2ab2b689f114c8',
+      indexName: 'zzy824',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://824zzy.github.io/2018/12/26/Network-software-design-exam-tips/"/>
+
+
+
+
+
+  <title>Tips for Examination of Network Software Design | Zhengyuan Zhu</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-111723881-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?605e0c55415d20ab6e7a9cd3fcb8f3e6";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <a target="_blank" rel="noopener" href="https://github.com/824zzy" class="github-corner" aria-label="View source on Github"><svg width="92" height="92" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Zhengyuan Zhu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-book">
+          <a href="/books%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            HandwritingNote
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-demo">
+          <a href="/demo%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-play-circle"></i> <br />
+            
+            Playing
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-maze">
+          <a href="/maze.html%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-code"></i> <br />
+            
+            Maze
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://824zzy.github.io/2018/12/26/Network-software-design-exam-tips/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhengyuan Zhu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Tips for Examination of Network Software Design</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-26T09:08:17-06:00">
+                2018-12-26
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified&#58;</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2019-01-04T07:21:04-06:00">
+                2019-01-04
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/BUPT/" itemprop="url" rel="index">
+                    <span itemprop="name">BUPT</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/12/26/Network-software-design-exam-tips/" class="leancloud_visitors" data-flag-title="Tips for Examination of Network Software Design">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  2,230
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  14分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <script src="/assets/js/APlayer.min.js"> </script><h2 id="Question-distribution"><a href="#Question-distribution" class="headerlink" title="Question distribution"></a>Question distribution</h2><ul>
+<li>10 choice questions(20%)</li>
+<li>10 true or false questions(20%)</li>
+<li>6 essay questions(60%)</li>
+</ul>
+<h2 id="Examation-contains-three-parts-Network-amp-Design-amp-Programming"><a href="#Examation-contains-three-parts-Network-amp-Design-amp-Programming" class="headerlink" title="Examation contains three parts: Network &amp; Design &amp; Programming"></a>Examation contains three parts: Network &amp; Design &amp; Programming</h2><h3 id="Network"><a href="#Network" class="headerlink" title="Network"></a>Network</h3><ul>
+<li>IP address:<ul>
+<li><code>public address</code>: an IP address that can be <strong>accessed over the Internet</strong>. And your public IP address is the <strong>globally unique</strong> and <strong>can be found</strong>, and can only be assigned to a unique device.</li>
+<li><code>private IP address</code>: The devices with private IP address will <strong>use your router’s public IP address to communicate</strong>. Note that to allow direct access to a local device which is assign a private IP address, a Network Address Translator(NAT) should be used.</li>
+<li><code>how to compute total ip address in a subnet</code>: <ol>
+<li>transform ip address into binary address.</li>
+<li>count zero from tail to first one.</li>
+<li>subtract 2(reserve address and broadcast address)</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Port(some default ports for common protocol):<ul>
+<li><strong>http</strong>: 80</li>
+<li><strong>https</strong>: 443</li>
+<li><strong>ntp</strong>: 123</li>
+<li><strong>ssh/tcp</strong>: 22</li>
+<li><strong>mongoDB</strong>: 27017</li>
+<li>DNS: 53</li>
+<li>FTP: 21</li>
+<li>Telnet: 23</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>DNS(duplicated):The Domain Name System(DNS) is the <strong>phonebook</strong> of the Internet. </p>
+<ul>
+<li>DNS <strong>translate domain names to IP address</strong> so browsers can load Internet resources.</li>
+<li>DNS is hierarchical with a few authoritative serves at the top level.<ol>
+<li>Your router or ISP provides information about DNS server to contact when doing a look up.</li>
+<li>Low level DNS servers cache mappings, which could become stale due to DNS propagation delays. </li>
+<li>DNS results can also be cached by your browser or OS for a certain period of time, determined by the time to live(TTL)</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1fynty6a1xwj20e50vnjt4.jpg" alt=""></p>
+<hr>
+<ul>
+<li>CDN(duplicated):<ul>
+<li>Definition: <strong>CDN(Content dilivery network/Content distributed network) is a geographically distributed network</strong> of proxy servers and their data centers. The goal is to distribute service spatially relative to end-users to <strong>provide high availability and high performance</strong>.</li>
+<li>Improve performance in two ways:<ul>
+<li>Users receive content at <strong>data centers close to them</strong>.</li>
+<li>Your servers do not have to serve requests that the CND fulfills.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Main routing protocol:<ul>
+<li><code>OSPF</code>(Open Shortest Path First): OSPF is an <strong>interior gateway protocal</strong>.</li>
+<li><code>IS-IS</code>(Intermediate System-to-Intermediate System): It is just like OSPF. IS-IS associates routers into areas of intra-area and inter-area.</li>
+<li><code>BGP</code>(Border Gateway Protocol): It is used as the edge of your network. BGP <strong>constructs a routing table of networks</strong> reachable among Autonomous Systems(AS) number defined by the user.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="Design"><a href="#Design" class="headerlink" title="Design"></a>Design</h3><h2 id="software-requirements-analysis-not-key-point"><a href="#software-requirements-analysis-not-key-point" class="headerlink" title="- software requirements analysis: not key point"></a>- software requirements analysis: not key point</h2><ul>
+<li>main principles and key technologies for High concurrency programming.(duplicated)<ol>
+<li><code>Security</code>, or correctness, is when a program executes concurrently with the expected results<ol>
+<li>The <strong>visibility</strong></li>
+<li>The <strong>order</strong></li>
+<li>The <strong>atomic</strong></li>
+</ol>
+</li>
+<li><code>Activeness</code>: Program must confront to <strong>deadlocks and livelocks</strong></li>
+<li><code>Performance</code>: <strong>Less context switching, less kernel calls, less consistent traffic</strong>, and so on.</li>
+</ol>
+</li>
+</ul>
+<hr>
+<ul>
+<li>generic phases of software engineering<ol>
+<li><code>Requirements analysis</code></li>
+<li><code>Software Design</code></li>
+<li><code>Implementation</code></li>
+<li><code>Verification/Testing</code></li>
+<li><code>Deployment</code></li>
+<li><code>Maintenance</code></li>
+</ol>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Agile Development(duplicated)<ol>
+<li><code>Agile Values</code>:<ol>
+<li>Individuals and <strong>interactions</strong> over processes and tools</li>
+<li>Working software over <strong>comprehensive documentation</strong></li>
+<li><strong>Customer collaboration</strong> over contract negotiation</li>
+<li><strong>Responding to change</strong> over following a plan</li>
+</ol>
+</li>
+<li><code>Agile Methods</code>:<ol>
+<li>Frequently <strong>deliver small incremental</strong> units of functionality</li>
+<li><strong>Define, build, test and evaluate cycles</strong></li>
+<li>Maximize speed of <strong>feedback loop</strong></li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h3 id="Programming"><a href="#Programming" class="headerlink" title="Programming"></a>Programming</h3><ul>
+<li>MVC(model-view-controller) model:<ul>
+<li>MVC is an <strong>architectural pattern</strong> commonly used for developing <strong>user interfaces</strong> and allowing for effcient <strong>code reuse</strong> and <strong>paraller development</strong>.<ul>
+<li>Model[probe]: an object carrying data. It can also have logic to <strong>update controller</strong> if its data changes.</li>
+<li>View[frontend]: it can be any <strong>output representation of information</strong>, such as chart or a diagram.</li>
+<li>Controller[backend]: accpet input and converts it to commands for the model or view</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>NoSQL database(duplicated):<ol>
+<li>NoSQL is <code>Not only SQL</code>, it has the advantages below: <ul>
+<li><strong>Not using</strong> the <strong>relational model</strong> nor the SQL language. It is a collection of <strong>data items represented in a key-value store, document-store, wide column store, or a graph database</strong>.</li>
+<li>Designed to run on <strong>large clusters</strong></li>
+<li><strong>No schema</strong></li>
+<li>Open Source</li>
+</ul>
+</li>
+<li>NoSQL properties in detail:<ul>
+<li><strong>Flexible scalability</strong></li>
+<li><strong>Dynamic schema</strong> of data</li>
+<li><strong>Efficient reading</strong></li>
+<li><strong>Cost saving</strong></li>
+</ul>
+</li>
+<li>NoSQL Technologies:<ul>
+<li><strong>MapReduce</strong> programming model</li>
+<li><strong>Key-value</strong> stores</li>
+<li><strong>Document databases</strong></li>
+<li><strong>Column-family stores</strong></li>
+<li><strong>Graph databases</strong> </li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Websocket(duplicated):<ul>
+<li>WebSocket is a <strong>computer communications protocal</strong>, providing <strong>Bidirectional full-duplex communication channels</strong> over a single TCP connection and it is defined in <strong>RFC6445</strong>.</li>
+<li>WebSocket is a different protocol from HTTP. Both protocols are located at <strong>layer 7 in the OSI model</strong> and depend on <strong>TCP at layer 4</strong>.</li>
+<li>The WebSocket protocol enables interaction between a web client and a web server with lower overheads, facilitating real-time data transfer from and to the server.</li>
+<li>working progress<ul>
+<li>There are four main functions in Tornado<ul>
+<li><code>open()</code>: Invoked when a new websocket is opened.</li>
+<li><code>on_message(message)</code>: Handle incoming messages on the WebSocket</li>
+<li><code>on_close()</code>: Invoke when the WebSocket is closed.</li>
+<li><code>write_message(message)</code>: Sends the given message to the client of this Web Socket.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Differences between <code>git</code> and <code>svn</code>:<ol>
+<li>Git is a <strong>distrubuted</strong> version control system; SVN is a non-distributed version control system.</li>
+<li>Git has a <strong>centralized</strong> server and repository; SVN has <strong>non-centralized</strong> server and repository.</li>
+<li>The content in Git is stored as <strong>metadata</strong>; SVN stores <strong>files of content</strong>.</li>
+<li>Git branches are <strong>easier</strong> to work with than SVN branches.</li>
+<li>Git does not have the <strong>global revision number</strong> feature like SVN has.</li>
+<li>Git has <strong>better content protection</strong> than SVN,</li>
+<li>Git was developed for <strong>Linux kernel</strong> by Linus Torvalds; SVN was deveploped by <strong>CollabNet</strong>.</li>
+</ol>
+</li>
+</ul>
+<h2 id="Essay-Questions"><a href="#Essay-Questions" class="headerlink" title="Essay Questions"></a>Essay Questions</h2><h3 id="Main-role-of-IP-address-port-DNS-CDN-for-network-software-design"><a href="#Main-role-of-IP-address-port-DNS-CDN-for-network-software-design" class="headerlink" title="Main role of IP address, port, DNS, CDN for network software design"></a>Main role of IP address, port, DNS, CDN for network software design</h3><ol>
+<li>An internet Protocal address(IP address) is <strong>a numerical label</strong> assigned to each device connected to a computer network that <strong>uses the Internet Protocal for communication</strong>.</li>
+<li>In computer networking, <strong>a port is an endpoint of communication</strong> and <strong>a logical construct that identifies a specific process</strong> or a type of network device.</li>
+<li><strong>DNS(Domain Name System)</strong> is a <strong>hierarchical decentralized naming system</strong> for computers connected to the Internet or a private network,</li>
+<li><strong>CDN(Content dilivery network/Content distributed network) is a geographically distributed network</strong> of proxy servers and their data centers. The goal is to distribute service spatially relative to end-users to <strong>provide high availability and high performance</strong>.</li>
+</ol>
+<h3 id="Difference-between-git-and-svn"><a href="#Difference-between-git-and-svn" class="headerlink" title="Difference between git and svn:"></a>Difference between <strong>git</strong> and <strong>svn</strong>:</h3><ol>
+<li>Git is a <strong>distrubuted</strong> version control system; SVN is a non-distributed version control system.</li>
+<li>Git has a <strong>centralized</strong> server and repository; SVN has <strong>non-centralized</strong> server and repository.</li>
+<li>The content in Git is stored as <strong>metadata</strong>; SVN stores <strong>files of content</strong>.</li>
+<li>Git branches are <strong>easier</strong> to work with than SVN branches.</li>
+<li>Git does not have the <strong>global revision number</strong> feature like SVN has.</li>
+<li>Git has <strong>better content protection</strong> than SVN,</li>
+<li>Git was developed for <strong>Linux kernel</strong> by Linus Torvalds; SVN was deveploped by <strong>CollabNet</strong>.</li>
+</ol>
+<h3 id="main-principles-and-key-technologies-for-High-concurrency-programming"><a href="#main-principles-and-key-technologies-for-High-concurrency-programming" class="headerlink" title="main principles and key technologies for High concurrency programming"></a>main principles and key technologies for High concurrency programming</h3><ol>
+<li><code>Security</code>, or correctness, is when a program executes concurrently with the expected results<ol>
+<li>The <strong>visibility</strong></li>
+<li>The <strong>order</strong></li>
+<li>The <strong>atomic</strong></li>
+</ol>
+</li>
+<li><code>Activeness</code>: Program must confront to <strong>deadlocks and livelocks</strong></li>
+<li><code>Performance</code>: <strong>Less context switching, less kernel calls, less consistent traffic</strong>, and so on.</li>
+</ol>
+<h3 id="NoSQL-and-SQL-database"><a href="#NoSQL-and-SQL-database" class="headerlink" title="NoSQL and SQL database"></a>NoSQL and SQL database</h3><ol>
+<li>RDBMS(Relational database management system)<ol>
+<li>A relational database like SQL is a collection of <strong>data items organized by tables</strong>. It has features below:<ol>
+<li><code>ACID</code> is a set of <strong>properties of relational database transactions</strong>.</li>
+<li><code>Atomicity</code>: Each transaction is all or nothing</li>
+<li><code>Consistency</code>: Any transaction will bring the database from one valid state to server.</li>
+<li><code>Isolation</code>:  Executing transaction has been committed, it will remain so.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>NoSQL</p>
+<ol>
+<li>NoSQL is <code>Not only SQL</code>, it has the advantages below: <ul>
+<li><strong>Not using</strong> the <strong>relational model</strong> nor the SQL language. It is a collection of <strong>data items represented in a key-value store, document-store, wide column store, or a graph database</strong>.</li>
+<li>Designed to run on <strong>large clusters</strong></li>
+<li><strong>No schema</strong></li>
+<li>Open Source</li>
+</ul>
+</li>
+<li>NoSQL properties in detail:<ul>
+<li><strong>Flexible scalability</strong></li>
+<li><strong>Dynamic schema</strong> of data</li>
+<li><strong>Efficient reading</strong></li>
+<li><strong>Cost saving</strong></li>
+</ul>
+</li>
+<li>NoSQL Technologies:<ul>
+<li><strong>MapReduce</strong> programming model</li>
+<li><strong>Key-value</strong> stores</li>
+<li><strong>Document databases</strong></li>
+<li><strong>Column-family stores</strong></li>
+<li><strong>Graph databases</strong> </li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>SQL VS NoSQL</p>
+<ol>
+<li>Relational data model VS Document data model</li>
+<li>Structured data VS semi-structured data</li>
+<li>strict schema VS dynamic/flexible schema</li>
+<li>relational data VS Non-relational data</li>
+</ol>
+</li>
+</ol>
+<h3 id="Websocket-working-progress"><a href="#Websocket-working-progress" class="headerlink" title="Websocket(working progress)"></a>Websocket(working progress)</h3><ul>
+<li>WebSocket is a <strong>computer communications protocal</strong>, providing <strong>Bidirectional full-duplex communication channels</strong> over a single TCP connection and it is defined in <strong>RFC6445</strong>.</li>
+<li>WebSocket is a different protocol from HTTP. Both protocols are located at <strong>layer 7 in the OSI model</strong> and depend on <strong>TCP at layer 4</strong>.</li>
+<li>The WebSocket protocol enables interaction between a web client and a web server with lower overheads, facilitating real-time data transfer from and to the server.</li>
+<li>working progress<ul>
+<li>There are four main functions in Tornado<ul>
+<li><code>open()</code>: Invoked when a new websocket is opened.</li>
+<li><code>on_message(message)</code>: Handle incoming messages on the WebSocket</li>
+<li><code>on_close()</code>: Invoke when the WebSocket is closed.</li>
+<li><code>write_message(message)</code>: Sends the given message to the client of this Web Socket.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Agile-Development-and-scrum"><a href="#Agile-Development-and-scrum" class="headerlink" title="Agile Development and scrum"></a>Agile Development and scrum</h3><ol>
+<li>Agile Values:<ol>
+<li>Individuals and interactions over processes and tools</li>
+<li>Working software over comprehensive documentation</li>
+<li>Customer collaboration over contract negotiation</li>
+<li>Responding to change over following a plan</li>
+</ol>
+</li>
+<li><p>Agile Methods:</p>
+<ol>
+<li>Frequently deliver small incremental units of functionality</li>
+<li>Define, build, test and evaluate cycles</li>
+<li>Maximize speed of feedback loop</li>
+</ol>
+</li>
+<li><p>Scrum is 3 roles:</p>
+<ol>
+<li>Development Team</li>
+<li>Product Owner</li>
+<li>Scrum Master</li>
+</ol>
+</li>
+<li><p>Scrum is 4 events:</p>
+<ol>
+<li>Sprint Planning</li>
+<li>Daily Stand-up Meeting</li>
+<li>Sprint Review</li>
+<li>Sprint Retrospective</li>
+</ol>
+</li>
+<li><p>Scrum is 4 artifacts:</p>
+<ol>
+<li>Product Backlog</li>
+<li>Sprint Backlog</li>
+<li>User Stories</li>
+<li>Scrum Board</li>
+</ol>
+</li>
+</ol>
+<h3 id="Explain-how-DNS-work"><a href="#Explain-how-DNS-work" class="headerlink" title="Explain how DNS work"></a>Explain how DNS work</h3><p>Definition: The Domain Name System(DNS) is the <strong>phonebook</strong> of the Internet. </p>
+<ul>
+<li>DNS <strong>translate domain names to IP address</strong> so browsers can load Internet resources.</li>
+<li>DNS is hierarchical with a few authoritative serves at the top level.<ol>
+<li>Your router or ISP provides information about DNS server to contact when doing a look up.</li>
+<li>Low level DNS servers cache mappings, which could become stale due to DNS propagation delays. </li>
+<li>DNS results can also be cached by your browser or OS for a certain period of time, determined by the time to live(TTL)</li>
+</ol>
+</li>
+</ul>
+<p><img src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1fynty6a1xwj20e50vnjt4.jpg" alt=""></p>
+<h3 id="Difference-between-docker-and-virtual-host"><a href="#Difference-between-docker-and-virtual-host" class="headerlink" title="Difference between docker and virtual host"></a>Difference between docker and virtual host</h3><ol>
+<li>Virtual Machine definition: Virtualization is the technique of importing a Guest operating system <strong>on top of a Host operating system</strong>.</li>
+<li>Docker definition: A container image is <strong>a lightweight, stand-alone, executable package of a piece of software</strong> that includes everything needed to run it.</li>
+<li>Docker is the service to run <strong>multiple containers on a machine</strong> (node) which can be on a vitual machine or on a physical machine.</li>
+<li>A virtual machine is an <strong>entire operating system</strong> (which normally is not lightweight).</li>
+</ol>
+<p><img src="http://ww1.sinaimg.cn/large/ca26ff18ly1fymtosr7vyj20vt0f0whj.jpg" alt="Difference between docker and virtual machine"></p>
+<h3 id="Type-of-software-test"><a href="#Type-of-software-test" class="headerlink" title="Type of software test"></a>Type of software test</h3><ul>
+<li><p>Black Box testing: Black box testing is a software testing method where testers <strong>are not required to know coding or internal structure</strong> of the software. Black box testing method relies on testing software with various inputs and validating results against expected output.</p>
+</li>
+<li><p>White Box testing: White box testing strategy deals with the <strong>internal logic and structure of the code</strong>. The tests written based on the white box testing strategy incorporate coverage of the code written, branches, paths, statements and internal logic of the code etc.</p>
+</li>
+<li><p>Equivalence Partitioning:Equivalence Partitioning is also known as Equivalence Class Partitioning is a software testing technique and not a type of testing by itself. Equivalence partitioning technique is <strong>used in black box and gray box testing types</strong>. Equivalence partitioning <strong>classifies test data into Equivalence classes as positive Equivalence classes and negative Equivalence classes</strong>, such classification ensures both positive and negative conditions are tested.</p>
+</li>
+</ul>
+<h3 id="Explain-how-CDN-work"><a href="#Explain-how-CDN-work" class="headerlink" title="Explain how CDN work"></a>Explain how CDN work</h3><ul>
+<li>Definition: <strong>CDN(Content dilivery network/Content distributed network) is a geographically distributed network</strong> of proxy servers and their data centers. The goal is to distribute service spatially relative to end-users to <strong>provide high availability and high performance</strong>.</li>
+<li>Improve performance in two ways:<ul>
+<li>Users receive content at data centers close to them.</li>
+<li>Your servers do not have to serve requests that the CND fulfills</li>
+</ul>
+</li>
+</ul>
+<p>To minimize the distance between the visitors and your website’s server, a CDN stores a cached version of its content in multiple geographical locations (a.k.a., points of presence, or PoPs). Each PoP contains a number of caching servers responsible for content delivery to visitors within its proximity.</p>
+<p>In essence, CDN puts your content in many places at once, providing superior coverage to your users. For example, when someone in London accesses your US-hosted website, it is done through a local UK PoP. This is much quicker than having the visitor’s requests, and your responses, travel the full width of the Atlantic and back.<br><img src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1fymv8bwce7j20d00kqgne.jpg" alt="CDN"></p>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.iplocation.net/public-vs-private-ip-address">What is the difference between public and private IP address?</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.differencebetween.net/technology/software-technology/difference-between-git-and-svn/">Difference Between Git and SVN</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.tutorialspoint.com/design_pattern/mvc_pattern.htm">Design Patterns - MVC Pattern</a></li>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">Model-view-controller</a></li>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/IP_address">IP address</a></li>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Port_(computer_networking">Port(computer networking)</a>)</li>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Domain_Name_System">Domain Name System</a></li>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Content_delivery_network">Content delivery network/Content distributed network</a></li>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/WebSocket">Websocket wiki</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.tornadoweb.org/en/stable/websocket.html">tornado.websocket — Bidirectional communication to the browser</a></li>
+<li><a target="_blank" rel="noopener" href="https://wenku.baidu.com/view/df90877bf121dd36a22d827d.html">网络常见协议及端口号</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cloudflare.com/learning/dns/what-is-dns/">How does DNS work</a></li>
+<li><a target="_blank" rel="noopener" href="http://freewimaxinfo.com/routing-protocol-types.html">Routing Protocols Types (RIP, IGRP, OSPF, EGP, EIGRP, BGP, IS-IS)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.virtually-limitless.com/vcix-nv-study-guide/configure-dynamic-routing-protocols-ospf-bgp-is-is/">Configure dynamic routing protocols: OSPF, BGP, IS-IS</a></li>
+<li><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/48396690/docker-vs-virtual-machine">Docker vs Virtual Machine</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/types-software-testing/">Types of Software Testing</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.testingexcellence.com/white-box-testing/">white-box-testing</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.testingexcellence.com/types-of-software-testing-complete-list/">types-of-software-testing-complete-list</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/ITer_ZC/article/details/40748587">聊聊高并发专栏</a></li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>请zzy824喝杯咖啡</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1ftpprdhc4gj20tz14q4a1.jpg" alt=" WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1ftppqm04y6j20go0p0jy4.jpg" alt=" Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    Zhengyuan Zhu
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="https://824zzy.github.io/2018/12/26/Network-software-design-exam-tips/" title="Tips for Examination of Network Software Design">https://824zzy.github.io/2018/12/26/Network-software-design-exam-tips/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/exam/" rel="tag"><i class="fa fa-tag"></i> exam</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/26/information-theory-channel-capacity-iteration-algorithm/" rel="next" title="信息论-信道容量迭代算法python实现版">
+                <i class="fa fa-chevron-left"></i> 信息论-信道容量迭代算法python实现版
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/19/first-deep-model-in-video-captioning/" rel="prev" title="视频描述领域的第一篇深度模型论文">
+                视频描述领域的第一篇深度模型论文 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
 
     <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+      
     </div>
   </div>
 
-{% endblock %}
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+          </div>
+          
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zODQxMS8xNDkzOQ"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="" />
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+			<!--my custom code begin-->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+			<script type="text/javascript">
+			  $("#sidebar").hover(function(){
+				$("#mydivshow").velocity('stop').velocity({opacity: 1});
+			  },function(){
+				$("#mydivshow").velocity('stop').velocity({opacity: 0});
+			  });
+			</script>
+			<div id="mydivshow" class="mydivshow">
+			<!--my custom code end-->
+			
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">72</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">90</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/824zzy" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:zhuzhengyuan824@gmail.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.zhihu.com/people/zzy-78/activities" target="_blank" title="知乎">
+                    
+                      <i class="fa fa-fw fa-bell"></i>知乎</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://github.com/BUPT/awesome-chatbot" title="Chatbot主页" target="_blank">Chatbot主页</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+        </div>
+		<!--my custom code begin-->
+		</div>
+		<!--my custom code end-->
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Question-distribution"><span class="nav-number">1.</span> <span class="nav-text">Question distribution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Examation-contains-three-parts-Network-amp-Design-amp-Programming"><span class="nav-number">2.</span> <span class="nav-text">Examation contains three parts: Network &amp; Design &amp; Programming</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Network"><span class="nav-number">2.1.</span> <span class="nav-text">Network</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Design"><span class="nav-number">2.2.</span> <span class="nav-text">Design</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#software-requirements-analysis-not-key-point"><span class="nav-number">3.</span> <span class="nav-text">- software requirements analysis: not key point</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Programming"><span class="nav-number">3.1.</span> <span class="nav-text">Programming</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Essay-Questions"><span class="nav-number">4.</span> <span class="nav-text">Essay Questions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Main-role-of-IP-address-port-DNS-CDN-for-network-software-design"><span class="nav-number">4.1.</span> <span class="nav-text">Main role of IP address, port, DNS, CDN for network software design</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Difference-between-git-and-svn"><span class="nav-number">4.2.</span> <span class="nav-text">Difference between git and svn:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#main-principles-and-key-technologies-for-High-concurrency-programming"><span class="nav-number">4.3.</span> <span class="nav-text">main principles and key technologies for High concurrency programming</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NoSQL-and-SQL-database"><span class="nav-number">4.4.</span> <span class="nav-text">NoSQL and SQL database</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Websocket-working-progress"><span class="nav-number">4.5.</span> <span class="nav-text">Websocket(working progress)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Agile-Development-and-scrum"><span class="nav-number">4.6.</span> <span class="nav-text">Agile Development and scrum</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Explain-how-DNS-work"><span class="nav-number">4.7.</span> <span class="nav-text">Explain how DNS work</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Difference-between-docker-and-virtual-host"><span class="nav-number">4.8.</span> <span class="nav-text">Difference between docker and virtual host</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Type-of-software-test"><span class="nav-number">4.9.</span> <span class="nav-text">Type of software test</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Explain-how-CDN-work"><span class="nav-number">4.10.</span> <span class="nav-text">Explain how CDN work</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">5.</span> <span class="nav-text">Reference:</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Zhengyuan Zhu</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">博客全站共69.4k字</span>
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a></div>
+  <span>　<i class="fa fa-bomb"></i></span>
+  <span id="showDays"></span>  
+
+
+
+
+<script>
+  var seconds = 1000;
+  var minutes = seconds * 60;
+  var hours = minutes * 60;
+  var days = hours * 24;
+  var years = days * 365;
+  var birthDay = Date.UTC(2018,07,27,00,00,00); // 这里设置建站时间
+  setInterval(function() {
+    var today = new Date();
+    var todayYear = today.getFullYear();
+    var todayMonth = today.getMonth()+1;
+    var todayDate = today.getDate();
+    var todayHour = today.getHours();
+    var todayMinute = today.getMinutes();
+    var todaySecond = today.getSeconds();
+    var now = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+    var diff = now - birthDay;
+    var diffYears = Math.floor(diff/years);
+    var diffDays = Math.floor((diff/days)-diffYears*365);
+    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+      document.getElementById('showDays').innerHTML="本站已运行 "+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+  }, 1000);
+</script>
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  <script type="text/javascript" color="255,255,255" opacity='1' zIndex="-2" count="81" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("lrStmEgU8MjAwlxcSITnS6DR-gzGzoHsz", "iR6jz7gj1mKzrFtB6EqbxmzK");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.3"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.3"></script>
+
+
+  
+  <script type="text/javascript" src="/js/src/exturl.js?v=5.1.3"></script>
+
+
+  <script src="/js/src/Aplayer-Controler.js"></script>
+<div id="AP-controler"></div>
+<script type="text/javascript">
+var myapc=new APlayer_Controler({
+		APC_dom:$('#AP-controler'),
+		aplayer:ap, //此为绑定的aplayer对象
+		attach_right:false,
+		position:{top:'300px',bottom:''},
+		fixed:true,
+		btn_width:100,
+		btn_height:120,
+		img_src:['http://oty1v077k.bkt.clouddn.com/bukagirl.jpg',
+				'http://oty1v077k.bkt.clouddn.com/jumpgirl.jpg',
+				'http://oty1v077k.bkt.clouddn.com/pentigirl.jpg',
+				'http://oty1v077k.bkt.clouddn.com/%E8%90%8C1.gif'],
+		img_style:{repeat:'no-repeat',position:'center',size:'contain'},
+		ctrls_color:'rgba(173,255,47,0.8)',
+		ctrls_hover_color:'rgba(255,140,0,0.7)',
+		tips_on:true,
+		tips_width:140,
+		tips_height:25,
+		tips_color:'rgba(255,255,255,0.6)',
+		tips_content:{},
+		timeout:30
+	});
+</script>
+
+<!-- 页面点击特效 -->
+<script type="text/javascript" src="/js/src/click-effect.js"></script>
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"sciptFrom":"local","model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"superSample":2,"width":300,"height":600,"position":"left","hOffset":0,"vOffset":-150},"mobile":{"show":true,"scale":0.01},"react":{"opacityDefault":0.9,"opacityOnHover":0.9},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
