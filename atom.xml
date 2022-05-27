@@ -479,33 +479,6 @@
   </entry>
   
   <entry>
-    <title>数据挖掘文本分类作业</title>
-    <link href="https://824zzy.github.io/2018/12/06/DataMining-Homework/"/>
-    <id>https://824zzy.github.io/2018/12/06/DataMining-Homework/</id>
-    <published>2018-12-06T17:16:41.000Z</published>
-    <updated>2018-12-14T08:26:31.000Z</updated>
-    
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Talk-is-Cheap-Let-me-show-you-the-code"><a href="#Talk-is-Cheap-Let-me-show-you-the-code" class="headerlink" title="Talk is Cheap, Let me show you the code"></a>Talk is Cheap, Let me show you the code</h2><p><a href="https://colab.research.google.com/drive/1AIzOZinBCn7iHo8Dx6AgLMRBzy2WglA-#scrollTo=ZPYreCTDWQB_&amp;uniqifier=4">传送门</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Talk-is-Cheap-Let-me-show-you-the-code&quot;&gt;&lt;a href=&quot;#Talk-is-Cheap-Let-me-show-you-th
-      
-    
-    </summary>
-    
-      <category term="ML" scheme="https://824zzy.github.io/categories/ML/"/>
-    
-    
-      <category term="dataMining" scheme="https://824zzy.github.io/tags/dataMining/"/>
-    
-      <category term="bupt" scheme="https://824zzy.github.io/tags/bupt/"/>
-    
-  </entry>
-  
-  <entry>
     <title>最大概率汉语切分作业</title>
     <link href="https://824zzy.github.io/2018/12/06/Chinese-segmentation-Homework/"/>
     <id>https://824zzy.github.io/2018/12/06/Chinese-segmentation-Homework/</id>
@@ -526,9 +499,36 @@
       <category term="NLP" scheme="https://824zzy.github.io/categories/NLP/"/>
     
     
+      <category term="chineseSegmentation" scheme="https://824zzy.github.io/tags/chineseSegmentation/"/>
+    
       <category term="bupt" scheme="https://824zzy.github.io/tags/bupt/"/>
     
-      <category term="chineseSegmentation" scheme="https://824zzy.github.io/tags/chineseSegmentation/"/>
+  </entry>
+  
+  <entry>
+    <title>数据挖掘文本分类作业</title>
+    <link href="https://824zzy.github.io/2018/12/06/DataMining-Homework/"/>
+    <id>https://824zzy.github.io/2018/12/06/DataMining-Homework/</id>
+    <published>2018-12-06T17:16:41.000Z</published>
+    <updated>2018-12-14T08:26:31.000Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><h2 id="Talk-is-Cheap-Let-me-show-you-the-code"><a href="#Talk-is-Cheap-Let-me-show-you-the-code" class="headerlink" title="Talk is Cheap, Let me show you the code"></a>Talk is Cheap, Let me show you the code</h2><p><a href="https://colab.research.google.com/drive/1AIzOZinBCn7iHo8Dx6AgLMRBzy2WglA-#scrollTo=ZPYreCTDWQB_&amp;uniqifier=4">传送门</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;h2 id=&quot;Talk-is-Cheap-Let-me-show-you-the-code&quot;&gt;&lt;a href=&quot;#Talk-is-Cheap-Let-me-show-you-th
+      
+    
+    </summary>
+    
+      <category term="ML" scheme="https://824zzy.github.io/categories/ML/"/>
+    
+    
+      <category term="bupt" scheme="https://824zzy.github.io/tags/bupt/"/>
+    
+      <category term="dataMining" scheme="https://824zzy.github.io/tags/dataMining/"/>
     
   </entry>
   
