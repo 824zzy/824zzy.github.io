@@ -640,16 +640,16 @@
 <span class="keyword">for</span> i <span class="keyword">in</span> range(M):
 Initial_random(minibatch)
 <span class="keyword">if</span> Train_Worker:
-  goal_exploration(enable=<span class="keyword">False</span>)
+  goal_exploration(enable=<span class="literal">False</span>)
   sampled_capt = LSTM() <span class="comment"># a_1, a_2, ..., a_T</span>
   Reward = [r_i <span class="keyword">for</span> r_i <span class="keyword">in</span> calculate_R(sampled_caption)]
-  Manager(enable=<span class="keyword">False</span>)
+  Manager(enable=<span class="literal">False</span>)
   worker_policy = Policy_gradient(Reward)
 <span class="keyword">elif</span> Train_Manager:
   Initial_ramdom_process(N)
   greedy_decoded_cap = LSTM()
   Reward = [r_i <span class="keyword">for</span> r_i <span class="keyword">in</span> calculate_R(sampled_caption)]
-  Worker(enable=<span class="keyword">False</span>)
+  Worker(enable=<span class="literal">False</span>)
   manager_policy = Policy_gradient(Reward)
 </code></pre>
 </li>
