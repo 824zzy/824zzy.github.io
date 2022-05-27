@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta name="baidu-site-verification" content="UqlC4pwKIm">
+  <meta name="baidu-site-verification" content="d3U0dGeqGw">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+  <script>
+    (function () {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
+                alert('密码错误！');
+                if (history.length === 1) {
+                    location.replace("http://xxxxxxx.xxx"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+  </script>
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <meta name="google-site-verification" content="1C1XSuJ8TgM2O0mcZvsgzEdy0IdRZOJfxDYPyh18U9Q">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.cat.net/css?family=Roboto Slab:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="logging,unittest,datetime,retry,os,timeit,glob,PIL,pickle,matplotlib,numpy,setuptool,graphviz,pydot,easydict,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Zzy824" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="python logging模块   Python引入了logging模块来记录用户想要查看的信息。 日志级别当我们执行如下代码：1234567import logging  # 引入logging模块# 将信息打印到控制台上logging.debug(u&quot;A&quot;)logging.info(u&quot;B&quot;)logging.warning(u&quot;C&quot;)logging.error(u&quot;D&quot;)logging.c">
+<meta name="keywords" content="logging,unittest,datetime,retry,os,timeit,glob,PIL,pickle,matplotlib,numpy,setuptool,graphviz,pydot,easydict">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python常用模块">
+<meta property="og:url" content="https://824zzy.github.io/2017/06/10/Python-module/index.html">
+<meta property="og:site_name" content="Zzy824">
+<meta property="og:description" content="python logging模块   Python引入了logging模块来记录用户想要查看的信息。 日志级别当我们执行如下代码：1234567import logging  # 引入logging模块# 将信息打印到控制台上logging.debug(u&quot;A&quot;)logging.info(u&quot;B&quot;)logging.warning(u&quot;C&quot;)logging.error(u&quot;D&quot;)logging.c">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/824zzy/blogResources/master/picResources/python_model_1.png">
+<meta property="og:updated_time" content="2018-10-03T07:34:55.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python常用模块">
+<meta name="twitter:description" content="python logging模块   Python引入了logging模块来记录用户想要查看的信息。 日志级别当我们执行如下代码：1234567import logging  # 引入logging模块# 将信息打印到控制台上logging.debug(u&quot;A&quot;)logging.info(u&quot;B&quot;)logging.warning(u&quot;C&quot;)logging.error(u&quot;D&quot;)logging.c">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/824zzy/blogResources/master/picResources/python_model_1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: 'undefined',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '0BV7SDEYWS',
+      apiKey: '7b5bee63a251ae508a2ab2b689f114c8',
+      indexName: 'zzy824',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://824zzy.github.io/2017/06/10/Python-module/">
+
+
+
+
+
+  <title>Python常用模块 | Zzy824</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-111723881-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?605e0c55415d20ab6e7a9cd3fcb8f3e6";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <a href="https://github.com/824zzy" class="github-corner" aria-label="View source on Github"><svg width="92" height="92" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Zzy824</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">Player of AI</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-book">
+          <a href="/books" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br>
+            
+            手写笔记
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-demo">
+          <a href="/demo" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-play-circle"></i> <br>
+            
+            演奏
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-maze">
+          <a href="/maze.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-code"></i> <br>
+            
+            迷宫
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://824zzy.github.io/2017/06/10/Python-module/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZZY">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zzy824">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Python常用模块</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-10T00:00:00+08:00">
+                2017-06-10
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-10-03T15:34:55+08:00">
+                2018-10-03
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/06/10/Python-module/" class="leancloud_visitors" data-flag-title="Python常用模块">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2,614
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  12分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <script src="/assets/js/APlayer.min.js"> </script><h2 id="python-logging模块"><a href="#python-logging模块" class="headerlink" title="python logging模块"></a>python logging模块</h2><blockquote>
+<p>  Python引入了logging模块来记录用户想要查看的信息。</p>
+<h3 id="日志级别"><a href="#日志级别" class="headerlink" title="日志级别"></a>日志级别</h3><p>当我们执行如下代码：<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> logging  <span class="comment"># 引入logging模块</span></span><br><span class="line"><span class="comment"># 将信息打印到控制台上</span></span><br><span class="line">logging.debug(<span class="string">u"A"</span>)</span><br><span class="line">logging.info(<span class="string">u"B"</span>)</span><br><span class="line">logging.warning(<span class="string">u"C"</span>)</span><br><span class="line">logging.error(<span class="string">u"D"</span>)</span><br><span class="line">logging.critical(<span class="string">u"E"</span>)</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>控制台的输出结果为：<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">WARNING:root:C</span><br><span class="line">ERROR:root:D</span><br><span class="line">CRITICAL:root:E</span><br></pre></td></tr></table></figure></p>
+<p>我们会发现控制台只输出了后三个日志，这是因为<strong>默认生成的root logger的level是logging.WARNING,低于该级别的就不输出了</strong>。因此在代码最上方需要<strong>改变日志级别为NOTSET</strong>：<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> logging <span class="comment"># 引入logging模块</span></span><br><span class="line">logging.basciConfig(level=logging.NOTSET) <span class="comment"># 设置日志级别</span></span><br><span class="line">logging.debug(<span class="string">u"如果设置了日志级别为NOTSET,那么这里可以采取debug、info的级别的内容也可以显示在控制台上了"</span>)</span><br></pre></td></tr></table></figure></p>
+<h3 id="控制台日志输出"><a href="#控制台日志输出" class="headerlink" title="控制台日志输出"></a>控制台日志输出</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> logging  <span class="comment"># 引入logging模块</span></span><br><span class="line">logging.basicConfig(level=logging.DEBUG,format=<span class="string">'%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s'</span>)  <span class="comment"># logging.basicConfig函数对日志的输出格式及方式做相关配置</span></span><br><span class="line"><span class="comment"># 由于日志基本配置中级别设置为DEBUG，所以一下打印信息将会全部显示在控制台上</span></span><br><span class="line">logging.info(<span class="string">'this is a loggging info message'</span>)</span><br><span class="line">logging.debug(<span class="string">'this is a loggging debug message'</span>)</span><br><span class="line">logging.warning(<span class="string">'this is loggging a warning message'</span>)</span><br><span class="line">logging.error(<span class="string">'this is an loggging error message'</span>)</span><br><span class="line">logging.critical(<span class="string">'this is a loggging critical message'</span>)</span><br></pre></td></tr></table></figure>
+<p><img src="https://raw.githubusercontent.com/824zzy/blogResources/master/picResources/python_model_1.png" alt></p>
+<h3 id="日志文件输出"><a href="#日志文件输出" class="headerlink" title="日志文件输出"></a>日志文件输出</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> logging  <span class="comment"># 引入logging模块</span></span><br><span class="line"><span class="keyword">import</span> os.path</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="comment"># 第一步，创建一个logger</span></span><br><span class="line">logger = logging.getLogger()</span><br><span class="line">logger.setLevel(logging.INFO)  <span class="comment"># Log等级总开关</span></span><br><span class="line"><span class="comment"># 第二步，创建一个handler，用于写入日志文件</span></span><br><span class="line">rq = time.strftime(<span class="string">'%Y%m%d%H%M'</span>, time.localtime(time.time()))</span><br><span class="line">log_path = os.path.dirname(os.getcwd()) + <span class="string">'/Logs/'</span></span><br><span class="line">log_name = log_path + rq + <span class="string">'.log'</span></span><br><span class="line">logfile = log_name</span><br><span class="line">fh = logging.FileHandler(logfile, mode=<span class="string">'w'</span>)</span><br><span class="line">fh.setLevel(logging.DEBUG)  <span class="comment"># 输出到file的log等级的开关</span></span><br><span class="line"><span class="comment"># 第三步，定义handler的输出格式</span></span><br><span class="line">formatter = logging.Formatter(<span class="string">"%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s"</span>)</span><br><span class="line">fh.setFormatter(formatter)</span><br><span class="line"><span class="comment"># 第四步，将logger添加到handler里面</span></span><br><span class="line">logger.addHandler(fh)</span><br><span class="line"><span class="comment"># 日志</span></span><br><span class="line">logger.debug(<span class="string">'this is a logger debug message'</span>)</span><br><span class="line">logger.info(<span class="string">'this is a logger info message'</span>)</span><br><span class="line">logger.warning(<span class="string">'this is a logger warning message'</span>)</span><br><span class="line">logger.error(<span class="string">'this is a logger error message'</span>)</span><br><span class="line">logger.critical(<span class="string">'this is a logger critical message'</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="python单元测试框架-unittest"><a href="#python单元测试框架-unittest" class="headerlink" title="python单元测试框架-unittest"></a>python单元测试框架-unittest</h2><h3 id="unittest最核心的原理"><a href="#unittest最核心的原理" class="headerlink" title="unittest最核心的原理"></a>unittest最核心的原理</h3><ul>
+<li>TestCase:测试用例<ul>
+<li>setUP:测试前准备环境的搭建</li>
+<li>run:执行测试代码</li>
+<li>tearDown:测试后环境的还原</li>
+</ul>
+</li>
+<li>TestSuite：多个测试用例的集合</li>
+<li>TestLoader：加载TestCase到TestSuite中</li>
+<li>TextTestRunner：执行测试用例，并且把结果保存在TextTestResult之中</li>
+<li>test fixture：对测试用例环境的搭建和销毁</li>
+</ul>
+<h3 id="基本使用方法"><a href="#基本使用方法" class="headerlink" title="基本使用方法"></a>基本使用方法</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> unnittest</span><br><span class="line"></span><br><span class="line"><span class="comment"># 以下定义四个函数进行单元测试</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(a, b)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> a+b</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">minus</span><span class="params">(a, b)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> a-b</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">multi</span><span class="params">(a, b)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> a*b</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">divide</span><span class="params">(a, b)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> a/b</span><br><span class="line"><span class="comment"># 是时候展现真正的(unittest)技术了:单元测试主体部分</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestMathFunc</span><span class="params">(unittest.TestCase)</span>:</span></span><br><span class="line">    <span class="string">"""Test mathfuc.py"""</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_add</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="string">"""Test method add(a, b)"""</span></span><br><span class="line">        self.assertEqual(<span class="number">3</span>, add(<span class="number">1</span>, <span class="number">2</span>))</span><br><span class="line">        self.assertNotEqual(<span class="number">3</span>, add(<span class="number">2</span>, <span class="number">2</span>))</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_minus</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="string">"""Test method minus(a, b)"""</span></span><br><span class="line">        self.assertEqual(<span class="number">1</span>, minus(<span class="number">3</span>, <span class="number">2</span>))</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_multi</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="string">"""Test method multi(a, b)"""</span></span><br><span class="line">        self.assertEqual(<span class="number">6</span>, multi(<span class="number">2</span>, <span class="number">3</span>))</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">test_divide</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="string">"""Test method divide(a, b)"""</span></span><br><span class="line">        self.assertEqual(<span class="number">2</span>, divide(<span class="number">6</span>, <span class="number">3</span>))</span><br><span class="line">        self.assertEqual(<span class="number">2.5</span>, divide(<span class="number">5</span>, <span class="number">2</span>))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    unittest.main()</span><br><span class="line"><span class="string">"""执行结果为：</span></span><br><span class="line"><span class="string">.F..</span></span><br><span class="line"><span class="string">======================================================================</span></span><br><span class="line"><span class="string">FAIL: test_divide (__main__.TestMathFunc)</span></span><br><span class="line"><span class="string">Test method divide(a, b)</span></span><br><span class="line"><span class="string">----------------------------------------------------------------------</span></span><br><span class="line"><span class="string">Traceback (most recent call last):</span></span><br><span class="line"><span class="string">  File "D:/py/test_mathfunc.py", line 26, in test_divide</span></span><br><span class="line"><span class="string">    self.assertEqual(2.5, divide(5, 2))</span></span><br><span class="line"><span class="string">AssertionError: 2.5 != 2</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">----------------------------------------------------------------------</span></span><br><span class="line"><span class="string">Ran 4 tests in 0.000s</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">FAILED (failures=1)</span></span><br><span class="line"><span class="string">"""</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>在第一行给出了每一个用例执行的结果的标识，成功是 .，失败是 F，出错是 E，跳过是 S。从上面也可以看出，测试的执行跟方法的顺序没有关系，test_divide写在了第4个，但是却是第2个执行的。</li>
+<li>每个测试方法均以 test 开头，否则是不被unittest识别的。</li>
+</ul>
+<h3 id="进阶：TestSuite-组织测试"><a href="#进阶：TestSuite-组织测试" class="headerlink" title="进阶：TestSuite(组织测试)"></a>进阶：TestSuite(组织测试)</h3><blockquote>
+<p>将程序按照添加的顺序来执行。此处只需针对上文的main函数进行改进</p>
+</blockquote>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    suite = unittest.TestSuite()</span><br><span class="line"></span><br><span class="line">    tests = [TestMathFunc(<span class="string">"test_add"</span>), TestMathFunc(<span class="string">"test_minus"</span>), TestMathFunc(<span class="string">"test_divide"</span>)]</span><br><span class="line">    suite.addTests(tests)</span><br><span class="line"></span><br><span class="line">    runner = unittest.TextTestRunner(verbosity=<span class="number">2</span>)</span><br><span class="line">    runner.run(suite)</span><br></pre></td></tr></table></figure>
+<h3 id="进阶：准备测试环境"><a href="#进阶：准备测试环境" class="headerlink" title="进阶：准备测试环境"></a>进阶：准备测试环境</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TestMathFunc</span><span class="params">(unittest.TestCase)</span>:</span></span><br><span class="line">    <span class="string">"""Test mathfuc.py"""</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">setUp</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">"do something before test.Prepare environment."</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">tearDown</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">"do something after test.Clean up."</span></span><br><span class="line">    </span><br><span class="line"><span class="meta">    @classmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">setUpClass</span><span class="params">(cls)</span>:</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">"This setUpClass() method only called once."</span></span><br><span class="line"></span><br><span class="line"><span class="meta">    @classmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">tearDownClass</span><span class="params">(cls)</span>:</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">"This tearDownClass() method only called once too."</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>这两个方法在每个测试方法执行前以及执行后执行一次，<code>setUp</code>用来为测试准备环境，<code>tearDown</code>用来清理环境，已备之后的测试。</li>
+<li>如果想要在所有case执行之前准备一次环境，并在所有case执行结束之后再清理环境，我们可以用 <code>setUpClass()</code>与<code>tearDownClass()</code></li>
+</ul>
+<h2 id="os模块与sys的模块"><a href="#os模块与sys的模块" class="headerlink" title="os模块与sys的模块"></a>os模块与sys的模块</h2><h3 id="os模块与sys模块的区分"><a href="#os模块与sys模块的区分" class="headerlink" title="os模块与sys模块的区分"></a>os模块与sys模块的区分</h3><blockquote>
+<p>os模块：提供了一种方便使用操作系统函数的方法</p>
+<p>sys模块：提供访问由解释器使用或维护的变量和在与解释器交互使用到的函数 </p>
+</blockquote>
+<h3 id="os模块常用方法"><a href="#os模块常用方法" class="headerlink" title="os模块常用方法"></a>os模块常用方法</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">os.remove()删除文件  </span><br><span class="line">os.rename()重命名文件  </span><br><span class="line">os.walk()生成目录树下的所有文件名  </span><br><span class="line">os.chdir()改变目录  </span><br><span class="line">os.mkdir/makedirs创建目录/多层目录  </span><br><span class="line">os.rmdir/removedirs删除目录/多层目录  </span><br><span class="line">os.listdir()列出指定目录的文件  </span><br><span class="line">os.getcwd()取得当前工作目录  </span><br><span class="line">os.chmod()改变目录权限  </span><br><span class="line">os.path.basename()去掉目录路径，返回文件名  </span><br><span class="line">os.path.dirname()去掉文件名，返回目录路径  </span><br><span class="line">os.path.join()将分离的各部分组合成一个路径名  </span><br><span class="line">os.path.split()返回（dirname(),basename())元组  </span><br><span class="line">os.path.splitext()(返回filename,extension)元组  </span><br><span class="line">os.path.getatime\ctime\mtime分别返回最近访问、创建、修改时间  </span><br><span class="line">os.path.getsize()返回文件大小  </span><br><span class="line">os.path.exists()是否存在  </span><br><span class="line">os.path.isabs()是否为绝对路径  </span><br><span class="line">os.path.isdir()是否为目录  </span><br><span class="line">os.path.isfile()是否为文件</span><br></pre></td></tr></table></figure>
+<h2 id="sys模块常用方法："><a href="#sys模块常用方法：" class="headerlink" title="sys模块常用方法："></a>sys模块常用方法：</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">sys.argv           命令行参数List，第一个元素是程序本身路径   </span><br><span class="line">sys.modules.keys() 返回所有已经导入的模块列表   </span><br><span class="line">sys.exc_info()     获取当前正在处理的异常类,exc_type、exc_value、exc_traceback当前处理的异常详细信息   </span><br><span class="line">sys.exit(n)        退出程序，正常退出时exit(<span class="number">0</span>)   </span><br><span class="line">sys.hexversion     获取Python解释程序的版本值，<span class="number">16</span>进制格式如：<span class="number">0x020403F0</span>   </span><br><span class="line">sys.version        获取Python解释程序的版本信息   </span><br><span class="line">sys.maxint         最大的Int值   </span><br><span class="line">sys.maxunicode     最大的Unicode值   </span><br><span class="line">sys.modules        返回系统导入的模块字段，key是模块名，value是模块   </span><br><span class="line">sys.path           返回模块的搜索路径，初始化时使用PYTHONPATH环境变量的值   </span><br><span class="line">sys.platform       返回操作系统平台名称   </span><br><span class="line">sys.stdout         标准输出  </span><br><span class="line">sys.stdin          标准输入  </span><br><span class="line">sys.stderr         错误输出  </span><br><span class="line">sys.exc_clear()    用来清除当前线程所出现的当前的或最近的错误信息  </span><br><span class="line">sys.exec_prefix    返回平台独立的python文件安装的位置  </span><br><span class="line">sys.byteorder      本地字节规则的指示器，big-endian平台的值是<span class="string">'big'</span>,little-endian平台的值是<span class="string">'little'</span>  </span><br><span class="line">sys.copyright      记录python版权相关的东西  </span><br><span class="line">sys.api_version    解释器的C的API版本  </span><br><span class="line">sys.version_info</span><br></pre></td></tr></table></figure>
+<h2 id="关于时间的模块"><a href="#关于时间的模块" class="headerlink" title="关于时间的模块"></a>关于时间的模块</h2><h3 id="datetime模块获取当前时间"><a href="#datetime模块获取当前时间" class="headerlink" title="datetime模块获取当前时间"></a>datetime模块获取当前时间</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line">nowTime = datatime.datatime.now().strftime(<span class="string">'%Y-%m-%d %H:%M:%S'</span>) <span class="comment"># 现在</span></span><br></pre></td></tr></table></figure>
+<h2 id="retry模块"><a href="#retry模块" class="headerlink" title="retry模块"></a>retry模块</h2><p>使用场景通常是在网络情况不太稳定时，预防超时异常<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">from</span> retrying <span class="keyword">import</span> retry</span><br><span class="line"></span><br><span class="line"><span class="meta">@retry</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">do_something_unreliable</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">if</span> random.randint(<span class="number">0</span>, <span class="number">10</span>) &gt; <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">raise</span> IOError(<span class="string">"Broken sauce, everything is hosed!!!111one"</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"Awesome sauce!"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> do_something_unreliable()</span><br></pre></td></tr></table></figure></p>
+<p>以上是官方文档的代码：给函数添加@retry装饰器后，只要有异常，那么函数会不断地重试，直到有返回值。<br>下面是几个常常传入装饰器的参数<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 最多尝试7次，这个最常用！</span></span><br><span class="line"><span class="meta">@retry(stop_max_attempt_number=7)</span></span><br><span class="line"><span class="comment"># 最长等待10秒</span></span><br><span class="line"><span class="meta">@retry(stop_max_delay=10000)</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="timeit"><a href="#timeit" class="headerlink" title="timeit"></a>timeit</h2><p>专门用来测试代码的运行时间，运行十分方便：<br>    实例化<code>Timer</code>类需要两个参数，第一个参数为你需要计算运行时间的函数，类型为字符串；第二个参数为构建环境的导入语句，类型也为字符串。</p>
+<h3 id="例子1"><a href="#例子1" class="headerlink" title="例子1"></a>例子1</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 用来计算运行时间的函数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test1</span><span class="params">()</span>:</span></span><br><span class="line">    n = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">101</span>):</span><br><span class="line">        n += i</span><br><span class="line">    <span class="keyword">return</span> n</span><br><span class="line"><span class="keyword">from</span> timeit <span class="keyword">import</span> Timer</span><br><span class="line"><span class="comment"># 实例化</span></span><br><span class="line">t = Timer(<span class="string">"test1()"</span>, <span class="string">"from __main__ import test1"</span>)</span><br><span class="line"><span class="keyword">print</span> t.timeit()</span><br><span class="line"><span class="keyword">print</span> t.repeat(<span class="number">3</span>, <span class="number">10000</span>) <span class="comment"># 执行测试三次</span></span><br></pre></td></tr></table></figure>
+<h2 id="glob"><a href="#glob" class="headerlink" title="glob"></a>glob</h2><p>glob是python自己带的一个文件操作相关模块，用它可以查找符合自己目的的文件，支持<strong>通配符操作</strong>: <code></code> <code>?</code> <code>[]]</code>这三个通配符，<code></code>代表0个或多个字符，<code>?</code>代表一个字符，<code>[]</code>匹配指定范围内的字符，如[0-9]匹配数字。主要方法如下.</p>
+<h3 id="glob方法：返回所有匹配的文件路径列表"><a href="#glob方法：返回所有匹配的文件路径列表" class="headerlink" title="glob方法：返回所有匹配的文件路径列表"></a>glob方法：返回所有匹配的文件路径列表</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">glob.glob(<span class="string">r'C:*.txt'</span>) <span class="comment"># 获取C盘下的所有txt文件</span></span><br><span class="line">glog.glob(<span class="string">r'../*.py'</span>) <span class="comment"># 获取相对路径下的python文件</span></span><br></pre></td></tr></table></figure>
+<h2 id="PIL"><a href="#PIL" class="headerlink" title="PIL"></a>PIL</h2><p>PIL：Python Imaging Library，已经是Python平台事实上的图像处理标准库了。PIL功能非常强大，但API却非常简单易用。</p>
+<h3 id="诡异的安装方式"><a href="#诡异的安装方式" class="headerlink" title="诡异的安装方式"></a>诡异的安装方式</h3><p><code>pip install pillow</code></p>
+<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line">im = Image.open(<span class="string">'path/to/Image.jpg'</span>) <span class="comment"># 打开图像文件</span></span><br><span class="line">w, h = im.size <span class="comment"># 获取图片尺寸</span></span><br><span class="line">im.thumbnail((w//<span class="number">2</span>, h//<span class="number">2</span>)) <span class="comment"># 缩放图片到50%</span></span><br><span class="line">im.save(<span class="string">'path/to/Image.jpg'</span>, <span class="string">'jpeg'</span>) <span class="comment"># 保存图片格式为jpeg</span></span><br></pre></td></tr></table></figure>
+<h2 id="matplotlib"><a href="#matplotlib" class="headerlink" title="matplotlib"></a>matplotlib</h2><h3 id="在远端服务器利用matplotlib绘图"><a href="#在远端服务器利用matplotlib绘图" class="headerlink" title="在远端服务器利用matplotlib绘图"></a>在远端服务器利用matplotlib绘图</h3><p>在<code>import matplotlib.pyplot</code><strong>之前</strong>加上:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib <span class="keyword">as</span> mpl</span><br><span class="line">mpl.use(<span class="string">'Agg'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>在<code>plt.draw</code><strong>之后</strong>加上:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plt.savefig(<span class="string">"/path/to/pic.jpg"</span>)</span><br></pre></td></tr></table></figure></p>
+<h2 id="setuptool"><a href="#setuptool" class="headerlink" title="setuptool"></a>setuptool</h2><h3 id="basic-usage"><a href="#basic-usage" class="headerlink" title="basic usage"></a>basic usage</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> setuptools <span class="keyword">import</span> setup</span><br><span class="line">setup(</span><br><span class="line">    name=<span class="string">'MyApp'</span>,         <span class="comment"># 应用名</span></span><br><span class="line">    version=<span class="string">'1.0'</span>,        <span class="comment"># 版本号</span></span><br><span class="line">    packages=[<span class="string">'myapp'</span>]    <span class="comment"># 包括在安装包内的Python包</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h2 id="pydot-amp-graphviz"><a href="#pydot-amp-graphviz" class="headerlink" title="pydot &amp; graphviz"></a>pydot &amp; graphviz</h2><p>两个包为keras的可视化模块。可以可视化神经网络结构</p>
+<h2 id="easydict"><a href="#easydict" class="headerlink" title="easydict"></a>easydict</h2><blockquote>
+<p>引用与参考资料</p>
+<ol>
+<li>logging:<a href="https://www.cnblogs.com/CJOKER/p/8295272.html" target="_blank" rel="noopener">https://www.cnblogs.com/CJOKER/p/8295272.html</a></li>
+<li>unittest:<a href="https://blog.csdn.net/huilan_same/article/details/52944782#t4" target="_blank" rel="noopener">https://blog.csdn.net/huilan_same/article/details/52944782#t4</a></li>
+<li><a href="https://my.oschina.net/liuyuantao/blog/755907" target="_blank" rel="noopener">https://my.oschina.net/liuyuantao/blog/755907</a></li>
+<li><a href="https://blog.csdn.net/u010472607/article/details/76857493/" target="_blank" rel="noopener">https://blog.csdn.net/u010472607/article/details/76857493/</a></li>
+<li><a href="https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/00140767171357714f87a053a824ffd811d98a83b58ec13000" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/00140767171357714f87a053a824ffd811d98a83b58ec13000</a></li>
+<li><a href="https://blog.csdn.net/i_is_a_energy_man/article/details/77833040" target="_blank" rel="noopener">https://blog.csdn.net/i_is_a_energy_man/article/details/77833040</a></li>
+<li><a href="https://blog.csdn.net/zzytmxk/article/details/53402257" target="_blank" rel="noopener">https://blog.csdn.net/zzytmxk/article/details/53402257</a></li>
+<li><a href="http://python.jobbole.com/87240/" target="_blank" rel="noopener">http://python.jobbole.com/87240/</a></li>
+</ol>
+</blockquote>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>请zzy824喝杯咖啡</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1ftpprdhc4gj20tz14q4a1.jpg" alt="ZZY 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="http://ww1.sinaimg.cn/mw690/ca26ff18ly1ftppqm04y6j20go0p0jy4.jpg" alt="ZZY 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    ZZY
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://824zzy.github.io/2017/06/10/Python-module/" title="Python常用模块">https://824zzy.github.io/2017/06/10/Python-module/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/logging/" rel="tag"><i class="fa fa-tag"></i> logging</a>
+          
+            <a href="/tags/unittest/" rel="tag"><i class="fa fa-tag"></i> unittest</a>
+          
+            <a href="/tags/datetime/" rel="tag"><i class="fa fa-tag"></i> datetime</a>
+          
+            <a href="/tags/retry/" rel="tag"><i class="fa fa-tag"></i> retry</a>
+          
+            <a href="/tags/os/" rel="tag"><i class="fa fa-tag"></i> os</a>
+          
+            <a href="/tags/timeit/" rel="tag"><i class="fa fa-tag"></i> timeit</a>
+          
+            <a href="/tags/glob/" rel="tag"><i class="fa fa-tag"></i> glob</a>
+          
+            <a href="/tags/PIL/" rel="tag"><i class="fa fa-tag"></i> PIL</a>
+          
+            <a href="/tags/pickle/" rel="tag"><i class="fa fa-tag"></i> pickle</a>
+          
+            <a href="/tags/matplotlib/" rel="tag"><i class="fa fa-tag"></i> matplotlib</a>
+          
+            <a href="/tags/numpy/" rel="tag"><i class="fa fa-tag"></i> numpy</a>
+          
+            <a href="/tags/setuptool/" rel="tag"><i class="fa fa-tag"></i> setuptool</a>
+          
+            <a href="/tags/graphviz/" rel="tag"><i class="fa fa-tag"></i> graphviz</a>
+          
+            <a href="/tags/pydot/" rel="tag"><i class="fa fa-tag"></i> pydot</a>
+          
+            <a href="/tags/easydict/" rel="tag"><i class="fa fa-tag"></i> easydict</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/16/Git-usage/" rel="next" title="Git使用备忘录">
+                <i class="fa fa-chevron-left"></i> Git使用备忘录
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/06/Latex-Mathjex-usage/" rel="prev" title="Latex&Mathjax使用">
+                Latex&Mathjax使用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zODQxMS8xNDkzOQ"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="ZZY">
+            
+              <p class="site-author-name" itemprop="name">ZZY</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+			<!--my custom code begin-->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+			<script type="text/javascript">
+			  $("#sidebar").hover(function(){
+				$("#mydivshow").velocity('stop').velocity({opacity: 1});
+			  },function(){
+				$("#mydivshow").velocity('stop').velocity({opacity: 0});
+			  });
+			</script>
+			<div id="mydivshow" class="mydivshow">
+			<!--my custom code end-->
+			
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">70</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">90</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/824zzy" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:zhuzhengyuan824@gmail.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.zhihu.com/people/zzy-78/activities" target="_blank" title="知乎">
+                    
+                      <i class="fa fa-fw fa-bell"></i>知乎</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://github.com/BUPT/awesome-chatbot" title="Chatbot主页" target="_blank">Chatbot主页</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+        </div>
+		<!--my custom code begin-->
+		</div>
+		<!--my custom code end-->
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#python-logging模块"><span class="nav-number">1.</span> <span class="nav-text">python logging模块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#日志级别"><span class="nav-number">1.1.</span> <span class="nav-text">日志级别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#控制台日志输出"><span class="nav-number">1.2.</span> <span class="nav-text">控制台日志输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#日志文件输出"><span class="nav-number">1.3.</span> <span class="nav-text">日志文件输出</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#python单元测试框架-unittest"><span class="nav-number">2.</span> <span class="nav-text">python单元测试框架-unittest</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#unittest最核心的原理"><span class="nav-number">2.1.</span> <span class="nav-text">unittest最核心的原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本使用方法"><span class="nav-number">2.2.</span> <span class="nav-text">基本使用方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进阶：TestSuite-组织测试"><span class="nav-number">2.3.</span> <span class="nav-text">进阶：TestSuite(组织测试)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进阶：准备测试环境"><span class="nav-number">2.4.</span> <span class="nav-text">进阶：准备测试环境</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#os模块与sys的模块"><span class="nav-number">3.</span> <span class="nav-text">os模块与sys的模块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#os模块与sys模块的区分"><span class="nav-number">3.1.</span> <span class="nav-text">os模块与sys模块的区分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#os模块常用方法"><span class="nav-number">3.2.</span> <span class="nav-text">os模块常用方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sys模块常用方法："><span class="nav-number">4.</span> <span class="nav-text">sys模块常用方法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于时间的模块"><span class="nav-number">5.</span> <span class="nav-text">关于时间的模块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#datetime模块获取当前时间"><span class="nav-number">5.1.</span> <span class="nav-text">datetime模块获取当前时间</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#retry模块"><span class="nav-number">6.</span> <span class="nav-text">retry模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#timeit"><span class="nav-number">7.</span> <span class="nav-text">timeit</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#例子1"><span class="nav-number">7.1.</span> <span class="nav-text">例子1</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#glob"><span class="nav-number">8.</span> <span class="nav-text">glob</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#glob方法：返回所有匹配的文件路径列表"><span class="nav-number">8.1.</span> <span class="nav-text">glob方法：返回所有匹配的文件路径列表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PIL"><span class="nav-number">9.</span> <span class="nav-text">PIL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#诡异的安装方式"><span class="nav-number">9.1.</span> <span class="nav-text">诡异的安装方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本操作"><span class="nav-number">9.2.</span> <span class="nav-text">基本操作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#matplotlib"><span class="nav-number">10.</span> <span class="nav-text">matplotlib</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在远端服务器利用matplotlib绘图"><span class="nav-number">10.1.</span> <span class="nav-text">在远端服务器利用matplotlib绘图</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#setuptool"><span class="nav-number">11.</span> <span class="nav-text">setuptool</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#basic-usage"><span class="nav-number">11.1.</span> <span class="nav-text">basic usage</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pydot-amp-graphviz"><span class="nav-number">12.</span> <span class="nav-text">pydot &amp; graphviz</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#easydict"><span class="nav-number">13.</span> <span class="nav-text">easydict</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ZZY</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">博客全站共68.3k字</span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a></div>
+  <span>　<i class="fa fa-bomb"></i></span>
+  <span id="showDays"></span>  
+
+
+
+
+<script>
+  var seconds = 1000;
+  var minutes = seconds * 60;
+  var hours = minutes * 60;
+  var days = hours * 24;
+  var years = days * 365;
+  var birthDay = Date.UTC(2018,07,27,00,00,00); // 这里设置建站时间
+  setInterval(function() {
+    var today = new Date();
+    var todayYear = today.getFullYear();
+    var todayMonth = today.getMonth()+1;
+    var todayDate = today.getDate();
+    var todayHour = today.getHours();
+    var todayMinute = today.getMinutes();
+    var todaySecond = today.getSeconds();
+    var now = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+    var diff = now - birthDay;
+    var diffYears = Math.floor(diff/years);
+    var diffDays = Math.floor((diff/days)-diffYears*365);
+    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+      document.getElementById('showDays').innerHTML="本站已运行 "+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+  }, 1000);
+</script>
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  <script type="text/javascript" color="255,255,255" opacity="1" zindex="-2" count="81" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("lrStmEgU8MjAwlxcSITnS6DR-gzGzoHsz", "iR6jz7gj1mKzrFtB6EqbxmzK");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.3"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.3"></script>
+
+
+  
+  <script type="text/javascript" src="/js/src/exturl.js?v=5.1.3"></script>
+
+
+  <script src="/js/src/Aplayer-Controler.js"></script>
+<div id="AP-controler"></div>
+<script type="text/javascript">
+var myapc=new APlayer_Controler({
+		APC_dom:$('#AP-controler'),
+		aplayer:ap, //此为绑定的aplayer对象
+		attach_right:false,
+		position:{top:'300px',bottom:''},
+		fixed:true,
+		btn_width:100,
+		btn_height:120,
+		img_src:['http://oty1v077k.bkt.clouddn.com/bukagirl.jpg',
+				'http://oty1v077k.bkt.clouddn.com/jumpgirl.jpg',
+				'http://oty1v077k.bkt.clouddn.com/pentigirl.jpg',
+				'http://oty1v077k.bkt.clouddn.com/%E8%90%8C1.gif'],
+		img_style:{repeat:'no-repeat',position:'center',size:'contain'},
+		ctrls_color:'rgba(173,255,47,0.8)',
+		ctrls_hover_color:'rgba(255,140,0,0.7)',
+		tips_on:true,
+		tips_width:140,
+		tips_height:25,
+		tips_color:'rgba(255,255,255,0.6)',
+		tips_content:{},
+		timeout:30
+	});
+</script>
+
+<!-- 页面点击特效 -->
+<script type="text/javascript" src="/js/src/click-effect.js"></script>
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"sciptFrom":"local","model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"superSample":2,"width":300,"height":600,"position":"left","hOffset":0,"vOffset":-150},"mobile":{"show":true,"scale":0.01},"react":{"opacityDefault":0.9,"opacityOnHover":0.9},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
