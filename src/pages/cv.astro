@@ -1,0 +1,366 @@
+---
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Layout from "@/layouts/Layout.astro";
+import { SITE } from "@/config";
+---
+
+<Layout title={`CV | ${SITE.title}`}>
+  <Header />
+  <Breadcrumb />
+  <main id="main-content" class="app-layout mb-28">
+    <h1 class="text-2xl tracking-wider sm:text-3xl mb-4">Curriculum Vitae</h1>
+
+    <p class="mb-10 leading-relaxed opacity-80">
+      Machine Learning Engineer at Adobe building LLM-based agent orchestration
+      systems for Adobe Experience Platform. Ph.D. in Computer Science with
+      publications at top peer-reviewed venues (NAACL, ACL, EMNLP, COLING, CIKM, WSDM).
+    </p>
+
+    <!-- Work Experience -->
+    <h2 class="cv-section-title">Work Experience</h2>
+
+    <div class="cv-entry">
+      <div class="cv-entry-header">
+        <div>
+          <div class="cv-role">Machine Learning Engineer</div>
+          <div class="cv-org">Adobe Experience Platform, Agent Orchestrator</div>
+        </div>
+        <div class="cv-date">2025 – now</div>
+      </div>
+      <ul class="cv-bullets">
+        <li>Designed and built the <strong>Agent Executor</strong>, the core multi-agent orchestration engine serving tens of thousands of enterprise users, routing queries to 15+ specialized AI agents.</li>
+        <li>Owned <strong>Response Synthesis</strong> end-to-end: design doc, LLM-based evaluation pipeline with human-LLM alignment study, production launch.</li>
+        <li>Leading <strong>Context-Aware Agent Selection</strong>: analyzed production traffic revealing 49.2% misrouting, built ranking module covering 80.8% of interactions.</li>
+        <li>Built <strong>Scalable Attachment Summarization</strong> and <strong>Multi-layer OOS Defense</strong>; migrated to Response API; implemented MLflow tracing with OpenTelemetry.</li>
+      </ul>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-header">
+        <div>
+          <div class="cv-role">Machine Learning Engineer Intern</div>
+          <div class="cv-org">Adobe Experience Platform</div>
+        </div>
+        <div class="cv-date">2024</div>
+      </div>
+      <ul class="cv-bullets">
+        <li>Built <strong>MuRAR</strong>, a multi-modal question-answering assistant for Adobe Experience Platform.</li>
+        <li>Won <strong>Best Demonstration Paper</strong> at COLING 2025; filed patent (D54114).</li>
+      </ul>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-header">
+        <div>
+          <div class="cv-role">Lead Web Development Engineer</div>
+          <div class="cv-org">Department of CSE, University of Texas at Arlington</div>
+        </div>
+        <div class="cv-date">2020 – 2024</div>
+      </div>
+      <ul class="cv-bullets">
+        <li>Led a team building department web applications for Ph.D. management and faculty review; managed 100K+ database records.</li>
+      </ul>
+    </div>
+
+    <!-- Education -->
+    <h2 class="cv-section-title">Education</h2>
+
+    <div class="cv-entry">
+      <div class="cv-entry-header">
+        <div>
+          <div class="cv-role">Ph.D., Computer Science</div>
+          <div class="cv-org">University of Texas at Arlington</div>
+        </div>
+        <div class="cv-date">2020 – 2025</div>
+      </div>
+      <p class="cv-detail">Thesis: Understanding Misinformation on Social Media Through Truthfulness Stance.<br/>Advisor: Dr. Chengkai Li</p>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-header">
+        <div>
+          <div class="cv-role">M.S., Computer Science</div>
+          <div class="cv-org">University of Texas at Arlington</div>
+        </div>
+        <div class="cv-date">2018 – 2020</div>
+      </div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-header">
+        <div>
+          <div class="cv-role">B.S., Computer Science</div>
+          <div class="cv-org">Tianjin University of Finance and Economics</div>
+        </div>
+        <div class="cv-date">2014 – 2018</div>
+      </div>
+    </div>
+
+    <!-- Publications -->
+    <h2 class="cv-section-title">Publications</h2>
+
+    <div class="cv-pubs">
+      <div class="cv-pub">
+        <span class="cv-cite">26</span>
+        X. Shi, <strong>Z. Zhu</strong>, Z. Zhang, C. Li.
+        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FcfF6G4AAAAJ&citation_for_view=FcfF6G4AAAAJ:qjMakFHDy7sC" target="_blank">Hallucination Mitigation in Natural Language Generation from Large-Scale Open-Domain Knowledge Graphs.</a>
+        <em>EMNLP</em>, 2023.
+      </div>
+      <div class="cv-pub">
+        <span class="cv-cite">15</span>
+        <strong>Z. Zhu</strong>, D. Lee, H. Zhang, S.S. Harsha, L. Feujio, A. Maharaj, Y. Li.
+        <a href="https://arxiv.org/abs/2408.08521" target="_blank">MuRAR: A Simple and Effective Multimodal Retrieval and Answer Refinement Framework for Multimodal Question Answering.</a>
+        <em>COLING</em>, 2025.
+      </div>
+      <div class="cv-pub">
+        <span class="cv-cite">11</span>
+        <strong>Z. Zhu</strong>, K. Meng, J. Caraballo, I. Jaradat, X. Shi, Z. Zhang, F. Akrami, H. Liao, et al.
+        <a href="https://aclanthology.org/2021.eacl-demos.12" target="_blank">A Dashboard for Mitigating the COVID-19 Misinfodemic.</a>
+        <em>EACL</em>, 2021.
+      </div>
+      <div class="cv-pub">
+        <span class="cv-cite">8</span>
+        <strong>Z. Zhu</strong>, Z. Zhang, H. Zhang, C. Li.
+        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FcfF6G4AAAAJ&citation_for_view=FcfF6G4AAAAJ:WF5omc3nYNoC" target="_blank">RATSD: Retrieval Augmented Truthfulness Stance Detection from Social Media Posts toward Factual Claims.</a>
+        <em>Findings of NAACL</em>, 2025.
+      </div>
+      <div class="cv-pub">
+        <span class="cv-cite">6</span>
+        H. Zhang, <strong>Z. Zhu</strong>, Z. Zhang, J. Devasier, C. Li.
+        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FcfF6G4AAAAJ&citation_for_view=FcfF6G4AAAAJ:Tyk-4Ss8FVUC" target="_blank">Granular Analysis of Social Media Users' Truthfulness Stances toward Climate Change Factual Claims.</a>
+        <em>NLP Meets Climate Change (ClimateNLP)</em>, 2024.
+      </div>
+      <div class="cv-pub">
+        <span class="cv-cite">5</span>
+        H. Zhang, <strong>Z. Zhu</strong>, Z. Zhang, C. Li.
+        <a href="https://arxiv.org/abs/2504.12325" target="_blank">LLMTaxo: Leveraging Large Language Models for Constructing Taxonomy of Factual Claims from Social Media.</a>
+        <em>Findings of ACL</em>, 2025.
+      </div>
+      <div class="cv-pub">
+        <span class="cv-cite">5</span>
+        <strong>Z. Zhu</strong>, Z. Zhang, F. Patel, C. Li.
+        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FcfF6G4AAAAJ&citation_for_view=FcfF6G4AAAAJ:IjCSPb-OGe4C" target="_blank">Detecting Stance of Tweets Toward Truthfulness of Factual Claims.</a>
+        <em>Computation+Journalism Symposium</em>, 2022.
+      </div>
+      <div class="cv-pub">
+        <span class="cv-cite">3</span>
+        Z. Zhang, <strong>Z. Zhu</strong>, H. Zhang, F. Patel, J. Caraballo, P. Hennecke, C. Li.
+        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FcfF6G4AAAAJ&citation_for_view=FcfF6G4AAAAJ:UeHWp8X0CEIC" target="_blank">Wildfire: A Twitter Social Sensing Platform for Layperson.</a>
+        <em>WSDM</em>, 2024.
+      </div>
+      <div class="cv-pub">
+        <span class="cv-cite">2</span>
+        <strong>Z. Zhu</strong>, H. Zhang, Z. Zhang, C. Li.
+        <a href="https://doi.org/10.1145/3746252.3761622" target="_blank">TSD-CT: A Benchmark Dataset for Truthfulness Stance Detection.</a>
+        <em>CIKM</em>, 2025.
+      </div>
+      <div class="cv-pub">
+        <span class="cv-cite">2</span>
+        Z. Zhang, <strong>Z. Zhu</strong>, H. Zhang, C. Li.
+        <a href="https://doi.org/10.1007/978-3-031-78541-2_23" target="_blank">Exploring Behavioral Tendencies on Social Media: A Perspective Through Claim Check-Worthiness.</a>
+        <em>ASONAM</em>, 2024.
+      </div>
+      <div class="cv-pub">
+        <span class="cv-cite">1</span>
+        <strong>Z. Zhu</strong>, H. Zhang, Z. Zhang, C. Li.
+        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FcfF6G4AAAAJ&citation_for_view=FcfF6G4AAAAJ:YsMSGLbcyi4C" target="_blank">TrustMap: Mapping Truthfulness Stance of Social Media Posts on Factual Claims for Geographical Analysis.</a>
+        <em>CIKM</em>, 2025.
+      </div>
+      <div class="cv-pub">
+        <span class="cv-cite">1</span>
+        <strong>Z. Zhu</strong>.
+        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FcfF6G4AAAAJ&citation_for_view=FcfF6G4AAAAJ:ufrVoPGSRksC" target="_blank">Understanding Misinformation on Social Media through Truthfulness Stance.</a>
+        <em>Ph.D. Dissertation</em>, 2025.
+      </div>
+      <div class="cv-pub">
+        <span class="cv-cite"></span>
+        <strong>Z. Zhu</strong>, Z. Zhang, H. Zhang, C. Li.
+        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FcfF6G4AAAAJ&citation_for_view=FcfF6G4AAAAJ:Y0pCki6q_DkC" target="_blank">Detecting Stance of Social Media Posts Toward Truthfulness of Factual Claims for Social Goods.</a>
+        <em>Preprint</em>, 2024.
+      </div>
+      <div class="cv-pub">
+        <span class="cv-cite"></span>
+        A.K.R. Madhusudhan, H. Zhang, <strong>Z. Zhu</strong>, Z. Zhang, J. Devasier, C. Li.
+        <a href="https://arxiv.org/abs/2503.05565" target="_blank">Evaluating Open Source LLMs for Claim Detection in Fact-Checking.</a>
+        <em>Preprint</em>, 2025.
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <h2 class="cv-section-title">Technical Skills</h2>
+
+    <div class="cv-skills">
+      <div class="cv-skill-row">
+        <span class="cv-skill-label">Languages</span>
+        <span>Python, JavaScript/TypeScript, SQL, PHP, HTML/CSS, Cypher</span>
+      </div>
+      <div class="cv-skill-row">
+        <span class="cv-skill-label">ML/AI</span>
+        <span>PyTorch, TensorFlow, HuggingFace, OpenAI API, LangChain, RAG, BERT, GPT</span>
+      </div>
+      <div class="cv-skill-row">
+        <span class="cv-skill-label">Systems</span>
+        <span>Docker, Kubernetes, Azure, MLflow, OpenTelemetry, Neo4j, Git, FastAPI</span>
+      </div>
+    </div>
+
+    <!-- Awards -->
+    <h2 class="cv-section-title">Awards & Activities</h2>
+
+    <div class="cv-awards">
+      <div class="cv-award"><span class="cv-award-year">2025</span> Best Demonstration Paper Award, COLING</div>
+      <div class="cv-award"><span class="cv-award-year">2025</span> Featured in Adobe official blog: "Show, Don't Tell: Multimodal Answers in AI Assistant"</div>
+      <div class="cv-award"><span class="cv-award-year">2025</span> Best Presentation & Demo Award, Student Computing Research Festival</div>
+      <div class="cv-award"><span class="cv-award-year">2025</span> Invited speaker: Caltech Election Integrity Conference</div>
+      <div class="cv-award"><span class="cv-award-year">2024</span> Patent filed: D54114 "Multimodal Retrieval and Answer Refinement Framework" (Adobe)</div>
+      <div class="cv-award"><span class="cv-award-year">2024</span> Invited speaker: TACCSTER</div>
+      <div class="cv-award"><span class="cv-award-year">2021–25</span> Reviewer: SIGMOD, NAACL, ACL, KDD, SIGIR, VLDB, WSDM, ICDE</div>
+      <div class="cv-award"><span class="cv-award-year">NSF</span> Contributor on grants #2346261 ($299K) and #2333834 ($1.5M)</div>
+    </div>
+
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .cv-section-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent);
+  }
+
+  .cv-entry {
+    margin-bottom: 1.75rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--border);
+  }
+
+  .cv-entry:hover {
+    border-left-color: var(--accent);
+  }
+
+  .cv-entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .cv-role {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .cv-org {
+    font-style: italic;
+    opacity: 0.7;
+    font-size: 0.9rem;
+  }
+
+  .cv-date {
+    font-family: var(--font-app);
+    font-size: 0.8rem;
+    opacity: 0.5;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .cv-bullets {
+    margin-top: 0.5rem;
+    padding-left: 1.25rem;
+    list-style-type: "→ ";
+    font-size: 0.875rem;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .cv-detail {
+    margin-top: 0.35rem;
+    font-size: 0.875rem;
+    opacity: 0.7;
+  }
+
+  .cv-pubs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .cv-pub {
+    font-size: 0.875rem;
+    opacity: 0.8;
+    padding-left: 1rem;
+    border-left: 3px solid var(--border);
+  }
+
+  .cv-pub:hover {
+    border-left-color: var(--accent);
+  }
+
+  .cv-cite {
+    display: inline-block;
+    min-width: 1.75rem;
+    text-align: right;
+    font-family: var(--font-app);
+    font-size: 0.7rem;
+    opacity: 0.45;
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+  }
+
+  .cv-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .cv-skill-row {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+  }
+
+  .cv-skill-label {
+    font-weight: 600;
+    min-width: 6rem;
+    flex-shrink: 0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .cv-awards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-size: 0.875rem;
+  }
+
+  .cv-award {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    opacity: 0.8;
+  }
+
+  .cv-award-year {
+    font-family: var(--font-app);
+    font-size: 0.75rem;
+    opacity: 0.6;
+    min-width: 4rem;
+    flex-shrink: 0;
+    text-align: right;
+  }
+</style>

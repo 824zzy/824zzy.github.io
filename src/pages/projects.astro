@@ -1,0 +1,283 @@
+---
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Layout from "@/layouts/Layout.astro";
+import { SITE } from "@/config";
+
+const sections = [
+  {
+    title: "NLP & Fact-Checking",
+    projects: [
+      {
+        name: "RATSD",
+        desc: "Retrieval-augmented system for detecting truthfulness stance of social media posts toward factual claims. Combines dense retrieval with stance classification.",
+        tags: ["NAACL 2025", "Python", "PyTorch", "RAG"],
+        link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FcfF6G4AAAAJ&citation_for_view=FcfF6G4AAAAJ:WF5omc3nYNoC",
+        color: "#7c3aed",
+      },
+      {
+        name: "TSD-CT",
+        desc: "A benchmark dataset for truthfulness stance detection with fine-grained claim-tweet pairs and comprehensive annotations.",
+        tags: ["CIKM 2025", "Dataset", "NLP"],
+        link: "https://doi.org/10.1145/3746252.3761622",
+        color: "#6d28d9",
+      },
+      {
+        name: "TrustMap",
+        desc: "Mapping truthfulness stance of social media posts on factual claims for geographical analysis using GIS visualization.",
+        tags: ["CIKM 2025", "GIS", "Visualization"],
+        link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FcfF6G4AAAAJ&citation_for_view=FcfF6G4AAAAJ:YsMSGLbcyi4C",
+        color: "#5b21b6",
+      },
+      {
+        name: "COVID-19 Misinfodemic Dashboard",
+        desc: "Real-time dashboard for monitoring and mitigating COVID-19 misinformation on social media with fact-check integration.",
+        tags: ["EACL 2021", "Dashboard", "Python"],
+        link: "https://aclanthology.org/2021.eacl-demos.12",
+        color: "#7c3aed",
+      },
+      {
+        name: "Hallucination Mitigation in KG-NLG",
+        desc: "Reducing hallucinations in natural language generation from large-scale open-domain knowledge graphs.",
+        tags: ["EMNLP 2023", "Knowledge Graphs", "NLG"],
+        link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FcfF6G4AAAAJ&citation_for_view=FcfF6G4AAAAJ:qjMakFHDy7sC",
+        color: "#6d28d9",
+      },
+      {
+        name: "LLMTaxo",
+        desc: "Leveraging large language models for automatically constructing taxonomy of factual claims from social media.",
+        tags: ["ACL 2025", "LLMs", "Taxonomy"],
+        link: "https://arxiv.org/abs/2504.12325",
+        color: "#5b21b6",
+      },
+    ],
+  },
+  {
+    title: "AI Agents & LLMs",
+    projects: [
+      {
+        name: "Agent Executor",
+        desc: "Core multi-agent orchestration engine at Adobe serving tens of thousands of enterprise users, routing queries to 15+ specialized AI agents with sequential dependencies.",
+        tags: ["Adobe", "Python", "LLMs", "Production"],
+        color: "#dc2626",
+      },
+      {
+        name: "MuRAR",
+        desc: "Multimodal retrieval and answer refinement framework for question answering. Won Best Demonstration Paper at COLING 2025. Patent filed.",
+        tags: ["COLING 2025", "Best Demo", "Patent", "Multimodal"],
+        link: "https://arxiv.org/abs/2408.08521",
+        color: "#ea580c",
+      },
+      {
+        name: "Response Synthesis",
+        desc: "End-to-end LLM-based evaluation pipeline with human-LLM alignment study for measuring response quality in agent systems.",
+        tags: ["Adobe", "LLM Eval", "Production"],
+        color: "#dc2626",
+      },
+      {
+        name: "Context-Aware Agent Selection",
+        desc: "Application-context ranking module that analyzes production traffic patterns to reduce agent misrouting. Covers 80.8% of interactions.",
+        tags: ["Adobe", "Ranking", "ML"],
+        color: "#dc2626",
+      },
+    ],
+  },
+  {
+    title: "Data & Visualization",
+    projects: [
+      {
+        name: "Wildfire",
+        desc: "Twitter social sensing platform for layperson, enabling real-time monitoring and analysis of wildfire-related social media activity.",
+        tags: ["WSDM 2024", "Twitter API", "Real-time"],
+        link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=FcfF6G4AAAAJ&citation_for_view=FcfF6G4AAAAJ:UeHWp8X0CEIC",
+        color: "#d97706",
+      },
+      {
+        name: "StanceMap",
+        desc: "Interactive visualization tool for mapping and analyzing stance distributions across social media conversations on factual claims.",
+        tags: ["Visualization", "Python", "GIS"],
+        github: "https://github.com/824zzy/stancemap",
+        color: "#ca8a04",
+      },
+    ],
+  },
+  {
+    title: "Web Applications",
+    projects: [
+      {
+        name: "AI-Interactive-Teacher",
+        desc: "Ionic mobile app powered by TensorFlow.js for interactive AI-assisted teaching and learning experiences.",
+        tags: ["Ionic", "TensorFlow.js", "Mobile"],
+        github: "https://github.com/824zzy/AI-Interactive-Teacher",
+        color: "#0891b2",
+      },
+      {
+        name: "Uber-ServeMe-System",
+        desc: "Uber subsystem built with Ionic4, Angular8, and Firebase for service management and real-time coordination.",
+        tags: ["Ionic4", "Angular8", "Firebase"],
+        github: "https://github.com/824zzy/Uber-ServeMe-System",
+        color: "#0d9488",
+      },
+      {
+        name: "Maze Game",
+        desc: "Interactive browser-based maze game with keyboard controls. A fun Easter egg on this very site.",
+        tags: ["JavaScript", "CSS", "Game"],
+        link: "/maze.html",
+        color: "#7c3aed",
+      },
+    ],
+  },
+];
+---
+
+<Layout title={`Projects | ${SITE.title}`}>
+  <Header />
+  <Breadcrumb />
+  <main id="main-content" class="app-layout mb-28">
+    <h1 class="text-2xl tracking-wider sm:text-3xl mb-4">Projects & Research</h1>
+    <p class="mb-10 leading-relaxed opacity-80">
+      A collection of research projects, industry work, and side projects spanning
+      NLP, AI agents, data visualization, and web development.
+    </p>
+
+    {sections.map(section => (
+      <section class="mb-12">
+        <h2 class="proj-section-title">{section.title}</h2>
+        <div class="proj-grid">
+          {section.projects.map(proj => (
+            <div class="proj-card">
+              <div class="proj-color-bar" style={`background: ${proj.color}`}></div>
+              <div class="proj-content">
+                <h3 class="proj-name">
+                  {proj.link ? (
+                    <a href={proj.link} target="_blank">{proj.name}</a>
+                  ) : proj.github ? (
+                    <a href={proj.github} target="_blank">{proj.name}</a>
+                  ) : (
+                    proj.name
+                  )}
+                </h3>
+                <p class="proj-desc">{proj.desc}</p>
+                <div class="proj-tags">
+                  {proj.tags.map(tag => (
+                    <span class="proj-tag">{tag}</span>
+                  ))}
+                </div>
+                <div class="proj-links">
+                  {proj.link && (
+                    <a href={proj.link} target="_blank" class="proj-link">Paper ↗</a>
+                  )}
+                  {proj.github && (
+                    <a href={proj.github} target="_blank" class="proj-link">GitHub ↗</a>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    ))}
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .proj-section-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent);
+  }
+
+  .proj-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .proj-card {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    background: var(--background);
+  }
+
+  .proj-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .proj-color-bar {
+    height: 4px;
+    width: 100%;
+  }
+
+  .proj-content {
+    padding: 1rem;
+  }
+
+  .proj-name {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+  }
+
+  .proj-name a {
+    color: var(--foreground);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .proj-name a:hover {
+    color: var(--accent);
+  }
+
+  .proj-desc {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+  }
+
+  .proj-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .proj-tag {
+    font-size: 0.65rem;
+    font-family: var(--font-app);
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    opacity: 0.7;
+    white-space: nowrap;
+  }
+
+  .proj-links {
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  .proj-link {
+    font-size: 0.75rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+  }
+
+  .proj-link:hover {
+    opacity: 0.7;
+  }
+</style>

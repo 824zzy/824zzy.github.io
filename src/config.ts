@@ -1,0 +1,23 @@
+export const SITE = {
+  website: "https://824zzy.github.io/",
+  author: "Zhengyuan Zhu (Joey)",
+  profile: "https://824zzy.github.io/",
+  desc: "ML Engineer at Adobe. Building LLM-based agent orchestration systems. Ph.D. in Computer Science.",
+  title: "Zhengyuan Zhu",
+  ogImage: "og-image.jpg",
+  lightAndDarkMode: true,
+  postPerIndex: 5,
+  postPerPage: 10,
+  scheduledPostMargin: 15 * 60 * 1000,
+  showArchives: true,
+  showBackButton: true,
+  editPost: {
+    enabled: false,
+    text: "Edit page",
+    url: "https://github.com/824zzy/824zzy.github.io/edit/source/",
+  },
+  dynamicOgImage: true,
+  dir: "ltr",
+  lang: "en",
+  timezone: "America/Los_Angeles",
+} as const;
