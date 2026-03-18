@@ -5,7 +5,16 @@ import Breadcrumb from "@/components/Breadcrumb.astro";
 import Layout from "@/layouts/Layout.astro";
 import { SITE } from "@/config";
 
-const sections = [
+type Project = {
+  name: string;
+  desc: string;
+  tags: string[];
+  link?: string;
+  github?: string;
+  color: string;
+};
+
+const sections: { title: string; projects: Project[] }[] = [
   {
     title: "NLP & Fact-Checking",
     projects: [
